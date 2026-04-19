@@ -1,0 +1,50 @@
+{
+  "SPA": {
+    "name": "Secular Progressive Alliance",
+    "ledBy": "DMK",
+    "leader": "M.K. Stalin",
+    "seats": 234,
+    "color": "#d32a1e",
+    "short": "DMK-led INDIA bloc in Tamil Nadu. DMK contests 164 seats on Rising Sun; INC 27 on Hand. Smaller allies — DMDK, VCK, MDMK, CPI, CPI(M), IUML, KMDK — contest on DMK's Rising Sun symbol per ECI."
+  },
+  "NDA": {
+    "name": "National Democratic Alliance",
+    "ledBy": "AIADMK",
+    "leader": "Edappadi K. Palaniswami",
+    "seats": 234,
+    "color": "#0c7a3a",
+    "short": "AIADMK-led alliance, rejoined BJP-NDA in April 2025. AIADMK 167 seats on Two Leaves; BJP 27 on Lotus; PMK 18 on Mango; AMMK 11 on Gift Box. TMC(M) 5 on BJP's Lotus; IJK, TMMK, PBK on AIADMK's Two Leaves."
+  },
+  "TVK": {
+    "name": "Tamilaga Vettri Kazhagam",
+    "ledBy": "TVK",
+    "leader": "Vijay",
+    "seats": 234,
+    "color": "#8a2020",
+    "short": "Actor Vijay's new party, contesting solo across all 234 seats in its debut election. Vijay contests from Perambur (AC 12) and Tiruchirappalli East (AC 141)."
+  },
+  "NTK": {
+    "name": "Naam Tamilar Katchi",
+    "ledBy": "NTK",
+    "leader": "Seeman",
+    "seats": 234,
+    "color": "#d8a520",
+    "short": "Tamil nationalist party contesting all 234 seats solo, with 117 men and 117 women candidates. Seeman contests from Karaikudi (AC 184)."
+  },
+  "OTH": {
+    "name": "Other Parties",
+    "ledBy": "",
+    "leader": "",
+    "seats": 0,
+    "color": "#5a7a9a",
+    "short": "Third-front and smaller state/national parties contesting outside the four headline blocs. Notable presences: Tamizhaga Vaazhvurimai Katchi (Velmurugan, 164 seats), Bahujan Samaj Party (119), AIPMMK (Sasikala, 78), Puthiya Tamilagam (60)."
+  },
+  "IND": {
+    "name": "Independent Candidates",
+    "ledBy": "",
+    "leader": "",
+    "seats": 0,
+    "color": "#6b5d52",
+    "short": "Candidates contesting without party affiliation. 2,208 independents across 234 constituencies — a mean of 9.4 per seat. AC 135 (Karur) has the most with 71, partly attributable to the September 2025 TVK rally crowd crush and surrounding political tension."
+  }
+}

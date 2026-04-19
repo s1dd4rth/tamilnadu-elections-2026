@@ -1,0 +1,2342 @@
+[
+  {
+    "no": 1,
+    "n": "Gummidipoondi",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 122195,
+    "f": 129372,
+    "tg": 36,
+    "total": 251603
+  },
+  {
+    "no": 2,
+    "n": "Ponneri",
+    "d": "Thiruvallur",
+    "t": "SC",
+    "m": 121221,
+    "f": 127662,
+    "tg": 34,
+    "total": 248917
+  },
+  {
+    "no": 3,
+    "n": "Tiruttani",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 128642,
+    "f": 131417,
+    "tg": 25,
+    "total": 260084
+  },
+  {
+    "no": 4,
+    "n": "Thiruvallur",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 121188,
+    "f": 127426,
+    "tg": 37,
+    "total": 248651
+  },
+  {
+    "no": 5,
+    "n": "Poonamallee",
+    "d": "Thiruvallur",
+    "t": "SC",
+    "m": 176849,
+    "f": 186769,
+    "tg": 70,
+    "total": 363688
+  },
+  {
+    "no": 6,
+    "n": "Avadi",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 209662,
+    "f": 219035,
+    "tg": 75,
+    "total": 428772
+  },
+  {
+    "no": 7,
+    "n": "Maduravoyal",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 179602,
+    "f": 184349,
+    "tg": 80,
+    "total": 364031
+  },
+  {
+    "no": 8,
+    "n": "Ambattur",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 162248,
+    "f": 168175,
+    "tg": 57,
+    "total": 330480
+  },
+  {
+    "no": 9,
+    "n": "Madavaram",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 205922,
+    "f": 214596,
+    "tg": 83,
+    "total": 420601
+  },
+  {
+    "no": 10,
+    "n": "Thiruvottiyur",
+    "d": "Thiruvallur",
+    "t": "GEN",
+    "m": 117181,
+    "f": 123289,
+    "tg": 116,
+    "total": 240586
+  },
+  {
+    "no": 11,
+    "n": "Dr.Radhakrishnan Nagar",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 93576,
+    "f": 102201,
+    "tg": 79,
+    "total": 195856
+  },
+  {
+    "no": 12,
+    "n": "Perambur",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 107995,
+    "f": 114726,
+    "tg": 71,
+    "total": 222792
+  },
+  {
+    "no": 13,
+    "n": "Kolathur",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 99607,
+    "f": 107607,
+    "tg": 37,
+    "total": 207251
+  },
+  {
+    "no": 14,
+    "n": "Villivakkam",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 76947,
+    "f": 82785,
+    "tg": 32,
+    "total": 159764
+  },
+  {
+    "no": 15,
+    "n": "Thiru-Vi-Ka-Nagar",
+    "d": "Chennai",
+    "t": "SC",
+    "m": 85724,
+    "f": 93008,
+    "tg": 61,
+    "total": 178793
+  },
+  {
+    "no": 16,
+    "n": "Egmore",
+    "d": "Chennai",
+    "t": "SC",
+    "m": 65677,
+    "f": 69149,
+    "tg": 53,
+    "total": 134879
+  },
+  {
+    "no": 17,
+    "n": "Royapuram",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 75870,
+    "f": 81004,
+    "tg": 57,
+    "total": 156931
+  },
+  {
+    "no": 18,
+    "n": "Harbour",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 58221,
+    "f": 58620,
+    "tg": 55,
+    "total": 116896
+  },
+  {
+    "no": 19,
+    "n": "Chepauk-Thiruvallikeni",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 79412,
+    "f": 84396,
+    "tg": 58,
+    "total": 163866
+  },
+  {
+    "no": 20,
+    "n": "Thousand Lights",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 73500,
+    "f": 80343,
+    "tg": 65,
+    "total": 153908
+  },
+  {
+    "no": 21,
+    "n": "Anna Nagar",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 87325,
+    "f": 94029,
+    "tg": 48,
+    "total": 181402
+  },
+  {
+    "no": 22,
+    "n": "Virugampakkam",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 95025,
+    "f": 101461,
+    "tg": 50,
+    "total": 196536
+  },
+  {
+    "no": 23,
+    "n": "Saidapet",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 96950,
+    "f": 103685,
+    "tg": 62,
+    "total": 200697
+  },
+  {
+    "no": 24,
+    "n": "Thiyagarayanagar",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 74682,
+    "f": 80228,
+    "tg": 33,
+    "total": 154943
+  },
+  {
+    "no": 25,
+    "n": "Mylapore",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 93017,
+    "f": 101691,
+    "tg": 23,
+    "total": 194731
+  },
+  {
+    "no": 26,
+    "n": "Velachery",
+    "d": "Chennai",
+    "t": "GEN",
+    "m": 102235,
+    "f": 109411,
+    "tg": 45,
+    "total": 211691
+  },
+  {
+    "no": 27,
+    "n": "Shozhinganallur",
+    "d": "Chengalpattu",
+    "t": "GEN",
+    "m": 262621,
+    "f": 274254,
+    "tg": 116,
+    "total": 536991
+  },
+  {
+    "no": 28,
+    "n": "Alandur",
+    "d": "Kancheepuram",
+    "t": "GEN",
+    "m": 143839,
+    "f": 152173,
+    "tg": 40,
+    "total": 296052
+  },
+  {
+    "no": 29,
+    "n": "Sriperumbudur",
+    "d": "Kancheepuram",
+    "t": "SC",
+    "m": 181852,
+    "f": 194007,
+    "tg": 62,
+    "total": 375921
+  },
+  {
+    "no": 30,
+    "n": "Pallavaram",
+    "d": "Chengalpattu",
+    "t": "GEN",
+    "m": 161197,
+    "f": 168996,
+    "tg": 24,
+    "total": 330217
+  },
+  {
+    "no": 31,
+    "n": "Tambaram",
+    "d": "Chengalpattu",
+    "t": "GEN",
+    "m": 157580,
+    "f": 166046,
+    "tg": 51,
+    "total": 323677
+  },
+  {
+    "no": 32,
+    "n": "Chengalpattu",
+    "d": "Chengalpattu",
+    "t": "GEN",
+    "m": 178076,
+    "f": 188267,
+    "tg": 57,
+    "total": 366400
+  },
+  {
+    "no": 33,
+    "n": "Thiruporur",
+    "d": "Chengalpattu",
+    "t": "GEN",
+    "m": 140991,
+    "f": 148359,
+    "tg": 51,
+    "total": 289401
+  },
+  {
+    "no": 34,
+    "n": "Cheyyur",
+    "d": "Chengalpattu",
+    "t": "SC",
+    "m": 100103,
+    "f": 101934,
+    "tg": 18,
+    "total": 202055
+  },
+  {
+    "no": 35,
+    "n": "Madurantakam",
+    "d": "Chengalpattu",
+    "t": "SC",
+    "m": 103943,
+    "f": 107288,
+    "tg": 64,
+    "total": 211295
+  },
+  {
+    "no": 36,
+    "n": "Uthiramerur",
+    "d": "Kancheepuram",
+    "t": "GEN",
+    "m": 118564,
+    "f": 125300,
+    "tg": 58,
+    "total": 243922
+  },
+  {
+    "no": 37,
+    "n": "Kancheepuram",
+    "d": "Kancheepuram",
+    "t": "GEN",
+    "m": 133825,
+    "f": 142437,
+    "tg": 37,
+    "total": 276299
+  },
+  {
+    "no": 38,
+    "n": "Arakkonam",
+    "d": "Ranipet",
+    "t": "SC",
+    "m": 96982,
+    "f": 102157,
+    "tg": 26,
+    "total": 199165
+  },
+  {
+    "no": 39,
+    "n": "Sholinghur",
+    "d": "Ranipet",
+    "t": "GEN",
+    "m": 126034,
+    "f": 130072,
+    "tg": 12,
+    "total": 256118
+  },
+  {
+    "no": 40,
+    "n": "Katpadi",
+    "d": "Vellore",
+    "t": "GEN",
+    "m": 108863,
+    "f": 116914,
+    "tg": 32,
+    "total": 225809
+  },
+  {
+    "no": 41,
+    "n": "Ranipet",
+    "d": "Ranipet",
+    "t": "GEN",
+    "m": 119090,
+    "f": 126719,
+    "tg": 44,
+    "total": 245853
+  },
+  {
+    "no": 42,
+    "n": "Arcot",
+    "d": "Ranipet",
+    "t": "GEN",
+    "m": 119107,
+    "f": 124429,
+    "tg": 29,
+    "total": 243565
+  },
+  {
+    "no": 43,
+    "n": "Vellore",
+    "d": "Vellore",
+    "t": "GEN",
+    "m": 101554,
+    "f": 109460,
+    "tg": 49,
+    "total": 211063
+  },
+  {
+    "no": 44,
+    "n": "Anaikattu",
+    "d": "Vellore",
+    "t": "GEN",
+    "m": 113833,
+    "f": 120863,
+    "tg": 42,
+    "total": 234738
+  },
+  {
+    "no": 45,
+    "n": "Kilvaithinankuppam",
+    "d": "Vellore",
+    "t": "SC",
+    "m": 104458,
+    "f": 108985,
+    "tg": 8,
+    "total": 213451
+  },
+  {
+    "no": 46,
+    "n": "Gudiyattam",
+    "d": "Vellore",
+    "t": "SC",
+    "m": 120946,
+    "f": 127547,
+    "tg": 33,
+    "total": 248526
+  },
+  {
+    "no": 47,
+    "n": "Vaniyambadi",
+    "d": "Tirupathur",
+    "t": "GEN",
+    "m": 118457,
+    "f": 121713,
+    "tg": 50,
+    "total": 240220
+  },
+  {
+    "no": 48,
+    "n": "Ambur",
+    "d": "Tirupathur",
+    "t": "GEN",
+    "m": 103478,
+    "f": 109113,
+    "tg": 40,
+    "total": 212631
+  },
+  {
+    "no": 49,
+    "n": "Jolarpet",
+    "d": "Tirupathur",
+    "t": "GEN",
+    "m": 115656,
+    "f": 118154,
+    "tg": 20,
+    "total": 233830
+  },
+  {
+    "no": 50,
+    "n": "Tirupattur",
+    "d": "Tirupathur",
+    "t": "GEN",
+    "m": 111873,
+    "f": 113016,
+    "tg": 29,
+    "total": 224918
+  },
+  {
+    "no": 51,
+    "n": "Uthangarai",
+    "d": "Krishnagiri",
+    "t": "SC",
+    "m": 116918,
+    "f": 116541,
+    "tg": 41,
+    "total": 233500
+  },
+  {
+    "no": 52,
+    "n": "Bargur",
+    "d": "Krishnagiri",
+    "t": "GEN",
+    "m": 117135,
+    "f": 120197,
+    "tg": 17,
+    "total": 237349
+  },
+  {
+    "no": 53,
+    "n": "Krishnagiri",
+    "d": "Krishnagiri",
+    "t": "GEN",
+    "m": 129777,
+    "f": 135200,
+    "tg": 60,
+    "total": 265037
+  },
+  {
+    "no": 54,
+    "n": "Veppanahalli",
+    "d": "Krishnagiri",
+    "t": "GEN",
+    "m": 123389,
+    "f": 120449,
+    "tg": 37,
+    "total": 243875
+  },
+  {
+    "no": 55,
+    "n": "Hosur",
+    "d": "Krishnagiri",
+    "t": "GEN",
+    "m": 169099,
+    "f": 169124,
+    "tg": 72,
+    "total": 338295
+  },
+  {
+    "no": 56,
+    "n": "Thalli",
+    "d": "Krishnagiri",
+    "t": "GEN",
+    "m": 120000,
+    "f": 115947,
+    "tg": 37,
+    "total": 235984
+  },
+  {
+    "no": 57,
+    "n": "Palacodu",
+    "d": "Dharmapuri",
+    "t": "GEN",
+    "m": 119611,
+    "f": 117845,
+    "tg": 20,
+    "total": 237476
+  },
+  {
+    "no": 58,
+    "n": "Pennagaram",
+    "d": "Dharmapuri",
+    "t": "GEN",
+    "m": 126763,
+    "f": 119521,
+    "tg": 9,
+    "total": 246293
+  },
+  {
+    "no": 59,
+    "n": "Dharmapuri",
+    "d": "Dharmapuri",
+    "t": "GEN",
+    "m": 129393,
+    "f": 128464,
+    "tg": 82,
+    "total": 257939
+  },
+  {
+    "no": 60,
+    "n": "Pappireddipatti",
+    "d": "Dharmapuri",
+    "t": "GEN",
+    "m": 127427,
+    "f": 127217,
+    "tg": 14,
+    "total": 254658
+  },
+  {
+    "no": 61,
+    "n": "Harur",
+    "d": "Dharmapuri",
+    "t": "SC",
+    "m": 121453,
+    "f": 122264,
+    "tg": 25,
+    "total": 243742
+  },
+  {
+    "no": 62,
+    "n": "Chengam",
+    "d": "Tiruvannamalai",
+    "t": "SC",
+    "m": 132571,
+    "f": 134045,
+    "tg": 13,
+    "total": 266629
+  },
+  {
+    "no": 63,
+    "n": "Tiruvannamalai",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 119784,
+    "f": 127477,
+    "tg": 48,
+    "total": 247309
+  },
+  {
+    "no": 64,
+    "n": "Kilpennathur",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 117840,
+    "f": 121058,
+    "tg": 15,
+    "total": 238913
+  },
+  {
+    "no": 65,
+    "n": "Kalasapakkam",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 114155,
+    "f": 116592,
+    "tg": 19,
+    "total": 230766
+  },
+  {
+    "no": 66,
+    "n": "Polur",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 114221,
+    "f": 118196,
+    "tg": 9,
+    "total": 232426
+  },
+  {
+    "no": 67,
+    "n": "Arani",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 123335,
+    "f": 129650,
+    "tg": 37,
+    "total": 253022
+  },
+  {
+    "no": 68,
+    "n": "Cheyyar",
+    "d": "Tiruvannamalai",
+    "t": "GEN",
+    "m": 117159,
+    "f": 121115,
+    "tg": 9,
+    "total": 238283
+  },
+  {
+    "no": 69,
+    "n": "Vandavasi",
+    "d": "Tiruvannamalai",
+    "t": "SC",
+    "m": 104662,
+    "f": 107144,
+    "tg": 5,
+    "total": 211811
+  },
+  {
+    "no": 70,
+    "n": "Gingee",
+    "d": "Viluppuram",
+    "t": "GEN",
+    "m": 119278,
+    "f": 121651,
+    "tg": 28,
+    "total": 240957
+  },
+  {
+    "no": 71,
+    "n": "Mailam",
+    "d": "Viluppuram",
+    "t": "GEN",
+    "m": 103451,
+    "f": 104195,
+    "tg": 19,
+    "total": 207665
+  },
+  {
+    "no": 72,
+    "n": "Tindivanam",
+    "d": "Viluppuram",
+    "t": "SC",
+    "m": 106762,
+    "f": 110836,
+    "tg": 11,
+    "total": 217609
+  },
+  {
+    "no": 73,
+    "n": "Vanur",
+    "d": "Viluppuram",
+    "t": "SC",
+    "m": 101938,
+    "f": 106030,
+    "tg": 16,
+    "total": 207984
+  },
+  {
+    "no": 74,
+    "n": "Viluppuram",
+    "d": "Viluppuram",
+    "t": "GEN",
+    "m": 118786,
+    "f": 125218,
+    "tg": 76,
+    "total": 244080
+  },
+  {
+    "no": 75,
+    "n": "Vikravandi",
+    "d": "Viluppuram",
+    "t": "GEN",
+    "m": 112050,
+    "f": 115276,
+    "tg": 29,
+    "total": 227355
+  },
+  {
+    "no": 76,
+    "n": "Tirukkoyilur",
+    "d": "Viluppuram",
+    "t": "GEN",
+    "m": 121023,
+    "f": 119948,
+    "tg": 32,
+    "total": 241003
+  },
+  {
+    "no": 77,
+    "n": "Ulundurpettai",
+    "d": "Kallakurichi",
+    "t": "GEN",
+    "m": 148929,
+    "f": 148499,
+    "tg": 44,
+    "total": 297472
+  },
+  {
+    "no": 78,
+    "n": "Rishivandiyam",
+    "d": "Kallakurichi",
+    "t": "GEN",
+    "m": 135292,
+    "f": 135198,
+    "tg": 51,
+    "total": 270541
+  },
+  {
+    "no": 79,
+    "n": "Sankarapuram",
+    "d": "Kallakurichi",
+    "t": "GEN",
+    "m": 130231,
+    "f": 132859,
+    "tg": 46,
+    "total": 263136
+  },
+  {
+    "no": 80,
+    "n": "Kallakurichi",
+    "d": "Kallakurichi",
+    "t": "SC",
+    "m": 137649,
+    "f": 141044,
+    "tg": 69,
+    "total": 278762
+  },
+  {
+    "no": 81,
+    "n": "Gangavalli",
+    "d": "Salem",
+    "t": "SC",
+    "m": 105720,
+    "f": 111067,
+    "tg": 7,
+    "total": 216794
+  },
+  {
+    "no": 82,
+    "n": "Attur",
+    "d": "Salem",
+    "t": "SC",
+    "m": 109943,
+    "f": 116517,
+    "tg": 21,
+    "total": 226481
+  },
+  {
+    "no": 83,
+    "n": "Yercaud",
+    "d": "Salem",
+    "t": "ST",
+    "m": 132685,
+    "f": 137827,
+    "tg": 17,
+    "total": 270529
+  },
+  {
+    "no": 84,
+    "n": "Omalur",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 148764,
+    "f": 143081,
+    "tg": 21,
+    "total": 291866
+  },
+  {
+    "no": 85,
+    "n": "Mettur",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 127853,
+    "f": 125575,
+    "tg": 17,
+    "total": 253445
+  },
+  {
+    "no": 86,
+    "n": "Edappadi",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 138709,
+    "f": 135316,
+    "tg": 29,
+    "total": 274054
+  },
+  {
+    "no": 87,
+    "n": "Sankari",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 130573,
+    "f": 128075,
+    "tg": 30,
+    "total": 258678
+  },
+  {
+    "no": 88,
+    "n": "Salem (West)",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 127131,
+    "f": 128125,
+    "tg": 64,
+    "total": 255320
+  },
+  {
+    "no": 89,
+    "n": "Salem (North)",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 114816,
+    "f": 121224,
+    "tg": 48,
+    "total": 236088
+  },
+  {
+    "no": 90,
+    "n": "Salem (South)",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 109918,
+    "f": 114130,
+    "tg": 49,
+    "total": 224097
+  },
+  {
+    "no": 91,
+    "n": "Veerapandi",
+    "d": "Salem",
+    "t": "GEN",
+    "m": 124850,
+    "f": 123611,
+    "tg": 17,
+    "total": 248478
+  },
+  {
+    "no": 92,
+    "n": "Rasipuram",
+    "d": "Namakkal",
+    "t": "SC",
+    "m": 107813,
+    "f": 112728,
+    "tg": 13,
+    "total": 220554
+  },
+  {
+    "no": 93,
+    "n": "Senthamangalam",
+    "d": "Namakkal",
+    "t": "ST",
+    "m": 111214,
+    "f": 116087,
+    "tg": 26,
+    "total": 227327
+  },
+  {
+    "no": 94,
+    "n": "Namakkal",
+    "d": "Namakkal",
+    "t": "GEN",
+    "m": 113217,
+    "f": 122093,
+    "tg": 41,
+    "total": 235351
+  },
+  {
+    "no": 95,
+    "n": "Paramathi-Velur",
+    "d": "Namakkal",
+    "t": "GEN",
+    "m": 97727,
+    "f": 105830,
+    "tg": 10,
+    "total": 203567
+  },
+  {
+    "no": 96,
+    "n": "Tiruchengodu",
+    "d": "Namakkal",
+    "t": "GEN",
+    "m": 100412,
+    "f": 106475,
+    "tg": 41,
+    "total": 206928
+  },
+  {
+    "no": 97,
+    "n": "Kumarapalayam",
+    "d": "Namakkal",
+    "t": "GEN",
+    "m": 104916,
+    "f": 112239,
+    "tg": 69,
+    "total": 217224
+  },
+  {
+    "no": 98,
+    "n": "Erode (East)",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 84202,
+    "f": 91989,
+    "tg": 37,
+    "total": 176228
+  },
+  {
+    "no": 99,
+    "n": "Erode (West)",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 118206,
+    "f": 127246,
+    "tg": 41,
+    "total": 245493
+  },
+  {
+    "no": 100,
+    "n": "Modakkurichi",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 98532,
+    "f": 107577,
+    "tg": 13,
+    "total": 206122
+  },
+  {
+    "no": 101,
+    "n": "Dharapuram",
+    "d": "Tiruppur",
+    "t": "SC",
+    "m": 106142,
+    "f": 114593,
+    "tg": 8,
+    "total": 220743
+  },
+  {
+    "no": 102,
+    "n": "Kangayam",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 103784,
+    "f": 112849,
+    "tg": 13,
+    "total": 216646
+  },
+  {
+    "no": 103,
+    "n": "Perundurai",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 101851,
+    "f": 110225,
+    "tg": 8,
+    "total": 212084
+  },
+  {
+    "no": 104,
+    "n": "Bhavani",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 108203,
+    "f": 113170,
+    "tg": 20,
+    "total": 221393
+  },
+  {
+    "no": 105,
+    "n": "Anthiyur",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 100339,
+    "f": 105371,
+    "tg": 27,
+    "total": 205737
+  },
+  {
+    "no": 106,
+    "n": "Gobichettipalayam",
+    "d": "Erode",
+    "t": "GEN",
+    "m": 113378,
+    "f": 124190,
+    "tg": 13,
+    "total": 237581
+  },
+  {
+    "no": 107,
+    "n": "Bhavanisagar",
+    "d": "Erode",
+    "t": "SC",
+    "m": 113755,
+    "f": 121806,
+    "tg": 23,
+    "total": 235584
+  },
+  {
+    "no": 108,
+    "n": "Udhagamandalam",
+    "d": "The Nilgiris",
+    "t": "GEN",
+    "m": 89066,
+    "f": 98348,
+    "tg": 11,
+    "total": 187425
+  },
+  {
+    "no": 109,
+    "n": "Gudalur",
+    "d": "The Nilgiris",
+    "t": "SC",
+    "m": 89206,
+    "f": 94675,
+    "tg": 7,
+    "total": 183888
+  },
+  {
+    "no": 110,
+    "n": "Coonoor",
+    "d": "The Nilgiris",
+    "t": "GEN",
+    "m": 83045,
+    "f": 92768,
+    "tg": 7,
+    "total": 175820
+  },
+  {
+    "no": 111,
+    "n": "Mettuppalayam",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 133022,
+    "f": 146382,
+    "tg": 34,
+    "total": 279438
+  },
+  {
+    "no": 112,
+    "n": "Avanashi",
+    "d": "Tiruppur",
+    "t": "SC",
+    "m": 119841,
+    "f": 130496,
+    "tg": 9,
+    "total": 250346
+  },
+  {
+    "no": 113,
+    "n": "Tiruppur (North)",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 152351,
+    "f": 157662,
+    "tg": 125,
+    "total": 310138
+  },
+  {
+    "no": 114,
+    "n": "Tiruppur (South)",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 94579,
+    "f": 99011,
+    "tg": 24,
+    "total": 193614
+  },
+  {
+    "no": 115,
+    "n": "Palladam",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 156069,
+    "f": 166429,
+    "tg": 32,
+    "total": 322530
+  },
+  {
+    "no": 116,
+    "n": "Sulur",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 145987,
+    "f": 157452,
+    "tg": 102,
+    "total": 303541
+  },
+  {
+    "no": 117,
+    "n": "Kavundampalayam",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 198430,
+    "f": 208963,
+    "tg": 114,
+    "total": 407507
+  },
+  {
+    "no": 118,
+    "n": "Coimbatore (North)",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 143383,
+    "f": 148122,
+    "tg": 28,
+    "total": 291533
+  },
+  {
+    "no": 119,
+    "n": "Thondamuthur",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 138968,
+    "f": 148371,
+    "tg": 103,
+    "total": 287442
+  },
+  {
+    "no": 120,
+    "n": "Coimbatore (South)",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 90214,
+    "f": 96263,
+    "tg": 32,
+    "total": 186509
+  },
+  {
+    "no": 121,
+    "n": "Singanallur",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 128758,
+    "f": 137277,
+    "tg": 23,
+    "total": 266058
+  },
+  {
+    "no": 122,
+    "n": "Kinathukadavu",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 144562,
+    "f": 155888,
+    "tg": 36,
+    "total": 300486
+  },
+  {
+    "no": 123,
+    "n": "Pollachi",
+    "d": "Coimbatore",
+    "t": "GEN",
+    "m": 96061,
+    "f": 105919,
+    "tg": 35,
+    "total": 202015
+  },
+  {
+    "no": 124,
+    "n": "Valparai",
+    "d": "Coimbatore",
+    "t": "SC",
+    "m": 81504,
+    "f": 90759,
+    "tg": 21,
+    "total": 172284
+  },
+  {
+    "no": 125,
+    "n": "Udumalaipettai",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 109103,
+    "f": 119396,
+    "tg": 25,
+    "total": 228524
+  },
+  {
+    "no": 126,
+    "n": "Madathukulam",
+    "d": "Tiruppur",
+    "t": "GEN",
+    "m": 102309,
+    "f": 110417,
+    "tg": 16,
+    "total": 212742
+  },
+  {
+    "no": 127,
+    "n": "Palani",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 115728,
+    "f": 121582,
+    "tg": 49,
+    "total": 237359
+  },
+  {
+    "no": 128,
+    "n": "Oddanchatram",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 104519,
+    "f": 113177,
+    "tg": 2,
+    "total": 217698
+  },
+  {
+    "no": 129,
+    "n": "Athoor",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 125056,
+    "f": 134773,
+    "tg": 17,
+    "total": 259846
+  },
+  {
+    "no": 130,
+    "n": "Nilakkottai",
+    "d": "Dindigul",
+    "t": "SC",
+    "m": 107389,
+    "f": 111673,
+    "tg": 15,
+    "total": 219077
+  },
+  {
+    "no": 131,
+    "n": "Natham",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 127116,
+    "f": 131421,
+    "tg": 66,
+    "total": 258603
+  },
+  {
+    "no": 132,
+    "n": "Dindigul",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 114893,
+    "f": 122765,
+    "tg": 21,
+    "total": 237679
+  },
+  {
+    "no": 133,
+    "n": "Vedasandur",
+    "d": "Dindigul",
+    "t": "GEN",
+    "m": 118236,
+    "f": 123573,
+    "tg": 4,
+    "total": 241813
+  },
+  {
+    "no": 134,
+    "n": "Aravakurichi",
+    "d": "Karur",
+    "t": "GEN",
+    "m": 92738,
+    "f": 101763,
+    "tg": 4,
+    "total": 194505
+  },
+  {
+    "no": 135,
+    "n": "Karur",
+    "d": "Karur",
+    "t": "GEN",
+    "m": 106684,
+    "f": 119859,
+    "tg": 41,
+    "total": 226584
+  },
+  {
+    "no": 136,
+    "n": "Krishnarayapuram",
+    "d": "Karur",
+    "t": "SC",
+    "m": 98262,
+    "f": 103794,
+    "tg": 31,
+    "total": 202087
+  },
+  {
+    "no": 137,
+    "n": "Kulithalai",
+    "d": "Karur",
+    "t": "GEN",
+    "m": 108343,
+    "f": 113638,
+    "tg": 7,
+    "total": 221988
+  },
+  {
+    "no": 138,
+    "n": "Manapparai",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 131212,
+    "f": 134798,
+    "tg": 9,
+    "total": 266019
+  },
+  {
+    "no": 139,
+    "n": "Srirangam",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 137694,
+    "f": 146120,
+    "tg": 48,
+    "total": 283862
+  },
+  {
+    "no": 140,
+    "n": "Tiruchirappalli (West)",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 113050,
+    "f": 122817,
+    "tg": 36,
+    "total": 235903
+  },
+  {
+    "no": 141,
+    "n": "Tiruchirappalli (East)",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 104883,
+    "f": 112460,
+    "tg": 54,
+    "total": 217397
+  },
+  {
+    "no": 142,
+    "n": "Thiruverumbur",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 124328,
+    "f": 131860,
+    "tg": 51,
+    "total": 256239
+  },
+  {
+    "no": 143,
+    "n": "Lalgudi",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 102156,
+    "f": 108861,
+    "tg": 26,
+    "total": 211043
+  },
+  {
+    "no": 144,
+    "n": "Manachanallur",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 113256,
+    "f": 120924,
+    "tg": 37,
+    "total": 234217
+  },
+  {
+    "no": 145,
+    "n": "Musiri",
+    "d": "Tiruchirappalli",
+    "t": "GEN",
+    "m": 103631,
+    "f": 108965,
+    "tg": 16,
+    "total": 212612
+  },
+  {
+    "no": 146,
+    "n": "Thuraiyur",
+    "d": "Tiruchirappalli",
+    "t": "SC",
+    "m": 101144,
+    "f": 107837,
+    "tg": 30,
+    "total": 209011
+  },
+  {
+    "no": 147,
+    "n": "Perambalur",
+    "d": "Perambalur",
+    "t": "SC",
+    "m": 139914,
+    "f": 148507,
+    "tg": 28,
+    "total": 288449
+  },
+  {
+    "no": 148,
+    "n": "Kunnam",
+    "d": "Perambalur",
+    "t": "GEN",
+    "m": 131720,
+    "f": 134959,
+    "tg": 3,
+    "total": 266682
+  },
+  {
+    "no": 149,
+    "n": "Ariyalur",
+    "d": "Ariyalur",
+    "t": "GEN",
+    "m": 129521,
+    "f": 131624,
+    "tg": 16,
+    "total": 261161
+  },
+  {
+    "no": 150,
+    "n": "Jayankondam",
+    "d": "Ariyalur",
+    "t": "GEN",
+    "m": 129713,
+    "f": 132068,
+    "tg": 12,
+    "total": 261793
+  },
+  {
+    "no": 151,
+    "n": "Tittakudi",
+    "d": "Cuddalore",
+    "t": "SC",
+    "m": 101774,
+    "f": 104992,
+    "tg": 4,
+    "total": 206770
+  },
+  {
+    "no": 152,
+    "n": "Vriddhachalam",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 118319,
+    "f": 119495,
+    "tg": 22,
+    "total": 237836
+  },
+  {
+    "no": 153,
+    "n": "Neyveli",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 94505,
+    "f": 94503,
+    "tg": 16,
+    "total": 189024
+  },
+  {
+    "no": 154,
+    "n": "Panruti",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 116476,
+    "f": 123504,
+    "tg": 68,
+    "total": 240048
+  },
+  {
+    "no": 155,
+    "n": "Cuddalore",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 105300,
+    "f": 115773,
+    "tg": 79,
+    "total": 221152
+  },
+  {
+    "no": 156,
+    "n": "Kurinjipadi",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 116013,
+    "f": 120238,
+    "tg": 46,
+    "total": 236297
+  },
+  {
+    "no": 157,
+    "n": "Bhuvanagiri",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 114785,
+    "f": 116164,
+    "tg": 19,
+    "total": 230968
+  },
+  {
+    "no": 158,
+    "n": "Chidambaram",
+    "d": "Cuddalore",
+    "t": "GEN",
+    "m": 112664,
+    "f": 116443,
+    "tg": 29,
+    "total": 229136
+  },
+  {
+    "no": 159,
+    "n": "Kattumannarkoil",
+    "d": "Cuddalore",
+    "t": "SC",
+    "m": 111691,
+    "f": 112864,
+    "tg": 10,
+    "total": 224565
+  },
+  {
+    "no": 160,
+    "n": "Sirkazhi",
+    "d": "Mayiladuthurai",
+    "t": "SC",
+    "m": 118809,
+    "f": 120647,
+    "tg": 13,
+    "total": 239469
+  },
+  {
+    "no": 161,
+    "n": "Mayiladuthurai",
+    "d": "Mayiladuthurai",
+    "t": "GEN",
+    "m": 114613,
+    "f": 117979,
+    "tg": 26,
+    "total": 232618
+  },
+  {
+    "no": 162,
+    "n": "Poompuhar",
+    "d": "Mayiladuthurai",
+    "t": "GEN",
+    "m": 127071,
+    "f": 130050,
+    "tg": 8,
+    "total": 257129
+  },
+  {
+    "no": 163,
+    "n": "Nagapattinam",
+    "d": "Nagapattinam",
+    "t": "GEN",
+    "m": 84493,
+    "f": 88464,
+    "tg": 22,
+    "total": 172979
+  },
+  {
+    "no": 164,
+    "n": "Kilvelur",
+    "d": "Nagapattinam",
+    "t": "SC",
+    "m": 83392,
+    "f": 85535,
+    "tg": 7,
+    "total": 168934
+  },
+  {
+    "no": 165,
+    "n": "Vedaranyam",
+    "d": "Nagapattinam",
+    "t": "GEN",
+    "m": 91735,
+    "f": 94299,
+    "tg": 0,
+    "total": 186034
+  },
+  {
+    "no": 166,
+    "n": "Thiruthuraipoondi",
+    "d": "Thiruvarur",
+    "t": "SC",
+    "m": 111001,
+    "f": 114348,
+    "tg": 14,
+    "total": 225363
+  },
+  {
+    "no": 167,
+    "n": "Mannargudi",
+    "d": "Thiruvarur",
+    "t": "GEN",
+    "m": 112530,
+    "f": 119401,
+    "tg": 4,
+    "total": 231935
+  },
+  {
+    "no": 168,
+    "n": "Thiruvarur",
+    "d": "Thiruvarur",
+    "t": "GEN",
+    "m": 126054,
+    "f": 131818,
+    "tg": 20,
+    "total": 257892
+  },
+  {
+    "no": 169,
+    "n": "Nannilam",
+    "d": "Thiruvarur",
+    "t": "GEN",
+    "m": 131094,
+    "f": 133352,
+    "tg": 16,
+    "total": 264462
+  },
+  {
+    "no": 170,
+    "n": "Thiruvidaimarudur",
+    "d": "Thanjavur",
+    "t": "SC",
+    "m": 125132,
+    "f": 129313,
+    "tg": 8,
+    "total": 254453
+  },
+  {
+    "no": 171,
+    "n": "Kumbakonam",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 122383,
+    "f": 129469,
+    "tg": 16,
+    "total": 251868
+  },
+  {
+    "no": 172,
+    "n": "Papanasam",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 123838,
+    "f": 130791,
+    "tg": 23,
+    "total": 254652
+  },
+  {
+    "no": 173,
+    "n": "Thiruvaiyaru",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 125357,
+    "f": 131000,
+    "tg": 20,
+    "total": 256377
+  },
+  {
+    "no": 174,
+    "n": "Thanjavur",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 118648,
+    "f": 130369,
+    "tg": 47,
+    "total": 249064
+  },
+  {
+    "no": 175,
+    "n": "Orathanadu",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 112298,
+    "f": 118947,
+    "tg": 6,
+    "total": 231251
+  },
+  {
+    "no": 176,
+    "n": "Pattukkottai",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 115354,
+    "f": 125580,
+    "tg": 20,
+    "total": 240954
+  },
+  {
+    "no": 177,
+    "n": "Peravurani",
+    "d": "Thanjavur",
+    "t": "GEN",
+    "m": 104268,
+    "f": 108543,
+    "tg": 15,
+    "total": 212826
+  },
+  {
+    "no": 178,
+    "n": "Gandarvakkottai",
+    "d": "Pudukkottai",
+    "t": "SC",
+    "m": 98028,
+    "f": 96695,
+    "tg": 9,
+    "total": 194732
+  },
+  {
+    "no": 179,
+    "n": "Viralimalai",
+    "d": "Pudukkottai",
+    "t": "GEN",
+    "m": 110011,
+    "f": 113040,
+    "tg": 33,
+    "total": 223084
+  },
+  {
+    "no": 180,
+    "n": "Pudukkottai",
+    "d": "Pudukkottai",
+    "t": "GEN",
+    "m": 109962,
+    "f": 113943,
+    "tg": 23,
+    "total": 223928
+  },
+  {
+    "no": 181,
+    "n": "Thirumayam",
+    "d": "Pudukkottai",
+    "t": "GEN",
+    "m": 107006,
+    "f": 112270,
+    "tg": 3,
+    "total": 219279
+  },
+  {
+    "no": 182,
+    "n": "Alangudi",
+    "d": "Pudukkottai",
+    "t": "GEN",
+    "m": 103987,
+    "f": 106309,
+    "tg": 0,
+    "total": 210296
+  },
+  {
+    "no": 183,
+    "n": "Aranthangi",
+    "d": "Pudukkottai",
+    "t": "GEN",
+    "m": 112282,
+    "f": 115305,
+    "tg": 1,
+    "total": 227588
+  },
+  {
+    "no": 184,
+    "n": "Karaikudi",
+    "d": "Sivaganga",
+    "t": "GEN",
+    "m": 148087,
+    "f": 155256,
+    "tg": 28,
+    "total": 303371
+  },
+  {
+    "no": 185,
+    "n": "Tiruppattur",
+    "d": "Sivaganga",
+    "t": "GEN",
+    "m": 134270,
+    "f": 139183,
+    "tg": 3,
+    "total": 273456
+  },
+  {
+    "no": 186,
+    "n": "Sivaganga",
+    "d": "Sivaganga",
+    "t": "GEN",
+    "m": 135113,
+    "f": 141039,
+    "tg": 4,
+    "total": 276156
+  },
+  {
+    "no": 187,
+    "n": "Manamadurai",
+    "d": "Sivaganga",
+    "t": "SC",
+    "m": 126565,
+    "f": 131048,
+    "tg": 3,
+    "total": 257616
+  },
+  {
+    "no": 188,
+    "n": "Melur",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 113091,
+    "f": 114687,
+    "tg": 11,
+    "total": 227789
+  },
+  {
+    "no": 189,
+    "n": "Madurai East",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 161361,
+    "f": 169579,
+    "tg": 53,
+    "total": 330993
+  },
+  {
+    "no": 190,
+    "n": "Sholavandan",
+    "d": "Madurai",
+    "t": "SC",
+    "m": 104246,
+    "f": 108243,
+    "tg": 13,
+    "total": 212502
+  },
+  {
+    "no": 191,
+    "n": "Madurai North",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 106263,
+    "f": 112410,
+    "tg": 46,
+    "total": 218719
+  },
+  {
+    "no": 192,
+    "n": "Madurai South",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 87179,
+    "f": 90378,
+    "tg": 48,
+    "total": 177605
+  },
+  {
+    "no": 193,
+    "n": "Madurai Central",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 95632,
+    "f": 101198,
+    "tg": 26,
+    "total": 196856
+  },
+  {
+    "no": 194,
+    "n": "Madurai West",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 133116,
+    "f": 138214,
+    "tg": 11,
+    "total": 271341
+  },
+  {
+    "no": 195,
+    "n": "Thiruparankundram",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 150596,
+    "f": 157157,
+    "tg": 30,
+    "total": 307783
+  },
+  {
+    "no": 196,
+    "n": "Thirumangalam",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 125756,
+    "f": 133461,
+    "tg": 8,
+    "total": 259225
+  },
+  {
+    "no": 197,
+    "n": "Usilampatti",
+    "d": "Madurai",
+    "t": "GEN",
+    "m": 131411,
+    "f": 132724,
+    "tg": 6,
+    "total": 264141
+  },
+  {
+    "no": 198,
+    "n": "Andipatti",
+    "d": "Theni",
+    "t": "GEN",
+    "m": 124591,
+    "f": 129928,
+    "tg": 30,
+    "total": 254549
+  },
+  {
+    "no": 199,
+    "n": "Periyakulam",
+    "d": "Theni",
+    "t": "SC",
+    "m": 128368,
+    "f": 135070,
+    "tg": 109,
+    "total": 263547
+  },
+  {
+    "no": 200,
+    "n": "Bodinayakanur",
+    "d": "Theni",
+    "t": "GEN",
+    "m": 126856,
+    "f": 134760,
+    "tg": 15,
+    "total": 261631
+  },
+  {
+    "no": 201,
+    "n": "Cumbum",
+    "d": "Theni",
+    "t": "GEN",
+    "m": 122496,
+    "f": 131129,
+    "tg": 21,
+    "total": 253646
+  },
+  {
+    "no": 202,
+    "n": "Rajapalayam",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 103236,
+    "f": 108951,
+    "tg": 33,
+    "total": 212220
+  },
+  {
+    "no": 203,
+    "n": "Srivilliputhur",
+    "d": "Virudhunagar",
+    "t": "SC",
+    "m": 108109,
+    "f": 114218,
+    "tg": 40,
+    "total": 222367
+  },
+  {
+    "no": 204,
+    "n": "Sattur",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 110693,
+    "f": 117207,
+    "tg": 63,
+    "total": 227963
+  },
+  {
+    "no": 205,
+    "n": "Sivakasi",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 109420,
+    "f": 116013,
+    "tg": 28,
+    "total": 225461
+  },
+  {
+    "no": 206,
+    "n": "Virudhunagar",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 96436,
+    "f": 102141,
+    "tg": 39,
+    "total": 198616
+  },
+  {
+    "no": 207,
+    "n": "Aruppukkottai",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 100000,
+    "f": 106468,
+    "tg": 29,
+    "total": 206497
+  },
+  {
+    "no": 208,
+    "n": "Tiruchuli",
+    "d": "Virudhunagar",
+    "t": "GEN",
+    "m": 100645,
+    "f": 103634,
+    "tg": 14,
+    "total": 204293
+  },
+  {
+    "no": 209,
+    "n": "Paramakudi",
+    "d": "Ramanathapuram",
+    "t": "SC",
+    "m": 115701,
+    "f": 117714,
+    "tg": 18,
+    "total": 233433
+  },
+  {
+    "no": 210,
+    "n": "Tiruvadanai",
+    "d": "Ramanathapuram",
+    "t": "GEN",
+    "m": 140103,
+    "f": 141997,
+    "tg": 21,
+    "total": 282121
+  },
+  {
+    "no": 211,
+    "n": "Ramanathapuram",
+    "d": "Ramanathapuram",
+    "t": "GEN",
+    "m": 152412,
+    "f": 157740,
+    "tg": 13,
+    "total": 310165
+  },
+  {
+    "no": 212,
+    "n": "Mudhukulathur",
+    "d": "Ramanathapuram",
+    "t": "GEN",
+    "m": 148105,
+    "f": 149202,
+    "tg": 3,
+    "total": 297310
+  },
+  {
+    "no": 213,
+    "n": "Vilathikulam",
+    "d": "Thoothukudi",
+    "t": "GEN",
+    "m": 99913,
+    "f": 103804,
+    "tg": 15,
+    "total": 203732
+  },
+  {
+    "no": 214,
+    "n": "Thoothukkudi",
+    "d": "Thoothukudi",
+    "t": "GEN",
+    "m": 120614,
+    "f": 127623,
+    "tg": 63,
+    "total": 248300
+  },
+  {
+    "no": 215,
+    "n": "Tiruchendur",
+    "d": "Thoothukudi",
+    "t": "GEN",
+    "m": 112367,
+    "f": 118305,
+    "tg": 30,
+    "total": 230702
+  },
+  {
+    "no": 216,
+    "n": "Srivaikuntam",
+    "d": "Thoothukudi",
+    "t": "GEN",
+    "m": 105099,
+    "f": 107782,
+    "tg": 4,
+    "total": 212885
+  },
+  {
+    "no": 217,
+    "n": "Ottapidaram",
+    "d": "Thoothukudi",
+    "t": "SC",
+    "m": 117432,
+    "f": 123502,
+    "tg": 54,
+    "total": 240988
+  },
+  {
+    "no": 218,
+    "n": "Kovilpatti",
+    "d": "Thoothukudi",
+    "t": "GEN",
+    "m": 116317,
+    "f": 123673,
+    "tg": 27,
+    "total": 240017
+  },
+  {
+    "no": 219,
+    "n": "Sankarankovil",
+    "d": "Tenkasi",
+    "t": "SC",
+    "m": 114876,
+    "f": 121639,
+    "tg": 17,
+    "total": 236532
+  },
+  {
+    "no": 220,
+    "n": "Vasudevanallur",
+    "d": "Tenkasi",
+    "t": "SC",
+    "m": 110960,
+    "f": 116396,
+    "tg": 13,
+    "total": 227369
+  },
+  {
+    "no": 221,
+    "n": "Kadayanallur",
+    "d": "Tenkasi",
+    "t": "GEN",
+    "m": 132228,
+    "f": 135272,
+    "tg": 17,
+    "total": 267517
+  },
+  {
+    "no": 222,
+    "n": "Tenkasi",
+    "d": "Tenkasi",
+    "t": "GEN",
+    "m": 136260,
+    "f": 143223,
+    "tg": 102,
+    "total": 279585
+  },
+  {
+    "no": 223,
+    "n": "Alangulam",
+    "d": "Tenkasi",
+    "t": "GEN",
+    "m": 123739,
+    "f": 129650,
+    "tg": 19,
+    "total": 253408
+  },
+  {
+    "no": 224,
+    "n": "Tirunelveli",
+    "d": "Tirunelveli",
+    "t": "GEN",
+    "m": 132511,
+    "f": 140929,
+    "tg": 80,
+    "total": 273520
+  },
+  {
+    "no": 225,
+    "n": "Ambasamudram",
+    "d": "Tirunelveli",
+    "t": "GEN",
+    "m": 109384,
+    "f": 116318,
+    "tg": 12,
+    "total": 225714
+  },
+  {
+    "no": 226,
+    "n": "Palayamkottai",
+    "d": "Tirunelveli",
+    "t": "GEN",
+    "m": 123972,
+    "f": 131141,
+    "tg": 17,
+    "total": 255130
+  },
+  {
+    "no": 227,
+    "n": "Nanguneri",
+    "d": "Tirunelveli",
+    "t": "GEN",
+    "m": 125276,
+    "f": 129130,
+    "tg": 14,
+    "total": 254420
+  },
+  {
+    "no": 228,
+    "n": "Radhapuram",
+    "d": "Tirunelveli",
+    "t": "GEN",
+    "m": 120458,
+    "f": 124000,
+    "tg": 22,
+    "total": 244480
+  },
+  {
+    "no": 229,
+    "n": "Kanniyakumari",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 141230,
+    "f": 145643,
+    "tg": 95,
+    "total": 286968
+  },
+  {
+    "no": 230,
+    "n": "Nagercoil",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 125873,
+    "f": 131139,
+    "tg": 10,
+    "total": 257022
+  },
+  {
+    "no": 231,
+    "n": "Colachal",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 131885,
+    "f": 131562,
+    "tg": 1,
+    "total": 263448
+  },
+  {
+    "no": 232,
+    "n": "Padmanabhapuram",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 116895,
+    "f": 117142,
+    "tg": 19,
+    "total": 234056
+  },
+  {
+    "no": 233,
+    "n": "Vilavancode",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 111990,
+    "f": 113226,
+    "tg": 3,
+    "total": 225219
+  },
+  {
+    "no": 234,
+    "n": "Killiyoor",
+    "d": "Kanniyakumari",
+    "t": "GEN",
+    "m": 123143,
+    "f": 120678,
+    "tg": 16,
+    "total": 243837
+  }
+]

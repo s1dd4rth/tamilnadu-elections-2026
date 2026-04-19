@@ -1,0 +1,11 @@
+{
+  "DMK": { "full": "Dravida Munnetra Kazhagam", "alliance": "SPA", "color": "#d32a1e" },
+  "INC": { "full": "Indian National Congress", "alliance": "SPA", "color": "#19aaed" },
+  "AIADMK": { "full": "All India Anna Dravida Munnetra Kazhagam", "alliance": "NDA", "color": "#0c7a3a" },
+  "BJP": { "full": "Bharatiya Janata Party", "alliance": "NDA", "color": "#ff9933" },
+  "TVK": { "full": "Tamilaga Vettri Kazhagam", "alliance": "TVK", "color": "#8a2020" },
+  "NTK": { "full": "Naam Tamilar Katchi", "alliance": "NTK", "color": "#d8a520" },
+  "PMK": { "full": "Pattali Makkal Katchi", "alliance": "NDA", "color": "#ffcc00" },
+  "VCK": { "full": "Viduthalai Chiruthaigal Katchi", "alliance": "SPA", "color": "#c81e1e" },
+  "IND": { "full": "Independent", "alliance": "IND", "color": "#6b5d52" }
+}

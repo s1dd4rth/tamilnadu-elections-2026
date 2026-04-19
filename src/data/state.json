@@ -1,0 +1,20 @@
+{
+  "total": 56707380,
+  "male": 27738925,
+  "female": 28960838,
+  "thirdGender": 7617,
+  "age18_19": 1251000,
+  "age85plus": 399000,
+  "pwd": 463000,
+  "newYouth": 740000,
+  "pollingStations": 75064,
+  "districts": 38,
+  "acs": 234,
+  "scReserved": 44,
+  "stReserved": 2,
+  "general": 188,
+  "preSir": 64114587,
+  "draft": 54376756,
+  "totalDeletions": 9737831,
+  "netReduction": 7407207
+}
