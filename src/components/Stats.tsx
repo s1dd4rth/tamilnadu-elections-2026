@@ -1,10 +1,13 @@
+"use client";
 import React from 'react';
 import { SERIF, COLORS } from '@/styles/theme';
 import { SmallCaps } from './common';
 import { fmtIndian } from '@/utils/format';
 import stateData from '@/data/state.json';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 export const KPIStrip = () => {
+  const isMobile = useIsMobile();
   const items = [
     { label: 'Total Electors', val: '5.67', unit: 'Cr', sub: fmtIndian(stateData.total) },
     { label: 'Women', val: '2.90', unit: 'Cr', sub: '+12.22 L vs men' },
@@ -17,10 +20,14 @@ export const KPIStrip = () => {
   ];
   return (
     <div style={{ border: `1px solid ${COLORS.border}`, borderLeft: 0, borderRight: 0, padding: '18px 0', margin: '0 0 28px' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0' }}>
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: isMobile ? 'repeat(2, 1fr)' : 'repeat(auto-fit, minmax(160px, 1fr))', 
+        gap: '0' 
+      }}>
         {items.map((it, i) => (
           <div key={i} style={{
-            padding: '10px 16px',
+            padding: isMobile ? '16px' : '10px 16px',
             borderRight: '1px solid #d4c9bc',
             borderBottom: '1px solid #d4c9bc',
           }}>

@@ -6,6 +6,13 @@ import { ACExplorer } from '@/components/ACExplorer';
 import { SIRFlow } from '@/components/SIRFlow';
 import { DistrictTable } from '@/components/DistrictTable';
 import { ACExtremes } from '@/components/ACExtremes';
+import { 
+  ContestDensity, 
+  DecoyCandidates, 
+  WomenOnBallot, 
+  BeyondBigFour, 
+  SymbolMenagerie 
+} from '@/components/ElectoralInsights';
 import { SmallCaps } from '@/components/common';
 import { COLORS, SERIF, MONO } from '@/styles/theme';
 
@@ -22,6 +29,12 @@ export default function Page() {
       <ACExtremes />
       <DistrictTable />
       <ACExplorer />
+
+      <ContestDensity />
+      <DecoyCandidates />
+      <WomenOnBallot />
+      <BeyondBigFour />
+      <SymbolMenagerie />
 
       <footer style={{ 
         marginTop: '80px', 

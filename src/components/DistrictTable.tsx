@@ -24,7 +24,7 @@ export const DistrictTable = () => {
     else { setSortBy(field); setSortDir('desc'); }
   };
 
-  const Th = ({ field, label, align = 'left' }: any) => (
+  const Th = ({ field, label, align = 'left', sticky = false }: any) => (
     <th onClick={() => toggleSort(field)} style={{
       cursor: 'pointer',
       textAlign: align,
@@ -34,7 +34,9 @@ export const DistrictTable = () => {
       background: '#f5ead8',
       position: 'sticky',
       top: 0,
-      zIndex: 10
+      left: sticky ? 0 : 'auto',
+      zIndex: sticky ? 20 : 10,
+      boxShadow: sticky ? '2px 0 0 rgba(26,20,16,0.1)' : 'none'
     }}>
       <SmallCaps style={{ color: COLORS.text, fontSize: '10px' }}>
         {label} {sortBy === field && (sortDir === 'desc' ? '▼' : '▲')}
@@ -53,7 +55,7 @@ export const DistrictTable = () => {
         <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: SERIF, minWidth: '700px' }}>
           <thead>
             <tr>
-              <Th field="name" label="District" />
+              <Th field="name" label="District" sticky />
               <Th field="tag" label="Character" />
               <Th field="total" label="Electorate" align="right" />
               <Th field="f" label="Women" align="right" />
@@ -69,7 +71,17 @@ export const DistrictTable = () => {
                   background: i % 2 === 0 ? '#faf4e8' : '#f5ead8',
                   borderBottom: '1px solid #d4c9bc'
                 }}>
-                  <td style={{ padding: '12px 8px', fontWeight: 800, fontSize: '16px', color: COLORS.text }}>{d.name}</td>
+                  <td style={{ 
+                    padding: '12px 8px', 
+                    fontWeight: 800, 
+                    fontSize: '16px', 
+                    color: COLORS.text,
+                    position: 'sticky',
+                    left: 0,
+                    zIndex: 5,
+                    background: i % 2 === 0 ? '#faf4e8' : '#f5ead8',
+                    boxShadow: '2px 0 0 rgba(26,20,16,0.1)'
+                  }}>{d.name}</td>
                   <td style={{ padding: '12px 8px', fontStyle: 'italic', fontSize: '13px', color: COLORS.muted }}>{d.tag}</td>
                   <td style={{ padding: '12px 8px', textAlign: 'right', fontFeatureSettings: '"tnum" 1', fontWeight: 700, position: 'relative' }}>
                     <div style={{ position: 'absolute', inset: 0, right: `${100 - pctOfState * 10}%`, background: 'rgba(160, 64, 32, 0.08)', pointerEvents: 'none' }} />

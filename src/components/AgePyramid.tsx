@@ -1,19 +1,24 @@
+"use client";
 import React from 'react';
 import { SERIF, MONO, COLORS } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import { fmtLakh } from '@/utils/format';
 import ageData from '@/data/age-data.json';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 export const AgePyramid = () => {
   const maxHalf = Math.max(...ageData.cohorts.map(c => Math.max(c.m, c.f)));
   const ticks = [0, 2000000, 4000000, 6000000];
+  const isMobile = useIsMobile();
+
+  const gridCols = isMobile ? '40px 1fr 50px 1fr' : '80px 1fr 60px 1fr 100px';
 
   return (
     <section style={{ margin: '32px 0' }}>
       <div style={{ borderTop: `2px solid ${COLORS.text}` }} />
       <SectionTitle kicker="Demographic Pulse">The Pyramid of Power.</SectionTitle>
       
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px', flexDirection: isMobile ? 'column' : 'row', gap: '8px' }}>
         <SmallCaps style={{ color: COLORS.muted }}>Gender split by age cohort</SmallCaps>
         <div style={{ display: 'flex', gap: '20px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
@@ -26,21 +31,20 @@ export const AgePyramid = () => {
           </div>
         </div>
       </div>
-
-      <div style={{ border: `1px solid ${COLORS.text}`, padding: '24px 20px', background: '#fff9ef' }}>
+      <div style={{ border: `1px solid ${COLORS.text}`, padding: isMobile ? '16px 10px' : '24px 20px', background: '#fff9ef' }}>
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: '80px 1fr 60px 1fr 100px', 
+          gridTemplateColumns: gridCols, 
           gap: '10px',
           paddingBottom: '8px',
           borderBottom: '1px solid #d4c9bc',
           marginBottom: '16px'
         }}>
-          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px' }}>Age Band</SmallCaps>
-          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'right' }}>Male Count</SmallCaps>
-          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'center' }}>Ratio</SmallCaps>
-          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px' }}>Female Count</SmallCaps>
-          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'right' }}>Cohort Total</SmallCaps>
+          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px' }}>Age</SmallCaps>
+          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'right' }}>{isMobile ? 'M' : 'Male Count'}</SmallCaps>
+          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'center' }}>{isMobile ? 'R' : 'Ratio'}</SmallCaps>
+          <SmallCaps style={{ color: COLORS.muted, fontSize: '9px' }}>{isMobile ? 'F' : 'Female Count'}</SmallCaps>
+          {!isMobile && <SmallCaps style={{ color: COLORS.muted, fontSize: '9px', textAlign: 'right' }}>Cohort Total</SmallCaps>}
         </div>
 
         {ageData.cohorts.map((c, i) => {
@@ -55,13 +59,13 @@ export const AgePyramid = () => {
           return (
             <div key={i} style={{ 
               display: 'grid', 
-              gridTemplateColumns: '80px 1fr 60px 1fr 100px', 
+              gridTemplateColumns: gridCols, 
               gap: '10px', 
               height: '32px', 
               alignItems: 'center',
               marginBottom: '2px'
             }}>
-              <div style={{ fontFamily: MONO, fontSize: '11px', fontWeight: 700, color: COLORS.text }}>{c.band}</div>
+              <div style={{ fontFamily: MONO, fontSize: isMobile ? '9px' : '11px', fontWeight: 700, color: COLORS.text }}>{c.band}</div>
               
               <div style={{ position: 'relative', height: '100%', display: 'flex', justifyContent: 'flex-end' }}>
                 <div style={{ 
@@ -70,24 +74,24 @@ export const AgePyramid = () => {
                   width: `${mPct}%`, 
                   background: COLORS.text 
                 }} />
-                <span style={{ 
-                  position: 'absolute', 
-                  right: mLabelInside ? '8px' : `calc(${mPct}% + 8px)`,
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  fontFamily: MONO, fontSize: '10px',
-                  color: mLabelInside ? '#f5ead8' : COLORS.text,
-                  fontFeatureSettings: '"tnum" 1', letterSpacing: '0.05em', fontWeight: 600,
-                  whiteSpace: 'nowrap',
-                }}>
-                  {fmtLakh(c.m)}
-                </span>
+                {(!isMobile || mPct > 35) && (
+                  <span style={{ 
+                    position: 'absolute', 
+                    right: mLabelInside ? '8px' : `calc(${mPct}% + 4px)`,
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    fontFamily: MONO, fontSize: '10px',
+                    color: mLabelInside ? '#f5ead8' : COLORS.text,
+                    fontFeatureSettings: '"tnum" 1', letterSpacing: '0.05em', fontWeight: 600,
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {fmtLakh(c.m)}
+                  </span>
+                )}
               </div>
-
-              <div style={{ textAlign: 'center', fontFamily: MONO, fontSize: '9.5px', color: COLORS.muted, letterSpacing: '0.06em', fontFeatureSettings: '"tnum" 1' }}>
-                {(c.f / c.m * 1000).toFixed(0)} F/1k
+              <div style={{ textAlign: 'center', fontFamily: MONO, fontSize: isMobile ? '8.5px' : '9.5px', color: COLORS.muted, letterSpacing: '0.06em', fontFeatureSettings: '"tnum" 1' }}>
+                {isMobile ? (c.f / c.m * 10).toFixed(1) : `${(c.f / c.m * 1000).toFixed(0)} F/1k`}
               </div>
-
               <div style={{ position: 'relative', height: '100%' }}>
                 <div style={{ 
                   position: 'absolute', 
@@ -95,24 +99,27 @@ export const AgePyramid = () => {
                   width: `${fPct}%`, 
                   background: COLORS.accent 
                 }} />
-                <span style={{ 
-                  position: 'absolute', 
-                  left: fLabelInside ? '8px' : `calc(${fPct}% + 8px)`,
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  fontFamily: MONO, fontSize: '10px',
-                  color: fLabelInside ? '#faf4e8' : COLORS.text,
-                  fontFeatureSettings: '"tnum" 1', letterSpacing: '0.05em', fontWeight: 600,
-                  whiteSpace: 'nowrap',
-                }}>
-                  {fmtLakh(c.f)}
-                </span>
+                {(!isMobile || fPct > 35) && (
+                  <span style={{ 
+                    position: 'absolute', 
+                    left: fLabelInside ? '8px' : `calc(${fPct}% + 4px)`,
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    fontFamily: MONO, fontSize: '10px',
+                    color: fLabelInside ? '#faf4e8' : COLORS.text,
+                    fontFeatureSettings: '"tnum" 1', letterSpacing: '0.05em', fontWeight: 600,
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {fmtLakh(c.f)}
+                  </span>
+                )}
               </div>
-
-              <div style={{ textAlign: 'right', fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontFeatureSettings: '"tnum" 1', fontWeight: 700 }}>
-                {fmtLakh(cohortTotal)}
-                <div style={{ fontSize: '9px', color: COLORS.muted, letterSpacing: '0.04em', fontWeight: 500 }}>{sharePct}%</div>
-              </div>
+              {!isMobile && (
+                <div style={{ textAlign: 'right', fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontFeatureSettings: '"tnum" 1', fontWeight: 700 }}>
+                  {fmtLakh(cohortTotal)}
+                  <div style={{ fontSize: '9px', color: COLORS.muted, letterSpacing: '0.04em', fontWeight: 500 }}>{sharePct}%</div>
+                </div>
+              )}
             </div>
           );
         })}

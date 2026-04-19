@@ -8,6 +8,7 @@ import districtsData from '@/data/districts.json';
 import stateData from '@/data/state.json';
 import { MAP_COORDS, TN_CLIP_PATHS, VORONOI_CELLS } from '@/data/map-data';
 import mapSvgData from '@/data/map-svg.json';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 const TNMap = ({ selected, onSelect, onHover, hovered }: any) => {
   const maxTotal = Math.max(...districtsData.map(d => d.total));
@@ -280,6 +281,7 @@ const DistrictPanel = ({ district }: any) => {
 export const MapSection = () => {
   const [selected, setSelected] = useState(null);
   const [hovered, setHovered] = useState(null);
+  const isMobile = useIsMobile();
 
   const activeId = selected || hovered;
   const activeDistrict = districtsData.find(d => d.id === activeId);
@@ -287,7 +289,12 @@ export const MapSection = () => {
   return (
     <section style={{ margin: '0 0 60px' }}>
       <SectionTitle kicker="Geographic Spread">The Canvas of Contests.</SectionTitle>
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.3fr) minmax(0, 1fr)', gap: '40px', alignItems: 'start' }}>
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.3fr) minmax(0, 1fr)', 
+        gap: isMobile ? '32px' : '40px', 
+        alignItems: 'start' 
+      }}>
         <div style={{ border: `1.5px solid ${COLORS.text}`, background: '#fff9ef', padding: '12px', boxShadow: '6px 6px 0 rgba(26,20,16,0.05)' }}>
           <TNMap
             selected={selected}
@@ -296,7 +303,11 @@ export const MapSection = () => {
             onHover={setHovered}
           />
         </div>
-        <div style={{ paddingTop: '10px', position: 'sticky', top: '20px' }}>
+        <div style={{ 
+          paddingTop: isMobile ? '0' : '10px', 
+          position: isMobile ? 'relative' : 'sticky', 
+          top: isMobile ? '0' : '20px' 
+        }}>
           <DistrictPanel district={activeDistrict} />
         </div>
       </div>

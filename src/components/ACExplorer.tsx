@@ -7,6 +7,7 @@ import { fmtIndian } from '@/utils/format';
 import acsData from '@/data/acs.json';
 import candidatesData from '@/data/candidates_by_ac.json';
 import partiesData from '@/data/parties.json';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 const ALLIANCES: any = {
   SPA: { name: 'Secular Progressive Alliance', color: '#d32a1e', leader: 'M.K. Stalin' },
@@ -42,11 +43,11 @@ const CandidateCard = ({ candidate, ballotNo }: any) => {
       }}>
         {ballotNo}
       </div>
-      <div style={{ minWidth: 0 }}>
+      <div style={{ minWidth: 0, flex: 1 }}>
         <h4 style={{ fontFamily: SERIF, fontSize: '18px', fontWeight: 800, margin: 0, color: COLORS.text }}>
           {candidate.name}
         </h4>
-        <div style={{ display: 'flex', gap: '8px', alignItems: 'baseline', marginTop: '2px' }}>
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'baseline', marginTop: '2px', flexWrap: 'wrap' }}>
           <span style={{ fontFamily: MONO, fontSize: '10px', fontWeight: 700, color: p.color, letterSpacing: '0.05em' }}>
             {candidate.party}
           </span>
@@ -54,6 +55,19 @@ const CandidateCard = ({ candidate, ballotNo }: any) => {
             {p.full}
           </span>
         </div>
+        {candidate.symbol && (
+          <div style={{ 
+            marginTop: '4px', 
+            fontFamily: MONO, 
+            fontSize: '9px', 
+            textTransform: 'uppercase', 
+            color: COLORS.accent, 
+            fontWeight: 700,
+            letterSpacing: '0.05em'
+          }}>
+            Symbol: {candidate.symbol}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -61,6 +75,7 @@ const CandidateCard = ({ candidate, ballotNo }: any) => {
 
 const CandidatePanel = ({ ac, onClose }: any) => {
   if (!ac) return null;
+  const isMobile = useIsMobile();
   const candidates = (candidatesData as any)[ac.no] || [];
   const femalePct = ((ac.f / ac.total) * 100).toFixed(1);
 
@@ -80,13 +95,13 @@ const CandidatePanel = ({ ac, onClose }: any) => {
       style={{
         position: 'fixed',
         inset: 0,
-        background: 'rgba(26, 20, 16, 0.65)',
+        background: 'rgba(26, 20, 16, 0.85)',
         display: 'flex',
-        alignItems: 'flex-start',
+        alignItems: isMobile ? 'flex-end' : 'flex-start',
         justifyContent: 'center',
-        padding: '40px 16px',
+        padding: isMobile ? '0' : '40px 16px',
         zIndex: 9999,
-        overflowY: 'auto',
+        overflowY: 'auto'
       }}
     >
       <div
@@ -96,13 +111,16 @@ const CandidatePanel = ({ ac, onClose }: any) => {
           maxWidth: '760px',
           width: '100%',
           border: `2px solid ${COLORS.text}`,
+          borderBottom: isMobile ? 'none' : `2px solid ${COLORS.text}`,
+          borderRadius: isMobile ? '24px 24px 0 0' : '0',
           boxShadow: '0 20px 60px rgba(26,20,16,0.35)',
+          overflow: 'hidden'
         }}
       >
         <div style={{
           background: COLORS.text,
           color: COLORS.background,
-          padding: '18px 24px',
+          padding: isMobile ? '24px' : '18px 24px',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'flex-start',
@@ -112,7 +130,7 @@ const CandidatePanel = ({ ac, onClose }: any) => {
             <div style={{ fontFamily: MONO, fontSize: '11px', letterSpacing: '0.18em', color: '#d4a080', fontWeight: 600 }}>
               AC №{String(ac.no).padStart(3, '0')} · {ac.d}{ac.t !== 'GEN' ? ` · ${ac.t}` : ''}
             </div>
-            <h2 style={{ fontFamily: SERIF, fontSize: '32px', fontWeight: 900, fontStyle: 'italic', margin: '4px 0 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+            <h2 style={{ fontFamily: SERIF, fontSize: isMobile ? '28px' : '32px', fontWeight: 900, fontStyle: 'italic', margin: '4px 0 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               {ac.n}
             </h2>
             <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.12em', color: '#d4a080', marginTop: '6px', fontWeight: 600 }}>
@@ -133,7 +151,7 @@ const CandidatePanel = ({ ac, onClose }: any) => {
               fontWeight: 600,
             }}
           >
-            ✕ CLOSE
+            {isMobile ? '✕' : '✕ CLOSE'}
           </button>
         </div>
 
@@ -188,6 +206,8 @@ export const ACExplorer = () => {
   const [sortKey, setSortKey] = useState('no');
   const [selectedAc, setSelectedAc] = useState<any>(null);
 
+  const isMobile = useIsMobile();
+
   const filtered = useMemo(() => {
     let matches = acsData.filter((ac: any) => {
       const q = filter.toLowerCase();
@@ -210,14 +230,21 @@ export const ACExplorer = () => {
         All 234 Constituencies.
       </SectionTitle>
 
-      <div style={{ display: 'flex', gap: '14px', marginBottom: '24px', alignItems: 'center', flexWrap: 'wrap' }}>
+      <div style={{ 
+        display: 'flex', 
+        gap: '14px', 
+        marginBottom: '24px', 
+        alignItems: 'center', 
+        flexDirection: isMobile ? 'column' : 'row' 
+      }}>
         <input
           type="text"
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Filter by name, district or number..."
           style={{
-            flex: '1 1 260px',
+            width: '100%',
+            flex: isMobile ? 'none' : '1 1 260px',
             padding: '12px 16px',
             background: '#fff9ef',
             border: `1.5px solid ${COLORS.text}`,
@@ -226,9 +253,10 @@ export const ACExplorer = () => {
             outline: 'none'
           }}
         />
-        <div style={{ display: 'flex', border: `1.5px solid ${COLORS.text}` }}>
+        <div style={{ display: 'flex', width: isMobile ? '100%' : 'auto', border: `1.5px solid ${COLORS.text}` }}>
           {['ALL', 'GEN', 'SC', 'ST'].map(t => (
             <button key={t} onClick={() => setTypeFilter(t)} style={{
+              flex: isMobile ? 1 : 'none',
               padding: '10px 14px',
               background: typeFilter === t ? COLORS.text : 'transparent',
               color: typeFilter === t ? COLORS.background : COLORS.text,
@@ -245,6 +273,7 @@ export const ACExplorer = () => {
           value={sortKey}
           onChange={(e) => setSortKey(e.target.value)}
           style={{
+            width: isMobile ? '100%' : 'auto',
             padding: '12px 16px',
             background: '#fff9ef',
             border: `1.5px solid ${COLORS.text}`,
@@ -290,6 +319,10 @@ export const ACExplorer = () => {
       )}
 
       {selectedAc && <CandidatePanel ac={selectedAc} onClose={() => setSelectedAc(null)} />}
+
+      <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '11px', color: COLORS.muted, marginTop: '32px', textAlign: 'right', lineHeight: 1.5 }}>
+        Complete 2026 candidate data sourced from the ECI constituency-wise filing aggregate — 4,023 candidates across all 234 constituencies. 105 parties including 2,208 independents. Per-candidate EVM symbol preserved.
+      </p>
     </section>
   );
 };
