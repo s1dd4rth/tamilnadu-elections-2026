@@ -1,9 +1,12 @@
 "use client";
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { SERIF, MONO, COLORS } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import { useIsMobile } from '@/hooks/useMediaQuery';
+import candidatesData from '@/data/candidates_by_ac.json';
+import candidatesMyneta from '@/data/candidates_myneta.json';
+import partiesData from '@/data/parties.json';
 
 // Data Constants from original monolith
 const CONTEST_TOP10 = [
@@ -208,16 +211,50 @@ export const DecoyCandidates = () => {
 };
 
 // ─── 3. Women on the Ballot ───────────────────────────────────────────────
+
+// MyNeta cross-check: women that MyNeta has confirmed female from their
+// affidavit data, broken down by the same alliance buckets.
+function useMynetaWomenByAlliance() {
+  return useMemo(() => {
+    const counts: Record<string, { women: number; total: number }> = {
+      SPA: { women: 0, total: 0 },
+      NDA: { women: 0, total: 0 },
+      TVK: { women: 0, total: 0 },
+      NTK: { women: 0, total: 0 },
+      OTH: { women: 0, total: 0 },
+      IND: { women: 0, total: 0 },
+    };
+    for (const [acNo, list] of Object.entries(candidatesMyneta as any)) {
+      const eciList = (candidatesData as any)[acNo] || [];
+      for (const c of list as any[]) {
+        const eci = eciList[c.i];
+        if (!eci) continue;
+        const party = eci.party || '';
+        const p = (partiesData as any)[party];
+        const alliance = (p && p.alliance) || (party === 'IND' ? 'IND' : 'OTH');
+        if (counts[alliance]) {
+          counts[alliance].total += 1;
+          if (c.g === 'F') counts[alliance].women += 1;
+        }
+      }
+    }
+    return counts;
+  }, []);
+}
+
 export const WomenOnBallot = () => {
   const isMobile = useIsMobile();
   const maxAllianceP = Math.max(...ALLIANCE_WOMEN.map(a => a.pct));
   const maxPartyP = Math.max(...PARTY_WOMEN.map(p => p.pct));
+  const mynetaCounts = useMynetaWomenByAlliance();
+  const mynetaTotal = Object.values(mynetaCounts).reduce((s, c) => s + c.women, 0);
+
   return (
     <section style={{ margin: '60px 0' }}>
       <div style={{ borderTop: `2px solid ${COLORS.text}` }} />
       <SectionTitle kicker="Reading the 2026 ballot · №3 of 5">Women on the Ballot.</SectionTitle>
       <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '15px', color: COLORS.muted, margin: '-8px 0 32px', maxWidth: '820px', lineHeight: 1.6 }}>
-        Nearly 834 women (20.7%) are on the ballot. The shape matters: established parties field the smallest share, while newer forces like NTK and TVK over-index on gender representation.
+        <strong style={{ color: COLORS.accent }}>1,380 of the 7,599 nomination forms (18.2%) were filed by women</strong>, per the Tamil Nadu CEO. The two-stage filter — Returning-Officer scrutiny then voluntary withdrawal — narrows that figure further: MyNeta, working off the affidavit corpus, classifies <strong style={{ color: COLORS.accent }}>{mynetaTotal} of {Object.values(mynetaCounts).reduce((s, c) => s + c.total, 0).toLocaleString('en-IN')} contestants</strong> as women. The party-by-party share below comes from MyNeta's classification; alliance estimates are rounded.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(360px, 1fr))', gap: '40px' }}>
@@ -249,6 +286,31 @@ export const WomenOnBallot = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: '36px', padding: '20px 24px', background: '#f5ead8', border: `1.5px solid ${COLORS.border}` }}>
+        <SmallCaps style={{ color: COLORS.accent }}>Affidavit-derived alliance counts</SmallCaps>
+        <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '12px', color: COLORS.muted, margin: '4px 0 14px' }}>
+          MyNeta's affidavit-derived classification, by alliance bucket. NTK's official slate (117 announced women) is conspicuously larger than the affidavit count — likely because MyNeta detects gender from the W/o, D/o, or female-honorific marker, which many NTK candidates omit.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(auto-fit, minmax(140px, 1fr))', gap: '12px 18px' }}>
+          {ALLIANCE_WOMEN.map(a => {
+            const m = mynetaCounts[a.code];
+            return (
+              <div key={a.code}>
+                <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.08em', color: COLORS.muted, fontWeight: 700 }}>
+                  {a.label.toUpperCase()}
+                </div>
+                <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 800, color: a.color, fontFeatureSettings: '"tnum" 1', marginTop: '2px' }}>
+                  {m?.women ?? 0}
+                </div>
+                <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.05em' }}>
+                  of {m?.total ?? 0} contesting
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

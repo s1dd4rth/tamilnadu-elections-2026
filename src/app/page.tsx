@@ -4,15 +4,22 @@ import { MapSection } from '@/components/MapSection';
 import { AgePyramid } from '@/components/AgePyramid';
 import { ACExplorer } from '@/components/ACExplorer';
 import { SIRFlow } from '@/components/SIRFlow';
+import { NominationFunnel } from '@/components/NominationFunnel';
 import { DistrictTable } from '@/components/DistrictTable';
 import { ACExtremes } from '@/components/ACExtremes';
-import { 
-  ContestDensity, 
-  DecoyCandidates, 
-  WomenOnBallot, 
-  BeyondBigFour, 
-  SymbolMenagerie 
+import {
+  ContestDensity,
+  DecoyCandidates,
+  WomenOnBallot,
+  BeyondBigFour,
+  SymbolMenagerie
 } from '@/components/ElectoralInsights';
+import {
+  CrorepatiBallot,
+  CriminalColumn,
+  AgeOfTheBallot,
+  EducationalBallot,
+} from '@/components/AffidavitInsights';
 import { SmallCaps } from '@/components/common';
 import { COLORS, SERIF, MONO } from '@/styles/theme';
 
@@ -28,6 +35,7 @@ export default function Page() {
       <AgePyramid />
       <ACExtremes />
       <DistrictTable />
+      <NominationFunnel />
       <ACExplorer />
 
       <ContestDensity />
@@ -35,6 +43,11 @@ export default function Page() {
       <WomenOnBallot />
       <BeyondBigFour />
       <SymbolMenagerie />
+
+      <CrorepatiBallot />
+      <CriminalColumn />
+      <AgeOfTheBallot />
+      <EducationalBallot />
 
       <footer style={{ 
         marginTop: '80px', 

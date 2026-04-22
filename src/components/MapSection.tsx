@@ -16,7 +16,9 @@ const TNMap = ({ selected, onSelect, onHover, hovered }: any) => {
   
   const radiusFor = (t: number) => {
     const norm = (Math.log(t) - Math.log(minTotal)) / (Math.log(maxTotal) - Math.log(minTotal));
-    return 6 + norm * 14;
+    // Round to 3dp so server and client serialize identically (otherwise
+    // float-toString chooses different ULPs and React hydration mismatches).
+    return Math.round((6 + norm * 14) * 1000) / 1000;
   };
 
   const logMin = Math.log(minTotal);
@@ -99,7 +101,7 @@ const TNMap = ({ selected, onSelect, onHover, hovered }: any) => {
             />
             <circle
               cx={cx} cy={cy}
-              r={Math.max(2, r * 0.35)}
+              r={Math.max(2, Math.round(r * 0.35 * 1000) / 1000)}
               fill={isActive ? COLORS.accent : COLORS.text}
               style={{ transition: 'all 150ms ease' }}
             />
