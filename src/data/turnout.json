@@ -1,289 +1,1921 @@
 {
   "pollDate": "23-04-2026",
   "snapshotTime": "21:18 IST",
-  "source": "ECINET Polling Trends (Approximate VTR)",
+  "source": "ECINET Polling Trends (Approximate VTR, 2026) \u00b7 TCPD / opencity.in (AC-wise 2021)",
   "note": "Figures are provisional and typically revise up by 1-2 points in the final ECI release.",
   "state": {
-    "vtr2026": 85.10,
+    "vtr2026": 85.1,
     "vtr2021": 72.81,
-    "vtr2016": 74.30,
+    "vtr2016": 74.3,
     "vtr2011": 77.82,
     "electorate": 57343291
   },
   "districts": [
-    { "id": "kar", "name": "Karur",           "vtr": 92.65 },
-    { "id": "sal", "name": "Salem",           "vtr": 90.55 },
-    { "id": "drm", "name": "Dharmapuri",      "vtr": 90.09 },
-    { "id": "ero", "name": "Erode",           "vtr": 90.07 },
-    { "id": "nmk", "name": "Namakkal",        "vtr": 89.81 },
-    { "id": "rnp", "name": "Ranipet",         "vtr": 89.41 },
-    { "id": "tvn", "name": "Tiruvannamalai",  "vtr": 88.96 },
-    { "id": "din", "name": "Dindigul",        "vtr": 88.77 },
-    { "id": "tpt", "name": "Tirupattur",      "vtr": 88.67 },
-    { "id": "vlr", "name": "Vellore",         "vtr": 88.67 },
-    { "id": "vlp", "name": "Villupuram",      "vtr": 88.64 },
-    { "id": "tpr", "name": "Tiruppur",        "vtr": 88.51 },
-    { "id": "klk", "name": "Kallakurichi",    "vtr": 87.92 },
-    { "id": "kch", "name": "Kancheepuram",    "vtr": 87.32 },
-    { "id": "ari", "name": "Ariyalur",        "vtr": 86.61 },
-    { "id": "ngp", "name": "Nagapattinam",    "vtr": 86.18 },
-    { "id": "prb", "name": "Perambalur",      "vtr": 85.50 },
-    { "id": "try", "name": "Tiruchirappalli", "vtr": 85.42 },
-    { "id": "cud", "name": "Cuddalore",       "vtr": 85.31 },
-    { "id": "kri", "name": "Krishnagiri",     "vtr": 85.15 },
-    { "id": "cgl", "name": "Chengalpattu",    "vtr": 84.99 },
-    { "id": "vrd", "name": "Virudhunagar",    "vtr": 84.77 },
-    { "id": "cbe", "name": "Coimbatore",      "vtr": 84.68 },
-    { "id": "pdk", "name": "Pudukkottai",     "vtr": 83.82 },
-    { "id": "tvl", "name": "Thiruvallur",     "vtr": 83.62 },
-    { "id": "che", "name": "Chennai",         "vtr": 83.58 },
-    { "id": "tvr", "name": "Tiruvarur",       "vtr": 83.54 },
-    { "id": "tks", "name": "Tenkasi",         "vtr": 82.20 },
-    { "id": "myl", "name": "Mayiladuthurai",  "vtr": 81.93 },
-    { "id": "thn", "name": "Theni",           "vtr": 81.30 },
-    { "id": "mdu", "name": "Madurai",         "vtr": 80.50 },
-    { "id": "tut", "name": "Thoothukudi",     "vtr": 80.48 },
-    { "id": "tnj", "name": "Thanjavur",       "vtr": 80.35 },
-    { "id": "ngr", "name": "Nilgiris",        "vtr": 78.84 },
-    { "id": "trn", "name": "Tirunelveli",     "vtr": 77.86 },
-    { "id": "rmn", "name": "Ramanathapuram",  "vtr": 76.84 },
-    { "id": "svg", "name": "Sivaganga",       "vtr": 76.43 },
-    { "id": "kkm", "name": "Kanniyakumari",   "vtr": 75.60 }
+    {
+      "id": "kar",
+      "name": "Karur",
+      "vtr": 92.65,
+      "vtr2021": 83.95,
+      "delta": 8.7
+    },
+    {
+      "id": "sal",
+      "name": "Salem",
+      "vtr": 90.55,
+      "vtr2021": 79.15,
+      "delta": 11.4
+    },
+    {
+      "id": "drm",
+      "name": "Dharmapuri",
+      "vtr": 90.09,
+      "vtr2021": 82.53,
+      "delta": 7.56
+    },
+    {
+      "id": "ero",
+      "name": "Erode",
+      "vtr": 90.07,
+      "vtr2021": 77.07,
+      "delta": 13.0
+    },
+    {
+      "id": "nmk",
+      "name": "Namakkal",
+      "vtr": 89.81,
+      "vtr2021": 80.04,
+      "delta": 9.77
+    },
+    {
+      "id": "rnp",
+      "name": "Ranipet",
+      "vtr": 89.41,
+      "vtr2021": 77.96,
+      "delta": 11.45
+    },
+    {
+      "id": "tvn",
+      "name": "Tiruvannamalai",
+      "vtr": 88.96,
+      "vtr2021": 79.09,
+      "delta": 9.87
+    },
+    {
+      "id": "din",
+      "name": "Dindigul",
+      "vtr": 88.77,
+      "vtr2021": 76.83,
+      "delta": 11.94
+    },
+    {
+      "id": "tpt",
+      "name": "Tirupattur",
+      "vtr": 88.67,
+      "vtr2021": 76.88,
+      "delta": 11.79
+    },
+    {
+      "id": "vlr",
+      "name": "Vellore",
+      "vtr": 88.67,
+      "vtr2021": 74.07,
+      "delta": 14.6
+    },
+    {
+      "id": "vlp",
+      "name": "Villupuram",
+      "vtr": 88.64,
+      "vtr2021": 78.65,
+      "delta": 9.99
+    },
+    {
+      "id": "tpr",
+      "name": "Tiruppur",
+      "vtr": 88.51,
+      "vtr2021": 70.27,
+      "delta": 18.24
+    },
+    {
+      "id": "klk",
+      "name": "Kallakurichi",
+      "vtr": 87.92,
+      "vtr2021": 80.14,
+      "delta": 7.78
+    },
+    {
+      "id": "kch",
+      "name": "Kancheepuram",
+      "vtr": 87.32,
+      "vtr2021": 72.03,
+      "delta": 15.28
+    },
+    {
+      "id": "ari",
+      "name": "Ariyalur",
+      "vtr": 86.61,
+      "vtr2021": 82.46,
+      "delta": 4.15
+    },
+    {
+      "id": "ngp",
+      "name": "Nagapattinam",
+      "vtr": 86.18,
+      "vtr2021": 77.33,
+      "delta": 8.85
+    },
+    {
+      "id": "prb",
+      "name": "Perambalur",
+      "vtr": 85.5,
+      "vtr2021": 79.12,
+      "delta": 6.38
+    },
+    {
+      "id": "try",
+      "name": "Tiruchirappalli",
+      "vtr": 85.42,
+      "vtr2021": 73.79,
+      "delta": 11.63
+    },
+    {
+      "id": "cud",
+      "name": "Cuddalore",
+      "vtr": 85.31,
+      "vtr2021": 76.71,
+      "delta": 8.6
+    },
+    {
+      "id": "kri",
+      "name": "Krishnagiri",
+      "vtr": 85.15,
+      "vtr2021": 77.4,
+      "delta": 7.75
+    },
+    {
+      "id": "cgl",
+      "name": "Chengalpattu",
+      "vtr": 84.99,
+      "vtr2021": 67.76,
+      "delta": 17.23
+    },
+    {
+      "id": "vrd",
+      "name": "Virudhunagar",
+      "vtr": 84.77,
+      "vtr2021": 73.81,
+      "delta": 10.96
+    },
+    {
+      "id": "cbe",
+      "name": "Coimbatore",
+      "vtr": 84.68,
+      "vtr2021": 68.67,
+      "delta": 16.01
+    },
+    {
+      "id": "pdk",
+      "name": "Pudukkottai",
+      "vtr": 83.82,
+      "vtr2021": 76.22,
+      "delta": 7.59
+    },
+    {
+      "id": "tvl",
+      "name": "Thiruvallur",
+      "vtr": 83.62,
+      "vtr2021": 70.64,
+      "delta": 12.98
+    },
+    {
+      "id": "che",
+      "name": "Chennai",
+      "vtr": 83.58,
+      "vtr2021": 59.29,
+      "delta": 24.29
+    },
+    {
+      "id": "tvr",
+      "name": "Tiruvarur",
+      "vtr": 83.54,
+      "vtr2021": 76.35,
+      "delta": 7.19
+    },
+    {
+      "id": "tks",
+      "name": "Tenkasi",
+      "vtr": 82.2,
+      "vtr2021": 72.7,
+      "delta": 9.5
+    },
+    {
+      "id": "myl",
+      "name": "Mayiladuthurai",
+      "vtr": 81.93,
+      "vtr2021": 73.41,
+      "delta": 8.52
+    },
+    {
+      "id": "thn",
+      "name": "Theni",
+      "vtr": 81.3,
+      "vtr2021": 72.65,
+      "delta": 8.65
+    },
+    {
+      "id": "mdu",
+      "name": "Madurai",
+      "vtr": 80.5,
+      "vtr2021": 70.33,
+      "delta": 10.17
+    },
+    {
+      "id": "tut",
+      "name": "Thoothukudi",
+      "vtr": 80.48,
+      "vtr2021": 70.2,
+      "delta": 10.28
+    },
+    {
+      "id": "tnj",
+      "name": "Thanjavur",
+      "vtr": 80.35,
+      "vtr2021": 74.1,
+      "delta": 6.25
+    },
+    {
+      "id": "ngr",
+      "name": "Nilgiris",
+      "vtr": 78.84,
+      "vtr2021": 69.92,
+      "delta": 8.92
+    },
+    {
+      "id": "trn",
+      "name": "Tirunelveli",
+      "vtr": 77.86,
+      "vtr2021": 66.67,
+      "delta": 11.19
+    },
+    {
+      "id": "rmn",
+      "name": "Ramanathapuram",
+      "vtr": 76.84,
+      "vtr2021": 69.6,
+      "delta": 7.24
+    },
+    {
+      "id": "svg",
+      "name": "Sivaganga",
+      "vtr": 76.43,
+      "vtr2021": 69.14,
+      "delta": 7.29
+    },
+    {
+      "id": "kkm",
+      "name": "Kanniyakumari",
+      "vtr": 75.6,
+      "vtr2021": 68.72,
+      "delta": 6.88
+    }
   ],
   "acs": [
-    { "no": 1,   "name": "Gummidipoondi",           "vtr": 90.82 },
-    { "no": 2,   "name": "Ponneri",                 "vtr": 89.66 },
-    { "no": 3,   "name": "Tiruttani",               "vtr": 89.73 },
-    { "no": 4,   "name": "Thiruvallur",             "vtr": 89.51 },
-    { "no": 5,   "name": "Poonamallee",             "vtr": 83.13 },
-    { "no": 6,   "name": "Avadi",                   "vtr": 78.81 },
-    { "no": 7,   "name": "Maduravoyal",             "vtr": 78.55 },
-    { "no": 8,   "name": "Ambattur",                "vtr": 76.98 },
-    { "no": 9,   "name": "Madavaram",               "vtr": 83.29 },
-    { "no": 10,  "name": "Thiruvottiyur",           "vtr": 84.41 },
-    { "no": 11,  "name": "Dr.Radhakrishnan Nagar",  "vtr": 90.18 },
-    { "no": 12,  "name": "Perambur",                "vtr": 89.65 },
-    { "no": 13,  "name": "Kolathur",                "vtr": 86.11 },
-    { "no": 14,  "name": "Villivakkam",             "vtr": 85.98 },
-    { "no": 15,  "name": "Thiru-vi-ka-nagar",       "vtr": 78.68 },
-    { "no": 16,  "name": "Egmore",                  "vtr": 85.19 },
-    { "no": 17,  "name": "Royapuram",               "vtr": 79.34 },
-    { "no": 18,  "name": "Harbour",                 "vtr": 82.75 },
-    { "no": 19,  "name": "Chepauk-Thiruvallikeni",  "vtr": 84.22 },
-    { "no": 20,  "name": "Thousand Lights",         "vtr": 82.91 },
-    { "no": 21,  "name": "Anna Nagar",              "vtr": 85.17 },
-    { "no": 22,  "name": "Virugampakkam",           "vtr": 85.34 },
-    { "no": 23,  "name": "Saidapet",                "vtr": 77.84 },
-    { "no": 24,  "name": "Thiyagarayanagar",        "vtr": 83.48 },
-    { "no": 25,  "name": "Mylapore",                "vtr": 74.62 },
-    { "no": 26,  "name": "Velachery",               "vtr": 84.49 },
-    { "no": 27,  "name": "Shozhinganallur",         "vtr": 80.28 },
-    { "no": 28,  "name": "Alandur",                 "vtr": 86.15 },
-    { "no": 29,  "name": "Sriperumbudur",           "vtr": 86.02 },
-    { "no": 30,  "name": "Pallavaram",              "vtr": 83.26 },
-    { "no": 31,  "name": "Tambaram",                "vtr": 83.83 },
-    { "no": 32,  "name": "Chengalpattu",            "vtr": 86.30 },
-    { "no": 33,  "name": "Thiruporur",              "vtr": 87.58 },
-    { "no": 34,  "name": "Cheyyur",                 "vtr": 89.34 },
-    { "no": 35,  "name": "Madurantakam",            "vtr": 92.11 },
-    { "no": 36,  "name": "Uthiramerur",             "vtr": 91.02 },
-    { "no": 37,  "name": "Kancheepuram",            "vtr": 87.15 },
-    { "no": 38,  "name": "Arakkonam",               "vtr": 90.12 },
-    { "no": 39,  "name": "Sholingur",               "vtr": 89.43 },
-    { "no": 40,  "name": "Katpadi",                 "vtr": 87.86 },
-    { "no": 41,  "name": "Ranipet",                 "vtr": 87.98 },
-    { "no": 42,  "name": "Arcot",                   "vtr": 90.52 },
-    { "no": 43,  "name": "Vellore",                 "vtr": 87.97 },
-    { "no": 44,  "name": "Anaikattu",               "vtr": 89.59 },
-    { "no": 45,  "name": "Kilvaithinankuppam",      "vtr": 87.25 },
-    { "no": 46,  "name": "Gudiyattam",              "vtr": 90.44 },
-    { "no": 47,  "name": "Vaniyambadi",             "vtr": 86.83 },
-    { "no": 48,  "name": "Ambur",                   "vtr": 90.23 },
-    { "no": 49,  "name": "Jolarpet",                "vtr": 89.42 },
-    { "no": 50,  "name": "Tiruppattur",             "vtr": 88.53 },
-    { "no": 51,  "name": "Uthangarai",              "vtr": 86.03 },
-    { "no": 52,  "name": "Bargur",                  "vtr": 88.00 },
-    { "no": 53,  "name": "Krishnagiri",             "vtr": 84.85 },
-    { "no": 54,  "name": "Veppanahalli",            "vtr": 89.72 },
-    { "no": 55,  "name": "Hosur",                   "vtr": 80.33 },
-    { "no": 56,  "name": "Thalli",                  "vtr": 84.35 },
-    { "no": 57,  "name": "Palacodu",                "vtr": 92.57 },
-    { "no": 58,  "name": "Pennagaram",              "vtr": 90.51 },
-    { "no": 59,  "name": "Dharmapuri",              "vtr": 89.48 },
-    { "no": 60,  "name": "Pappireddipatti",         "vtr": 90.39 },
-    { "no": 61,  "name": "Harur",                   "vtr": 87.70 },
-    { "no": 62,  "name": "Chengam",                 "vtr": 87.73 },
-    { "no": 63,  "name": "Tiruvannamalai",          "vtr": 86.78 },
-    { "no": 64,  "name": "Kilpennathur",            "vtr": 89.62 },
-    { "no": 65,  "name": "Kalasapakkam",            "vtr": 89.97 },
-    { "no": 66,  "name": "Polur",                   "vtr": 88.95 },
-    { "no": 67,  "name": "Arani",                   "vtr": 89.06 },
-    { "no": 68,  "name": "Cheyyar",                 "vtr": 91.91 },
-    { "no": 69,  "name": "Vandavasi",               "vtr": 88.30 },
-    { "no": 70,  "name": "Gingee",                  "vtr": 87.81 },
-    { "no": 71,  "name": "Mailam",                  "vtr": 89.40 },
-    { "no": 72,  "name": "Tindivanam",              "vtr": 88.43 },
-    { "no": 73,  "name": "Vanur",                   "vtr": 91.05 },
-    { "no": 74,  "name": "Viluppuram",              "vtr": 86.22 },
-    { "no": 75,  "name": "Vikravandi",              "vtr": 90.43 },
-    { "no": 76,  "name": "Tirukkoyilur",            "vtr": 88.18 },
-    { "no": 77,  "name": "Ulundurpettai",           "vtr": 89.36 },
-    { "no": 78,  "name": "Rishivandiyam",           "vtr": 87.53 },
-    { "no": 79,  "name": "Sankarapuram",            "vtr": 86.95 },
-    { "no": 80,  "name": "Kallakurichi",            "vtr": 87.93 },
-    { "no": 81,  "name": "Gangavalli",              "vtr": 88.61 },
-    { "no": 82,  "name": "Attur",                   "vtr": 90.12 },
-    { "no": 83,  "name": "Yercaud",                 "vtr": 90.96 },
-    { "no": 84,  "name": "Omalur",                  "vtr": 90.69 },
-    { "no": 85,  "name": "Mettur",                  "vtr": 89.18 },
-    { "no": 86,  "name": "Edappadi",                "vtr": 92.02 },
-    { "no": 87,  "name": "Sankari",                 "vtr": 92.49 },
-    { "no": 88,  "name": "Salem (West)",            "vtr": 89.71 },
-    { "no": 89,  "name": "Salem (North)",           "vtr": 87.39 },
-    { "no": 90,  "name": "Salem (South)",           "vtr": 91.01 },
-    { "no": 91,  "name": "Veerapandi",              "vtr": 93.38 },
-    { "no": 92,  "name": "Rasipuram",               "vtr": 90.38 },
-    { "no": 93,  "name": "Senthamangalam",          "vtr": 88.49 },
-    { "no": 94,  "name": "Namakkal",                "vtr": 87.72 },
-    { "no": 95,  "name": "Paramathi-Velur",         "vtr": 89.92 },
-    { "no": 96,  "name": "Tiruchengodu",            "vtr": 90.02 },
-    { "no": 97,  "name": "Kumarapalayam",           "vtr": 92.64 },
-    { "no": 98,  "name": "Erode (East)",            "vtr": 89.78 },
-    { "no": 99,  "name": "Erode (West)",            "vtr": 87.95 },
-    { "no": 100, "name": "Modakkurichi",            "vtr": 90.35 },
-    { "no": 101, "name": "Dharapuram",              "vtr": 88.85 },
-    { "no": 102, "name": "Kangayam",                "vtr": 91.54 },
-    { "no": 103, "name": "Perundurai",              "vtr": 92.42 },
-    { "no": 104, "name": "Bhavani",                 "vtr": 91.96 },
-    { "no": 105, "name": "Anthiyur",                "vtr": 88.15 },
-    { "no": 106, "name": "Gobichettipalayam",       "vtr": 90.74 },
-    { "no": 107, "name": "Bhavanisagar",            "vtr": 89.52 },
-    { "no": 108, "name": "Udhagamandalam",          "vtr": 77.55 },
-    { "no": 109, "name": "Gudalur",                 "vtr": 80.77 },
-    { "no": 110, "name": "Coonoor",                 "vtr": 78.19 },
-    { "no": 111, "name": "Mettuppalayam",           "vtr": 85.73 },
-    { "no": 112, "name": "Avanashi",                "vtr": 90.57 },
-    { "no": 113, "name": "Tiruppur (North)",        "vtr": 83.13 },
-    { "no": 114, "name": "Tiruppur (South)",        "vtr": 90.71 },
-    { "no": 115, "name": "Palladam",                "vtr": 90.73 },
-    { "no": 116, "name": "Sulur",                   "vtr": 88.12 },
-    { "no": 117, "name": "Kavundampalayam",         "vtr": 85.69 },
-    { "no": 118, "name": "Coimbatore (North)",      "vtr": 75.64 },
-    { "no": 119, "name": "Thondamuthur",            "vtr": 87.54 },
-    { "no": 120, "name": "Coimbatore (South)",      "vtr": 82.02 },
-    { "no": 121, "name": "Singanallur",             "vtr": 81.18 },
-    { "no": 122, "name": "Kinathukadavu",           "vtr": 87.04 },
-    { "no": 123, "name": "Pollachi",                "vtr": 88.08 },
-    { "no": 124, "name": "Valparai",                "vtr": 85.43 },
-    { "no": 125, "name": "Udumalaipettai",          "vtr": 87.37 },
-    { "no": 126, "name": "Madathukulam",            "vtr": 86.76 },
-    { "no": 127, "name": "Palani",                  "vtr": 86.00 },
-    { "no": 128, "name": "Oddanchatram",            "vtr": 90.50 },
-    { "no": 129, "name": "Athoor",                  "vtr": 89.31 },
-    { "no": 130, "name": "Nilakkottai",             "vtr": 88.04 },
-    { "no": 131, "name": "Natham",                  "vtr": 90.32 },
-    { "no": 132, "name": "Dindigul",                "vtr": 85.88 },
-    { "no": 133, "name": "Vedasandur",              "vtr": 91.26 },
-    { "no": 134, "name": "Aravakurichi",            "vtr": 91.74 },
-    { "no": 135, "name": "Karur",                   "vtr": 93.39 },
-    { "no": 136, "name": "Krishnarayapuram",        "vtr": 92.49 },
-    { "no": 137, "name": "Kulithalai",              "vtr": 92.85 },
-    { "no": 138, "name": "Manapparai",              "vtr": 88.68 },
-    { "no": 139, "name": "Srirangam",               "vtr": 87.95 },
-    { "no": 140, "name": "Tiruchirappalli (West)",  "vtr": 81.35 },
-    { "no": 141, "name": "Tiruchirappalli (East)",  "vtr": 81.77 },
-    { "no": 142, "name": "Thiruverumbur",           "vtr": 81.21 },
-    { "no": 143, "name": "Lalgudi",                 "vtr": 86.51 },
-    { "no": 144, "name": "Manachanallur",           "vtr": 87.64 },
-    { "no": 145, "name": "Musiri",                  "vtr": 86.78 },
-    { "no": 146, "name": "Thuraiyur",               "vtr": 86.51 },
-    { "no": 147, "name": "Perambalur",              "vtr": 85.92 },
-    { "no": 148, "name": "Kunnam",                  "vtr": 85.04 },
-    { "no": 149, "name": "Ariyalur",                "vtr": 88.23 },
-    { "no": 150, "name": "Jayankondam",             "vtr": 85.14 },
-    { "no": 151, "name": "Tittakudi",               "vtr": 83.25 },
-    { "no": 152, "name": "Vriddhachalam",           "vtr": 86.09 },
-    { "no": 153, "name": "Neyveli",                 "vtr": 87.11 },
-    { "no": 154, "name": "Panruti",                 "vtr": 86.19 },
-    { "no": 155, "name": "Cuddalore",               "vtr": 83.68 },
-    { "no": 156, "name": "Kurinjipadi",             "vtr": 88.17 },
-    { "no": 157, "name": "Bhuvanagiri",             "vtr": 87.68 },
-    { "no": 158, "name": "Chidambaram",             "vtr": 83.60 },
-    { "no": 159, "name": "Kattumannarkoil",         "vtr": 82.11 },
-    { "no": 160, "name": "Sirkazhi",                "vtr": 82.34 },
-    { "no": 161, "name": "Mayiladuthurai",          "vtr": 79.54 },
-    { "no": 162, "name": "Poompuhar",               "vtr": 83.92 },
-    { "no": 163, "name": "Nagapattinam",            "vtr": 85.79 },
-    { "no": 164, "name": "Kilvelur",                "vtr": 87.83 },
-    { "no": 165, "name": "Vedaranyam",              "vtr": 85.18 },
-    { "no": 166, "name": "Thiruthuraipoondi",       "vtr": 83.53 },
-    { "no": 167, "name": "Mannargudi",              "vtr": 81.97 },
-    { "no": 168, "name": "Thiruvarur",              "vtr": 83.03 },
-    { "no": 169, "name": "Nannilam",                "vtr": 85.59 },
-    { "no": 170, "name": "Thiruvidaimarudur",       "vtr": 80.15 },
-    { "no": 171, "name": "Kumbakonam",              "vtr": 80.83 },
-    { "no": 172, "name": "Papanasam",               "vtr": 79.96 },
-    { "no": 173, "name": "Thiruvaiyaru",            "vtr": 85.01 },
-    { "no": 174, "name": "Thanjavur",               "vtr": 77.39 },
-    { "no": 175, "name": "Orathanadu",              "vtr": 82.70 },
-    { "no": 176, "name": "Pattukkottai",            "vtr": 75.29 },
-    { "no": 177, "name": "Peravurani",              "vtr": 81.83 },
-    { "no": 178, "name": "Gandharvakottai",         "vtr": 84.76 },
-    { "no": 179, "name": "Viralimalai",             "vtr": 89.83 },
-    { "no": 180, "name": "Pudukkottai",             "vtr": 83.26 },
-    { "no": 181, "name": "Thirumayam",              "vtr": 81.94 },
-    { "no": 182, "name": "Alangudi",                "vtr": 84.43 },
-    { "no": 183, "name": "Aranthangi",              "vtr": 78.94 },
-    { "no": 184, "name": "Karaikudi",               "vtr": 73.99 },
-    { "no": 185, "name": "Tiruppattur",             "vtr": 77.28 },
-    { "no": 186, "name": "Sivaganga",               "vtr": 75.81 },
-    { "no": 187, "name": "Manamadurai",             "vtr": 79.12 },
-    { "no": 188, "name": "Melur",                   "vtr": 82.42 },
-    { "no": 189, "name": "Madurai East",            "vtr": 79.80 },
-    { "no": 190, "name": "Sholavandan",             "vtr": 87.12 },
-    { "no": 191, "name": "Madurai North",           "vtr": 72.63 },
-    { "no": 192, "name": "Madurai South",           "vtr": 78.26 },
-    { "no": 193, "name": "Madurai Central",         "vtr": 73.86 },
-    { "no": 194, "name": "Madurai West",            "vtr": 77.81 },
-    { "no": 195, "name": "Thiruparankundram",       "vtr": 81.39 },
-    { "no": 196, "name": "Thirumangalam",           "vtr": 86.80 },
-    { "no": 197, "name": "Usilampatti",             "vtr": 83.06 },
-    { "no": 198, "name": "Andipatti",               "vtr": 83.26 },
-    { "no": 199, "name": "Periyakulam",             "vtr": 78.51 },
-    { "no": 200, "name": "Bodinayakanur",           "vtr": 82.42 },
-    { "no": 201, "name": "Cumbum",                  "vtr": 81.20 },
-    { "no": 202, "name": "Rajapalayam",             "vtr": 84.47 },
-    { "no": 203, "name": "Srivilliputhur",          "vtr": 84.72 },
-    { "no": 204, "name": "Sattur",                  "vtr": 85.39 },
-    { "no": 205, "name": "Sivakasi",                "vtr": 84.26 },
-    { "no": 206, "name": "Virudhunagar",            "vtr": 82.77 },
-    { "no": 207, "name": "Aruppukkottai",           "vtr": 84.58 },
-    { "no": 208, "name": "Tiruchuli",               "vtr": 87.21 },
-    { "no": 209, "name": "Paramakudi",              "vtr": 79.48 },
-    { "no": 210, "name": "Tiruvadanai",             "vtr": 77.00 },
-    { "no": 211, "name": "Ramanathapuram",          "vtr": 75.40 },
-    { "no": 212, "name": "Mudhukulathur",           "vtr": 76.22 },
-    { "no": 213, "name": "Vilathikulam",            "vtr": 84.13 },
-    { "no": 214, "name": "Thoothukkudi",            "vtr": 80.92 },
-    { "no": 215, "name": "Tiruchendur",             "vtr": 78.89 },
-    { "no": 216, "name": "Srivaikuntam",            "vtr": 81.04 },
-    { "no": 217, "name": "Ottapidaram",             "vtr": 79.34 },
-    { "no": 218, "name": "Kovilpatti",              "vtr": 79.21 },
-    { "no": 219, "name": "Sankarankovil",           "vtr": 81.09 },
-    { "no": 220, "name": "Vasudevanallur",          "vtr": 81.48 },
-    { "no": 221, "name": "Kadayanallur",            "vtr": 81.38 },
-    { "no": 222, "name": "Tenkasi",                 "vtr": 82.42 },
-    { "no": 223, "name": "Alangulam",               "vtr": 84.57 },
-    { "no": 224, "name": "Tirunelveli",             "vtr": 78.21 },
-    { "no": 225, "name": "Ambasamudram",            "vtr": 82.79 },
-    { "no": 226, "name": "Palayamkottai",           "vtr": 68.97 },
-    { "no": 227, "name": "Nanguneri",               "vtr": 80.05 },
-    { "no": 228, "name": "Radhapuram",              "vtr": 79.92 },
-    { "no": 229, "name": "Kanniyakumari",           "vtr": 81.43 },
-    { "no": 230, "name": "Nagercoil",               "vtr": 74.72 },
-    { "no": 231, "name": "Colachal",                "vtr": 74.13 },
-    { "no": 232, "name": "Padmanabhapuram",         "vtr": 75.42 },
-    { "no": 233, "name": "Vilavancode",             "vtr": 75.77 },
-    { "no": 234, "name": "Killiyoor",               "vtr": 71.29 }
+    {
+      "no": 1,
+      "name": "Gummidipoondi",
+      "vtr": 90.82,
+      "vtr2021": 78.08,
+      "delta": 12.74
+    },
+    {
+      "no": 2,
+      "name": "Ponneri",
+      "vtr": 89.66,
+      "vtr2021": 78.2,
+      "delta": 11.46
+    },
+    {
+      "no": 3,
+      "name": "Tiruttani",
+      "vtr": 89.73,
+      "vtr2021": 78.76,
+      "delta": 10.97
+    },
+    {
+      "no": 4,
+      "name": "Thiruvallur",
+      "vtr": 89.51,
+      "vtr2021": 77.2,
+      "delta": 12.31
+    },
+    {
+      "no": 5,
+      "name": "Poonamallee",
+      "vtr": 83.13,
+      "vtr2021": 72.99,
+      "delta": 10.14
+    },
+    {
+      "no": 6,
+      "name": "Avadi",
+      "vtr": 78.81,
+      "vtr2021": 67.37,
+      "delta": 11.44
+    },
+    {
+      "no": 7,
+      "name": "Maduravoyal",
+      "vtr": 78.55,
+      "vtr2021": 60.3,
+      "delta": 18.25
+    },
+    {
+      "no": 8,
+      "name": "Ambattur",
+      "vtr": 76.98,
+      "vtr2021": 62.01,
+      "delta": 14.97
+    },
+    {
+      "no": 9,
+      "name": "Madavaram",
+      "vtr": 83.29,
+      "vtr2021": 66.37,
+      "delta": 16.92
+    },
+    {
+      "no": 10,
+      "name": "Thiruvottiyur",
+      "vtr": 84.41,
+      "vtr2021": 65.15,
+      "delta": 19.26
+    },
+    {
+      "no": 11,
+      "name": "Dr.Radhakrishnan Nagar",
+      "vtr": 90.18,
+      "vtr2021": 70.98,
+      "delta": 19.2
+    },
+    {
+      "no": 12,
+      "name": "Perambur",
+      "vtr": 89.65,
+      "vtr2021": 63.0,
+      "delta": 26.65
+    },
+    {
+      "no": 13,
+      "name": "Kolathur",
+      "vtr": 86.11,
+      "vtr2021": 61.04,
+      "delta": 25.07
+    },
+    {
+      "no": 14,
+      "name": "Villivakkam",
+      "vtr": 85.98,
+      "vtr2021": 55.92,
+      "delta": 30.06
+    },
+    {
+      "no": 15,
+      "name": "Thiru-vi-ka-nagar",
+      "vtr": 78.68,
+      "vtr2021": 60.62,
+      "delta": 18.06
+    },
+    {
+      "no": 16,
+      "name": "Egmore",
+      "vtr": 85.19,
+      "vtr2021": 61.13,
+      "delta": 24.06
+    },
+    {
+      "no": 17,
+      "name": "Royapuram",
+      "vtr": 79.34,
+      "vtr2021": 62.6,
+      "delta": 16.74
+    },
+    {
+      "no": 18,
+      "name": "Harbour",
+      "vtr": 82.75,
+      "vtr2021": 57.64,
+      "delta": 25.11
+    },
+    {
+      "no": 19,
+      "name": "Chepauk-Thiruvallikeni",
+      "vtr": 84.22,
+      "vtr2021": 58.33,
+      "delta": 25.89
+    },
+    {
+      "no": 20,
+      "name": "Thousand Lights",
+      "vtr": 82.91,
+      "vtr2021": 56.25,
+      "delta": 26.66
+    },
+    {
+      "no": 21,
+      "name": "Anna Nagar",
+      "vtr": 85.17,
+      "vtr2021": 57.33,
+      "delta": 27.84
+    },
+    {
+      "no": 22,
+      "name": "Virugampakkam",
+      "vtr": 85.34,
+      "vtr2021": 57.59,
+      "delta": 27.75
+    },
+    {
+      "no": 23,
+      "name": "Saidapet",
+      "vtr": 77.84,
+      "vtr2021": 57.36,
+      "delta": 20.48
+    },
+    {
+      "no": 24,
+      "name": "Thiyagarayanagar",
+      "vtr": 83.48,
+      "vtr2021": 55.99,
+      "delta": 27.49
+    },
+    {
+      "no": 25,
+      "name": "Mylapore",
+      "vtr": 74.62,
+      "vtr2021": 56.6,
+      "delta": 18.02
+    },
+    {
+      "no": 26,
+      "name": "Velachery",
+      "vtr": 84.49,
+      "vtr2021": 56.18,
+      "delta": 28.31
+    },
+    {
+      "no": 27,
+      "name": "Shozhinganallur",
+      "vtr": 80.28,
+      "vtr2021": 55.51,
+      "delta": 24.77
+    },
+    {
+      "no": 28,
+      "name": "Alandur",
+      "vtr": 86.15,
+      "vtr2021": 60.82,
+      "delta": 25.33
+    },
+    {
+      "no": 29,
+      "name": "Sriperumbudur",
+      "vtr": 86.02,
+      "vtr2021": 73.94,
+      "delta": 12.08
+    },
+    {
+      "no": 30,
+      "name": "Pallavaram",
+      "vtr": 83.26,
+      "vtr2021": 60.86,
+      "delta": 22.4
+    },
+    {
+      "no": 31,
+      "name": "Tambaram",
+      "vtr": 83.83,
+      "vtr2021": 59.55,
+      "delta": 24.28
+    },
+    {
+      "no": 32,
+      "name": "Chengalpattu",
+      "vtr": 86.3,
+      "vtr2021": 63.54,
+      "delta": 22.76
+    },
+    {
+      "no": 33,
+      "name": "Thiruporur",
+      "vtr": 87.58,
+      "vtr2021": 76.36,
+      "delta": 11.22
+    },
+    {
+      "no": 34,
+      "name": "Cheyyur",
+      "vtr": 89.34,
+      "vtr2021": 77.88,
+      "delta": 11.46
+    },
+    {
+      "no": 35,
+      "name": "Madurantakam",
+      "vtr": 92.11,
+      "vtr2021": 80.65,
+      "delta": 11.46
+    },
+    {
+      "no": 36,
+      "name": "Uthiramerur",
+      "vtr": 91.02,
+      "vtr2021": 80.1,
+      "delta": 10.92
+    },
+    {
+      "no": 37,
+      "name": "Kancheepuram",
+      "vtr": 87.15,
+      "vtr2021": 73.28,
+      "delta": 13.87
+    },
+    {
+      "no": 38,
+      "name": "Arakkonam",
+      "vtr": 90.12,
+      "vtr2021": 74.89,
+      "delta": 15.23
+    },
+    {
+      "no": 39,
+      "name": "Sholingur",
+      "vtr": 89.43,
+      "vtr2021": 80.09,
+      "delta": 9.34
+    },
+    {
+      "no": 40,
+      "name": "Katpadi",
+      "vtr": 87.86,
+      "vtr2021": 74.0,
+      "delta": 13.86
+    },
+    {
+      "no": 41,
+      "name": "Ranipet",
+      "vtr": 87.98,
+      "vtr2021": 77.24,
+      "delta": 10.74
+    },
+    {
+      "no": 42,
+      "name": "Arcot",
+      "vtr": 90.52,
+      "vtr2021": 79.62,
+      "delta": 10.9
+    },
+    {
+      "no": 43,
+      "name": "Vellore",
+      "vtr": 87.97,
+      "vtr2021": 70.25,
+      "delta": 17.72
+    },
+    {
+      "no": 44,
+      "name": "Anaikattu",
+      "vtr": 89.59,
+      "vtr2021": 77.05,
+      "delta": 12.54
+    },
+    {
+      "no": 45,
+      "name": "Kilvaithinankuppam",
+      "vtr": 87.25,
+      "vtr2021": 76.5,
+      "delta": 10.75
+    },
+    {
+      "no": 46,
+      "name": "Gudiyattam",
+      "vtr": 90.44,
+      "vtr2021": 72.56,
+      "delta": 17.88
+    },
+    {
+      "no": 47,
+      "name": "Vaniyambadi",
+      "vtr": 86.83,
+      "vtr2021": 75.55,
+      "delta": 11.28
+    },
+    {
+      "no": 48,
+      "name": "Ambur",
+      "vtr": 90.23,
+      "vtr2021": 74.01,
+      "delta": 16.22
+    },
+    {
+      "no": 49,
+      "name": "Jolarpet",
+      "vtr": 89.42,
+      "vtr2021": 80.98,
+      "delta": 8.44
+    },
+    {
+      "no": 50,
+      "name": "Tiruppattur",
+      "vtr": 88.53,
+      "vtr2021": 76.97,
+      "delta": 11.56
+    },
+    {
+      "no": 51,
+      "name": "Uthangarai",
+      "vtr": 86.03,
+      "vtr2021": 78.37,
+      "delta": 7.66
+    },
+    {
+      "no": 52,
+      "name": "Bargur",
+      "vtr": 88.0,
+      "vtr2021": 79.08,
+      "delta": 8.92
+    },
+    {
+      "no": 53,
+      "name": "Krishnagiri",
+      "vtr": 84.85,
+      "vtr2021": 78.5,
+      "delta": 6.35
+    },
+    {
+      "no": 54,
+      "name": "Veppanahalli",
+      "vtr": 89.72,
+      "vtr2021": 81.31,
+      "delta": 8.41
+    },
+    {
+      "no": 55,
+      "name": "Hosur",
+      "vtr": 80.33,
+      "vtr2021": 70.09,
+      "delta": 10.24
+    },
+    {
+      "no": 56,
+      "name": "Thalli",
+      "vtr": 84.35,
+      "vtr2021": 77.06,
+      "delta": 7.29
+    },
+    {
+      "no": 57,
+      "name": "Palacodu",
+      "vtr": 92.57,
+      "vtr2021": 87.37,
+      "delta": 5.2
+    },
+    {
+      "no": 58,
+      "name": "Pennagaram",
+      "vtr": 90.51,
+      "vtr2021": 85.0,
+      "delta": 5.51
+    },
+    {
+      "no": 59,
+      "name": "Dharmapuri",
+      "vtr": 89.48,
+      "vtr2021": 79.69,
+      "delta": 9.79
+    },
+    {
+      "no": 60,
+      "name": "Pappireddipatti",
+      "vtr": 90.39,
+      "vtr2021": 82.15,
+      "delta": 8.24
+    },
+    {
+      "no": 61,
+      "name": "Harur",
+      "vtr": 87.7,
+      "vtr2021": 78.46,
+      "delta": 9.24
+    },
+    {
+      "no": 62,
+      "name": "Chengam",
+      "vtr": 87.73,
+      "vtr2021": 80.66,
+      "delta": 7.07
+    },
+    {
+      "no": 63,
+      "name": "Tiruvannamalai",
+      "vtr": 86.78,
+      "vtr2021": 71.69,
+      "delta": 15.09
+    },
+    {
+      "no": 64,
+      "name": "Kilpennathur",
+      "vtr": 89.62,
+      "vtr2021": 79.35,
+      "delta": 10.27
+    },
+    {
+      "no": 65,
+      "name": "Kalasapakkam",
+      "vtr": 89.97,
+      "vtr2021": 80.36,
+      "delta": 9.61
+    },
+    {
+      "no": 66,
+      "name": "Polur",
+      "vtr": 88.95,
+      "vtr2021": 82.33,
+      "delta": 6.62
+    },
+    {
+      "no": 67,
+      "name": "Arani",
+      "vtr": 89.06,
+      "vtr2021": 79.84,
+      "delta": 9.22
+    },
+    {
+      "no": 68,
+      "name": "Cheyyar",
+      "vtr": 91.91,
+      "vtr2021": 81.69,
+      "delta": 10.22
+    },
+    {
+      "no": 69,
+      "name": "Vandavasi",
+      "vtr": 88.3,
+      "vtr2021": 76.81,
+      "delta": 11.49
+    },
+    {
+      "no": 70,
+      "name": "Gingee",
+      "vtr": 87.81,
+      "vtr2021": 78.21,
+      "delta": 9.6
+    },
+    {
+      "no": 71,
+      "name": "Mailam",
+      "vtr": 89.4,
+      "vtr2021": 79.5,
+      "delta": 9.9
+    },
+    {
+      "no": 72,
+      "name": "Tindivanam",
+      "vtr": 88.43,
+      "vtr2021": 78.43,
+      "delta": 10.0
+    },
+    {
+      "no": 73,
+      "name": "Vanur",
+      "vtr": 91.05,
+      "vtr2021": 79.79,
+      "delta": 11.26
+    },
+    {
+      "no": 74,
+      "name": "Viluppuram",
+      "vtr": 86.22,
+      "vtr2021": 76.97,
+      "delta": 9.25
+    },
+    {
+      "no": 75,
+      "name": "Vikravandi",
+      "vtr": 90.43,
+      "vtr2021": 81.39,
+      "delta": 9.04
+    },
+    {
+      "no": 76,
+      "name": "Tirukkoyilur",
+      "vtr": 88.18,
+      "vtr2021": 76.27,
+      "delta": 11.91
+    },
+    {
+      "no": 77,
+      "name": "Ulundurpettai",
+      "vtr": 89.36,
+      "vtr2021": 82.62,
+      "delta": 6.74
+    },
+    {
+      "no": 78,
+      "name": "Rishivandiyam",
+      "vtr": 87.53,
+      "vtr2021": 80.18,
+      "delta": 7.35
+    },
+    {
+      "no": 79,
+      "name": "Sankarapuram",
+      "vtr": 86.95,
+      "vtr2021": 79.58,
+      "delta": 7.37
+    },
+    {
+      "no": 80,
+      "name": "Kallakurichi",
+      "vtr": 87.93,
+      "vtr2021": 78.16,
+      "delta": 9.77
+    },
+    {
+      "no": 81,
+      "name": "Gangavalli",
+      "vtr": 88.61,
+      "vtr2021": 77.11,
+      "delta": 11.5
+    },
+    {
+      "no": 82,
+      "name": "Attur",
+      "vtr": 90.12,
+      "vtr2021": 77.26,
+      "delta": 12.86
+    },
+    {
+      "no": 83,
+      "name": "Yercaud",
+      "vtr": 90.96,
+      "vtr2021": 83.09,
+      "delta": 7.87
+    },
+    {
+      "no": 84,
+      "name": "Omalur",
+      "vtr": 90.69,
+      "vtr2021": 83.28,
+      "delta": 7.41
+    },
+    {
+      "no": 85,
+      "name": "Mettur",
+      "vtr": 89.18,
+      "vtr2021": 75.01,
+      "delta": 14.17
+    },
+    {
+      "no": 86,
+      "name": "Edappadi",
+      "vtr": 92.02,
+      "vtr2021": 85.64,
+      "delta": 6.38
+    },
+    {
+      "no": 87,
+      "name": "Sankari",
+      "vtr": 92.49,
+      "vtr2021": 83.71,
+      "delta": 8.78
+    },
+    {
+      "no": 88,
+      "name": "Salem (West)",
+      "vtr": 89.71,
+      "vtr2021": 71.81,
+      "delta": 17.9
+    },
+    {
+      "no": 89,
+      "name": "Salem (North)",
+      "vtr": 87.39,
+      "vtr2021": 72.14,
+      "delta": 15.25
+    },
+    {
+      "no": 90,
+      "name": "Salem (South)",
+      "vtr": 91.01,
+      "vtr2021": 76.0,
+      "delta": 15.01
+    },
+    {
+      "no": 91,
+      "name": "Veerapandi",
+      "vtr": 93.38,
+      "vtr2021": 85.64,
+      "delta": 7.74
+    },
+    {
+      "no": 92,
+      "name": "Rasipuram",
+      "vtr": 90.38,
+      "vtr2021": 82.05,
+      "delta": 8.33
+    },
+    {
+      "no": 93,
+      "name": "Senthamangalam",
+      "vtr": 88.49,
+      "vtr2021": 80.93,
+      "delta": 7.56
+    },
+    {
+      "no": 94,
+      "name": "Namakkal",
+      "vtr": 87.72,
+      "vtr2021": 78.57,
+      "delta": 9.15
+    },
+    {
+      "no": 95,
+      "name": "Paramathi-Velur",
+      "vtr": 89.92,
+      "vtr2021": 81.14,
+      "delta": 8.78
+    },
+    {
+      "no": 96,
+      "name": "Tiruchengodu",
+      "vtr": 90.02,
+      "vtr2021": 78.71,
+      "delta": 11.31
+    },
+    {
+      "no": 97,
+      "name": "Kumarapalayam",
+      "vtr": 92.64,
+      "vtr2021": 78.85,
+      "delta": 13.79
+    },
+    {
+      "no": 98,
+      "name": "Erode (East)",
+      "vtr": 89.78,
+      "vtr2021": 66.24,
+      "delta": 23.54
+    },
+    {
+      "no": 99,
+      "name": "Erode (West)",
+      "vtr": 87.95,
+      "vtr2021": 69.36,
+      "delta": 18.59
+    },
+    {
+      "no": 100,
+      "name": "Modakkurichi",
+      "vtr": 90.35,
+      "vtr2021": 75.26,
+      "delta": 15.09
+    },
+    {
+      "no": 101,
+      "name": "Dharapuram",
+      "vtr": 88.85,
+      "vtr2021": 74.15,
+      "delta": 14.7
+    },
+    {
+      "no": 102,
+      "name": "Kangayam",
+      "vtr": 91.54,
+      "vtr2021": 77.19,
+      "delta": 14.35
+    },
+    {
+      "no": 103,
+      "name": "Perundurai",
+      "vtr": 92.42,
+      "vtr2021": 82.6,
+      "delta": 9.82
+    },
+    {
+      "no": 104,
+      "name": "Bhavani",
+      "vtr": 91.96,
+      "vtr2021": 83.5,
+      "delta": 8.46
+    },
+    {
+      "no": 105,
+      "name": "Anthiyur",
+      "vtr": 88.15,
+      "vtr2021": 79.69,
+      "delta": 8.46
+    },
+    {
+      "no": 106,
+      "name": "Gobichettipalayam",
+      "vtr": 90.74,
+      "vtr2021": 82.52,
+      "delta": 8.22
+    },
+    {
+      "no": 107,
+      "name": "Bhavanisagar",
+      "vtr": 89.52,
+      "vtr2021": 77.37,
+      "delta": 12.15
+    },
+    {
+      "no": 108,
+      "name": "Udhagamandalam",
+      "vtr": 77.55,
+      "vtr2021": 67.82,
+      "delta": 9.73
+    },
+    {
+      "no": 109,
+      "name": "Gudalur",
+      "vtr": 80.77,
+      "vtr2021": 72.15,
+      "delta": 8.62
+    },
+    {
+      "no": 110,
+      "name": "Coonoor",
+      "vtr": 78.19,
+      "vtr2021": 69.79,
+      "delta": 8.4
+    },
+    {
+      "no": 111,
+      "name": "Mettuppalayam",
+      "vtr": 85.73,
+      "vtr2021": 75.14,
+      "delta": 10.59
+    },
+    {
+      "no": 112,
+      "name": "Avanashi",
+      "vtr": 90.57,
+      "vtr2021": 75.18,
+      "delta": 15.39
+    },
+    {
+      "no": 113,
+      "name": "Tiruppur (North)",
+      "vtr": 83.13,
+      "vtr2021": 62.44,
+      "delta": 20.69
+    },
+    {
+      "no": 114,
+      "name": "Tiruppur (South)",
+      "vtr": 90.71,
+      "vtr2021": 62.74,
+      "delta": 27.97
+    },
+    {
+      "no": 115,
+      "name": "Palladam",
+      "vtr": 90.73,
+      "vtr2021": 66.7,
+      "delta": 24.03
+    },
+    {
+      "no": 116,
+      "name": "Sulur",
+      "vtr": 88.12,
+      "vtr2021": 75.57,
+      "delta": 12.55
+    },
+    {
+      "no": 117,
+      "name": "Kavundampalayam",
+      "vtr": 85.69,
+      "vtr2021": 66.13,
+      "delta": 19.56
+    },
+    {
+      "no": 118,
+      "name": "Coimbatore (North)",
+      "vtr": 75.64,
+      "vtr2021": 59.21,
+      "delta": 16.43
+    },
+    {
+      "no": 119,
+      "name": "Thondamuthur",
+      "vtr": 87.54,
+      "vtr2021": 70.22,
+      "delta": 17.32
+    },
+    {
+      "no": 120,
+      "name": "Coimbatore (South)",
+      "vtr": 82.02,
+      "vtr2021": 60.69,
+      "delta": 21.33
+    },
+    {
+      "no": 121,
+      "name": "Singanallur",
+      "vtr": 81.18,
+      "vtr2021": 61.73,
+      "delta": 19.45
+    },
+    {
+      "no": 122,
+      "name": "Kinathukadavu",
+      "vtr": 87.04,
+      "vtr2021": 70.64,
+      "delta": 16.4
+    },
+    {
+      "no": 123,
+      "name": "Pollachi",
+      "vtr": 88.08,
+      "vtr2021": 77.34,
+      "delta": 10.74
+    },
+    {
+      "no": 124,
+      "name": "Valparai",
+      "vtr": 85.43,
+      "vtr2021": 70.04,
+      "delta": 15.39
+    },
+    {
+      "no": 125,
+      "name": "Udumalaipettai",
+      "vtr": 87.37,
+      "vtr2021": 71.31,
+      "delta": 16.06
+    },
+    {
+      "no": 126,
+      "name": "Madathukulam",
+      "vtr": 86.76,
+      "vtr2021": 72.45,
+      "delta": 14.31
+    },
+    {
+      "no": 127,
+      "name": "Palani",
+      "vtr": 86.0,
+      "vtr2021": 73.33,
+      "delta": 12.67
+    },
+    {
+      "no": 128,
+      "name": "Oddanchatram",
+      "vtr": 90.5,
+      "vtr2021": 83.08,
+      "delta": 7.42
+    },
+    {
+      "no": 129,
+      "name": "Athoor",
+      "vtr": 89.31,
+      "vtr2021": 77.96,
+      "delta": 11.35
+    },
+    {
+      "no": 130,
+      "name": "Nilakkottai",
+      "vtr": 88.04,
+      "vtr2021": 75.07,
+      "delta": 12.97
+    },
+    {
+      "no": 131,
+      "name": "Natham",
+      "vtr": 90.32,
+      "vtr2021": 78.95,
+      "delta": 11.37
+    },
+    {
+      "no": 132,
+      "name": "Dindigul",
+      "vtr": 85.88,
+      "vtr2021": 69.27,
+      "delta": 16.61
+    },
+    {
+      "no": 133,
+      "name": "Vedasandur",
+      "vtr": 91.26,
+      "vtr2021": 80.16,
+      "delta": 11.1
+    },
+    {
+      "no": 134,
+      "name": "Aravakurichi",
+      "vtr": 91.74,
+      "vtr2021": 81.92,
+      "delta": 9.82
+    },
+    {
+      "no": 135,
+      "name": "Karur",
+      "vtr": 93.39,
+      "vtr2021": 83.57,
+      "delta": 9.82
+    },
+    {
+      "no": 136,
+      "name": "Krishnarayapuram",
+      "vtr": 92.49,
+      "vtr2021": 84.17,
+      "delta": 8.32
+    },
+    {
+      "no": 137,
+      "name": "Kulithalai",
+      "vtr": 92.85,
+      "vtr2021": 86.16,
+      "delta": 6.69
+    },
+    {
+      "no": 138,
+      "name": "Manapparai",
+      "vtr": 88.68,
+      "vtr2021": 76.02,
+      "delta": 12.66
+    },
+    {
+      "no": 139,
+      "name": "Srirangam",
+      "vtr": 87.95,
+      "vtr2021": 76.15,
+      "delta": 11.8
+    },
+    {
+      "no": 140,
+      "name": "Tiruchirappalli (West)",
+      "vtr": 81.35,
+      "vtr2021": 67.01,
+      "delta": 14.34
+    },
+    {
+      "no": 141,
+      "name": "Tiruchirappalli (East)",
+      "vtr": 81.77,
+      "vtr2021": 66.87,
+      "delta": 14.9
+    },
+    {
+      "no": 142,
+      "name": "Thiruverumbur",
+      "vtr": 81.21,
+      "vtr2021": 66.59,
+      "delta": 14.62
+    },
+    {
+      "no": 143,
+      "name": "Lalgudi",
+      "vtr": 86.51,
+      "vtr2021": 79.23,
+      "delta": 7.28
+    },
+    {
+      "no": 144,
+      "name": "Manachanallur",
+      "vtr": 87.64,
+      "vtr2021": 79.63,
+      "delta": 8.01
+    },
+    {
+      "no": 145,
+      "name": "Musiri",
+      "vtr": 86.78,
+      "vtr2021": 75.98,
+      "delta": 10.8
+    },
+    {
+      "no": 146,
+      "name": "Thuraiyur",
+      "vtr": 86.51,
+      "vtr2021": 76.63,
+      "delta": 9.88
+    },
+    {
+      "no": 147,
+      "name": "Perambalur",
+      "vtr": 85.92,
+      "vtr2021": 78.2,
+      "delta": 7.72
+    },
+    {
+      "no": 148,
+      "name": "Kunnam",
+      "vtr": 85.04,
+      "vtr2021": 80.05,
+      "delta": 4.99
+    },
+    {
+      "no": 149,
+      "name": "Ariyalur",
+      "vtr": 88.23,
+      "vtr2021": 84.54,
+      "delta": 3.69
+    },
+    {
+      "no": 150,
+      "name": "Jayankondam",
+      "vtr": 85.14,
+      "vtr2021": 80.38,
+      "delta": 4.76
+    },
+    {
+      "no": 151,
+      "name": "Tittakudi",
+      "vtr": 83.25,
+      "vtr2021": 76.3,
+      "delta": 6.95
+    },
+    {
+      "no": 152,
+      "name": "Vriddhachalam",
+      "vtr": 86.09,
+      "vtr2021": 77.02,
+      "delta": 9.07
+    },
+    {
+      "no": 153,
+      "name": "Neyveli",
+      "vtr": 87.11,
+      "vtr2021": 74.25,
+      "delta": 12.86
+    },
+    {
+      "no": 154,
+      "name": "Panruti",
+      "vtr": 86.19,
+      "vtr2021": 79.6,
+      "delta": 6.59
+    },
+    {
+      "no": 155,
+      "name": "Cuddalore",
+      "vtr": 83.68,
+      "vtr2021": 74.77,
+      "delta": 8.91
+    },
+    {
+      "no": 156,
+      "name": "Kurinjipadi",
+      "vtr": 88.17,
+      "vtr2021": 82.06,
+      "delta": 6.11
+    },
+    {
+      "no": 157,
+      "name": "Bhuvanagiri",
+      "vtr": 87.68,
+      "vtr2021": 78.57,
+      "delta": 9.11
+    },
+    {
+      "no": 158,
+      "name": "Chidambaram",
+      "vtr": 83.6,
+      "vtr2021": 71.93,
+      "delta": 11.67
+    },
+    {
+      "no": 159,
+      "name": "Kattumannarkoil",
+      "vtr": 82.11,
+      "vtr2021": 75.87,
+      "delta": 6.24
+    },
+    {
+      "no": 160,
+      "name": "Sirkazhi",
+      "vtr": 82.34,
+      "vtr2021": 74.91,
+      "delta": 7.43
+    },
+    {
+      "no": 161,
+      "name": "Mayiladuthurai",
+      "vtr": 79.54,
+      "vtr2021": 70.14,
+      "delta": 9.4
+    },
+    {
+      "no": 162,
+      "name": "Poompuhar",
+      "vtr": 83.92,
+      "vtr2021": 75.19,
+      "delta": 8.73
+    },
+    {
+      "no": 163,
+      "name": "Nagapattinam",
+      "vtr": 85.79,
+      "vtr2021": 71.97,
+      "delta": 13.82
+    },
+    {
+      "no": 164,
+      "name": "Kilvelur",
+      "vtr": 87.83,
+      "vtr2021": 79.43,
+      "delta": 8.4
+    },
+    {
+      "no": 165,
+      "name": "Vedaranyam",
+      "vtr": 85.18,
+      "vtr2021": 80.6,
+      "delta": 4.58
+    },
+    {
+      "no": 166,
+      "name": "Thiruthuraipoondi",
+      "vtr": 83.53,
+      "vtr2021": 76.74,
+      "delta": 6.79
+    },
+    {
+      "no": 167,
+      "name": "Mannargudi",
+      "vtr": 81.97,
+      "vtr2021": 74.34,
+      "delta": 7.63
+    },
+    {
+      "no": 168,
+      "name": "Thiruvarur",
+      "vtr": 83.03,
+      "vtr2021": 73.25,
+      "delta": 9.78
+    },
+    {
+      "no": 169,
+      "name": "Nannilam",
+      "vtr": 85.59,
+      "vtr2021": 81.08,
+      "delta": 4.51
+    },
+    {
+      "no": 170,
+      "name": "Thiruvidaimarudur",
+      "vtr": 80.15,
+      "vtr2021": 75.76,
+      "delta": 4.39
+    },
+    {
+      "no": 171,
+      "name": "Kumbakonam",
+      "vtr": 80.83,
+      "vtr2021": 71.45,
+      "delta": 9.38
+    },
+    {
+      "no": 172,
+      "name": "Papanasam",
+      "vtr": 79.96,
+      "vtr2021": 74.76,
+      "delta": 5.2
+    },
+    {
+      "no": 173,
+      "name": "Thiruvaiyaru",
+      "vtr": 85.01,
+      "vtr2021": 78.11,
+      "delta": 6.9
+    },
+    {
+      "no": 174,
+      "name": "Thanjavur",
+      "vtr": 77.39,
+      "vtr2021": 65.72,
+      "delta": 11.67
+    },
+    {
+      "no": 175,
+      "name": "Orathanadu",
+      "vtr": 82.7,
+      "vtr2021": 78.29,
+      "delta": 4.41
+    },
+    {
+      "no": 176,
+      "name": "Pattukkottai",
+      "vtr": 75.29,
+      "vtr2021": 71.66,
+      "delta": 3.63
+    },
+    {
+      "no": 177,
+      "name": "Peravurani",
+      "vtr": 81.83,
+      "vtr2021": 77.02,
+      "delta": 4.81
+    },
+    {
+      "no": 178,
+      "name": "Gandharvakottai",
+      "vtr": 84.76,
+      "vtr2021": 74.45,
+      "delta": 10.31
+    },
+    {
+      "no": 179,
+      "name": "Viralimalai",
+      "vtr": 89.83,
+      "vtr2021": 85.43,
+      "delta": 4.4
+    },
+    {
+      "no": 180,
+      "name": "Pudukkottai",
+      "vtr": 83.26,
+      "vtr2021": 72.94,
+      "delta": 10.32
+    },
+    {
+      "no": 181,
+      "name": "Thirumayam",
+      "vtr": 81.94,
+      "vtr2021": 75.85,
+      "delta": 6.09
+    },
+    {
+      "no": 182,
+      "name": "Alangudi",
+      "vtr": 84.43,
+      "vtr2021": 78.47,
+      "delta": 5.96
+    },
+    {
+      "no": 183,
+      "name": "Aranthangi",
+      "vtr": 78.94,
+      "vtr2021": 70.21,
+      "delta": 8.73
+    },
+    {
+      "no": 184,
+      "name": "Karaikudi",
+      "vtr": 73.99,
+      "vtr2021": 66.23,
+      "delta": 7.76
+    },
+    {
+      "no": 185,
+      "name": "Tiruppattur",
+      "vtr": 77.28,
+      "vtr2021": 71.98,
+      "delta": 5.3
+    },
+    {
+      "no": 186,
+      "name": "Sivaganga",
+      "vtr": 75.81,
+      "vtr2021": 66.29,
+      "delta": 9.52
+    },
+    {
+      "no": 187,
+      "name": "Manamadurai",
+      "vtr": 79.12,
+      "vtr2021": 72.05,
+      "delta": 7.07
+    },
+    {
+      "no": 188,
+      "name": "Melur",
+      "vtr": 82.42,
+      "vtr2021": 74.23,
+      "delta": 8.19
+    },
+    {
+      "no": 189,
+      "name": "Madurai East",
+      "vtr": 79.8,
+      "vtr2021": 71.34,
+      "delta": 8.46
+    },
+    {
+      "no": 190,
+      "name": "Sholavandan",
+      "vtr": 87.12,
+      "vtr2021": 79.49,
+      "delta": 7.63
+    },
+    {
+      "no": 191,
+      "name": "Madurai North",
+      "vtr": 72.63,
+      "vtr2021": 63.6,
+      "delta": 9.03
+    },
+    {
+      "no": 192,
+      "name": "Madurai South",
+      "vtr": 78.26,
+      "vtr2021": 63.8,
+      "delta": 14.46
+    },
+    {
+      "no": 193,
+      "name": "Madurai Central",
+      "vtr": 73.86,
+      "vtr2021": 61.03,
+      "delta": 12.83
+    },
+    {
+      "no": 194,
+      "name": "Madurai West",
+      "vtr": 77.81,
+      "vtr2021": 65.12,
+      "delta": 12.69
+    },
+    {
+      "no": 195,
+      "name": "Thiruparankundram",
+      "vtr": 81.39,
+      "vtr2021": 72.73,
+      "delta": 8.66
+    },
+    {
+      "no": 196,
+      "name": "Thirumangalam",
+      "vtr": 86.8,
+      "vtr2021": 78.13,
+      "delta": 8.67
+    },
+    {
+      "no": 197,
+      "name": "Usilampatti",
+      "vtr": 83.06,
+      "vtr2021": 73.82,
+      "delta": 9.24
+    },
+    {
+      "no": 198,
+      "name": "Andipatti",
+      "vtr": 83.26,
+      "vtr2021": 74.85,
+      "delta": 8.41
+    },
+    {
+      "no": 199,
+      "name": "Periyakulam",
+      "vtr": 78.51,
+      "vtr2021": 69.94,
+      "delta": 8.57
+    },
+    {
+      "no": 200,
+      "name": "Bodinayakanur",
+      "vtr": 82.42,
+      "vtr2021": 76.3,
+      "delta": 6.12
+    },
+    {
+      "no": 201,
+      "name": "Cumbum",
+      "vtr": 81.2,
+      "vtr2021": 69.51,
+      "delta": 11.69
+    },
+    {
+      "no": 202,
+      "name": "Rajapalayam",
+      "vtr": 84.47,
+      "vtr2021": 73.89,
+      "delta": 10.58
+    },
+    {
+      "no": 203,
+      "name": "Srivilliputhur",
+      "vtr": 84.72,
+      "vtr2021": 73.14,
+      "delta": 11.58
+    },
+    {
+      "no": 204,
+      "name": "Sattur",
+      "vtr": 85.39,
+      "vtr2021": 75.17,
+      "delta": 10.22
+    },
+    {
+      "no": 205,
+      "name": "Sivakasi",
+      "vtr": 84.26,
+      "vtr2021": 70.16,
+      "delta": 14.1
+    },
+    {
+      "no": 206,
+      "name": "Virudhunagar",
+      "vtr": 82.77,
+      "vtr2021": 71.27,
+      "delta": 11.5
+    },
+    {
+      "no": 207,
+      "name": "Aruppukkottai",
+      "vtr": 84.58,
+      "vtr2021": 75.6,
+      "delta": 8.98
+    },
+    {
+      "no": 208,
+      "name": "Tiruchuli",
+      "vtr": 87.21,
+      "vtr2021": 77.46,
+      "delta": 9.75
+    },
+    {
+      "no": 209,
+      "name": "Paramakudi",
+      "vtr": 79.48,
+      "vtr2021": 70.59,
+      "delta": 8.89
+    },
+    {
+      "no": 210,
+      "name": "Tiruvadanai",
+      "vtr": 77.0,
+      "vtr2021": 68.72,
+      "delta": 8.28
+    },
+    {
+      "no": 211,
+      "name": "Ramanathapuram",
+      "vtr": 75.4,
+      "vtr2021": 68.81,
+      "delta": 6.59
+    },
+    {
+      "no": 212,
+      "name": "Mudhukulathur",
+      "vtr": 76.22,
+      "vtr2021": 70.29,
+      "delta": 5.93
+    },
+    {
+      "no": 213,
+      "name": "Vilathikulam",
+      "vtr": 84.13,
+      "vtr2021": 76.52,
+      "delta": 7.61
+    },
+    {
+      "no": 214,
+      "name": "Thoothukkudi",
+      "vtr": 80.92,
+      "vtr2021": 65.07,
+      "delta": 15.85
+    },
+    {
+      "no": 215,
+      "name": "Tiruchendur",
+      "vtr": 78.89,
+      "vtr2021": 70.04,
+      "delta": 8.85
+    },
+    {
+      "no": 216,
+      "name": "Srivaikuntam",
+      "vtr": 81.04,
+      "vtr2021": 72.34,
+      "delta": 8.7
+    },
+    {
+      "no": 217,
+      "name": "Ottapidaram",
+      "vtr": 79.34,
+      "vtr2021": 69.82,
+      "delta": 9.52
+    },
+    {
+      "no": 218,
+      "name": "Kovilpatti",
+      "vtr": 79.21,
+      "vtr2021": 67.43,
+      "delta": 11.78
+    },
+    {
+      "no": 219,
+      "name": "Sankarankovil",
+      "vtr": 81.09,
+      "vtr2021": 71.48,
+      "delta": 9.61
+    },
+    {
+      "no": 220,
+      "name": "Vasudevanallur",
+      "vtr": 81.48,
+      "vtr2021": 71.87,
+      "delta": 9.61
+    },
+    {
+      "no": 221,
+      "name": "Kadayanallur",
+      "vtr": 81.38,
+      "vtr2021": 70.35,
+      "delta": 11.03
+    },
+    {
+      "no": 222,
+      "name": "Tenkasi",
+      "vtr": 82.42,
+      "vtr2021": 72.4,
+      "delta": 10.02
+    },
+    {
+      "no": 223,
+      "name": "Alangulam",
+      "vtr": 84.57,
+      "vtr2021": 77.4,
+      "delta": 7.17
+    },
+    {
+      "no": 224,
+      "name": "Tirunelveli",
+      "vtr": 78.21,
+      "vtr2021": 66.91,
+      "delta": 11.3
+    },
+    {
+      "no": 225,
+      "name": "Ambasamudram",
+      "vtr": 82.79,
+      "vtr2021": 72.03,
+      "delta": 10.76
+    },
+    {
+      "no": 226,
+      "name": "Palayamkottai",
+      "vtr": 68.97,
+      "vtr2021": 57.76,
+      "delta": 11.21
+    },
+    {
+      "no": 227,
+      "name": "Nanguneri",
+      "vtr": 80.05,
+      "vtr2021": 68.59,
+      "delta": 11.46
+    },
+    {
+      "no": 228,
+      "name": "Radhapuram",
+      "vtr": 79.92,
+      "vtr2021": 68.08,
+      "delta": 11.84
+    },
+    {
+      "no": 229,
+      "name": "Kanniyakumari",
+      "vtr": 81.43,
+      "vtr2021": 75.19,
+      "delta": 6.24
+    },
+    {
+      "no": 230,
+      "name": "Nagercoil",
+      "vtr": 74.72,
+      "vtr2021": 67.06,
+      "delta": 7.66
+    },
+    {
+      "no": 231,
+      "name": "Colachal",
+      "vtr": 74.13,
+      "vtr2021": 67.27,
+      "delta": 6.86
+    },
+    {
+      "no": 232,
+      "name": "Padmanabhapuram",
+      "vtr": 75.42,
+      "vtr2021": 70.08,
+      "delta": 5.34
+    },
+    {
+      "no": 233,
+      "name": "Vilavancode",
+      "vtr": 75.77,
+      "vtr2021": 66.83,
+      "delta": 8.94
+    },
+    {
+      "no": 234,
+      "name": "Killiyoor",
+      "vtr": 71.29,
+      "vtr2021": 65.87,
+      "delta": 5.42
+    }
   ]
 }

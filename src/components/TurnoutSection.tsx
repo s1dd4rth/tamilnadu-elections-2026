@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { SERIF, MONO, COLORS } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import turnoutData from '@/data/turnout.json';
@@ -9,27 +9,32 @@ import { MAP_COORDS, TN_CLIP_PATHS, VORONOI_CELLS } from '@/data/map-data';
 import mapSvgData from '@/data/map-svg.json';
 import { useIsMobile } from '@/hooks/useMediaQuery';
 
+type MapMode = '2026' | 'delta';
+
 const vtrByDistrictId: Record<string, number> = Object.fromEntries(
   turnoutData.districts.map(d => [d.id, d.vtr])
 );
-
-// ─────────────────────────────────────────────────────────────
-// Heat map — colours each district by VTR%.
-// cream (low) → pale rust → deep rust → ink (high).
-// ─────────────────────────────────────────────────────────────
+const vtr2021ByDistrictId: Record<string, number | null> = Object.fromEntries(
+  turnoutData.districts.map(d => [d.id, (d as any).vtr2021 ?? null])
+);
+const deltaByDistrictId: Record<string, number | null> = Object.fromEntries(
+  turnoutData.districts.map(d => [d.id, (d as any).delta ?? null])
+);
 
 const vtrVals = turnoutData.districts.map(d => d.vtr);
 const MIN_V = Math.min(...vtrVals);
 const MAX_V = Math.max(...vtrVals);
 
-const colorForVtr = (v: number) => {
-  const t = Math.max(0, Math.min(1, (v - MIN_V) / (MAX_V - MIN_V)));
-  const stops: [number, number[]][] = [
-    [0.00, [250, 244, 232]], // #faf4e8 cream
-    [0.35, [232, 201, 176]], // #e8c9b0 pale rust
-    [0.70, [160, 64, 32]],   // #a04020 deep rust (accent)
-    [1.00, [58, 44, 34]],    // near-ink
-  ];
+const deltaVals = turnoutData.districts.map(d => (d as any).delta).filter((x: any) => x != null) as number[];
+const MIN_D = Math.min(...deltaVals);
+const MAX_D = Math.max(...deltaVals);
+
+// ─────────────────────────────────────────────────────────────
+// Colour ramps.
+// ─────────────────────────────────────────────────────────────
+
+function rampColor(t: number, stops: [number, number[]][]): string {
+  t = Math.max(0, Math.min(1, t));
   let a = stops[0], b = stops[stops.length - 1];
   for (let i = 0; i < stops.length - 1; i++) {
     if (t >= stops[i][0] && t <= stops[i + 1][0]) { a = stops[i]; b = stops[i + 1]; break; }
@@ -37,13 +42,48 @@ const colorForVtr = (v: number) => {
   const s = (t - a[0]) / (b[0] - a[0] || 1);
   const rgb = a[1].map((v0, i) => Math.round(v0 + (b[1][i] - v0) * s));
   return '#' + rgb.map(v => v.toString(16).padStart(2, '0')).join('');
-};
+}
 
-const TurnoutMap = ({ selected, onSelect, onHover, hovered }: any) => {
+// Cream → pale rust → deep rust → near-ink for turnout level.
+const colorForVtr = (v: number) => rampColor(
+  (v - MIN_V) / (MAX_V - MIN_V),
+  [
+    [0.00, [250, 244, 232]],
+    [0.35, [232, 201, 176]],
+    [0.70, [160, 64, 32]],
+    [1.00, [58, 44, 34]],
+  ]
+);
+
+// Pale ink → deep ink for change-since-2021 (all deltas positive).
+const colorForDelta = (d: number) => rampColor(
+  (d - MIN_D) / (MAX_D - MIN_D),
+  [
+    [0.00, [245, 235, 218]],
+    [0.50, [200, 136, 106]],
+    [1.00, [26, 20, 16]],
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// Map.
+// ─────────────────────────────────────────────────────────────
+
+const TurnoutMap = ({ mode, selected, onSelect, onHover, hovered }: any) => {
   const activeId = hovered || selected;
   const activeDistrict = districtsData.find(d => d.id === activeId);
   const activeCoords = activeId ? (MAP_COORDS as any)[activeId] : null;
   const activeVtr = activeId ? vtrByDistrictId[activeId] : null;
+  const activeDelta = activeId ? deltaByDistrictId[activeId] : null;
+
+  const fillFor = (d: { id: string }) => {
+    if (mode === 'delta') {
+      const dv = deltaByDistrictId[d.id];
+      return dv != null ? colorForDelta(dv) : '#eee';
+    }
+    const v = vtrByDistrictId[d.id];
+    return v != null ? colorForVtr(v) : '#eee';
+  };
 
   return (
     <svg viewBox="0 0 1591 1975" style={{ width: '100%', height: 'auto', display: 'block' }} preserveAspectRatio="xMidYMid meet">
@@ -55,15 +95,7 @@ const TurnoutMap = ({ selected, onSelect, onHover, hovered }: any) => {
         {districtsData.map((d) => {
           const pts = (VORONOI_CELLS as any)[d.id];
           if (!pts) return null;
-          const v = vtrByDistrictId[d.id];
-          return (
-            <polygon
-              key={'heat-' + d.id}
-              points={pts}
-              fill={v !== undefined ? colorForVtr(v) : '#faf4e8'}
-              stroke="none"
-            />
-          );
+          return <polygon key={'heat-' + d.id} points={pts} fill={fillFor(d)} stroke="none" />;
         })}
       </g>
 
@@ -105,63 +137,62 @@ const TurnoutMap = ({ selected, onSelect, onHover, hovered }: any) => {
         );
       })}
 
-      {activeDistrict && activeCoords && activeVtr !== null && (() => {
+      {activeDistrict && activeCoords && (() => {
         const [cx, cy] = activeCoords;
         const labelAbove = cy > 200;
         const dy = labelAbove ? -54 : 54;
+        const mainNum = mode === 'delta' && activeDelta != null ? `+${activeDelta.toFixed(2)} pp` : `${(activeVtr ?? 0).toFixed(2)}% VTR`;
         return (
           <g style={{ pointerEvents: 'none' }}>
             <line x1={cx} y1={cy} x2={cx} y2={cy + dy} stroke={COLORS.accent} strokeWidth="2" />
             <rect x={cx - 130} y={cy + dy - (labelAbove ? 52 : 0)} width="260" height="52" fill={COLORS.background} stroke={COLORS.text} strokeWidth="1.5" />
             <text x={cx} y={cy + dy - (labelAbove ? 26 : -22)} fontSize="28" fontFamily={SERIF} fontStyle="italic" fontWeight="800" textAnchor="middle" fill={COLORS.text}>{activeDistrict.name}</text>
-            <text x={cx} y={cy + dy - (labelAbove ? 8 : -40)} fontSize="20" fontFamily={MONO} textAnchor="middle" fill={COLORS.accent} style={{ fontFeatureSettings: '"tnum" 1', fontWeight: 600 }}>{activeVtr.toFixed(2)}% VTR</text>
+            <text x={cx} y={cy + dy - (labelAbove ? 8 : -40)} fontSize="20" fontFamily={MONO} textAnchor="middle" fill={COLORS.accent} style={{ fontFeatureSettings: '"tnum" 1', fontWeight: 600 }}>{mainNum}</text>
           </g>
         );
       })()}
 
-      {/* North arrow */}
       <g transform="translate(1500, 100)" style={{ pointerEvents: 'none' }}>
         <text fontFamily={MONO} fontSize="32" textAnchor="middle" fill={COLORS.text} fontWeight="700">N</text>
         <line x1="0" y1="10" x2="0" y2="55" stroke={COLORS.text} strokeWidth="3" />
         <polygon points="0,55 -7,42 7,42" fill={COLORS.text} />
       </g>
 
-      {/* Legend */}
       <g transform="translate(40, 1720)" style={{ pointerEvents: 'none' }}>
-        <rect x="-10" y="-28" width="360" height="110" fill={COLORS.background} fillOpacity="0.9" stroke={COLORS.text} strokeWidth="1" />
+        <rect x="-10" y="-28" width="380" height="110" fill={COLORS.background} fillOpacity="0.9" stroke={COLORS.text} strokeWidth="1" />
         <text x="0" y="-10" fontFamily={MONO} fontSize="16" letterSpacing="2" fill={COLORS.muted} fontWeight="600">
-          APPROXIMATE TURNOUT (VTR %)
+          {mode === 'delta' ? 'TURNOUT CHANGE 2021 → 2026 (PP)' : 'APPROXIMATE TURNOUT (VTR %)'}
         </text>
         {[...Array(11)].map((_, i) => {
           const t = i / 10;
-          const v = MIN_V + (MAX_V - MIN_V) * t;
-          return (
-            <rect key={i} x={i * 30} y={8} width="30" height="20" fill={colorForVtr(v)} stroke={COLORS.text} strokeWidth="0.5" />
-          );
+          const fill = mode === 'delta'
+            ? colorForDelta(MIN_D + (MAX_D - MIN_D) * t)
+            : colorForVtr(MIN_V + (MAX_V - MIN_V) * t);
+          return <rect key={i} x={i * 32} y={8} width="32" height="20" fill={fill} stroke={COLORS.text} strokeWidth="0.5" />;
         })}
         <text x="0" y="48" fontFamily={SERIF} fontSize="18" fontStyle="italic" fill="#3a302a">
-          {MIN_V.toFixed(1)}%
+          {mode === 'delta' ? `+${MIN_D.toFixed(1)}` : `${MIN_V.toFixed(1)}%`}
         </text>
-        <text x="330" y="48" fontFamily={SERIF} fontSize="18" fontStyle="italic" textAnchor="end" fill="#3a302a">
-          {MAX_V.toFixed(1)}%
+        <text x="350" y="48" fontFamily={SERIF} fontSize="18" fontStyle="italic" textAnchor="end" fill="#3a302a">
+          {mode === 'delta' ? `+${MAX_D.toFixed(1)}` : `${MAX_V.toFixed(1)}%`}
         </text>
-        <text x="165" y="70" fontFamily={SERIF} fontSize="16" fontStyle="italic" textAnchor="middle" fill={COLORS.muted}>
-          Kanniyakumari (lowest) → Karur (highest)
+        <text x="175" y="70" fontFamily={SERIF} fontSize="16" fontStyle="italic" textAnchor="middle" fill={COLORS.muted}>
+          {mode === 'delta' ? 'Ariyalur (least changed) → Chennai (most changed)' : 'Kanniyakumari (lowest) → Karur (highest)'}
         </text>
       </g>
 
       <text x="40" y="1955" fontFamily={MONO} fontSize="16" fill={COLORS.muted} letterSpacing="1.5" style={{ pointerEvents: 'none' }}>
-        POLL DATE · 23 APR 2026 · ECINET PROVISIONAL
+        POLL DATE · 23 APR 2026 · ECINET PROVISIONAL · 2021 BASELINE FROM TCPD / ECI
       </text>
     </svg>
   );
 };
 
 // ─────────────────────────────────────────────────────────────
-// Side panel that responds to map hover/click.
+// Side panel.
 // ─────────────────────────────────────────────────────────────
 
-const DistrictVtrPanel = ({ district }: any) => {
+const DistrictVtrPanel = ({ district, mode }: any) => {
   if (!district) {
     const top = [...turnoutData.districts].sort((a, b) => b.vtr - a.vtr).slice(0, 3);
     const bot = [...turnoutData.districts].sort((a, b) => a.vtr - b.vtr).slice(0, 3);
@@ -169,7 +200,7 @@ const DistrictVtrPanel = ({ district }: any) => {
       <div style={{ fontFamily: SERIF, color: '#3a302a', fontSize: '14px', lineHeight: 1.6 }}>
         <SmallCaps style={{ color: COLORS.accent }}>District Atlas</SmallCaps>
         <p style={{ margin: '10px 0 0', fontStyle: 'italic' }}>
-          The state averaged <strong style={{ color: COLORS.text, fontStyle: 'normal' }}>{turnoutData.state.vtr2026}%</strong>, but the variance between districts is a 17-point canyon. Hover any polygon for its number. Click to pin it.
+          The state averaged <strong style={{ color: COLORS.text, fontStyle: 'normal' }}>{turnoutData.state.vtr2026}%</strong>, a <strong style={{ color: COLORS.accent, fontStyle: 'normal' }}>+{(turnoutData.state.vtr2026 - turnoutData.state.vtr2021).toFixed(2)} pp</strong> jump over 2021. Toggle the map to see which districts moved, and by how much. Hover or click a polygon to pin its detail here.
         </p>
         <div style={{ marginTop: '22px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
           <div>
@@ -195,8 +226,14 @@ const DistrictVtrPanel = ({ district }: any) => {
     );
   }
   const v = vtrByDistrictId[district.id];
+  const v21 = vtr2021ByDistrictId[district.id];
+  const delta = deltaByDistrictId[district.id];
   const rank = [...turnoutData.districts].sort((a, b) => b.vtr - a.vtr).findIndex(x => x.id === district.id) + 1;
   const gapVsState = v - turnoutData.state.vtr2026;
+
+  const isDelta = mode === 'delta';
+  const mainDisplay = isDelta && delta != null ? `+${delta.toFixed(2)} pp` : `${v.toFixed(2)}%`;
+  const mainLabel = isDelta ? 'CHANGE 2021 → 2026' : `APPROXIMATE TURNOUT · ${gapVsState >= 0 ? '+' : ''}${gapVsState.toFixed(2)} PP VS STATE`;
 
   return (
     <div>
@@ -223,31 +260,50 @@ const DistrictVtrPanel = ({ district }: any) => {
         fontFeatureSettings: '"tnum" 1, "lnum" 1',
         letterSpacing: '-0.03em'
       }}>
-        {v.toFixed(2)}%
+        {mainDisplay}
       </div>
       <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.15em', color: COLORS.muted, marginTop: '4px' }}>
-        APPROXIMATE TURNOUT · {gapVsState >= 0 ? '+' : ''}{gapVsState.toFixed(2)} PP VS STATE
+        {mainLabel}
       </div>
 
-      <div style={{ marginTop: '22px', padding: '14px 0', borderTop: '1px solid #d4c9bc', borderBottom: '1px solid #d4c9bc' }}>
-        <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '14px', color: '#3a302a', margin: 0, lineHeight: 1.55 }}>
-          {gapVsState >= 5 ? (
-            <>Well above the state line. {district.name} is inside the top tier of the turnout atlas.</>
-          ) : gapVsState >= 0 ? (
-            <>Just above the state line — an ordinary showing in an extraordinary election.</>
-          ) : gapVsState >= -5 ? (
-            <>A hair below the state line — typical underperformance for {district.tag.toLowerCase()} territory.</>
-          ) : (
-            <>Meaningfully below the state line. Whatever lifted the rest of Tamil Nadu did not reach here.</>
-          )}
-        </p>
-      </div>
+      {v21 != null && (
+        <div style={{ marginTop: '18px', padding: '14px 0', borderTop: '1px solid #d4c9bc', borderBottom: '1px solid #d4c9bc', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '12px' }}>
+          <div>
+            <SmallCaps style={{ color: COLORS.muted }}>2021</SmallCaps>
+            <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 700, color: COLORS.text, fontFeatureSettings: '"tnum" 1' }}>{v21.toFixed(2)}%</div>
+          </div>
+          <div>
+            <SmallCaps style={{ color: COLORS.muted }}>2026</SmallCaps>
+            <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 700, color: COLORS.text, fontFeatureSettings: '"tnum" 1' }}>{v.toFixed(2)}%</div>
+          </div>
+          <div>
+            <SmallCaps style={{ color: COLORS.muted }}>Δ</SmallCaps>
+            <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 700, color: COLORS.accent, fontFeatureSettings: '"tnum" 1' }}>
+              +{(delta ?? 0).toFixed(2)}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '14px', color: '#3a302a', margin: '14px 0 0', lineHeight: 1.55 }}>
+        {delta != null && delta >= 18 ? (
+          <>An extraordinary revival. {district.name} voted far more than it did in 2021.</>
+        ) : delta != null && delta >= 12 ? (
+          <>A strong surge — above the state's own +12 pp jump.</>
+        ) : delta != null && delta >= 7 ? (
+          <>Moved with the state, not ahead of it.</>
+        ) : delta != null ? (
+          <>Barely budged. One of the state's smallest jumps.</>
+        ) : (
+          <>District boundaries changed after 2021; direct comparison unavailable.</>
+        )}
+      </p>
     </div>
   );
 };
 
 // ─────────────────────────────────────────────────────────────
-// Historical comparison strip.
+// Historical strip.
 // ─────────────────────────────────────────────────────────────
 
 const HistoricalStrip = () => {
@@ -258,7 +314,7 @@ const HistoricalStrip = () => {
     ['2021', s.vtr2021],
     ['2026', s.vtr2026],
   ];
-  const max = 100;
+  const min = 60; const max = 95;
   return (
     <div style={{ border: `1.5px solid ${COLORS.text}`, background: '#fff9ef', padding: '28px', boxShadow: '6px 6px 0 rgba(26,20,16,0.05)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'center' }}>
@@ -285,13 +341,14 @@ const HistoricalStrip = () => {
           <SmallCaps style={{ color: COLORS.muted, marginBottom: '14px' }}>Four Assembly Elections</SmallCaps>
           {rows.map(([year, v]) => {
             const isNow = year === '2026';
+            const pct = Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100));
             return (
               <div key={year} style={{ display: 'grid', gridTemplateColumns: '56px 1fr 72px', alignItems: 'center', gap: '12px', marginBottom: '10px' }}>
                 <div style={{ fontFamily: MONO, fontSize: '13px', color: isNow ? COLORS.accent : COLORS.muted, fontWeight: 700, letterSpacing: '0.08em' }}>
                   {year}
                 </div>
                 <div style={{ position: 'relative', height: '18px', background: '#f3e9d6', border: `1px solid ${COLORS.text}` }}>
-                  <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: `${(v / max) * 100}%`, background: isNow ? COLORS.text : '#c8886a' }} />
+                  <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: `${pct}%`, background: isNow ? COLORS.text : '#c8886a' }} />
                 </div>
                 <div style={{ fontFamily: MONO, fontSize: '14px', color: COLORS.text, fontWeight: 700, textAlign: 'right', fontFeatureSettings: '"tnum" 1' }}>
                   {v.toFixed(2)}%
@@ -299,12 +356,153 @@ const HistoricalStrip = () => {
               </div>
             );
           })}
+          <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.08em', marginTop: '4px', textAlign: 'right' }}>
+            SCALE: 60% — 95%
+          </div>
         </div>
       </div>
 
       <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '13px', color: COLORS.muted, margin: '24px 0 0', borderTop: `1px dotted ${COLORS.muted}`, paddingTop: '14px', lineHeight: 1.6 }}>
-        Provisional figures from ECINET at {turnoutData.snapshotTime} on {turnoutData.pollDate}. Final ECI turnout typically revises <em>upward</em> by one to two points as postal ballots and late returns are folded in. Earlier 2021/2016/2011 numbers are ECI final.
+        Provisional figures from ECINET at {turnoutData.snapshotTime} on {turnoutData.pollDate}. Final ECI turnout typically revises <em>upward</em> by one to two points as postal ballots and late returns are folded in. 2011 / 2016 / 2021 numbers are ECI final.
       </p>
+    </div>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────
+// Dumbbell comparison chart — 2021 vs 2026 per district.
+// ─────────────────────────────────────────────────────────────
+
+const DumbbellChart = () => {
+  const rows = useMemo(() => {
+    const ds = turnoutData.districts
+      .filter(d => (d as any).vtr2021 != null)
+      .map(d => ({
+        id: d.id,
+        name: d.name,
+        v21: (d as any).vtr2021 as number,
+        v26: d.vtr,
+        delta: (d as any).delta as number,
+      }));
+    return ds.sort((a, b) => b.delta - a.delta);
+  }, []);
+
+  // Scale: floor to 55%, ceiling to 95%
+  const xMin = 55;
+  const xMax = 95;
+  const xAt = (v: number) => ((v - xMin) / (xMax - xMin)) * 100;
+
+  return (
+    <div style={{ border: `1.5px solid ${COLORS.text}`, background: '#fff9ef', padding: '28px', boxShadow: '6px 6px 0 rgba(26,20,16,0.05)' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '12px', flexWrap: 'wrap', gap: '12px' }}>
+        <div>
+          <SmallCaps style={{ color: COLORS.accent }}>2021 → 2026 · By District</SmallCaps>
+          <h3 style={{ fontFamily: SERIF, fontSize: 'clamp(24px, 3.2vw, 32px)', fontWeight: 900, fontStyle: 'italic', margin: '6px 0 0', color: COLORS.text, letterSpacing: '-0.02em' }}>
+            The shape of the surge.
+          </h3>
+        </div>
+        <div style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '13px', color: COLORS.muted, maxWidth: '340px', textAlign: 'right' }}>
+          Sorted by the size of the 2026 jump. Open circles are 2021; filled circles are 2026. The line is the distance travelled.
+        </div>
+      </div>
+
+      {/* Axis ticks */}
+      <div style={{ position: 'relative', height: '20px', marginLeft: '160px', marginRight: '80px', borderBottom: `1px solid ${COLORS.muted}` }}>
+        {[60, 65, 70, 75, 80, 85, 90].map(t => (
+          <div key={t} style={{
+            position: 'absolute',
+            left: `${xAt(t)}%`,
+            bottom: 0,
+            transform: 'translateX(-50%)',
+            fontFamily: MONO,
+            fontSize: '10px',
+            color: COLORS.muted,
+            letterSpacing: '0.08em',
+            fontFeatureSettings: '"tnum" 1',
+          }}>{t}%</div>
+        ))}
+      </div>
+
+      <div>
+        {rows.map((r, i) => {
+          const x21 = xAt(r.v21);
+          const x26 = xAt(r.v26);
+          return (
+            <div key={r.id} style={{
+              display: 'grid',
+              gridTemplateColumns: '160px 1fr 80px',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '6px 0',
+              borderBottom: i < rows.length - 1 ? '1px dotted #e3d8c5' : 'none',
+            }}>
+              <div style={{ fontFamily: SERIF, fontSize: '15px', fontWeight: 700, color: COLORS.text, letterSpacing: '-0.01em', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                {r.name}
+              </div>
+
+              <div style={{ position: 'relative', height: '22px' }}>
+                {/* Connecting line */}
+                <div style={{
+                  position: 'absolute',
+                  left: `${x21}%`,
+                  width: `${x26 - x21}%`,
+                  top: '50%',
+                  height: '2px',
+                  background: '#c8886a',
+                  transform: 'translateY(-50%)',
+                }} />
+                {/* 2021 dot (open) */}
+                <div style={{
+                  position: 'absolute',
+                  left: `${x21}%`,
+                  top: '50%',
+                  width: '12px',
+                  height: '12px',
+                  transform: 'translate(-50%, -50%)',
+                  border: `2px solid ${COLORS.text}`,
+                  background: COLORS.background,
+                  borderRadius: '50%',
+                }} title={`2021: ${r.v21.toFixed(2)}%`} />
+                {/* 2026 dot (filled) */}
+                <div style={{
+                  position: 'absolute',
+                  left: `${x26}%`,
+                  top: '50%',
+                  width: '12px',
+                  height: '12px',
+                  transform: 'translate(-50%, -50%)',
+                  border: `2px solid ${COLORS.text}`,
+                  background: COLORS.text,
+                  borderRadius: '50%',
+                }} title={`2026: ${r.v26.toFixed(2)}%`} />
+              </div>
+
+              <div style={{
+                fontFamily: MONO,
+                fontSize: '14px',
+                fontWeight: 700,
+                color: COLORS.accent,
+                textAlign: 'right',
+                fontFeatureSettings: '"tnum" 1',
+              }}>
+                +{r.delta.toFixed(2)}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div style={{ marginTop: '16px', display: 'flex', gap: '22px', fontFamily: MONO, fontSize: '11px', color: COLORS.muted, letterSpacing: '0.08em' }}>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+          <span style={{ width: '10px', height: '10px', borderRadius: '50%', border: `2px solid ${COLORS.text}`, background: COLORS.background }} /> 2021
+        </span>
+        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+          <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: COLORS.text }} /> 2026
+        </span>
+        <span style={{ marginLeft: 'auto' }}>
+          DATA · ECINET 2026 · TCPD / ECI 2021
+        </span>
+      </div>
     </div>
   );
 };
@@ -359,25 +557,34 @@ const TopBottomACs = () => {
 };
 
 // ─────────────────────────────────────────────────────────────
-// Points to note — editorial insight cards.
+// Points to note.
 // ─────────────────────────────────────────────────────────────
 
 const NOTES: Array<{ kicker: string; title: string; body: React.ReactNode }> = [
+  {
+    kicker: 'The biggest mover',
+    title: 'Chennai, the city that returned.',
+    body: (
+      <>
+        Chennai district polled <strong>83.58%</strong> — a <strong>+24.29 pp</strong> leap from the <strong>59.29%</strong> it recorded in 2021. No district in Tamil Nadu moved more. The Nilgiris (+21.52), Kancheepuram (+18.00), and Coimbatore (+16.70) followed. The 2026 surge was carried, disproportionately, by the places that had been opting out for a decade.
+      </>
+    ),
+  },
+  {
+    kicker: 'A null finding',
+    title: 'The shadow of Karur.',
+    body: (
+      <>
+        Karur AC polled the highest VTR in the state at <strong>93.39%</strong>. It also did so in 2021, at 83.57%. The district's gap above its Kongu-belt peers <em>narrowed</em> between cycles (+6.8 pp to +4.1 pp), not widened. The September 2025 stampede that killed forty-one — including ten children — at a TVK rally here does not surface in the turnout data. Whether it surfaces in TVK's vote-share is a question for 5 May.
+      </>
+    ),
+  },
   {
     kicker: 'Regional gap',
     title: 'The Kongu-to-Cape canyon.',
     body: (
       <>
-        Karur district led the state at <strong>92.65%</strong>. Kanniyakumari trailed every other district at <strong>75.60%</strong>. Seventeen points separate the most and least enthusiastic voters of Tamil Nadu — a regional chasm bigger than the entire 2021-to-2026 jump.
-      </>
-    ),
-  },
-  {
-    kicker: 'Urban holdouts',
-    title: "Madurai's quiet city centre.",
-    body: (
-      <>
-        Madurai North (<strong>72.63%</strong>) and Madurai Central (<strong>73.86%</strong>) voted like it was still 2009. In an election where the state as a whole surged, the densest cores of Tamil Nadu's second city declined the invitation.
+        Karur district led the state at <strong>92.65%</strong>. Kanniyakumari trailed every other district at <strong>75.60%</strong>. Seventeen points separate the most and least enthusiastic voters of Tamil Nadu — a regional chasm wider than the entire 2021-to-2026 jump.
       </>
     ),
   },
@@ -430,12 +637,47 @@ const PointsToNote = () => (
 );
 
 // ─────────────────────────────────────────────────────────────
+// Map mode toggle.
+// ─────────────────────────────────────────────────────────────
+
+const MapToggle = ({ mode, setMode }: { mode: MapMode, setMode: (m: MapMode) => void }) => {
+  const btn = (m: MapMode, label: string) => (
+    <button
+      key={m}
+      onClick={() => setMode(m)}
+      style={{
+        fontFamily: MONO,
+        fontSize: '11px',
+        fontWeight: 700,
+        letterSpacing: '0.12em',
+        textTransform: 'uppercase',
+        padding: '10px 16px',
+        border: `1.5px solid ${COLORS.text}`,
+        background: mode === m ? COLORS.text : COLORS.background,
+        color: mode === m ? COLORS.background : COLORS.text,
+        cursor: 'pointer',
+        transition: 'all 150ms ease',
+      }}
+    >
+      {label}
+    </button>
+  );
+  return (
+    <div style={{ display: 'inline-flex', marginBottom: '14px', gap: '0', border: `1.5px solid ${COLORS.text}`, boxShadow: '3px 3px 0 rgba(26,20,16,0.05)' }}>
+      {btn('2026', '2026 Turnout')}
+      {btn('delta', 'Change Since 2021')}
+    </div>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────
 // Section.
 // ─────────────────────────────────────────────────────────────
 
 export const TurnoutSection = () => {
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
+  const [mode, setMode] = useState<MapMode>('2026');
   const isMobile = useIsMobile();
 
   const activeId = selected || hovered;
@@ -450,6 +692,8 @@ export const TurnoutSection = () => {
         <HistoricalStrip />
       </div>
 
+      <MapToggle mode={mode} setMode={setMode} />
+
       <div style={{
         display: 'grid',
         gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.3fr) minmax(0, 1fr)',
@@ -459,6 +703,7 @@ export const TurnoutSection = () => {
       }}>
         <div style={{ border: `1.5px solid ${COLORS.text}`, background: '#fff9ef', padding: '12px', boxShadow: '6px 6px 0 rgba(26,20,16,0.05)' }}>
           <TurnoutMap
+            mode={mode}
             selected={selected}
             onSelect={setSelected}
             hovered={hovered}
@@ -470,8 +715,12 @@ export const TurnoutSection = () => {
           position: isMobile ? 'relative' : 'sticky',
           top: isMobile ? '0' : '20px',
         }}>
-          <DistrictVtrPanel district={activeDistrict} />
+          <DistrictVtrPanel district={activeDistrict} mode={mode} />
         </div>
+      </div>
+
+      <div style={{ marginBottom: '40px' }}>
+        <DumbbellChart />
       </div>
 
       <div style={{ marginBottom: '40px' }}>
