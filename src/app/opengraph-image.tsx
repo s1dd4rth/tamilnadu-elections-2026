@@ -3,7 +3,7 @@ import turnoutData from "@/data/turnout.json";
 
 export const runtime = "edge";
 export const alt = "Tamil Nadu 2026 Election Dashboard — turnout and electoral atlas";
-export const size = { width: 1200, height: 630 };
+export const size = { width: 1200, height: 628 };
 export const contentType = "image/png";
 
 export default async function OgImage() {

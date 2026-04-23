@@ -5,7 +5,8 @@ import turnoutData from "@/data/turnout.json";
 import "./globals.css";
 
 const SITE_URL = "https://tn-dashboard-app.vercel.app";
-const TITLE = "TN Election 2026 · Dashboard";
+const TITLE = `Tamil Nadu 2026 Election · ${turnoutData.state.vtr2026}% Turnout Dashboard`;
+const OG_TITLE = `${turnoutData.state.vtr2026}% — Tamil Nadu's 2026 turnout, mapped constituency by constituency`;
 const DESCRIPTION = `Tamil Nadu polled ${turnoutData.state.vtr2026}% on 23 April 2026 — the highest assembly-election turnout in modern memory. An editorial data atlas of the roll, the ballot, and the vote: interactive district heat maps, 2021-to-2026 comparisons, candidate affidavit analysis, and the counter-intuitive findings hiding in the numbers.`;
 
 export const metadata: Metadata = {
@@ -26,18 +27,28 @@ export const metadata: Metadata = {
   creator: "Siddarth Kengadaran",
   publisher: "Siddarth Kengadaran",
   openGraph: {
-    title: `${turnoutData.state.vtr2026}% — Tamil Nadu's 2026 turnout, mapped`,
+    title: OG_TITLE,
     description: DESCRIPTION,
     url: SITE_URL,
     siteName: "TN Election 2026 Dashboard",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 628,
+        alt: "Tamil Nadu 2026 Election Dashboard — turnout and electoral atlas",
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${turnoutData.state.vtr2026}% — Tamil Nadu's 2026 turnout, mapped`,
+    title: OG_TITLE,
     description: DESCRIPTION,
     creator: "@s1dd4rth",
+    images: [`${SITE_URL}/opengraph-image`],
   },
   robots: {
     index: true,
