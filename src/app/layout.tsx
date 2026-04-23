@@ -64,9 +64,6 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   category: "news",
-  verification: {
-    google: "google6ee3fc32482ecc32",
-  },
 };
 
 const jsonLd = {
