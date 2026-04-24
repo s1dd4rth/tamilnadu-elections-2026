@@ -298,7 +298,7 @@ const CandidatePanel = ({ ac, onClose }: any) => {
                       fontFamily: MONO,
                       fontSize: '11px',
                       letterSpacing: '0.18em',
-                      color: meta?.color || COLORS.muted,
+                      color: meta ? onCream(meta.color) : COLORS.muted,
                       fontWeight: 700,
                     }}>
                       {meta?.name.toUpperCase() || alliance} · {group.length}

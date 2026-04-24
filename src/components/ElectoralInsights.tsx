@@ -264,7 +264,7 @@ export const WomenOnBallot = () => {
             <div key={a.code} style={{ marginBottom: '16px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
                 <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 800 }}>{a.label}</span>
-                <span style={{ fontFamily: MONO, fontSize: '11px', color: a.color, fontWeight: 800 }}>{a.pct}%</span>
+                <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(a.color), fontWeight: 800 }}>{a.pct}%</span>
               </div>
               <div style={{ background: '#f5ead8', height: '20px', border: `1px solid ${COLORS.border}` }}>
                 <div style={{ width: `${(a.pct / maxAllianceP) * 100}%`, height: '100%', background: a.color }} />
@@ -302,7 +302,7 @@ export const WomenOnBallot = () => {
                 <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.08em', color: COLORS.muted, fontWeight: 700 }}>
                   {a.label.toUpperCase()}
                 </div>
-                <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 800, color: a.color, fontFeatureSettings: '"tnum" 1', marginTop: '2px' }}>
+                <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 800, color: onCream(a.color), fontFeatureSettings: '"tnum" 1', marginTop: '2px' }}>
                   {m?.women ?? 0}
                 </div>
                 <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.05em' }}>

@@ -30,6 +30,11 @@ export const KPIStrip = () => {
             padding: isMobile ? '16px' : '10px 16px',
             borderRight: '1px solid #d4c9bc',
             borderBottom: '1px solid #d4c9bc',
+            // Reserve vertical space so Fraunces swap-in cannot resize the
+            // cells and cascade a CLS shift through the page below. Sized
+            // generously above steady-state content height (SmallCaps +
+            // clamp(22-36px) number + italic subtitle + padding).
+            minHeight: isMobile ? 124 : 112,
           }}>
             <SmallCaps style={{ color: COLORS.muted }}>{it.label}</SmallCaps>
             <div style={{
