@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps, SectionTitle } from "@/components/common";
 import { SeatHemicycle } from "@/components/SeatHemicycle";
+import { SeatHexMap } from "@/components/SeatHexMap";
 import { NonVoterAnalysis } from "@/components/NonVoterAnalysis";
 import analysisData from "@/data/analysis.json";
 import turnoutData from "@/data/turnout.json";
@@ -147,6 +148,43 @@ export default function AnalysisPage() {
             caption={
               <>
                 2026 is a four-way race: DMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>SPA</strong>, AIADMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NDA</strong>, and both <strong style={{ color: COLORS.text, fontStyle: "normal" }}>TVK</strong> (Vijay) and <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NTK</strong> (Seeman) contesting solo in all 234 seats. The arc holds 234 neutral dots until counting begins on <strong style={{ color: COLORS.text, fontStyle: "normal" }}>5 May 2026</strong>. The geometry matches the 2021 arc, so when seats colour in, the flips read at a glance.
+              </>
+            }
+          />
+        </div>
+      </section>
+
+      {/* Two hex tile maps — 2021 baseline and 2026 placeholder.
+          Same seats arrays as the hemicycles, so the two visual units
+          read as a paired set (arc above, geography below). */}
+      <section style={{ marginBottom: "56px" }}>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
+            gap: "22px",
+            alignItems: "start",
+          }}
+        >
+          <SeatHexMap
+            kicker="2021 · BASELINE"
+            title="The map, drawn from the result."
+            seats={seats2021}
+            legend={legend2021}
+            caption={
+              <>
+                One hex per constituency, arranged to follow Tamil Nadu's outline. Equal-area, so a Chennai ward and a Nilgiris hill seat carry the same visual weight. SPA swept the southern and delta belts; NDA held the western belt around Salem-Dharmapuri. Map tiles adapted from <a href="https://github.com/baskicanvas/tamilnadu-assembly-constituency-maps" style={{ color: COLORS.accent }} target="_blank" rel="noopener noreferrer">baskicanvas/tamilnadu-assembly-constituency-maps</a>.
+              </>
+            }
+          />
+          <SeatHexMap
+            kicker="2026 · AWAITING COUNT"
+            title="The same geography, held in waiting."
+            seats={seats2026Placeholder}
+            legend={legend2026}
+            caption={
+              <>
+                234 cells, none yet coloured. The geometry matches the 2021 map so that when results arrive on <strong style={{ color: COLORS.text, fontStyle: "normal" }}>5 May 2026</strong>, the flip pattern — which belts turn, which hold — reads at a glance against the baseline beside it.
               </>
             }
           />

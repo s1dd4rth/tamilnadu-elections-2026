@@ -2,6 +2,7 @@ import { Masthead, HeadlineBar } from '@/components/Header';
 import { KPIStrip } from '@/components/Stats';
 import { MapSection } from '@/components/MapSection';
 import { TurnoutSection } from '@/components/TurnoutSection';
+import { ACTurnoutMap } from '@/components/ACTurnoutMap';
 import { AgePyramid } from '@/components/AgePyramid';
 import { ACExplorer } from '@/components/ACExplorer';
 import { SIRFlow } from '@/components/SIRFlow';
@@ -33,6 +34,7 @@ export default function Page() {
       
       <MapSection />
       <TurnoutSection />
+      <ACTurnoutMap />
       <SIRFlow />
       <AgePyramid />
       <ACExtremes />
