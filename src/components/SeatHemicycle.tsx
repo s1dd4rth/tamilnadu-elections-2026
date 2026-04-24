@@ -60,6 +60,8 @@ function hemicycleLayout(n: number, rows: number, innerR: number, outerR: number
 const ALLIANCE_COLOUR: Record<string, string> = {
   SPA: "#a04020",   // DMK-led — deep rust (site accent, editorial lead)
   NDA: "#1f4e3d",   // AIADMK-led — deep green
+  TVK: "#8a2020",   // Tamilaga Vetri Kazhagam — Vijay, maroon (from parties.json)
+  NTK: "#d8a520",   // Naam Tamilar Katchi — Seeman, gold
   IND: "#7a6a56",   // independents — muted sepia
   OTHER: "#4a3a2c", // everything else — dark sepia
   UNKNOWN: "#e0d5c2", // placeholder before 2026 results come in
@@ -68,6 +70,8 @@ const ALLIANCE_COLOUR: Record<string, string> = {
 const ALLIANCE_LABEL: Record<string, string> = {
   SPA: "DMK-led (SPA)",
   NDA: "AIADMK-led (NDA)",
+  TVK: "TVK (Vijay)",
+  NTK: "NTK (Seeman)",
   IND: "Independent",
   OTHER: "Other",
   UNKNOWN: "Awaiting result",
@@ -91,11 +95,18 @@ type Props = {
   title: string;
   kicker: string;
   seats: Seat[];
-  legendCounts?: Record<string, number>;
+  /**
+   * Explicit legend entries. Each entry is an alliance code; pass `null`
+   * for value to render as "expected contestant" (colour chip, no count).
+   * Use this instead of trying to infer from seats, since in pre-results
+   * mode we want to advertise the 4-way contest even when no seat has
+   * been coloured yet.
+   */
+  legend: Array<{ alliance: string; count: number | null }>;
   caption?: React.ReactNode;
 };
 
-export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCounts, caption }) => {
+export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, caption }) => {
   const N = seats.length;
   const positions = useMemo(
     () => hemicycleLayout(N, 7, 160, 320),
@@ -109,10 +120,13 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
 
   const activeSeat = hoverIdx != null ? seatData[hoverIdx] : null;
 
-  // SVG viewbox sized to fit the arc plus some padding
-  const pad = 24;
-  const vbW = 320 * 2 + pad * 2;
-  const vbH = 320 + pad * 2;
+  // SVG viewbox: top pad for the arc's top row, bottom pad for the
+  // centre labels ("TAMIL NADU / 234 / ASSEMBLY SEATS") which sit in
+  // the arc's central well.
+  const padTop = 24;
+  const padBottom = 90; // enough room for the 3-line centre label
+  const vbW = 320 * 2 + padTop * 2;
+  const vbH = 320 + padTop + padBottom;
 
   return (
     <div style={{ background: "#fff9ef", border: `1.5px solid ${COLORS.text}`, padding: "28px", boxShadow: "6px 6px 0 rgba(26,20,16,0.05)" }}>
@@ -133,7 +147,7 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
 
       <div style={{ position: "relative", width: "100%" }}>
         <svg
-          viewBox={`${-320 - pad} ${-320 - pad} ${vbW} ${vbH}`}
+          viewBox={`${-320 - padTop} ${-320 - padTop} ${vbW} ${vbH}`}
           style={{ width: "100%", height: "auto", display: "block" }}
         >
           {/* seat dots */}
@@ -156,14 +170,15 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
             );
           })}
 
-          {/* centre total label */}
+          {/* Centre label — sits in the well below the arc. The arc's
+              inner row at r=160 leaves a clear y ∈ (0, 80) area at x=0. */}
           <text
             x={0}
-            y={-50}
+            y={22}
             fontFamily={MONO}
-            fontSize="16"
+            fontSize="15"
             fontWeight="700"
-            letterSpacing="0.12em"
+            letterSpacing="0.14em"
             textAnchor="middle"
             fill={COLORS.muted}
           >
@@ -171,23 +186,23 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
           </text>
           <text
             x={0}
-            y={0}
+            y={70}
             fontFamily={SERIF}
-            fontSize="88"
+            fontSize="56"
             fontWeight="900"
             fontStyle="italic"
             textAnchor="middle"
             fill={COLORS.text}
-            letterSpacing="-0.04em"
+            letterSpacing="-0.03em"
           >
             {N}
           </text>
           <text
             x={0}
-            y={28}
+            y={88}
             fontFamily={MONO}
-            fontSize="12"
-            letterSpacing="0.14em"
+            fontSize="11"
+            letterSpacing="0.16em"
             textAnchor="middle"
             fill={COLORS.muted}
           >
@@ -240,31 +255,28 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
         )}
       </div>
 
-      {/* legend */}
+      {/* legend — renders exactly the entries the caller passes. */}
       <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "18px" }}>
-        {["SPA", "NDA", "OTHER", "UNKNOWN"].map((a) => {
-          const count = legendCounts?.[a];
-          if (count === 0) return null;
-          return (
-            <div key={a} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span
-                style={{
-                  width: "14px",
-                  height: "14px",
-                  borderRadius: "50%",
-                  background: ALLIANCE_COLOUR[a],
-                  border: `1px solid ${COLORS.text}`,
-                }}
-              />
-              <span style={{ fontFamily: MONO, fontSize: "11px", letterSpacing: "0.08em", color: COLORS.text, fontWeight: 600 }}>
-                {ALLIANCE_LABEL[a]}
-                {count != null && (
-                  <span style={{ color: COLORS.accent, marginLeft: "6px" }}>· {count}</span>
-                )}
-              </span>
-            </div>
-          );
-        })}
+        {legend.map(({ alliance, count }) => (
+          <div key={alliance} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span
+              style={{
+                width: "14px",
+                height: "14px",
+                borderRadius: "50%",
+                background: ALLIANCE_COLOUR[alliance] || ALLIANCE_COLOUR.OTHER,
+                border: `1px solid ${COLORS.text}`,
+                flex: "none",
+              }}
+            />
+            <span style={{ fontFamily: MONO, fontSize: "11px", letterSpacing: "0.08em", color: COLORS.text, fontWeight: 600, whiteSpace: "nowrap" }}>
+              {ALLIANCE_LABEL[alliance] || alliance}
+              {count != null && (
+                <span style={{ color: COLORS.accent, marginLeft: "6px" }}>· {count}</span>
+              )}
+            </span>
+          </div>
+        ))}
       </div>
 
       {caption && (

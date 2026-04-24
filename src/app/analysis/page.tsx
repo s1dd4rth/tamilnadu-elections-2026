@@ -50,8 +50,24 @@ export default function AnalysisPage() {
     marginPct: 0,
   }));
 
-  const allianceCounts2021 = analysisData.allianceCounts2021 as Record<string, number>;
-  const allianceCounts2026: Record<string, number> = { UNKNOWN: analysisData.acs.length };
+  const ac2021 = analysisData.allianceCounts2021 as Record<string, number>;
+
+  // 2021 legend: only the two blocs that actually won seats, with counts.
+  const legend2021 = [
+    { alliance: "SPA", count: ac2021.SPA },
+    { alliance: "NDA", count: ac2021.NDA },
+  ];
+
+  // 2026 legend: advertise the four-cornered contest so the colour key
+  // is visible even before any dot has been coloured. "Awaiting result"
+  // entry carries the 234 placeholder count.
+  const legend2026 = [
+    { alliance: "SPA", count: null },
+    { alliance: "NDA", count: null },
+    { alliance: "TVK", count: null },
+    { alliance: "NTK", count: null },
+    { alliance: "UNKNOWN", count: analysisData.acs.length },
+  ];
 
   return (
     <main style={{ maxWidth: "1200px", margin: "0 auto", background: "#faf4e8", minHeight: "100vh", padding: "16px" }}>
@@ -114,23 +130,23 @@ export default function AnalysisPage() {
             kicker="2021 · BASELINE"
             title="How the house stood at dissolution."
             seats={seats2021}
-            legendCounts={allianceCounts2021}
+            legend={legend2021}
             caption={
               <>
                 The DMK-led Secular Progressive Alliance (SPA) carried{" "}
-                <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{allianceCounts2021.SPA}</strong> of 234 seats in 2021. The AIADMK-led NDA held{" "}
-                <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{allianceCounts2021.NDA}</strong>. Each dot is a constituency. On counting day, the arc on the right fills in — and the dots that switched colour tell the real story.
+                <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{ac2021.SPA}</strong> of 234 seats in 2021. The AIADMK-led NDA held{" "}
+                <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{ac2021.NDA}</strong>. A two-alliance map, because that's what the 2021 result was. Each dot is a constituency.
               </>
             }
           />
           <SeatHemicycle
             kicker="2026 · AWAITING COUNT"
-            title="234 dots, held in waiting."
+            title="A four-cornered contest, held in waiting."
             seats={seats2026Placeholder}
-            legendCounts={allianceCounts2026}
+            legend={legend2026}
             caption={
               <>
-                Every constituency sits in neutral until counting begins on <strong style={{ color: COLORS.text, fontStyle: "normal" }}>5 May 2026</strong>. The arc occupies the same geometry as 2021 so that when it colours in, the flips — dots that changed hands — are read at a glance.
+                2026 is a four-way race: DMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>SPA</strong>, AIADMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NDA</strong>, and both <strong style={{ color: COLORS.text, fontStyle: "normal" }}>TVK</strong> (Vijay) and <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NTK</strong> (Seeman) contesting solo in all 234 seats. The arc holds 234 neutral dots until counting begins on <strong style={{ color: COLORS.text, fontStyle: "normal" }}>5 May 2026</strong>. The geometry matches the 2021 arc, so when seats colour in, the flips read at a glance.
               </>
             }
           />
