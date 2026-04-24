@@ -58,9 +58,11 @@ function hemicycleLayout(n: number, rows: number, innerR: number, outerR: number
 // ─────────────────────────────────────────────────────────────
 
 const ALLIANCE_COLOUR: Record<string, string> = {
-  SPA: "#a04020",   // DMK-led — deep rust (site accent, editorial lead)
+  SPA: "#a04020",   // DMK-led — warm rust (site accent, editorial lead)
   NDA: "#1f4e3d",   // AIADMK-led — deep green
-  TVK: "#8a2020",   // Tamilaga Vetri Kazhagam — Vijay, maroon (from parties.json)
+  TVK: "#a61e5e",   // Tamilaga Vetri Kazhagam — wine/magenta (distinct from DMK rust;
+                    //   TVK's flag uses red, but maroon was indistinguishable from
+                    //   SPA at dot size — this keeps it "party red" but visually clear)
   NTK: "#d8a520",   // Naam Tamilar Katchi — Seeman, gold
   IND: "#7a6a56",   // independents — muted sepia
   OTHER: "#4a3a2c", // everything else — dark sepia
