@@ -1,0 +1,6565 @@
+{
+  "pollDate": "23-04-2026",
+  "countDate": "05-05-2026",
+  "source": "TCPD / ECI Statistical Report 2021; ECINET 2026; CEO Tamil Nadu SIR Final Roll",
+  "allianceCounts2021": {
+    "SPA": 159,
+    "NDA": 75,
+    "IND": 0,
+    "OTHER": 0
+  },
+  "acs": [
+    {
+      "no": 1,
+      "name": "Gummidipoondi",
+      "district": "Thiruvallur",
+      "elec2021": 284412,
+      "elec2026": 251603,
+      "vtr2021": 78.08,
+      "vtr2026": 90.82,
+      "nonVoters2021": 62343,
+      "nonVoters2026": 23097,
+      "winner2021": {
+        "name": "Govindarajan T.J",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 126452,
+        "voteshare": 56.94
+      },
+      "runnerUp2021": {
+        "name": "Prakash M",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 75514,
+        "voteshare": 34.0
+      },
+      "margin2021": 50938,
+      "marginPct2021": 22.94,
+      "apathyRatio": 1.22
+    },
+    {
+      "no": 2,
+      "name": "Ponneri",
+      "district": "Thiruvallur",
+      "elec2021": 268994,
+      "elec2026": 248917,
+      "vtr2021": 78.2,
+      "vtr2026": 89.66,
+      "nonVoters2021": 58641,
+      "nonVoters2026": 25738,
+      "winner2021": {
+        "name": "Durai. Chandrasekar",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 94528,
+        "voteshare": 44.94
+      },
+      "runnerUp2021": {
+        "name": "Balaraman. P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84839,
+        "voteshare": 40.33
+      },
+      "margin2021": 9689,
+      "marginPct2021": 4.61,
+      "apathyRatio": 6.05
+    },
+    {
+      "no": 3,
+      "name": "Tiruttani",
+      "district": "Thiruvallur",
+      "elec2021": 295358,
+      "elec2026": 260084,
+      "vtr2021": 78.76,
+      "vtr2026": 89.73,
+      "nonVoters2021": 62734,
+      "nonVoters2026": 26711,
+      "winner2021": {
+        "name": "S.Chandran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 120314,
+        "voteshare": 51.72
+      },
+      "runnerUp2021": {
+        "name": "G.Hari",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 91061,
+        "voteshare": 39.15
+      },
+      "margin2021": 29253,
+      "marginPct2021": 12.58,
+      "apathyRatio": 2.14
+    },
+    {
+      "no": 4,
+      "name": "Thiruvallur",
+      "district": "Thiruvallur",
+      "elec2021": 277516,
+      "elec2026": 248651,
+      "vtr2021": 77.2,
+      "vtr2026": 89.51,
+      "nonVoters2021": 63274,
+      "nonVoters2026": 26083,
+      "winner2021": {
+        "name": "Raajendran, V.G.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 107709,
+        "voteshare": 50.27
+      },
+      "runnerUp2021": {
+        "name": "Ramanah, Be Vee",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85008,
+        "voteshare": 39.68
+      },
+      "margin2021": 22701,
+      "marginPct2021": 10.6,
+      "apathyRatio": 2.79
+    },
+    {
+      "no": 5,
+      "name": "Poonamallee",
+      "district": "Thiruvallur",
+      "elec2021": 361331,
+      "elec2026": 363688,
+      "vtr2021": 72.99,
+      "vtr2026": 83.13,
+      "nonVoters2021": 97596,
+      "nonVoters2026": 61354,
+      "winner2021": {
+        "name": "Krishnaswamy A",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 149578,
+        "voteshare": 56.72
+      },
+      "runnerUp2021": {
+        "name": "Rajamannar S X",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 55468,
+        "voteshare": 21.03
+      },
+      "margin2021": 94110,
+      "marginPct2021": 35.68,
+      "apathyRatio": 1.04
+    },
+    {
+      "no": 6,
+      "name": "Avadi",
+      "district": "Thiruvallur",
+      "elec2021": 446678,
+      "elec2026": 428772,
+      "vtr2021": 67.37,
+      "vtr2026": 78.81,
+      "nonVoters2021": 145751,
+      "nonVoters2026": 90857,
+      "winner2021": {
+        "name": "Nasar S M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 150287,
+        "voteshare": 49.94
+      },
+      "runnerUp2021": {
+        "name": "Pandiarajan K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 95012,
+        "voteshare": 31.57
+      },
+      "margin2021": 55275,
+      "marginPct2021": 18.37,
+      "apathyRatio": 2.64
+    },
+    {
+      "no": 7,
+      "name": "Maduravoyal",
+      "district": "Thiruvallur",
+      "elec2021": 454179,
+      "elec2026": 364031,
+      "vtr2021": 60.3,
+      "vtr2026": 78.55,
+      "nonVoters2021": 180309,
+      "nonVoters2026": 78085,
+      "winner2021": {
+        "name": "Ganapathy.K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 121298,
+        "voteshare": 44.29
+      },
+      "runnerUp2021": {
+        "name": "Benjamin.P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 89577,
+        "voteshare": 32.71
+      },
+      "margin2021": 31721,
+      "marginPct2021": 11.58,
+      "apathyRatio": 5.68
+    },
+    {
+      "no": 8,
+      "name": "Ambattur",
+      "district": "Thiruvallur",
+      "elec2021": 387516,
+      "elec2026": 330480,
+      "vtr2021": 62.01,
+      "vtr2026": 76.98,
+      "nonVoters2021": 147217,
+      "nonVoters2026": 76076,
+      "winner2021": {
+        "name": "Joseph Samuel",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 114554,
+        "voteshare": 47.67
+      },
+      "runnerUp2021": {
+        "name": "V Alexander",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 72408,
+        "voteshare": 30.13
+      },
+      "margin2021": 42146,
+      "marginPct2021": 17.54,
+      "apathyRatio": 3.49
+    },
+    {
+      "no": 9,
+      "name": "Madavaram",
+      "district": "Thiruvallur",
+      "elec2021": 456079,
+      "elec2026": 420601,
+      "vtr2021": 66.37,
+      "vtr2026": 83.29,
+      "nonVoters2021": 153379,
+      "nonVoters2026": 70282,
+      "winner2021": {
+        "name": "Sudharsanam. S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 151485,
+        "voteshare": 50.04
+      },
+      "runnerUp2021": {
+        "name": "Moorthy. V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 94414,
+        "voteshare": 31.19
+      },
+      "margin2021": 57071,
+      "marginPct2021": 18.85,
+      "apathyRatio": 2.69
+    },
+    {
+      "no": 10,
+      "name": "Thiruvottiyur",
+      "district": "Thiruvallur",
+      "elec2021": 306977,
+      "elec2026": 240586,
+      "vtr2021": 65.15,
+      "vtr2026": 84.41,
+      "nonVoters2021": 106981,
+      "nonVoters2026": 37507,
+      "winner2021": {
+        "name": "K.P.Shankar",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 88185,
+        "voteshare": 44.09
+      },
+      "runnerUp2021": {
+        "name": "K.Kuppan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 50524,
+        "voteshare": 25.26
+      },
+      "margin2021": 37661,
+      "marginPct2021": 18.83,
+      "apathyRatio": 2.84
+    },
+    {
+      "no": 11,
+      "name": "Dr.Radhakrishnan Nagar",
+      "district": "Chennai",
+      "elec2021": 263492,
+      "elec2026": 195856,
+      "vtr2021": 70.98,
+      "vtr2026": 90.18,
+      "nonVoters2021": 76465,
+      "nonVoters2026": 19233,
+      "winner2021": {
+        "name": "Ebenezer. J.J. (@)  John Ebenezer.J",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95763,
+        "voteshare": 51.2
+      },
+      "runnerUp2021": {
+        "name": "Raajesh.R.S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 53284,
+        "voteshare": 28.49
+      },
+      "margin2021": 42479,
+      "marginPct2021": 22.71,
+      "apathyRatio": 1.8
+    },
+    {
+      "no": 12,
+      "name": "Perambur",
+      "district": "Chennai",
+      "elec2021": 318074,
+      "elec2026": 222792,
+      "vtr2021": 63.0,
+      "vtr2026": 89.65,
+      "nonVoters2021": 117687,
+      "nonVoters2026": 23059,
+      "winner2021": {
+        "name": "Shekar. R.D",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 105267,
+        "voteshare": 52.53
+      },
+      "runnerUp2021": {
+        "name": "Dhanapalan N.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 50291,
+        "voteshare": 25.1
+      },
+      "margin2021": 54976,
+      "marginPct2021": 27.43,
+      "apathyRatio": 2.14
+    },
+    {
+      "no": 13,
+      "name": "Kolathur",
+      "district": "Chennai",
+      "elec2021": 284056,
+      "elec2026": 207251,
+      "vtr2021": 61.04,
+      "vtr2026": 86.11,
+      "nonVoters2021": 110668,
+      "nonVoters2026": 28787,
+      "winner2021": {
+        "name": "M.K. Stalin",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 105522,
+        "voteshare": 60.86
+      },
+      "runnerUp2021": {
+        "name": "Aadirajaram",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 35138,
+        "voteshare": 20.27
+      },
+      "margin2021": 70384,
+      "marginPct2021": 40.59,
+      "apathyRatio": 1.57
+    },
+    {
+      "no": 14,
+      "name": "Villivakkam",
+      "district": "Chennai",
+      "elec2021": 257675,
+      "elec2026": 159764,
+      "vtr2021": 55.92,
+      "vtr2026": 85.98,
+      "nonVoters2021": 113583,
+      "nonVoters2026": 22399,
+      "winner2021": {
+        "name": "A . Vetriazhagan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 76127,
+        "voteshare": 52.83
+      },
+      "runnerUp2021": {
+        "name": "J.C.D.Prabhakar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 38890,
+        "voteshare": 26.99
+      },
+      "margin2021": 37237,
+      "marginPct2021": 25.84,
+      "apathyRatio": 3.05
+    },
+    {
+      "no": 15,
+      "name": "Thiru-Vi-Ka-Nagar",
+      "district": "Chennai",
+      "elec2021": 220547,
+      "elec2026": 178793,
+      "vtr2021": 60.62,
+      "vtr2026": 78.68,
+      "nonVoters2021": 86851,
+      "nonVoters2026": 38119,
+      "winner2021": {
+        "name": "Sivakumar.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 81727,
+        "voteshare": 61.13
+      },
+      "runnerUp2021": {
+        "name": "Kalyani.P.L",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 26714,
+        "voteshare": 19.98
+      },
+      "margin2021": 55013,
+      "marginPct2021": 41.15,
+      "apathyRatio": 1.58
+    },
+    {
+      "no": 16,
+      "name": "Egmore",
+      "district": "Chennai",
+      "elec2021": 195110,
+      "elec2026": 134879,
+      "vtr2021": 61.13,
+      "vtr2026": 85.19,
+      "nonVoters2021": 75839,
+      "nonVoters2026": 19976,
+      "winner2021": {
+        "name": "I.Paranthamen",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 68832,
+        "voteshare": 57.71
+      },
+      "runnerUp2021": {
+        "name": "B.John Pandian",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 30064,
+        "voteshare": 25.21
+      },
+      "margin2021": 38768,
+      "marginPct2021": 32.5,
+      "apathyRatio": 1.96
+    },
+    {
+      "no": 17,
+      "name": "Royapuram",
+      "district": "Chennai",
+      "elec2021": 193595,
+      "elec2026": 156931,
+      "vtr2021": 62.6,
+      "vtr2026": 79.34,
+      "nonVoters2021": 72405,
+      "nonVoters2026": 32422,
+      "winner2021": {
+        "name": "Murthy.R.Idream",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 64424,
+        "voteshare": 53.16
+      },
+      "runnerUp2021": {
+        "name": "Jayakumar.D",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 36645,
+        "voteshare": 30.24
+      },
+      "margin2021": 27779,
+      "marginPct2021": 22.92,
+      "apathyRatio": 2.61
+    },
+    {
+      "no": 18,
+      "name": "Harbour",
+      "district": "Chennai",
+      "elec2021": 176353,
+      "elec2026": 116896,
+      "vtr2021": 57.64,
+      "vtr2026": 82.75,
+      "nonVoters2021": 74703,
+      "nonVoters2026": 20165,
+      "winner2021": {
+        "name": "Sekarbabu. P.K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 59317,
+        "voteshare": 58.35
+      },
+      "runnerUp2021": {
+        "name": "Vinoj. P. Selvam",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 32043,
+        "voteshare": 31.52
+      },
+      "margin2021": 27274,
+      "marginPct2021": 26.83,
+      "apathyRatio": 2.74
+    },
+    {
+      "no": 19,
+      "name": "Chepauk-Thiruvallikeni",
+      "district": "Chennai",
+      "elec2021": 235564,
+      "elec2026": 163866,
+      "vtr2021": 58.33,
+      "vtr2026": 84.22,
+      "nonVoters2021": 98160,
+      "nonVoters2026": 25858,
+      "winner2021": {
+        "name": "Udhayanidhi Stalin",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93285,
+        "voteshare": 67.89
+      },
+      "runnerUp2021": {
+        "name": "Kassali A.V.A",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 23930,
+        "voteshare": 17.42
+      },
+      "margin2021": 69355,
+      "marginPct2021": 50.47,
+      "apathyRatio": 1.42
+    },
+    {
+      "no": 20,
+      "name": "Thousand Lights",
+      "district": "Chennai",
+      "elec2021": 241671,
+      "elec2026": 153908,
+      "vtr2021": 56.25,
+      "vtr2026": 82.91,
+      "nonVoters2021": 105731,
+      "nonVoters2026": 26303,
+      "winner2021": {
+        "name": "Ezhilan N",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 71867,
+        "voteshare": 52.87
+      },
+      "runnerUp2021": {
+        "name": "Kushboo Sundar",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 39405,
+        "voteshare": 28.99
+      },
+      "margin2021": 32462,
+      "marginPct2021": 23.88,
+      "apathyRatio": 3.26
+    },
+    {
+      "no": 21,
+      "name": "Anna Nagar",
+      "district": "Chennai",
+      "elec2021": 287974,
+      "elec2026": 181402,
+      "vtr2021": 57.33,
+      "vtr2026": 85.17,
+      "nonVoters2021": 122879,
+      "nonVoters2026": 26902,
+      "winner2021": {
+        "name": "M.K. Mohan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 80054,
+        "voteshare": 48.49
+      },
+      "runnerUp2021": {
+        "name": "S. Gokula Indira",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 52609,
+        "voteshare": 31.87
+      },
+      "margin2021": 27445,
+      "marginPct2021": 16.62,
+      "apathyRatio": 4.48
+    },
+    {
+      "no": 22,
+      "name": "Virugampakkam",
+      "district": "Chennai",
+      "elec2021": 293604,
+      "elec2026": 196536,
+      "vtr2021": 57.59,
+      "vtr2026": 85.34,
+      "nonVoters2021": 124517,
+      "nonVoters2026": 28812,
+      "winner2021": {
+        "name": "Amv.Prabhakara Raja",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 74351,
+        "voteshare": 43.97
+      },
+      "runnerUp2021": {
+        "name": "Virugai V.N.Ravi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 55984,
+        "voteshare": 33.11
+      },
+      "margin2021": 18367,
+      "marginPct2021": 10.86,
+      "apathyRatio": 6.78
+    },
+    {
+      "no": 23,
+      "name": "Saidapet",
+      "district": "Chennai",
+      "elec2021": 279510,
+      "elec2026": 200697,
+      "vtr2021": 57.36,
+      "vtr2026": 77.84,
+      "nonVoters2021": 119183,
+      "nonVoters2026": 44474,
+      "winner2021": {
+        "name": "Subramanian. Ma",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 80194,
+        "voteshare": 50.02
+      },
+      "runnerUp2021": {
+        "name": "Saidai Duraisamy",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 50786,
+        "voteshare": 31.68
+      },
+      "margin2021": 29408,
+      "marginPct2021": 18.34,
+      "apathyRatio": 4.05
+    },
+    {
+      "no": 24,
+      "name": "Thiyagarayanagar",
+      "district": "Chennai",
+      "elec2021": 246676,
+      "elec2026": 154943,
+      "vtr2021": 55.99,
+      "vtr2026": 83.48,
+      "nonVoters2021": 108562,
+      "nonVoters2026": 25597,
+      "winner2021": {
+        "name": "Karunanithi J",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 56035,
+        "voteshare": 40.57
+      },
+      "runnerUp2021": {
+        "name": "Sathiyanaarayanan B",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 55898,
+        "voteshare": 40.47
+      },
+      "margin2021": 137,
+      "marginPct2021": 0.1,
+      "apathyRatio": 792.42
+    },
+    {
+      "no": 25,
+      "name": "Mylapore",
+      "district": "Chennai",
+      "elec2021": 271077,
+      "elec2026": 194731,
+      "vtr2021": 56.6,
+      "vtr2026": 74.62,
+      "nonVoters2021": 117647,
+      "nonVoters2026": 49423,
+      "winner2021": {
+        "name": "Velu.Dha",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 68392,
+        "voteshare": 44.58
+      },
+      "runnerUp2021": {
+        "name": "Nataraj.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 55759,
+        "voteshare": 36.34
+      },
+      "margin2021": 12633,
+      "marginPct2021": 8.23,
+      "apathyRatio": 9.31
+    },
+    {
+      "no": 26,
+      "name": "Velachery",
+      "district": "Chennai",
+      "elec2021": 314549,
+      "elec2026": 211691,
+      "vtr2021": 56.18,
+      "vtr2026": 84.49,
+      "nonVoters2021": 137835,
+      "nonVoters2026": 32833,
+      "winner2021": {
+        "name": "Jmh.Aassan Maulaana",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 68493,
+        "voteshare": 38.76
+      },
+      "runnerUp2021": {
+        "name": "M.K.Ashok",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 64141,
+        "voteshare": 36.3
+      },
+      "margin2021": 4352,
+      "marginPct2021": 2.46,
+      "apathyRatio": 31.67
+    },
+    {
+      "no": 27,
+      "name": "Shozhinganallur",
+      "district": "Chengalpattu",
+      "elec2021": 699612,
+      "elec2026": 536991,
+      "vtr2021": 55.51,
+      "vtr2026": 80.28,
+      "nonVoters2021": 311257,
+      "nonVoters2026": 105895,
+      "winner2021": {
+        "name": "S.Aravindramesh",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 171558,
+        "voteshare": 44.18
+      },
+      "runnerUp2021": {
+        "name": "K.P.Kandan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 136153,
+        "voteshare": 35.06
+      },
+      "margin2021": 35405,
+      "marginPct2021": 9.12,
+      "apathyRatio": 8.79
+    },
+    {
+      "no": 28,
+      "name": "Alandur",
+      "district": "Kancheepuram",
+      "elec2021": 390909,
+      "elec2026": 296052,
+      "vtr2021": 60.82,
+      "vtr2026": 86.15,
+      "nonVoters2021": 153158,
+      "nonVoters2026": 41003,
+      "winner2021": {
+        "name": "T.M.Anbarasan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 116785,
+        "voteshare": 49.12
+      },
+      "runnerUp2021": {
+        "name": "B.Valarmathi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 76214,
+        "voteshare": 32.06
+      },
+      "margin2021": 40571,
+      "marginPct2021": 17.06,
+      "apathyRatio": 3.78
+    },
+    {
+      "no": 29,
+      "name": "Sriperumbudur",
+      "district": "Kancheepuram",
+      "elec2021": 357400,
+      "elec2026": 375921,
+      "vtr2021": 73.94,
+      "vtr2026": 86.02,
+      "nonVoters2021": 93138,
+      "nonVoters2026": 52554,
+      "winner2021": {
+        "name": "Selvaperunthagai",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 115353,
+        "voteshare": 43.65
+      },
+      "runnerUp2021": {
+        "name": "Palani",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 104474,
+        "voteshare": 39.53
+      },
+      "margin2021": 10879,
+      "marginPct2021": 4.12,
+      "apathyRatio": 8.56
+    },
+    {
+      "no": 30,
+      "name": "Pallavaram",
+      "district": "Chengalpattu",
+      "elec2021": 437387,
+      "elec2026": 330217,
+      "vtr2021": 60.86,
+      "vtr2026": 83.26,
+      "nonVoters2021": 171193,
+      "nonVoters2026": 55278,
+      "winner2021": {
+        "name": "Karunanithi",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 126427,
+        "voteshare": 47.49
+      },
+      "runnerUp2021": {
+        "name": "Rajendran",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88646,
+        "voteshare": 33.3
+      },
+      "margin2021": 37781,
+      "marginPct2021": 14.19,
+      "apathyRatio": 4.53
+    },
+    {
+      "no": 31,
+      "name": "Tambaram",
+      "district": "Chengalpattu",
+      "elec2021": 418082,
+      "elec2026": 323677,
+      "vtr2021": 59.55,
+      "vtr2026": 83.83,
+      "nonVoters2021": 169114,
+      "nonVoters2026": 52339,
+      "winner2021": {
+        "name": "Raja.S.R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 116840,
+        "voteshare": 46.93
+      },
+      "runnerUp2021": {
+        "name": "Chinnaiyah.T.K.M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 80016,
+        "voteshare": 32.14
+      },
+      "margin2021": 36824,
+      "marginPct2021": 14.79,
+      "apathyRatio": 4.59
+    },
+    {
+      "no": 32,
+      "name": "Chengalpattu",
+      "district": "Chengalpattu",
+      "elec2021": 431361,
+      "elec2026": 366400,
+      "vtr2021": 63.54,
+      "vtr2026": 86.3,
+      "nonVoters2021": 157274,
+      "nonVoters2026": 50197,
+      "winner2021": {
+        "name": "Varalakshmi.M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 130573,
+        "voteshare": 47.64
+      },
+      "runnerUp2021": {
+        "name": "Gajendran.M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 103908,
+        "voteshare": 37.91
+      },
+      "margin2021": 26665,
+      "marginPct2021": 9.73,
+      "apathyRatio": 5.9
+    },
+    {
+      "no": 33,
+      "name": "Thiruporur",
+      "district": "Chengalpattu",
+      "elec2021": 296921,
+      "elec2026": 289401,
+      "vtr2021": 76.36,
+      "vtr2026": 87.58,
+      "nonVoters2021": 70192,
+      "nonVoters2026": 35944,
+      "winner2021": {
+        "name": "S.S.Balaji",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 93954,
+        "voteshare": 41.44
+      },
+      "runnerUp2021": {
+        "name": "Arumugam.K",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 92007,
+        "voteshare": 40.58
+      },
+      "margin2021": 1947,
+      "marginPct2021": 0.86,
+      "apathyRatio": 36.05
+    },
+    {
+      "no": 34,
+      "name": "Cheyyur",
+      "district": "Chengalpattu",
+      "elec2021": 229994,
+      "elec2026": 202055,
+      "vtr2021": 77.88,
+      "vtr2026": 89.34,
+      "nonVoters2021": 50875,
+      "nonVoters2026": 21539,
+      "winner2021": {
+        "name": "Babu M",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 82750,
+        "voteshare": 46.2
+      },
+      "runnerUp2021": {
+        "name": "Kanitha S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78708,
+        "voteshare": 43.94
+      },
+      "margin2021": 4042,
+      "marginPct2021": 2.26,
+      "apathyRatio": 12.59
+    },
+    {
+      "no": 35,
+      "name": "Madurantakam",
+      "district": "Chengalpattu",
+      "elec2021": 230430,
+      "elec2026": 211295,
+      "vtr2021": 80.65,
+      "vtr2026": 92.11,
+      "nonVoters2021": 44588,
+      "nonVoters2026": 16671,
+      "winner2021": {
+        "name": "Maragatham. K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 86646,
+        "voteshare": 46.62
+      },
+      "runnerUp2021": {
+        "name": "Sathya. C.E",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 83076,
+        "voteshare": 44.7
+      },
+      "margin2021": 3570,
+      "marginPct2021": 1.92,
+      "apathyRatio": 12.49
+    },
+    {
+      "no": 36,
+      "name": "Uthiramerur",
+      "district": "Kancheepuram",
+      "elec2021": 262832,
+      "elec2026": 243922,
+      "vtr2021": 80.1,
+      "vtr2026": 91.02,
+      "nonVoters2021": 52304,
+      "nonVoters2026": 21904,
+      "winner2021": {
+        "name": "Sundar K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93427,
+        "voteshare": 44.38
+      },
+      "runnerUp2021": {
+        "name": "Somasundaram V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 91805,
+        "voteshare": 43.61
+      },
+      "margin2021": 1622,
+      "marginPct2021": 0.77,
+      "apathyRatio": 32.25
+    },
+    {
+      "no": 37,
+      "name": "Kancheepuram",
+      "district": "Kancheepuram",
+      "elec2021": 313089,
+      "elec2026": 276299,
+      "vtr2021": 73.28,
+      "vtr2026": 87.15,
+      "nonVoters2021": 83657,
+      "nonVoters2026": 35504,
+      "winner2021": {
+        "name": "C.V.M.P. Ezhailzrasan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102712,
+        "voteshare": 44.77
+      },
+      "runnerUp2021": {
+        "name": "P. Magesh Kumar",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 91117,
+        "voteshare": 39.71
+      },
+      "margin2021": 11595,
+      "marginPct2021": 5.05,
+      "apathyRatio": 7.21
+    },
+    {
+      "no": 38,
+      "name": "Arakkonam",
+      "district": "Ranipet",
+      "elec2021": 228885,
+      "elec2026": 199165,
+      "vtr2021": 74.89,
+      "vtr2026": 90.12,
+      "nonVoters2021": 57473,
+      "nonVoters2026": 19678,
+      "winner2021": {
+        "name": "S.Ravi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85399,
+        "voteshare": 49.82
+      },
+      "runnerUp2021": {
+        "name": "Gowthama Sannah.J",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 58230,
+        "voteshare": 33.97
+      },
+      "margin2021": 27169,
+      "marginPct2021": 15.85,
+      "apathyRatio": 2.12
+    },
+    {
+      "no": 39,
+      "name": "Sholinghur",
+      "district": "Ranipet",
+      "elec2021": 279821,
+      "elec2026": 256118,
+      "vtr2021": 80.09,
+      "vtr2026": 89.43,
+      "nonVoters2021": 55712,
+      "nonVoters2026": 27072,
+      "winner2021": {
+        "name": "A.M.Munirathinam",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 110228,
+        "voteshare": 49.18
+      },
+      "runnerUp2021": {
+        "name": "A.M.Krishnan",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 83530,
+        "voteshare": 37.27
+      },
+      "margin2021": 26698,
+      "marginPct2021": 11.91,
+      "apathyRatio": 2.09
+    },
+    {
+      "no": 40,
+      "name": "Katpadi",
+      "district": "Vellore",
+      "elec2021": 251683,
+      "elec2026": 225809,
+      "vtr2021": 74.0,
+      "vtr2026": 87.86,
+      "nonVoters2021": 65438,
+      "nonVoters2026": 27413,
+      "winner2021": {
+        "name": "Duraimurugan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 85140,
+        "voteshare": 45.71
+      },
+      "runnerUp2021": {
+        "name": "V Ramu",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84394,
+        "voteshare": 45.31
+      },
+      "margin2021": 746,
+      "marginPct2021": 0.4,
+      "apathyRatio": 87.72
+    },
+    {
+      "no": 41,
+      "name": "Ranipet",
+      "district": "Ranipet",
+      "elec2021": 268593,
+      "elec2026": 245853,
+      "vtr2021": 77.24,
+      "vtr2026": 87.98,
+      "nonVoters2021": 61132,
+      "nonVoters2026": 29552,
+      "winner2021": {
+        "name": "R.Gandhi",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103291,
+        "voteshare": 49.79
+      },
+      "runnerUp2021": {
+        "name": "S.M.Sugumar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 86793,
+        "voteshare": 41.84
+      },
+      "margin2021": 16498,
+      "marginPct2021": 7.95,
+      "apathyRatio": 3.71
+    },
+    {
+      "no": 42,
+      "name": "Arcot",
+      "district": "Ranipet",
+      "elec2021": 263490,
+      "elec2026": 243565,
+      "vtr2021": 79.62,
+      "vtr2026": 90.52,
+      "nonVoters2021": 53699,
+      "nonVoters2026": 23090,
+      "winner2021": {
+        "name": "J.L.Eswarappan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103885,
+        "voteshare": 49.52
+      },
+      "runnerUp2021": {
+        "name": "Elavazagan.K.L",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 83927,
+        "voteshare": 40.01
+      },
+      "margin2021": 19958,
+      "marginPct2021": 9.51,
+      "apathyRatio": 2.69
+    },
+    {
+      "no": 43,
+      "name": "Vellore",
+      "district": "Vellore",
+      "elec2021": 256083,
+      "elec2026": 211063,
+      "vtr2021": 70.25,
+      "vtr2026": 87.97,
+      "nonVoters2021": 76185,
+      "nonVoters2026": 25391,
+      "winner2021": {
+        "name": "Karthikeyan .P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84299,
+        "voteshare": 46.86
+      },
+      "runnerUp2021": {
+        "name": "Appu S.R.K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 75118,
+        "voteshare": 41.76
+      },
+      "margin2021": 9181,
+      "marginPct2021": 5.1,
+      "apathyRatio": 8.3
+    },
+    {
+      "no": 44,
+      "name": "Anaikattu",
+      "district": "Vellore",
+      "elec2021": 256722,
+      "elec2026": 234738,
+      "vtr2021": 77.05,
+      "vtr2026": 89.59,
+      "nonVoters2021": 58918,
+      "nonVoters2026": 24436,
+      "winner2021": {
+        "name": "A.P.Nandakumar",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95159,
+        "voteshare": 48.11
+      },
+      "runnerUp2021": {
+        "name": "D.Velazhagan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88799,
+        "voteshare": 44.89
+      },
+      "margin2021": 6360,
+      "marginPct2021": 3.22,
+      "apathyRatio": 9.26
+    },
+    {
+      "no": 45,
+      "name": "Kilvaithinankuppam",
+      "district": "Vellore",
+      "elec2021": 227613,
+      "elec2026": 213451,
+      "vtr2021": 76.5,
+      "vtr2026": 87.25,
+      "nonVoters2021": 53489,
+      "nonVoters2026": 27215,
+      "winner2021": {
+        "name": "M.Jagan Moorthy",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84579,
+        "voteshare": 48.57
+      },
+      "runnerUp2021": {
+        "name": "K Seetharaman",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 73997,
+        "voteshare": 42.5
+      },
+      "margin2021": 10582,
+      "marginPct2021": 6.08,
+      "apathyRatio": 5.05
+    },
+    {
+      "no": 46,
+      "name": "Gudiyattam",
+      "district": "Vellore",
+      "elec2021": 291662,
+      "elec2026": 248526,
+      "vtr2021": 72.56,
+      "vtr2026": 90.44,
+      "nonVoters2021": 80032,
+      "nonVoters2026": 23759,
+      "winner2021": {
+        "name": "Amulu.V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 100412,
+        "voteshare": 47.45
+      },
+      "runnerUp2021": {
+        "name": "Paritha.G",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 93511,
+        "voteshare": 44.19
+      },
+      "margin2021": 6901,
+      "marginPct2021": 3.26,
+      "apathyRatio": 11.6
+    },
+    {
+      "no": 47,
+      "name": "Vaniyambadi",
+      "district": "Tirupathur",
+      "elec2021": 251485,
+      "elec2026": 240220,
+      "vtr2021": 75.55,
+      "vtr2026": 86.83,
+      "nonVoters2021": 61488,
+      "nonVoters2026": 31637,
+      "winner2021": {
+        "name": "G.Sendhil Kumar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88018,
+        "voteshare": 46.33
+      },
+      "runnerUp2021": {
+        "name": "N.Mohammed Nayeem",
+        "party": "IUML",
+        "alliance": "SPA",
+        "votes": 83114,
+        "voteshare": 43.74
+      },
+      "margin2021": 4904,
+      "marginPct2021": 2.58,
+      "apathyRatio": 12.54
+    },
+    {
+      "no": 48,
+      "name": "Ambur",
+      "district": "Tirupathur",
+      "elec2021": 240343,
+      "elec2026": 212631,
+      "vtr2021": 74.01,
+      "vtr2026": 90.23,
+      "nonVoters2021": 62465,
+      "nonVoters2026": 20774,
+      "winner2021": {
+        "name": "Vilwanathan.A.C",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 90476,
+        "voteshare": 50.86
+      },
+      "runnerUp2021": {
+        "name": "Nazar Mohamed.K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70244,
+        "voteshare": 39.49
+      },
+      "margin2021": 20232,
+      "marginPct2021": 11.37,
+      "apathyRatio": 3.09
+    },
+    {
+      "no": 49,
+      "name": "Jolarpet",
+      "district": "Tirupathur",
+      "elec2021": 242477,
+      "elec2026": 233830,
+      "vtr2021": 80.98,
+      "vtr2026": 89.42,
+      "nonVoters2021": 46119,
+      "nonVoters2026": 24739,
+      "winner2021": {
+        "name": "Devaraji.K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89490,
+        "voteshare": 45.57
+      },
+      "runnerUp2021": {
+        "name": "Veeramani.K.C.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88399,
+        "voteshare": 45.02
+      },
+      "margin2021": 1091,
+      "marginPct2021": 0.56,
+      "apathyRatio": 42.27
+    },
+    {
+      "no": 50,
+      "name": "Tirupattur",
+      "district": "Tirupathur",
+      "elec2021": 241561,
+      "elec2026": 224918,
+      "vtr2021": 76.97,
+      "vtr2026": 88.53,
+      "nonVoters2021": 55631,
+      "nonVoters2026": 25798,
+      "winner2021": {
+        "name": "A. Nallathambi",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 96522,
+        "voteshare": 51.91
+      },
+      "runnerUp2021": {
+        "name": "T.K. Raja",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 68282,
+        "voteshare": 36.72
+      },
+      "margin2021": 28240,
+      "marginPct2021": 15.19,
+      "apathyRatio": 1.97
+    },
+    {
+      "no": 51,
+      "name": "Uthangarai",
+      "district": "Krishnagiri",
+      "elec2021": 240172,
+      "elec2026": 233500,
+      "vtr2021": 78.37,
+      "vtr2026": 86.03,
+      "nonVoters2021": 51949,
+      "nonVoters2026": 32620,
+      "winner2021": {
+        "name": "T.M.Tamilselvam",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 99675,
+        "voteshare": 52.96
+      },
+      "runnerUp2021": {
+        "name": "S.Arumugam",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 71288,
+        "voteshare": 37.87
+      },
+      "margin2021": 28387,
+      "marginPct2021": 15.08,
+      "apathyRatio": 1.83
+    },
+    {
+      "no": 52,
+      "name": "Bargur",
+      "district": "Krishnagiri",
+      "elec2021": 250106,
+      "elec2026": 237349,
+      "vtr2021": 79.08,
+      "vtr2026": 88.0,
+      "nonVoters2021": 52322,
+      "nonVoters2026": 28482,
+      "winner2021": {
+        "name": "Mathiazhagan D",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 97256,
+        "voteshare": 49.17
+      },
+      "runnerUp2021": {
+        "name": "Krishnan A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84642,
+        "voteshare": 42.8
+      },
+      "margin2021": 12614,
+      "marginPct2021": 6.38,
+      "apathyRatio": 4.15
+    },
+    {
+      "no": 53,
+      "name": "Krishnagiri",
+      "district": "Krishnagiri",
+      "elec2021": 269615,
+      "elec2026": 265037,
+      "vtr2021": 78.5,
+      "vtr2026": 84.85,
+      "nonVoters2021": 57967,
+      "nonVoters2026": 40153,
+      "winner2021": {
+        "name": "Ashokkumar.K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 96050,
+        "voteshare": 45.38
+      },
+      "runnerUp2021": {
+        "name": "Senguttuvan.T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95256,
+        "voteshare": 45.01
+      },
+      "margin2021": 794,
+      "marginPct2021": 0.38,
+      "apathyRatio": 73.01
+    },
+    {
+      "no": 54,
+      "name": "Veppanahalli",
+      "district": "Krishnagiri",
+      "elec2021": 252294,
+      "elec2026": 243875,
+      "vtr2021": 81.31,
+      "vtr2026": 89.72,
+      "nonVoters2021": 47154,
+      "nonVoters2026": 25070,
+      "winner2021": {
+        "name": "K.P.Munusamy",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 94104,
+        "voteshare": 45.87
+      },
+      "runnerUp2021": {
+        "name": "P.Murugan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 91050,
+        "voteshare": 44.38
+      },
+      "margin2021": 3054,
+      "marginPct2021": 1.49,
+      "apathyRatio": 15.44
+    },
+    {
+      "no": 55,
+      "name": "Hosur",
+      "district": "Krishnagiri",
+      "elec2021": 353970,
+      "elec2026": 338295,
+      "vtr2021": 70.09,
+      "vtr2026": 80.33,
+      "nonVoters2021": 105872,
+      "nonVoters2026": 66543,
+      "winner2021": {
+        "name": "Prakaash Y",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 118231,
+        "voteshare": 47.65
+      },
+      "runnerUp2021": {
+        "name": "Jyothi S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 105864,
+        "voteshare": 42.67
+      },
+      "margin2021": 12367,
+      "marginPct2021": 4.98,
+      "apathyRatio": 8.56
+    },
+    {
+      "no": 56,
+      "name": "Thalli",
+      "district": "Krishnagiri",
+      "elec2021": 251780,
+      "elec2026": 235984,
+      "vtr2021": 77.06,
+      "vtr2026": 84.35,
+      "nonVoters2021": 57758,
+      "nonVoters2026": 36931,
+      "winner2021": {
+        "name": "Ramachandran.T",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 120641,
+        "voteshare": 62.18
+      },
+      "runnerUp2021": {
+        "name": "Dr.Nagesh Kumar.C",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 64415,
+        "voteshare": 33.2
+      },
+      "margin2021": 56226,
+      "marginPct2021": 28.98,
+      "apathyRatio": 1.03
+    },
+    {
+      "no": 57,
+      "name": "Palacodu",
+      "district": "Dharmapuri",
+      "elec2021": 236459,
+      "elec2026": 237476,
+      "vtr2021": 87.37,
+      "vtr2026": 92.57,
+      "nonVoters2021": 29865,
+      "nonVoters2026": 17644,
+      "winner2021": {
+        "name": "Anbalagan.K.P.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 110070,
+        "voteshare": 53.28
+      },
+      "runnerUp2021": {
+        "name": "Murugan.P.K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 81970,
+        "voteshare": 39.68
+      },
+      "margin2021": 28100,
+      "marginPct2021": 13.6,
+      "apathyRatio": 1.06
+    },
+    {
+      "no": 58,
+      "name": "Pennagaram",
+      "district": "Dharmapuri",
+      "elec2021": 247417,
+      "elec2026": 246293,
+      "vtr2021": 85.0,
+      "vtr2026": 90.51,
+      "nonVoters2021": 37113,
+      "nonVoters2026": 23373,
+      "winner2021": {
+        "name": "Mani. G.K",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 106123,
+        "voteshare": 50.46
+      },
+      "runnerUp2021": {
+        "name": "Inbasekaran. P.N.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84937,
+        "voteshare": 40.39
+      },
+      "margin2021": 21186,
+      "marginPct2021": 10.07,
+      "apathyRatio": 1.75
+    },
+    {
+      "no": 59,
+      "name": "Dharmapuri",
+      "district": "Dharmapuri",
+      "elec2021": 272723,
+      "elec2026": 257939,
+      "vtr2021": 79.69,
+      "vtr2026": 89.48,
+      "nonVoters2021": 55390,
+      "nonVoters2026": 27135,
+      "winner2021": {
+        "name": "Venkateshwaran.S.P.",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 105630,
+        "voteshare": 48.6
+      },
+      "runnerUp2021": {
+        "name": "Subramani.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78770,
+        "voteshare": 36.24
+      },
+      "margin2021": 26860,
+      "marginPct2021": 12.36,
+      "apathyRatio": 2.06
+    },
+    {
+      "no": 60,
+      "name": "Pappireddipatti",
+      "district": "Dharmapuri",
+      "elec2021": 269012,
+      "elec2026": 254658,
+      "vtr2021": 82.15,
+      "vtr2026": 90.39,
+      "nonVoters2021": 48019,
+      "nonVoters2026": 24473,
+      "winner2021": {
+        "name": "Govindasamy.A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 114507,
+        "voteshare": 51.81
+      },
+      "runnerUp2021": {
+        "name": "Prabhurajasekar.M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77564,
+        "voteshare": 35.1
+      },
+      "margin2021": 36943,
+      "marginPct2021": 16.72,
+      "apathyRatio": 1.3
+    },
+    {
+      "no": 61,
+      "name": "Harur",
+      "district": "Dharmapuri",
+      "elec2021": 253078,
+      "elec2026": 243742,
+      "vtr2021": 78.46,
+      "vtr2026": 87.7,
+      "nonVoters2021": 54513,
+      "nonVoters2026": 29980,
+      "winner2021": {
+        "name": "Sampathkumar.V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 99061,
+        "voteshare": 49.89
+      },
+      "runnerUp2021": {
+        "name": "Kumar.A",
+        "party": "CPM",
+        "alliance": "SPA",
+        "votes": 68699,
+        "voteshare": 34.6
+      },
+      "margin2021": 30362,
+      "marginPct2021": 15.29,
+      "apathyRatio": 1.8
+    },
+    {
+      "no": 62,
+      "name": "Chengam",
+      "district": "Tiruvannamalai",
+      "elec2021": 277646,
+      "elec2026": 266629,
+      "vtr2021": 80.66,
+      "vtr2026": 87.73,
+      "nonVoters2021": 53697,
+      "nonVoters2026": 32715,
+      "winner2021": {
+        "name": "Giri.M.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 108081,
+        "voteshare": 48.26
+      },
+      "runnerUp2021": {
+        "name": "Nainakannu.M.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 96511,
+        "voteshare": 43.09
+      },
+      "margin2021": 11570,
+      "marginPct2021": 5.17,
+      "apathyRatio": 4.64
+    },
+    {
+      "no": 63,
+      "name": "Tiruvannamalai",
+      "district": "Tiruvannamalai",
+      "elec2021": 291304,
+      "elec2026": 247309,
+      "vtr2021": 71.69,
+      "vtr2026": 86.78,
+      "nonVoters2021": 82468,
+      "nonVoters2026": 32694,
+      "winner2021": {
+        "name": "E V Velu",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 137876,
+        "voteshare": 66.02
+      },
+      "runnerUp2021": {
+        "name": "S Thanigaivel",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 43203,
+        "voteshare": 20.69
+      },
+      "margin2021": 94673,
+      "marginPct2021": 45.33,
+      "apathyRatio": 0.87
+    },
+    {
+      "no": 64,
+      "name": "Kilpennathur",
+      "district": "Tiruvannamalai",
+      "elec2021": 256945,
+      "elec2026": 238913,
+      "vtr2021": 79.35,
+      "vtr2026": 89.62,
+      "nonVoters2021": 53059,
+      "nonVoters2026": 24799,
+      "winner2021": {
+        "name": "K.Pitchandi",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 104675,
+        "voteshare": 51.34
+      },
+      "runnerUp2021": {
+        "name": "K.Selvakumar",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 77888,
+        "voteshare": 38.2
+      },
+      "margin2021": 26787,
+      "marginPct2021": 13.14,
+      "apathyRatio": 1.98
+    },
+    {
+      "no": 65,
+      "name": "Kalasapakkam",
+      "district": "Tiruvannamalai",
+      "elec2021": 244442,
+      "elec2026": 230766,
+      "vtr2021": 80.36,
+      "vtr2026": 89.97,
+      "nonVoters2021": 48008,
+      "nonVoters2026": 23146,
+      "winner2021": {
+        "name": "Saravanan.P.S.T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 94134,
+        "voteshare": 47.92
+      },
+      "runnerUp2021": {
+        "name": "Panneerselvam.V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84912,
+        "voteshare": 43.23
+      },
+      "margin2021": 9222,
+      "marginPct2021": 4.69,
+      "apathyRatio": 5.21
+    },
+    {
+      "no": 66,
+      "name": "Polur",
+      "district": "Tiruvannamalai",
+      "elec2021": 245368,
+      "elec2026": 232426,
+      "vtr2021": 82.33,
+      "vtr2026": 88.95,
+      "nonVoters2021": 43357,
+      "nonVoters2026": 25683,
+      "winner2021": {
+        "name": "Agri Krishnamurthy. S S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 97732,
+        "voteshare": 48.38
+      },
+      "runnerUp2021": {
+        "name": "Sekaran. K.V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 88007,
+        "voteshare": 43.57
+      },
+      "margin2021": 9725,
+      "marginPct2021": 4.81,
+      "apathyRatio": 4.46
+    },
+    {
+      "no": 67,
+      "name": "Arani",
+      "district": "Tiruvannamalai",
+      "elec2021": 277332,
+      "elec2026": 253022,
+      "vtr2021": 79.84,
+      "vtr2026": 89.06,
+      "nonVoters2021": 55910,
+      "nonVoters2026": 27681,
+      "winner2021": {
+        "name": "S.Ramachandran",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 102961,
+        "voteshare": 46.5
+      },
+      "runnerUp2021": {
+        "name": "S.S.Anbalagan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 99833,
+        "voteshare": 45.09
+      },
+      "margin2021": 3128,
+      "marginPct2021": 1.41,
+      "apathyRatio": 17.87
+    },
+    {
+      "no": 68,
+      "name": "Cheyyar",
+      "district": "Tiruvannamalai",
+      "elec2021": 262529,
+      "elec2026": 238283,
+      "vtr2021": 81.69,
+      "vtr2026": 91.91,
+      "nonVoters2021": 48069,
+      "nonVoters2026": 19277,
+      "winner2021": {
+        "name": "Jothi. O",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102460,
+        "voteshare": 47.78
+      },
+      "runnerUp2021": {
+        "name": "Dusi. K. Mohan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 90189,
+        "voteshare": 42.05
+      },
+      "margin2021": 12271,
+      "marginPct2021": 5.72,
+      "apathyRatio": 3.92
+    },
+    {
+      "no": 69,
+      "name": "Vandavasi",
+      "district": "Tiruvannamalai",
+      "elec2021": 242122,
+      "elec2026": 211811,
+      "vtr2021": 76.81,
+      "vtr2026": 88.3,
+      "nonVoters2021": 56148,
+      "nonVoters2026": 24782,
+      "winner2021": {
+        "name": "Ambethkumar S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102064,
+        "voteshare": 54.88
+      },
+      "runnerUp2021": {
+        "name": "Murali S",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 66111,
+        "voteshare": 35.55
+      },
+      "margin2021": 35953,
+      "marginPct2021": 19.33,
+      "apathyRatio": 1.56
+    },
+    {
+      "no": 70,
+      "name": "Gingee",
+      "district": "Viluppuram",
+      "elec2021": 264518,
+      "elec2026": 240957,
+      "vtr2021": 78.21,
+      "vtr2026": 87.81,
+      "nonVoters2021": 57638,
+      "nonVoters2026": 29373,
+      "winner2021": {
+        "name": "Masthan K S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 109625,
+        "voteshare": 52.99
+      },
+      "runnerUp2021": {
+        "name": "Rajendiran P",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 73822,
+        "voteshare": 35.68
+      },
+      "margin2021": 35803,
+      "marginPct2021": 17.31,
+      "apathyRatio": 1.61
+    },
+    {
+      "no": 71,
+      "name": "Mailam",
+      "district": "Viluppuram",
+      "elec2021": 222627,
+      "elec2026": 207665,
+      "vtr2021": 79.5,
+      "vtr2026": 89.4,
+      "nonVoters2021": 45639,
+      "nonVoters2026": 22012,
+      "winner2021": {
+        "name": "Sivakumar C",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 81044,
+        "voteshare": 45.79
+      },
+      "runnerUp2021": {
+        "name": "Dr. Masilamani R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78814,
+        "voteshare": 44.53
+      },
+      "margin2021": 2230,
+      "marginPct2021": 1.26,
+      "apathyRatio": 20.47
+    },
+    {
+      "no": 72,
+      "name": "Tindivanam",
+      "district": "Viluppuram",
+      "elec2021": 232740,
+      "elec2026": 217609,
+      "vtr2021": 78.43,
+      "vtr2026": 88.43,
+      "nonVoters2021": 50202,
+      "nonVoters2026": 25177,
+      "winner2021": {
+        "name": "Arjunan P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 87152,
+        "voteshare": 47.74
+      },
+      "runnerUp2021": {
+        "name": "Seethapathy P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77399,
+        "voteshare": 42.4
+      },
+      "margin2021": 9753,
+      "marginPct2021": 5.34,
+      "apathyRatio": 5.15
+    },
+    {
+      "no": 73,
+      "name": "Vanur",
+      "district": "Viluppuram",
+      "elec2021": 228359,
+      "elec2026": 207984,
+      "vtr2021": 79.79,
+      "vtr2026": 91.05,
+      "nonVoters2021": 46151,
+      "nonVoters2026": 18615,
+      "winner2021": {
+        "name": "Chakrapani M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 92219,
+        "voteshare": 50.61
+      },
+      "runnerUp2021": {
+        "name": "Vanni Arasu",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 70492,
+        "voteshare": 38.69
+      },
+      "margin2021": 21727,
+      "marginPct2021": 11.92,
+      "apathyRatio": 2.12
+    },
+    {
+      "no": 74,
+      "name": "Viluppuram",
+      "district": "Viluppuram",
+      "elec2021": 266155,
+      "elec2026": 244080,
+      "vtr2021": 76.97,
+      "vtr2026": 86.22,
+      "nonVoters2021": 61295,
+      "nonVoters2026": 33634,
+      "winner2021": {
+        "name": "Lakshmanan R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102271,
+        "voteshare": 49.92
+      },
+      "runnerUp2021": {
+        "name": "Shanmugam C Ve",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 87403,
+        "voteshare": 42.66
+      },
+      "margin2021": 14868,
+      "marginPct2021": 7.26,
+      "apathyRatio": 4.12
+    },
+    {
+      "no": 75,
+      "name": "Vikravandi",
+      "district": "Viluppuram",
+      "elec2021": 237887,
+      "elec2026": 227355,
+      "vtr2021": 81.39,
+      "vtr2026": 90.43,
+      "nonVoters2021": 44271,
+      "nonVoters2026": 21758,
+      "winner2021": {
+        "name": "Pugazhenthi N",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93730,
+        "voteshare": 48.41
+      },
+      "runnerUp2021": {
+        "name": "Muthamilselvan R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84157,
+        "voteshare": 43.47
+      },
+      "margin2021": 9573,
+      "marginPct2021": 4.94,
+      "apathyRatio": 4.62
+    },
+    {
+      "no": 76,
+      "name": "Tirukkoyilur",
+      "district": "Viluppuram",
+      "elec2021": 257266,
+      "elec2026": 241003,
+      "vtr2021": 76.27,
+      "vtr2026": 88.18,
+      "nonVoters2021": 61049,
+      "nonVoters2026": 28487,
+      "winner2021": {
+        "name": "K.Ponmudy",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 110980,
+        "voteshare": 56.56
+      },
+      "runnerUp2021": {
+        "name": "Vat.Kalivaradhan",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 51300,
+        "voteshare": 26.14
+      },
+      "margin2021": 59680,
+      "marginPct2021": 30.42,
+      "apathyRatio": 1.02
+    },
+    {
+      "no": 77,
+      "name": "Ulundurpettai",
+      "district": "Kallakurichi",
+      "elec2021": 296360,
+      "elec2026": 297472,
+      "vtr2021": 82.62,
+      "vtr2026": 89.36,
+      "nonVoters2021": 51507,
+      "nonVoters2026": 31651,
+      "winner2021": {
+        "name": "Manikannan A J",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 115451,
+        "voteshare": 47.15
+      },
+      "runnerUp2021": {
+        "name": "Kumaraguru R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 110195,
+        "voteshare": 45.0
+      },
+      "margin2021": 5256,
+      "marginPct2021": 2.15,
+      "apathyRatio": 9.8
+    },
+    {
+      "no": 78,
+      "name": "Rishivandiyam",
+      "district": "Kallakurichi",
+      "elec2021": 268278,
+      "elec2026": 270541,
+      "vtr2021": 80.18,
+      "vtr2026": 87.53,
+      "nonVoters2021": 53173,
+      "nonVoters2026": 33736,
+      "winner2021": {
+        "name": "Karthikeyan K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 113912,
+        "voteshare": 52.96
+      },
+      "runnerUp2021": {
+        "name": "Santhosh S A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 72184,
+        "voteshare": 33.56
+      },
+      "margin2021": 41728,
+      "marginPct2021": 19.4,
+      "apathyRatio": 1.27
+    },
+    {
+      "no": 79,
+      "name": "Sankarapuram",
+      "district": "Kallakurichi",
+      "elec2021": 271176,
+      "elec2026": 263136,
+      "vtr2021": 79.58,
+      "vtr2026": 86.95,
+      "nonVoters2021": 55374,
+      "nonVoters2026": 34339,
+      "winner2021": {
+        "name": "Udhayasuriyan T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 121186,
+        "voteshare": 56.16
+      },
+      "runnerUp2021": {
+        "name": "Dr.Raja G",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 75223,
+        "voteshare": 34.86
+      },
+      "margin2021": 45963,
+      "marginPct2021": 21.3,
+      "apathyRatio": 1.2
+    },
+    {
+      "no": 80,
+      "name": "Kallakurichi",
+      "district": "Kallakurichi",
+      "elec2021": 288968,
+      "elec2026": 278762,
+      "vtr2021": 78.16,
+      "vtr2026": 87.93,
+      "nonVoters2021": 63111,
+      "nonVoters2026": 33647,
+      "winner2021": {
+        "name": "Senthilkumar.M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 110643,
+        "voteshare": 48.99
+      },
+      "runnerUp2021": {
+        "name": "Manirathinem.K.I",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 84752,
+        "voteshare": 37.52
+      },
+      "margin2021": 25891,
+      "marginPct2021": 11.46,
+      "apathyRatio": 2.44
+    },
+    {
+      "no": 81,
+      "name": "Gangavalli",
+      "district": "Salem",
+      "elec2021": 241866,
+      "elec2026": 216794,
+      "vtr2021": 77.11,
+      "vtr2026": 88.61,
+      "nonVoters2021": 55363,
+      "nonVoters2026": 24693,
+      "winner2021": {
+        "name": "Nallathambi,A.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 89568,
+        "voteshare": 48.02
+      },
+      "runnerUp2021": {
+        "name": "Rekha Priyadharshini,J.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 82207,
+        "voteshare": 44.08
+      },
+      "margin2021": 7361,
+      "marginPct2021": 3.95,
+      "apathyRatio": 7.52
+    },
+    {
+      "no": 82,
+      "name": "Attur",
+      "district": "Salem",
+      "elec2021": 258533,
+      "elec2026": 226481,
+      "vtr2021": 77.26,
+      "vtr2026": 90.12,
+      "nonVoters2021": 58790,
+      "nonVoters2026": 22376,
+      "winner2021": {
+        "name": "Jayasankaran, A.P.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 95308,
+        "voteshare": 47.72
+      },
+      "runnerUp2021": {
+        "name": "Chinnadurai, K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87051,
+        "voteshare": 43.58
+      },
+      "margin2021": 8257,
+      "marginPct2021": 4.13,
+      "apathyRatio": 7.12
+    },
+    {
+      "no": 83,
+      "name": "Yercaud",
+      "district": "Salem",
+      "elec2021": 287548,
+      "elec2026": 270529,
+      "vtr2021": 83.09,
+      "vtr2026": 90.96,
+      "nonVoters2021": 48624,
+      "nonVoters2026": 24456,
+      "winner2021": {
+        "name": "G. Chitra",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 121561,
+        "voteshare": 50.88
+      },
+      "runnerUp2021": {
+        "name": "C. Tamilselvan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95606,
+        "voteshare": 40.02
+      },
+      "margin2021": 25955,
+      "marginPct2021": 10.86,
+      "apathyRatio": 1.87
+    },
+    {
+      "no": 84,
+      "name": "Omalur",
+      "district": "Salem",
+      "elec2021": 299023,
+      "elec2026": 291866,
+      "vtr2021": 83.28,
+      "vtr2026": 90.69,
+      "nonVoters2021": 49997,
+      "nonVoters2026": 27173,
+      "winner2021": {
+        "name": "R.Mani",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 142488,
+        "voteshare": 57.22
+      },
+      "runnerUp2021": {
+        "name": "Rangarajan Mohan Kumaramangalam",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 87194,
+        "voteshare": 35.01
+      },
+      "margin2021": 55294,
+      "marginPct2021": 22.2,
+      "apathyRatio": 0.9
+    },
+    {
+      "no": 85,
+      "name": "Mettur",
+      "district": "Salem",
+      "elec2021": 291217,
+      "elec2026": 253445,
+      "vtr2021": 75.01,
+      "vtr2026": 89.18,
+      "nonVoters2021": 72775,
+      "nonVoters2026": 27423,
+      "winner2021": {
+        "name": "Sadhasivam.S",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 97055,
+        "voteshare": 44.43
+      },
+      "runnerUp2021": {
+        "name": "Srinivasaperumal.S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 96399,
+        "voteshare": 44.13
+      },
+      "margin2021": 656,
+      "marginPct2021": 0.3,
+      "apathyRatio": 110.94
+    },
+    {
+      "no": 86,
+      "name": "Edappadi",
+      "district": "Salem",
+      "elec2021": 288768,
+      "elec2026": 274054,
+      "vtr2021": 85.64,
+      "vtr2026": 92.02,
+      "nonVoters2021": 41467,
+      "nonVoters2026": 21870,
+      "winner2021": {
+        "name": "Edappadi Palaniswami. K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 163154,
+        "voteshare": 65.97
+      },
+      "runnerUp2021": {
+        "name": "Sambathkumar. T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 69352,
+        "voteshare": 28.04
+      },
+      "margin2021": 93802,
+      "marginPct2021": 37.93,
+      "apathyRatio": 0.44
+    },
+    {
+      "no": 87,
+      "name": "Sankari",
+      "district": "Salem",
+      "elec2021": 277442,
+      "elec2026": 258678,
+      "vtr2021": 83.71,
+      "vtr2026": 92.49,
+      "nonVoters2021": 45195,
+      "nonVoters2026": 19427,
+      "winner2021": {
+        "name": "Sundararajan, S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 115472,
+        "voteshare": 49.72
+      },
+      "runnerUp2021": {
+        "name": "Rajesh, K.M.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95427,
+        "voteshare": 41.09
+      },
+      "margin2021": 20045,
+      "marginPct2021": 8.63,
+      "apathyRatio": 2.25
+    },
+    {
+      "no": 88,
+      "name": "Salem (West)",
+      "district": "Salem",
+      "elec2021": 301668,
+      "elec2026": 255320,
+      "vtr2021": 71.81,
+      "vtr2026": 89.71,
+      "nonVoters2021": 85040,
+      "nonVoters2026": 26272,
+      "winner2021": {
+        "name": "Arul. R",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 105483,
+        "voteshare": 48.69
+      },
+      "runnerUp2021": {
+        "name": "Rajendran. A",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 83984,
+        "voteshare": 38.77
+      },
+      "margin2021": 21499,
+      "marginPct2021": 9.92,
+      "apathyRatio": 3.96
+    },
+    {
+      "no": 89,
+      "name": "Salem (North)",
+      "district": "Salem",
+      "elec2021": 280532,
+      "elec2026": 236088,
+      "vtr2021": 72.14,
+      "vtr2026": 87.39,
+      "nonVoters2021": 78156,
+      "nonVoters2026": 29771,
+      "winner2021": {
+        "name": "R. Rajendran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93432,
+        "voteshare": 46.17
+      },
+      "runnerUp2021": {
+        "name": "G.Venkatachalam",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85844,
+        "voteshare": 42.42
+      },
+      "margin2021": 7588,
+      "marginPct2021": 3.75,
+      "apathyRatio": 10.3
+    },
+    {
+      "no": 90,
+      "name": "Salem (South)",
+      "district": "Salem",
+      "elec2021": 263134,
+      "elec2026": 224097,
+      "vtr2021": 76.0,
+      "vtr2026": 91.01,
+      "nonVoters2021": 63152,
+      "nonVoters2026": 20146,
+      "winner2021": {
+        "name": "E.Balasubramanian",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 97506,
+        "voteshare": 48.76
+      },
+      "runnerUp2021": {
+        "name": "A.S.Saravanan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 74897,
+        "voteshare": 37.45
+      },
+      "margin2021": 22609,
+      "marginPct2021": 11.31,
+      "apathyRatio": 2.79
+    },
+    {
+      "no": 91,
+      "name": "Veerapandi",
+      "district": "Salem",
+      "elec2021": 261212,
+      "elec2026": 248478,
+      "vtr2021": 85.64,
+      "vtr2026": 93.38,
+      "nonVoters2021": 37510,
+      "nonVoters2026": 16449,
+      "winner2021": {
+        "name": "Rajamuthu, M.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 111682,
+        "voteshare": 49.92
+      },
+      "runnerUp2021": {
+        "name": "Tharun, A.K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 91787,
+        "voteshare": 41.03
+      },
+      "margin2021": 19895,
+      "marginPct2021": 8.89,
+      "apathyRatio": 1.89
+    },
+    {
+      "no": 92,
+      "name": "Rasipuram",
+      "district": "Namakkal",
+      "elec2021": 239980,
+      "elec2026": 220554,
+      "vtr2021": 82.05,
+      "vtr2026": 90.38,
+      "nonVoters2021": 43076,
+      "nonVoters2026": 21217,
+      "winner2021": {
+        "name": "Mathiventhan M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 90727,
+        "voteshare": 46.08
+      },
+      "runnerUp2021": {
+        "name": "Saroja V. Dr",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88775,
+        "voteshare": 45.09
+      },
+      "margin2021": 1952,
+      "marginPct2021": 0.99,
+      "apathyRatio": 22.07
+    },
+    {
+      "no": 93,
+      "name": "Senthamangalam",
+      "district": "Namakkal",
+      "elec2021": 246181,
+      "elec2026": 227327,
+      "vtr2021": 80.93,
+      "vtr2026": 88.49,
+      "nonVoters2021": 46947,
+      "nonVoters2026": 26165,
+      "winner2021": {
+        "name": "Ponnusamy K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 90681,
+        "voteshare": 45.51
+      },
+      "runnerUp2021": {
+        "name": "Chandran S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 80188,
+        "voteshare": 40.25
+      },
+      "margin2021": 10493,
+      "marginPct2021": 5.27,
+      "apathyRatio": 4.47
+    },
+    {
+      "no": 94,
+      "name": "Namakkal",
+      "district": "Namakkal",
+      "elec2021": 263152,
+      "elec2026": 235351,
+      "vtr2021": 78.57,
+      "vtr2026": 87.72,
+      "nonVoters2021": 56393,
+      "nonVoters2026": 28901,
+      "winner2021": {
+        "name": "Ramalingam P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 106494,
+        "voteshare": 51.51
+      },
+      "runnerUp2021": {
+        "name": "Baskar K.P.P.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78633,
+        "voteshare": 38.03
+      },
+      "margin2021": 27861,
+      "marginPct2021": 13.48,
+      "apathyRatio": 2.02
+    },
+    {
+      "no": 95,
+      "name": "Paramathi-Velur",
+      "district": "Namakkal",
+      "elec2021": 226395,
+      "elec2026": 203567,
+      "vtr2021": 81.14,
+      "vtr2026": 89.92,
+      "nonVoters2021": 42698,
+      "nonVoters2026": 20520,
+      "winner2021": {
+        "name": "Sekar S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 86034,
+        "voteshare": 46.83
+      },
+      "runnerUp2021": {
+        "name": "Moorthiy K S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78372,
+        "voteshare": 42.66
+      },
+      "margin2021": 7662,
+      "marginPct2021": 4.17,
+      "apathyRatio": 5.57
+    },
+    {
+      "no": 96,
+      "name": "Tiruchengodu",
+      "district": "Namakkal",
+      "elec2021": 234619,
+      "elec2026": 206928,
+      "vtr2021": 78.71,
+      "vtr2026": 90.02,
+      "nonVoters2021": 49950,
+      "nonVoters2026": 20651,
+      "winner2021": {
+        "name": "Eswaran E R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 81688,
+        "voteshare": 44.23
+      },
+      "runnerUp2021": {
+        "name": "Saraswathi Pon",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78826,
+        "voteshare": 42.69
+      },
+      "margin2021": 2862,
+      "marginPct2021": 1.55,
+      "apathyRatio": 17.45
+    },
+    {
+      "no": 97,
+      "name": "Kumarapalayam",
+      "district": "Namakkal",
+      "elec2021": 256087,
+      "elec2026": 217224,
+      "vtr2021": 78.85,
+      "vtr2026": 92.64,
+      "nonVoters2021": 54162,
+      "nonVoters2026": 15988,
+      "winner2021": {
+        "name": "Thangamani.P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 100800,
+        "voteshare": 49.92
+      },
+      "runnerUp2021": {
+        "name": "M.Venkatachalam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 69154,
+        "voteshare": 34.25
+      },
+      "margin2021": 31646,
+      "marginPct2021": 15.67,
+      "apathyRatio": 1.71
+    },
+    {
+      "no": 98,
+      "name": "Erode (East)",
+      "district": "Erode",
+      "elec2021": 229524,
+      "elec2026": 176228,
+      "vtr2021": 66.24,
+      "vtr2026": 89.78,
+      "nonVoters2021": 77487,
+      "nonVoters2026": 18011,
+      "winner2021": {
+        "name": "Thirumahan Everaa,E.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 67300,
+        "voteshare": 44.27
+      },
+      "runnerUp2021": {
+        "name": "Yuvaraja,M.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 58396,
+        "voteshare": 38.41
+      },
+      "margin2021": 8904,
+      "marginPct2021": 5.86,
+      "apathyRatio": 8.7
+    },
+    {
+      "no": 99,
+      "name": "Erode (West)",
+      "district": "Erode",
+      "elec2021": 296394,
+      "elec2026": 245493,
+      "vtr2021": 69.36,
+      "vtr2026": 87.95,
+      "nonVoters2021": 90815,
+      "nonVoters2026": 29582,
+      "winner2021": {
+        "name": "Muthusamy S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 100757,
+        "voteshare": 49.01
+      },
+      "runnerUp2021": {
+        "name": "Ramalingam K V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78668,
+        "voteshare": 38.27
+      },
+      "margin2021": 22089,
+      "marginPct2021": 10.74,
+      "apathyRatio": 4.11
+    },
+    {
+      "no": 100,
+      "name": "Modakkurichi",
+      "district": "Erode",
+      "elec2021": 241638,
+      "elec2026": 206122,
+      "vtr2021": 75.26,
+      "vtr2026": 90.35,
+      "nonVoters2021": 59781,
+      "nonVoters2026": 19891,
+      "winner2021": {
+        "name": "Saraswathi.C",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 78125,
+        "voteshare": 42.96
+      },
+      "runnerUp2021": {
+        "name": "Subbulakshmi Jegadeesan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77844,
+        "voteshare": 42.81
+      },
+      "margin2021": 281,
+      "marginPct2021": 0.15,
+      "apathyRatio": 212.74
+    },
+    {
+      "no": 101,
+      "name": "Dharapuram",
+      "district": "Tiruppur",
+      "elec2021": 261619,
+      "elec2026": 220743,
+      "vtr2021": 74.15,
+      "vtr2026": 88.85,
+      "nonVoters2021": 67629,
+      "nonVoters2026": 24613,
+      "winner2021": {
+        "name": "Kayalvizhi N",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89986,
+        "voteshare": 46.39
+      },
+      "runnerUp2021": {
+        "name": "Murugan L",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 88593,
+        "voteshare": 45.67
+      },
+      "margin2021": 1393,
+      "marginPct2021": 0.72,
+      "apathyRatio": 48.55
+    },
+    {
+      "no": 102,
+      "name": "Kangayam",
+      "district": "Tiruppur",
+      "elec2021": 258865,
+      "elec2026": 216646,
+      "vtr2021": 77.19,
+      "vtr2026": 91.54,
+      "nonVoters2021": 59047,
+      "nonVoters2026": 18328,
+      "winner2021": {
+        "name": "Saminathan.M.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 94197,
+        "voteshare": 47.14
+      },
+      "runnerUp2021": {
+        "name": "Ramalingam.A.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 86866,
+        "voteshare": 43.47
+      },
+      "margin2021": 7331,
+      "marginPct2021": 3.67,
+      "apathyRatio": 8.05
+    },
+    {
+      "no": 103,
+      "name": "Perundurai",
+      "district": "Erode",
+      "elec2021": 229834,
+      "elec2026": 212084,
+      "vtr2021": 82.6,
+      "vtr2026": 92.42,
+      "nonVoters2021": 39991,
+      "nonVoters2026": 16076,
+      "winner2021": {
+        "name": "Jayakumar, S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85125,
+        "voteshare": 44.84
+      },
+      "runnerUp2021": {
+        "name": "Kkc Balu",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 70618,
+        "voteshare": 37.2
+      },
+      "margin2021": 14507,
+      "marginPct2021": 7.64,
+      "apathyRatio": 2.76
+    },
+    {
+      "no": 104,
+      "name": "Bhavani",
+      "district": "Erode",
+      "elec2021": 241179,
+      "elec2026": 221393,
+      "vtr2021": 83.5,
+      "vtr2026": 91.96,
+      "nonVoters2021": 39795,
+      "nonVoters2026": 17800,
+      "winner2021": {
+        "name": "Karuppanan.K.C",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 100915,
+        "voteshare": 50.11
+      },
+      "runnerUp2021": {
+        "name": "Durairaj.K.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78392,
+        "voteshare": 38.93
+      },
+      "margin2021": 22523,
+      "marginPct2021": 11.18,
+      "apathyRatio": 1.77
+    },
+    {
+      "no": 105,
+      "name": "Anthiyur",
+      "district": "Erode",
+      "elec2021": 221338,
+      "elec2026": 205737,
+      "vtr2021": 79.69,
+      "vtr2026": 88.15,
+      "nonVoters2021": 44954,
+      "nonVoters2026": 24380,
+      "winner2021": {
+        "name": "Venkatachalam.A.G",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 79096,
+        "voteshare": 44.84
+      },
+      "runnerUp2021": {
+        "name": "Shanmugavel.K.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 77821,
+        "voteshare": 44.12
+      },
+      "margin2021": 1275,
+      "marginPct2021": 0.72,
+      "apathyRatio": 35.26
+    },
+    {
+      "no": 106,
+      "name": "Gobichettipalayam",
+      "district": "Erode",
+      "elec2021": 259671,
+      "elec2026": 237581,
+      "vtr2021": 82.52,
+      "vtr2026": 90.74,
+      "nonVoters2021": 45390,
+      "nonVoters2026": 22000,
+      "winner2021": {
+        "name": "Sengottaiyan K.A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 108608,
+        "voteshare": 50.68
+      },
+      "runnerUp2021": {
+        "name": "Manimaran G.V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 80045,
+        "voteshare": 37.36
+      },
+      "margin2021": 28563,
+      "marginPct2021": 13.33,
+      "apathyRatio": 1.59
+    },
+    {
+      "no": 107,
+      "name": "Bhavanisagar",
+      "district": "Erode",
+      "elec2021": 259230,
+      "elec2026": 235584,
+      "vtr2021": 77.37,
+      "vtr2026": 89.52,
+      "nonVoters2021": 58664,
+      "nonVoters2026": 24689,
+      "winner2021": {
+        "name": "A.Bannari",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 99181,
+        "voteshare": 49.45
+      },
+      "runnerUp2021": {
+        "name": "P.L Sundaram",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 83173,
+        "voteshare": 41.47
+      },
+      "margin2021": 16008,
+      "marginPct2021": 7.98,
+      "apathyRatio": 3.66
+    },
+    {
+      "no": 108,
+      "name": "Udhagamandalam",
+      "district": "The Nilgiris",
+      "elec2021": 208053,
+      "elec2026": 187425,
+      "vtr2021": 67.82,
+      "vtr2026": 77.55,
+      "nonVoters2021": 66951,
+      "nonVoters2026": 42077,
+      "winner2021": {
+        "name": "Ganesh, R.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 65530,
+        "voteshare": 46.44
+      },
+      "runnerUp2021": {
+        "name": "Bhojarajan, M.",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 60182,
+        "voteshare": 42.65
+      },
+      "margin2021": 5348,
+      "marginPct2021": 3.79,
+      "apathyRatio": 12.52
+    },
+    {
+      "no": 109,
+      "name": "Gudalur",
+      "district": "The Nilgiris",
+      "elec2021": 191624,
+      "elec2026": 183888,
+      "vtr2021": 72.15,
+      "vtr2026": 80.77,
+      "nonVoters2021": 53367,
+      "nonVoters2026": 35362,
+      "winner2021": {
+        "name": "Pon.Jayaseelan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 64496,
+        "voteshare": 46.65
+      },
+      "runnerUp2021": {
+        "name": "Kasilingam, S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 62551,
+        "voteshare": 45.24
+      },
+      "margin2021": 1945,
+      "marginPct2021": 1.41,
+      "apathyRatio": 27.44
+    },
+    {
+      "no": 110,
+      "name": "Coonoor",
+      "district": "The Nilgiris",
+      "elec2021": 194738,
+      "elec2026": 175820,
+      "vtr2021": 69.79,
+      "vtr2026": 78.19,
+      "nonVoters2021": 58830,
+      "nonVoters2026": 38346,
+      "winner2021": {
+        "name": "Ramachandran, K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 61820,
+        "voteshare": 45.49
+      },
+      "runnerUp2021": {
+        "name": "Vinoth, D.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 57715,
+        "voteshare": 42.47
+      },
+      "margin2021": 4105,
+      "marginPct2021": 3.02,
+      "apathyRatio": 14.33
+    },
+    {
+      "no": 111,
+      "name": "Mettuppalayam",
+      "district": "Coimbatore",
+      "elec2021": 299551,
+      "elec2026": 279438,
+      "vtr2021": 75.14,
+      "vtr2026": 85.73,
+      "nonVoters2021": 74468,
+      "nonVoters2026": 39876,
+      "winner2021": {
+        "name": "Selvaraj A K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 105231,
+        "voteshare": 46.75
+      },
+      "runnerUp2021": {
+        "name": "Shanmugasundaram T R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102775,
+        "voteshare": 45.66
+      },
+      "margin2021": 2456,
+      "marginPct2021": 1.09,
+      "apathyRatio": 30.32
+    },
+    {
+      "no": 112,
+      "name": "Avanashi",
+      "district": "Tiruppur",
+      "elec2021": 282823,
+      "elec2026": 250346,
+      "vtr2021": 75.18,
+      "vtr2026": 90.57,
+      "nonVoters2021": 70197,
+      "nonVoters2026": 23608,
+      "winner2021": {
+        "name": "Dhanapal, P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 117284,
+        "voteshare": 55.16
+      },
+      "runnerUp2021": {
+        "name": "Athiyamaan Raju",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 66382,
+        "voteshare": 31.22
+      },
+      "margin2021": 50902,
+      "marginPct2021": 23.94,
+      "apathyRatio": 1.38
+    },
+    {
+      "no": 113,
+      "name": "Tiruppur (North)",
+      "district": "Tiruppur",
+      "elec2021": 381313,
+      "elec2026": 310138,
+      "vtr2021": 62.44,
+      "vtr2026": 83.13,
+      "nonVoters2021": 143221,
+      "nonVoters2026": 52320,
+      "winner2021": {
+        "name": "Vijeyakumar.K.N",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 113384,
+        "voteshare": 47.62
+      },
+      "runnerUp2021": {
+        "name": "Ravi (Alias) Subramanian . M",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 73282,
+        "voteshare": 30.78
+      },
+      "margin2021": 40102,
+      "marginPct2021": 16.84,
+      "apathyRatio": 3.57
+    },
+    {
+      "no": 114,
+      "name": "Tiruppur (South)",
+      "district": "Tiruppur",
+      "elec2021": 278001,
+      "elec2026": 193614,
+      "vtr2021": 62.74,
+      "vtr2026": 90.71,
+      "nonVoters2021": 103583,
+      "nonVoters2026": 17987,
+      "winner2021": {
+        "name": "Selvaraj. K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 75535,
+        "voteshare": 43.31
+      },
+      "runnerUp2021": {
+        "name": "Gunasekaran. S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70826,
+        "voteshare": 40.61
+      },
+      "margin2021": 4709,
+      "marginPct2021": 2.7,
+      "apathyRatio": 22.0
+    },
+    {
+      "no": 115,
+      "name": "Palladam",
+      "district": "Tiruppur",
+      "elec2021": 392070,
+      "elec2026": 322530,
+      "vtr2021": 66.7,
+      "vtr2026": 90.73,
+      "nonVoters2021": 130559,
+      "nonVoters2026": 29899,
+      "winner2021": {
+        "name": "Anandan M S M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 126903,
+        "voteshare": 48.53
+      },
+      "runnerUp2021": {
+        "name": "Muthurathinam K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 94212,
+        "voteshare": 36.03
+      },
+      "margin2021": 32691,
+      "marginPct2021": 12.5,
+      "apathyRatio": 3.99
+    },
+    {
+      "no": 116,
+      "name": "Sulur",
+      "district": "Coimbatore",
+      "elec2021": 319773,
+      "elec2026": 303541,
+      "vtr2021": 75.57,
+      "vtr2026": 88.12,
+      "nonVoters2021": 78121,
+      "nonVoters2026": 36061,
+      "winner2021": {
+        "name": "Kandasamy V.P.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 118968,
+        "voteshare": 49.23
+      },
+      "runnerUp2021": {
+        "name": "Premier Selvam (A)Kalichamy M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87036,
+        "voteshare": 36.02
+      },
+      "margin2021": 31932,
+      "marginPct2021": 13.21,
+      "apathyRatio": 2.45
+    },
+    {
+      "no": 117,
+      "name": "Kavundampalayam",
+      "district": "Coimbatore",
+      "elec2021": 468649,
+      "elec2026": 407507,
+      "vtr2021": 66.13,
+      "vtr2026": 85.69,
+      "nonVoters2021": 158731,
+      "nonVoters2026": 58314,
+      "winner2021": {
+        "name": "G.Arunkumar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 135669,
+        "voteshare": 43.78
+      },
+      "runnerUp2021": {
+        "name": "R.Krishnan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 125893,
+        "voteshare": 40.62
+      },
+      "margin2021": 9776,
+      "marginPct2021": 3.15,
+      "apathyRatio": 16.24
+    },
+    {
+      "no": 118,
+      "name": "Coimbatore (North)",
+      "district": "Coimbatore",
+      "elec2021": 342508,
+      "elec2026": 291533,
+      "vtr2021": 59.21,
+      "vtr2026": 75.64,
+      "nonVoters2021": 139709,
+      "nonVoters2026": 71017,
+      "winner2021": {
+        "name": "Amman K.Arjunan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 81454,
+        "voteshare": 40.16
+      },
+      "runnerUp2021": {
+        "name": "Shanmugasundaram V.M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77453,
+        "voteshare": 38.19
+      },
+      "margin2021": 4001,
+      "marginPct2021": 1.97,
+      "apathyRatio": 34.92
+    },
+    {
+      "no": 119,
+      "name": "Thondamuthur",
+      "district": "Coimbatore",
+      "elec2021": 328298,
+      "elec2026": 287442,
+      "vtr2021": 70.22,
+      "vtr2026": 87.54,
+      "nonVoters2021": 97767,
+      "nonVoters2026": 35815,
+      "winner2021": {
+        "name": "S.P. Velumani",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 124225,
+        "voteshare": 53.89
+      },
+      "runnerUp2021": {
+        "name": "Karthikeya",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 82595,
+        "voteshare": 35.83
+      },
+      "margin2021": 41630,
+      "marginPct2021": 18.06,
+      "apathyRatio": 2.35
+    },
+    {
+      "no": 120,
+      "name": "Coimbatore (South)",
+      "district": "Coimbatore",
+      "elec2021": 255009,
+      "elec2026": 186509,
+      "vtr2021": 60.69,
+      "vtr2026": 82.02,
+      "nonVoters2021": 100244,
+      "nonVoters2026": 33534,
+      "winner2021": {
+        "name": "Vanathi Srinivasan",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 53209,
+        "voteshare": 34.38
+      },
+      "runnerUp2021": {
+        "name": "Kamalhaasan",
+        "party": "MNM",
+        "alliance": "OTHER",
+        "votes": 51481,
+        "voteshare": 33.26
+      },
+      "margin2021": 1728,
+      "marginPct2021": 1.12,
+      "apathyRatio": 58.01
+    },
+    {
+      "no": 121,
+      "name": "Singanallur",
+      "district": "Coimbatore",
+      "elec2021": 327265,
+      "elec2026": 266058,
+      "vtr2021": 61.73,
+      "vtr2026": 81.18,
+      "nonVoters2021": 125244,
+      "nonVoters2026": 50072,
+      "winner2021": {
+        "name": "Jayaram, K.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 81244,
+        "voteshare": 40.22
+      },
+      "runnerUp2021": {
+        "name": "Karthik, N",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 70390,
+        "voteshare": 34.84
+      },
+      "margin2021": 10854,
+      "marginPct2021": 5.37,
+      "apathyRatio": 11.54
+    },
+    {
+      "no": 122,
+      "name": "Kinathukadavu",
+      "district": "Coimbatore",
+      "elec2021": 329041,
+      "elec2026": 300486,
+      "vtr2021": 70.64,
+      "vtr2026": 87.04,
+      "nonVoters2021": 96606,
+      "nonVoters2026": 38943,
+      "winner2021": {
+        "name": "Damodaran.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 101537,
+        "voteshare": 43.68
+      },
+      "runnerUp2021": {
+        "name": "Kuruchi Prabhakaran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 100442,
+        "voteshare": 43.21
+      },
+      "margin2021": 1095,
+      "marginPct2021": 0.47,
+      "apathyRatio": 88.22
+    },
+    {
+      "no": 123,
+      "name": "Pollachi",
+      "district": "Coimbatore",
+      "elec2021": 229257,
+      "elec2026": 202015,
+      "vtr2021": 77.34,
+      "vtr2026": 88.08,
+      "nonVoters2021": 51950,
+      "nonVoters2026": 24080,
+      "winner2021": {
+        "name": "Pollachi V. Jayaraman",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 80567,
+        "voteshare": 45.44
+      },
+      "runnerUp2021": {
+        "name": "Dr. Varadharajan, K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78842,
+        "voteshare": 44.47
+      },
+      "margin2021": 1725,
+      "marginPct2021": 0.97,
+      "apathyRatio": 30.12
+    },
+    {
+      "no": 124,
+      "name": "Valparai",
+      "district": "Coimbatore",
+      "elec2021": 207270,
+      "elec2026": 172284,
+      "vtr2021": 70.04,
+      "vtr2026": 85.43,
+      "nonVoters2021": 62098,
+      "nonVoters2026": 25102,
+      "winner2021": {
+        "name": "Amulkandasami T K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 71672,
+        "voteshare": 49.37
+      },
+      "runnerUp2021": {
+        "name": "Arumugam M",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 59449,
+        "voteshare": 40.95
+      },
+      "margin2021": 12223,
+      "marginPct2021": 8.42,
+      "apathyRatio": 5.08
+    },
+    {
+      "no": 125,
+      "name": "Udumalaipettai",
+      "district": "Tiruppur",
+      "elec2021": 272553,
+      "elec2026": 228524,
+      "vtr2021": 71.31,
+      "vtr2026": 87.37,
+      "nonVoters2021": 78195,
+      "nonVoters2026": 28863,
+      "winner2021": {
+        "name": "Radhakrishnan,K.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 96893,
+        "voteshare": 49.85
+      },
+      "runnerUp2021": {
+        "name": "Thennarasu,K.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 74998,
+        "voteshare": 38.59
+      },
+      "margin2021": 21895,
+      "marginPct2021": 11.27,
+      "apathyRatio": 3.57
+    },
+    {
+      "no": 126,
+      "name": "Madathukulam",
+      "district": "Tiruppur",
+      "elec2021": 251072,
+      "elec2026": 212742,
+      "vtr2021": 72.45,
+      "vtr2026": 86.76,
+      "nonVoters2021": 69170,
+      "nonVoters2026": 28167,
+      "winner2021": {
+        "name": "C Mahendran",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 84313,
+        "voteshare": 46.35
+      },
+      "runnerUp2021": {
+        "name": "R.Jayaramakrishnan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77875,
+        "voteshare": 42.81
+      },
+      "margin2021": 6438,
+      "marginPct2021": 3.54,
+      "apathyRatio": 10.74
+    },
+    {
+      "no": 127,
+      "name": "Palani",
+      "district": "Dindigul",
+      "elec2021": 280081,
+      "elec2026": 237359,
+      "vtr2021": 73.33,
+      "vtr2026": 86.0,
+      "nonVoters2021": 74698,
+      "nonVoters2026": 33230,
+      "winner2021": {
+        "name": "Senthil Kumar I.P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 108566,
+        "voteshare": 52.86
+      },
+      "runnerUp2021": {
+        "name": "Ravi Manoharan K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78510,
+        "voteshare": 38.23
+      },
+      "margin2021": 30056,
+      "marginPct2021": 14.63,
+      "apathyRatio": 2.49
+    },
+    {
+      "no": 128,
+      "name": "Oddanchatram",
+      "district": "Dindigul",
+      "elec2021": 242845,
+      "elec2026": 217698,
+      "vtr2021": 83.08,
+      "vtr2026": 90.5,
+      "nonVoters2021": 41089,
+      "nonVoters2026": 20681,
+      "winner2021": {
+        "name": "Sakkarapani R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 109970,
+        "voteshare": 54.51
+      },
+      "runnerUp2021": {
+        "name": "Nataraj N.P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 81228,
+        "voteshare": 40.26
+      },
+      "margin2021": 28742,
+      "marginPct2021": 14.25,
+      "apathyRatio": 1.43
+    },
+    {
+      "no": 129,
+      "name": "Athoor",
+      "district": "Dindigul",
+      "elec2021": 294946,
+      "elec2026": 259846,
+      "vtr2021": 77.96,
+      "vtr2026": 89.31,
+      "nonVoters2021": 65006,
+      "nonVoters2026": 27778,
+      "winner2021": {
+        "name": "Periyasamy I",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 165809,
+        "voteshare": 72.11
+      },
+      "runnerUp2021": {
+        "name": "Thilagabama M",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 30238,
+        "voteshare": 13.15
+      },
+      "margin2021": 135571,
+      "marginPct2021": 58.96,
+      "apathyRatio": 0.48
+    },
+    {
+      "no": 130,
+      "name": "Nilakkottai",
+      "district": "Dindigul",
+      "elec2021": 246176,
+      "elec2026": 219077,
+      "vtr2021": 75.07,
+      "vtr2026": 88.04,
+      "nonVoters2021": 61372,
+      "nonVoters2026": 26202,
+      "winner2021": {
+        "name": "S.Thenmozhi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 91461,
+        "voteshare": 49.49
+      },
+      "runnerUp2021": {
+        "name": "K.Murugavelrajan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 63843,
+        "voteshare": 34.55
+      },
+      "margin2021": 27618,
+      "marginPct2021": 14.94,
+      "apathyRatio": 2.22
+    },
+    {
+      "no": 131,
+      "name": "Natham",
+      "district": "Dindigul",
+      "elec2021": 285299,
+      "elec2026": 258603,
+      "vtr2021": 78.95,
+      "vtr2026": 90.32,
+      "nonVoters2021": 60055,
+      "nonVoters2026": 25033,
+      "winner2021": {
+        "name": "Natham.R.Viswanathan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 107762,
+        "voteshare": 47.84
+      },
+      "runnerUp2021": {
+        "name": "M.A.Andi Ambalam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95830,
+        "voteshare": 42.54
+      },
+      "margin2021": 11932,
+      "marginPct2021": 5.3,
+      "apathyRatio": 5.03
+    },
+    {
+      "no": 132,
+      "name": "Dindigul",
+      "district": "Dindigul",
+      "elec2021": 281677,
+      "elec2026": 237679,
+      "vtr2021": 69.27,
+      "vtr2026": 85.88,
+      "nonVoters2021": 86559,
+      "nonVoters2026": 33560,
+      "winner2021": {
+        "name": "Sreenivasan.C",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 90595,
+        "voteshare": 46.43
+      },
+      "runnerUp2021": {
+        "name": "Pandi.N",
+        "party": "CPM",
+        "alliance": "SPA",
+        "votes": 72848,
+        "voteshare": 37.34
+      },
+      "margin2021": 17747,
+      "marginPct2021": 9.1,
+      "apathyRatio": 4.88
+    },
+    {
+      "no": 133,
+      "name": "Vedasandur",
+      "district": "Dindigul",
+      "elec2021": 265818,
+      "elec2026": 241813,
+      "vtr2021": 80.16,
+      "vtr2026": 91.26,
+      "nonVoters2021": 52738,
+      "nonVoters2026": 21134,
+      "winner2021": {
+        "name": "Gandhirajan S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 106481,
+        "voteshare": 49.97
+      },
+      "runnerUp2021": {
+        "name": "Paramasivam V P B",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88928,
+        "voteshare": 41.73
+      },
+      "margin2021": 17553,
+      "marginPct2021": 8.24,
+      "apathyRatio": 3.0
+    },
+    {
+      "no": 134,
+      "name": "Aravakurichi",
+      "district": "Karur",
+      "elec2021": 216203,
+      "elec2026": 194505,
+      "vtr2021": 81.92,
+      "vtr2026": 91.74,
+      "nonVoters2021": 39090,
+      "nonVoters2026": 16066,
+      "winner2021": {
+        "name": "Elango. R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93369,
+        "voteshare": 52.72
+      },
+      "runnerUp2021": {
+        "name": "Annamalai. K",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 68553,
+        "voteshare": 38.71
+      },
+      "margin2021": 24816,
+      "marginPct2021": 14.01,
+      "apathyRatio": 1.58
+    },
+    {
+      "no": 135,
+      "name": "Karur",
+      "district": "Karur",
+      "elec2021": 248067,
+      "elec2026": 226584,
+      "vtr2021": 83.57,
+      "vtr2026": 93.39,
+      "nonVoters2021": 40757,
+      "nonVoters2026": 14977,
+      "winner2021": {
+        "name": "Senthilbalaji V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 101757,
+        "voteshare": 49.08
+      },
+      "runnerUp2021": {
+        "name": "Vijayabhaskar. M.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 89309,
+        "voteshare": 43.08
+      },
+      "margin2021": 12448,
+      "marginPct2021": 6.0,
+      "apathyRatio": 3.27
+    },
+    {
+      "no": 136,
+      "name": "Krishnarayapuram",
+      "district": "Karur",
+      "elec2021": 214924,
+      "elec2026": 202087,
+      "vtr2021": 84.17,
+      "vtr2026": 92.49,
+      "nonVoters2021": 34022,
+      "nonVoters2026": 15177,
+      "winner2021": {
+        "name": "Sivagama Sundari.K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 96540,
+        "voteshare": 53.37
+      },
+      "runnerUp2021": {
+        "name": "Muthukumar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 64915,
+        "voteshare": 35.88
+      },
+      "margin2021": 31625,
+      "marginPct2021": 17.48,
+      "apathyRatio": 1.08
+    },
+    {
+      "no": 137,
+      "name": "Kulithalai",
+      "district": "Karur",
+      "elec2021": 229173,
+      "elec2026": 221988,
+      "vtr2021": 86.16,
+      "vtr2026": 92.85,
+      "nonVoters2021": 31718,
+      "nonVoters2026": 15872,
+      "winner2021": {
+        "name": "R.Manickam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 100829,
+        "voteshare": 51.06
+      },
+      "runnerUp2021": {
+        "name": "N.R.Chandrasekar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 77289,
+        "voteshare": 39.14
+      },
+      "margin2021": 23540,
+      "marginPct2021": 11.92,
+      "apathyRatio": 1.35
+    },
+    {
+      "no": 138,
+      "name": "Manapparai",
+      "district": "Tiruchirappalli",
+      "elec2021": 291696,
+      "elec2026": 266019,
+      "vtr2021": 76.02,
+      "vtr2026": 88.68,
+      "nonVoters2021": 69949,
+      "nonVoters2026": 30113,
+      "winner2021": {
+        "name": "Abdul Samad P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 98077,
+        "voteshare": 44.23
+      },
+      "runnerUp2021": {
+        "name": "Chandrasekar.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85834,
+        "voteshare": 38.71
+      },
+      "margin2021": 12243,
+      "marginPct2021": 5.52,
+      "apathyRatio": 5.71
+    },
+    {
+      "no": 139,
+      "name": "Srirangam",
+      "district": "Tiruchirappalli",
+      "elec2021": 315482,
+      "elec2026": 283862,
+      "vtr2021": 76.15,
+      "vtr2026": 87.95,
+      "nonVoters2021": 75242,
+      "nonVoters2026": 34205,
+      "winner2021": {
+        "name": "Palaniyandi.M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 113904,
+        "voteshare": 47.41
+      },
+      "runnerUp2021": {
+        "name": "Kupa Krishnan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 93989,
+        "voteshare": 39.12
+      },
+      "margin2021": 19915,
+      "marginPct2021": 8.29,
+      "apathyRatio": 3.78
+    },
+    {
+      "no": 140,
+      "name": "Tiruchirappalli (West)",
+      "district": "Tiruchirappalli",
+      "elec2021": 273241,
+      "elec2026": 235903,
+      "vtr2021": 67.01,
+      "vtr2026": 81.35,
+      "nonVoters2021": 90142,
+      "nonVoters2026": 43996,
+      "winner2021": {
+        "name": "Nehru, K.N.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 118133,
+        "voteshare": 64.52
+      },
+      "runnerUp2021": {
+        "name": "Padmanathan, V.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 33024,
+        "voteshare": 18.04
+      },
+      "margin2021": 85109,
+      "marginPct2021": 46.48,
+      "apathyRatio": 1.06
+    },
+    {
+      "no": 141,
+      "name": "Tiruchirappalli (East)",
+      "district": "Tiruchirappalli",
+      "elec2021": 258495,
+      "elec2026": 217397,
+      "vtr2021": 66.87,
+      "vtr2026": 81.77,
+      "nonVoters2021": 85639,
+      "nonVoters2026": 39631,
+      "winner2021": {
+        "name": "Inigo Irudayaraj,S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 94302,
+        "voteshare": 54.56
+      },
+      "runnerUp2021": {
+        "name": "Vellamandi Natarajan,N.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 40505,
+        "voteshare": 23.43
+      },
+      "margin2021": 53797,
+      "marginPct2021": 31.12,
+      "apathyRatio": 1.59
+    },
+    {
+      "no": 142,
+      "name": "Thiruverumbur",
+      "district": "Tiruchirappalli",
+      "elec2021": 295859,
+      "elec2026": 256239,
+      "vtr2021": 66.59,
+      "vtr2026": 81.21,
+      "nonVoters2021": 98846,
+      "nonVoters2026": 48147,
+      "winner2021": {
+        "name": "Anbil Mahesh Poyyamozhi",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 105424,
+        "voteshare": 53.51
+      },
+      "runnerUp2021": {
+        "name": "P Kumar",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 55727,
+        "voteshare": 28.29
+      },
+      "margin2021": 49697,
+      "marginPct2021": 25.23,
+      "apathyRatio": 1.99
+    },
+    {
+      "no": 143,
+      "name": "Lalgudi",
+      "district": "Tiruchirappalli",
+      "elec2021": 220565,
+      "elec2026": 211043,
+      "vtr2021": 79.23,
+      "vtr2026": 86.51,
+      "nonVoters2021": 45811,
+      "nonVoters2026": 28470,
+      "winner2021": {
+        "name": "A.Soundarapandian",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84914,
+        "voteshare": 48.59
+      },
+      "runnerUp2021": {
+        "name": "D.R.Dharmaraj",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 67965,
+        "voteshare": 38.89
+      },
+      "margin2021": 16949,
+      "marginPct2021": 9.7,
+      "apathyRatio": 2.7
+    },
+    {
+      "no": 144,
+      "name": "Manachanallur",
+      "district": "Tiruchirappalli",
+      "elec2021": 247041,
+      "elec2026": 234217,
+      "vtr2021": 79.63,
+      "vtr2026": 87.64,
+      "nonVoters2021": 50322,
+      "nonVoters2026": 28949,
+      "winner2021": {
+        "name": "S. Kathiravan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 116334,
+        "voteshare": 59.14
+      },
+      "runnerUp2021": {
+        "name": "M. Paranjothi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 56716,
+        "voteshare": 28.83
+      },
+      "margin2021": 59618,
+      "marginPct2021": 30.31,
+      "apathyRatio": 0.84
+    },
+    {
+      "no": 145,
+      "name": "Musiri",
+      "district": "Tiruchirappalli",
+      "elec2021": 236517,
+      "elec2026": 212612,
+      "vtr2021": 75.98,
+      "vtr2026": 86.78,
+      "nonVoters2021": 56811,
+      "nonVoters2026": 28107,
+      "winner2021": {
+        "name": "N. Thiyagarajan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 90624,
+        "voteshare": 50.43
+      },
+      "runnerUp2021": {
+        "name": "M. Selvarasu",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 63788,
+        "voteshare": 35.5
+      },
+      "margin2021": 26836,
+      "marginPct2021": 14.93,
+      "apathyRatio": 2.12
+    },
+    {
+      "no": 146,
+      "name": "Thuraiyur",
+      "district": "Tiruchirappalli",
+      "elec2021": 229513,
+      "elec2026": 209011,
+      "vtr2021": 76.63,
+      "vtr2026": 86.51,
+      "nonVoters2021": 53637,
+      "nonVoters2026": 28196,
+      "winner2021": {
+        "name": "S.Stalinkumar",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87786,
+        "voteshare": 49.91
+      },
+      "runnerUp2021": {
+        "name": "T.Indragandhi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 65715,
+        "voteshare": 37.36
+      },
+      "margin2021": 22071,
+      "marginPct2021": 12.55,
+      "apathyRatio": 2.43
+    },
+    {
+      "no": 147,
+      "name": "Perambalur",
+      "district": "Perambalur",
+      "elec2021": 306938,
+      "elec2026": 288449,
+      "vtr2021": 78.2,
+      "vtr2026": 85.92,
+      "nonVoters2021": 66912,
+      "nonVoters2026": 40614,
+      "winner2021": {
+        "name": "Prabhaharan, M.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 122090,
+        "voteshare": 50.87
+      },
+      "runnerUp2021": {
+        "name": "Thamizhselvan, R.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 91056,
+        "voteshare": 37.94
+      },
+      "margin2021": 31034,
+      "marginPct2021": 12.93,
+      "apathyRatio": 2.16
+    },
+    {
+      "no": 148,
+      "name": "Kunnam",
+      "district": "Perambalur",
+      "elec2021": 274677,
+      "elec2026": 266682,
+      "vtr2021": 80.05,
+      "vtr2026": 85.04,
+      "nonVoters2021": 54798,
+      "nonVoters2026": 39896,
+      "winner2021": {
+        "name": "Sivasankar, S.S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103922,
+        "voteshare": 47.26
+      },
+      "runnerUp2021": {
+        "name": "Ramachandran, R.T.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 97593,
+        "voteshare": 44.38
+      },
+      "margin2021": 6329,
+      "marginPct2021": 2.88,
+      "apathyRatio": 8.66
+    },
+    {
+      "no": 149,
+      "name": "Ariyalur",
+      "district": "Ariyalur",
+      "elec2021": 266412,
+      "elec2026": 261161,
+      "vtr2021": 84.54,
+      "vtr2026": 88.23,
+      "nonVoters2021": 41187,
+      "nonVoters2026": 30739,
+      "winner2021": {
+        "name": "Chinnappa K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103975,
+        "voteshare": 46.16
+      },
+      "runnerUp2021": {
+        "name": "Rajendran S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 100741,
+        "voteshare": 44.73
+      },
+      "margin2021": 3234,
+      "marginPct2021": 1.44,
+      "apathyRatio": 12.74
+    },
+    {
+      "no": 150,
+      "name": "Jayankondam",
+      "district": "Ariyalur",
+      "elec2021": 269181,
+      "elec2026": 261793,
+      "vtr2021": 80.38,
+      "vtr2026": 85.14,
+      "nonVoters2021": 52813,
+      "nonVoters2026": 38902,
+      "winner2021": {
+        "name": "Kannan Ka So Ka",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 99529,
+        "voteshare": 46.0
+      },
+      "runnerUp2021": {
+        "name": "Balu K",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 94077,
+        "voteshare": 43.48
+      },
+      "margin2021": 5452,
+      "marginPct2021": 2.52,
+      "apathyRatio": 9.69
+    },
+    {
+      "no": 151,
+      "name": "Tittakudi",
+      "district": "Cuddalore",
+      "elec2021": 220424,
+      "elec2026": 206770,
+      "vtr2021": 76.3,
+      "vtr2026": 83.25,
+      "nonVoters2021": 52240,
+      "nonVoters2026": 34634,
+      "winner2021": {
+        "name": "Ganesan,  C.V.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 83726,
+        "voteshare": 49.78
+      },
+      "runnerUp2021": {
+        "name": "Periyasamy,  D.",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 62163,
+        "voteshare": 36.96
+      },
+      "margin2021": 21563,
+      "marginPct2021": 12.82,
+      "apathyRatio": 2.42
+    },
+    {
+      "no": 152,
+      "name": "Vriddhachalam",
+      "district": "Cuddalore",
+      "elec2021": 255432,
+      "elec2026": 237836,
+      "vtr2021": 77.02,
+      "vtr2026": 86.09,
+      "nonVoters2021": 58698,
+      "nonVoters2026": 33083,
+      "winner2021": {
+        "name": "Radhakrishnan",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 77064,
+        "voteshare": 39.17
+      },
+      "runnerUp2021": {
+        "name": "Karthikeyan. J",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 76202,
+        "voteshare": 38.73
+      },
+      "margin2021": 862,
+      "marginPct2021": 0.44,
+      "apathyRatio": 68.1
+    },
+    {
+      "no": 153,
+      "name": "Neyveli",
+      "district": "Cuddalore",
+      "elec2021": 221050,
+      "elec2026": 189024,
+      "vtr2021": 74.25,
+      "vtr2026": 87.11,
+      "nonVoters2021": 56920,
+      "nonVoters2026": 24365,
+      "winner2021": {
+        "name": "Saba.Rajendran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 75177,
+        "voteshare": 45.8
+      },
+      "runnerUp2021": {
+        "name": "Jagan.K",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 74200,
+        "voteshare": 45.21
+      },
+      "margin2021": 977,
+      "marginPct2021": 0.6,
+      "apathyRatio": 58.26
+    },
+    {
+      "no": 154,
+      "name": "Panruti",
+      "district": "Cuddalore",
+      "elec2021": 247548,
+      "elec2026": 240048,
+      "vtr2021": 79.6,
+      "vtr2026": 86.19,
+      "nonVoters2021": 50500,
+      "nonVoters2026": 33151,
+      "winner2021": {
+        "name": "Velmurugan.T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93801,
+        "voteshare": 47.6
+      },
+      "runnerUp2021": {
+        "name": "Rajendran.R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 89104,
+        "voteshare": 45.22
+      },
+      "margin2021": 4697,
+      "marginPct2021": 2.38,
+      "apathyRatio": 10.75
+    },
+    {
+      "no": 155,
+      "name": "Cuddalore",
+      "district": "Cuddalore",
+      "elec2021": 243414,
+      "elec2026": 221152,
+      "vtr2021": 74.77,
+      "vtr2026": 83.68,
+      "nonVoters2021": 61413,
+      "nonVoters2026": 36092,
+      "winner2021": {
+        "name": "G.Iyappan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84563,
+        "voteshare": 46.46
+      },
+      "runnerUp2021": {
+        "name": "M.C.Sampath",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 79412,
+        "voteshare": 43.63
+      },
+      "margin2021": 5151,
+      "marginPct2021": 2.83,
+      "apathyRatio": 11.92
+    },
+    {
+      "no": 156,
+      "name": "Kurinjipadi",
+      "district": "Cuddalore",
+      "elec2021": 242238,
+      "elec2026": 236297,
+      "vtr2021": 82.06,
+      "vtr2026": 88.17,
+      "nonVoters2021": 43457,
+      "nonVoters2026": 27954,
+      "winner2021": {
+        "name": "M.R.K.Panneerselvam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 101456,
+        "voteshare": 51.04
+      },
+      "runnerUp2021": {
+        "name": "Selvi Ramajayam",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 83929,
+        "voteshare": 42.22
+      },
+      "margin2021": 17527,
+      "marginPct2021": 8.82,
+      "apathyRatio": 2.48
+    },
+    {
+      "no": 157,
+      "name": "Bhuvanagiri",
+      "district": "Cuddalore",
+      "elec2021": 250941,
+      "elec2026": 230968,
+      "vtr2021": 78.57,
+      "vtr2026": 87.68,
+      "nonVoters2021": 53777,
+      "nonVoters2026": 28455,
+      "winner2021": {
+        "name": "Arunmozhithevan. A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 96453,
+        "voteshare": 48.92
+      },
+      "runnerUp2021": {
+        "name": "Saravanan. Durai.K",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 88194,
+        "voteshare": 44.73
+      },
+      "margin2021": 8259,
+      "marginPct2021": 4.19,
+      "apathyRatio": 6.51
+    },
+    {
+      "no": 158,
+      "name": "Chidambaram",
+      "district": "Cuddalore",
+      "elec2021": 254903,
+      "elec2026": 229136,
+      "vtr2021": 71.93,
+      "vtr2026": 83.6,
+      "nonVoters2021": 71551,
+      "nonVoters2026": 37578,
+      "winner2021": {
+        "name": "K.A. Pandian",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 91961,
+        "voteshare": 50.16
+      },
+      "runnerUp2021": {
+        "name": "S. Abdul Rahman",
+        "party": "IUML",
+        "alliance": "SPA",
+        "votes": 75024,
+        "voteshare": 40.92
+      },
+      "margin2021": 16937,
+      "marginPct2021": 9.24,
+      "apathyRatio": 4.22
+    },
+    {
+      "no": 159,
+      "name": "Kattumannarkoil",
+      "district": "Cuddalore",
+      "elec2021": 231397,
+      "elec2026": 224565,
+      "vtr2021": 75.87,
+      "vtr2026": 82.11,
+      "nonVoters2021": 55836,
+      "nonVoters2026": 40175,
+      "winner2021": {
+        "name": "Sinthanai Selvan",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 86056,
+        "voteshare": 49.02
+      },
+      "runnerUp2021": {
+        "name": "N. Murugumaran",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 75491,
+        "voteshare": 43.0
+      },
+      "margin2021": 10565,
+      "marginPct2021": 6.02,
+      "apathyRatio": 5.28
+    },
+    {
+      "no": 160,
+      "name": "Sirkazhi",
+      "district": "Mayiladuthurai",
+      "elec2021": 255406,
+      "elec2026": 239469,
+      "vtr2021": 74.91,
+      "vtr2026": 82.34,
+      "nonVoters2021": 64081,
+      "nonVoters2026": 42290,
+      "winner2021": {
+        "name": "Panneerselvam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 94057,
+        "voteshare": 49.16
+      },
+      "runnerUp2021": {
+        "name": "P.V.Bharathi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 81909,
+        "voteshare": 42.81
+      },
+      "margin2021": 12148,
+      "marginPct2021": 6.35,
+      "apathyRatio": 5.28
+    },
+    {
+      "no": 161,
+      "name": "Mayiladuthurai",
+      "district": "Mayiladuthurai",
+      "elec2021": 248987,
+      "elec2026": 232618,
+      "vtr2021": 70.14,
+      "vtr2026": 79.54,
+      "nonVoters2021": 74348,
+      "nonVoters2026": 47594,
+      "winner2021": {
+        "name": "Rajakumar.S",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 73642,
+        "voteshare": 42.17
+      },
+      "runnerUp2021": {
+        "name": "Palanisamy.A",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 70900,
+        "voteshare": 40.6
+      },
+      "margin2021": 2742,
+      "marginPct2021": 1.57,
+      "apathyRatio": 27.11
+    },
+    {
+      "no": 162,
+      "name": "Poompuhar",
+      "district": "Mayiladuthurai",
+      "elec2021": 276417,
+      "elec2026": 257129,
+      "vtr2021": 75.19,
+      "vtr2026": 83.92,
+      "nonVoters2021": 68579,
+      "nonVoters2026": 41346,
+      "winner2021": {
+        "name": "Nivedha M. Murugan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 96102,
+        "voteshare": 46.24
+      },
+      "runnerUp2021": {
+        "name": "S.Pavunraj",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 92803,
+        "voteshare": 44.65
+      },
+      "margin2021": 3299,
+      "marginPct2021": 1.59,
+      "apathyRatio": 20.79
+    },
+    {
+      "no": 163,
+      "name": "Nagapattinam",
+      "district": "Nagapattinam",
+      "elec2021": 199472,
+      "elec2026": 172979,
+      "vtr2021": 71.97,
+      "vtr2026": 85.79,
+      "nonVoters2021": 55912,
+      "nonVoters2026": 24580,
+      "winner2021": {
+        "name": "J. Mohamed Shanavas",
+        "party": "VCK",
+        "alliance": "SPA",
+        "votes": 66281,
+        "voteshare": 46.17
+      },
+      "runnerUp2021": {
+        "name": "Thanka.Kathiravan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 59043,
+        "voteshare": 41.13
+      },
+      "margin2021": 7238,
+      "marginPct2021": 5.04,
+      "apathyRatio": 7.72
+    },
+    {
+      "no": 164,
+      "name": "Kilvelur",
+      "district": "Nagapattinam",
+      "elec2021": 180026,
+      "elec2026": 168934,
+      "vtr2021": 79.43,
+      "vtr2026": 87.83,
+      "nonVoters2021": 37031,
+      "nonVoters2026": 20559,
+      "winner2021": {
+        "name": "Nagaimaali V P",
+        "party": "CPM",
+        "alliance": "SPA",
+        "votes": 67988,
+        "voteshare": 47.55
+      },
+      "runnerUp2021": {
+        "name": "Vadivel Ravanan  S",
+        "party": "PMK",
+        "alliance": "NDA",
+        "votes": 51003,
+        "voteshare": 35.67
+      },
+      "margin2021": 16985,
+      "marginPct2021": 11.88,
+      "apathyRatio": 2.18
+    },
+    {
+      "no": 165,
+      "name": "Vedaranyam",
+      "district": "Nagapattinam",
+      "elec2021": 196104,
+      "elec2026": 186034,
+      "vtr2021": 80.6,
+      "vtr2026": 85.18,
+      "nonVoters2021": 38044,
+      "nonVoters2026": 27570,
+      "winner2021": {
+        "name": "O.S.Manian",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 78719,
+        "voteshare": 49.8
+      },
+      "runnerUp2021": {
+        "name": "S.K.Vetharathinam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 66390,
+        "voteshare": 42.0
+      },
+      "margin2021": 12329,
+      "marginPct2021": 7.8,
+      "apathyRatio": 3.09
+    },
+    {
+      "no": 166,
+      "name": "Thiruthuraipoondi",
+      "district": "Thiruvarur",
+      "elec2021": 242228,
+      "elec2026": 225363,
+      "vtr2021": 76.74,
+      "vtr2026": 83.53,
+      "nonVoters2021": 56342,
+      "nonVoters2026": 37117,
+      "winner2021": {
+        "name": "Marimuthu K",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 97092,
+        "voteshare": 52.23
+      },
+      "runnerUp2021": {
+        "name": "Suresh Kumar C",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 67024,
+        "voteshare": 36.06
+      },
+      "margin2021": 30068,
+      "marginPct2021": 16.18,
+      "apathyRatio": 1.87
+    },
+    {
+      "no": 167,
+      "name": "Mannargudi",
+      "district": "Thiruvarur",
+      "elec2021": 259926,
+      "elec2026": 231935,
+      "vtr2021": 74.34,
+      "vtr2026": 81.97,
+      "nonVoters2021": 66697,
+      "nonVoters2026": 41818,
+      "winner2021": {
+        "name": "Rajaa T R B",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87172,
+        "voteshare": 45.11
+      },
+      "runnerUp2021": {
+        "name": "Rajamanickam  Siva",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 49779,
+        "voteshare": 25.76
+      },
+      "margin2021": 37393,
+      "marginPct2021": 19.35,
+      "apathyRatio": 1.78
+    },
+    {
+      "no": 168,
+      "name": "Thiruvarur",
+      "district": "Thiruvarur",
+      "elec2021": 284354,
+      "elec2026": 257892,
+      "vtr2021": 73.25,
+      "vtr2026": 83.03,
+      "nonVoters2021": 76065,
+      "nonVoters2026": 43764,
+      "winner2021": {
+        "name": "Kalaivanan  Poondi  K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 108906,
+        "voteshare": 52.29
+      },
+      "runnerUp2021": {
+        "name": "Pannerselvam A.N.R.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 57732,
+        "voteshare": 27.72
+      },
+      "margin2021": 51174,
+      "marginPct2021": 24.57,
+      "apathyRatio": 1.49
+    },
+    {
+      "no": 169,
+      "name": "Nannilam",
+      "district": "Thiruvarur",
+      "elec2021": 273734,
+      "elec2026": 264462,
+      "vtr2021": 81.08,
+      "vtr2026": 85.59,
+      "nonVoters2021": 51790,
+      "nonVoters2026": 38109,
+      "winner2021": {
+        "name": "Kamaraj R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 103637,
+        "voteshare": 46.7
+      },
+      "runnerUp2021": {
+        "name": "Jothiraman  S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 99213,
+        "voteshare": 44.7
+      },
+      "margin2021": 4424,
+      "marginPct2021": 1.99,
+      "apathyRatio": 11.71
+    },
+    {
+      "no": 170,
+      "name": "Thiruvidaimarudur",
+      "district": "Thanjavur",
+      "elec2021": 261940,
+      "elec2026": 254453,
+      "vtr2021": 75.76,
+      "vtr2026": 80.15,
+      "nonVoters2021": 63494,
+      "nonVoters2026": 50509,
+      "winner2021": {
+        "name": "Chezhiaan,  Govi.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 95763,
+        "voteshare": 48.26
+      },
+      "runnerUp2021": {
+        "name": "Union Veeramani, S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85083,
+        "voteshare": 42.87
+      },
+      "margin2021": 10680,
+      "marginPct2021": 5.38,
+      "apathyRatio": 5.95
+    },
+    {
+      "no": 171,
+      "name": "Kumbakonam",
+      "district": "Thanjavur",
+      "elec2021": 276506,
+      "elec2026": 251868,
+      "vtr2021": 71.45,
+      "vtr2026": 80.83,
+      "nonVoters2021": 78942,
+      "nonVoters2026": 48283,
+      "winner2021": {
+        "name": "Anbalagan, G.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 96057,
+        "voteshare": 48.62
+      },
+      "runnerUp2021": {
+        "name": "Srithar Vandayar, G.M.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 74674,
+        "voteshare": 37.8
+      },
+      "margin2021": 21383,
+      "marginPct2021": 10.82,
+      "apathyRatio": 3.69
+    },
+    {
+      "no": 172,
+      "name": "Papanasam",
+      "district": "Thanjavur",
+      "elec2021": 263485,
+      "elec2026": 254652,
+      "vtr2021": 74.76,
+      "vtr2026": 79.96,
+      "nonVoters2021": 66504,
+      "nonVoters2026": 51032,
+      "winner2021": {
+        "name": "Dr.Jawahirullah, M.H.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 86567,
+        "voteshare": 43.95
+      },
+      "runnerUp2021": {
+        "name": "Gopinathan, K.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70294,
+        "voteshare": 35.69
+      },
+      "margin2021": 16273,
+      "marginPct2021": 8.26,
+      "apathyRatio": 4.09
+    },
+    {
+      "no": 173,
+      "name": "Thiruvaiyaru",
+      "district": "Thanjavur",
+      "elec2021": 270682,
+      "elec2026": 256377,
+      "vtr2021": 78.11,
+      "vtr2026": 85.01,
+      "nonVoters2021": 59252,
+      "nonVoters2026": 38431,
+      "winner2021": {
+        "name": "Durai.Chandrasekaran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103210,
+        "voteshare": 48.82
+      },
+      "runnerUp2021": {
+        "name": "Venkatesan, S.",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 49560,
+        "voteshare": 23.44
+      },
+      "margin2021": 53650,
+      "marginPct2021": 25.37,
+      "apathyRatio": 1.1
+    },
+    {
+      "no": 174,
+      "name": "Thanjavur",
+      "district": "Thanjavur",
+      "elec2021": 296498,
+      "elec2026": 249064,
+      "vtr2021": 65.72,
+      "vtr2026": 77.39,
+      "nonVoters2021": 101640,
+      "nonVoters2026": 56313,
+      "winner2021": {
+        "name": "Neelamegam, T.K.G.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103772,
+        "voteshare": 53.25
+      },
+      "runnerUp2021": {
+        "name": "Arivudainambi, V.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 56623,
+        "voteshare": 29.06
+      },
+      "margin2021": 47149,
+      "marginPct2021": 24.2,
+      "apathyRatio": 2.16
+    },
+    {
+      "no": 175,
+      "name": "Orathanadu",
+      "district": "Thanjavur",
+      "elec2021": 245037,
+      "elec2026": 231251,
+      "vtr2021": 78.29,
+      "vtr2026": 82.7,
+      "nonVoters2021": 53198,
+      "nonVoters2026": 40006,
+      "winner2021": {
+        "name": "Vaithilingam, R.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 90063,
+        "voteshare": 46.95
+      },
+      "runnerUp2021": {
+        "name": "Ramchandran, M.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 61228,
+        "voteshare": 31.92
+      },
+      "margin2021": 28835,
+      "marginPct2021": 15.03,
+      "apathyRatio": 1.84
+    },
+    {
+      "no": 176,
+      "name": "Pattukkottai",
+      "district": "Thanjavur",
+      "elec2021": 247278,
+      "elec2026": 240954,
+      "vtr2021": 71.66,
+      "vtr2026": 75.29,
+      "nonVoters2021": 70079,
+      "nonVoters2026": 59540,
+      "winner2021": {
+        "name": "Annadurai, K.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 79065,
+        "voteshare": 44.62
+      },
+      "runnerUp2021": {
+        "name": "Rengarajan, N.R.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 53796,
+        "voteshare": 30.36
+      },
+      "margin2021": 25269,
+      "marginPct2021": 14.26,
+      "apathyRatio": 2.77
+    },
+    {
+      "no": 177,
+      "name": "Peravurani",
+      "district": "Thanjavur",
+      "elec2021": 221825,
+      "elec2026": 212826,
+      "vtr2021": 77.02,
+      "vtr2026": 81.83,
+      "nonVoters2021": 50975,
+      "nonVoters2026": 38670,
+      "winner2021": {
+        "name": "Ashokkumar, N.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89130,
+        "voteshare": 52.17
+      },
+      "runnerUp2021": {
+        "name": "Thirugnanasambandam, S.V.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 65627,
+        "voteshare": 38.41
+      },
+      "margin2021": 23503,
+      "marginPct2021": 13.76,
+      "apathyRatio": 2.17
+    },
+    {
+      "no": 178,
+      "name": "Gandarvakkottai",
+      "district": "Pudukkottai",
+      "elec2021": 211712,
+      "elec2026": 194732,
+      "vtr2021": 74.45,
+      "vtr2026": 84.76,
+      "nonVoters2021": 54092,
+      "nonVoters2026": 29677,
+      "winner2021": {
+        "name": "M.Chinnadurai",
+        "party": "CPM",
+        "alliance": "SPA",
+        "votes": 69710,
+        "voteshare": 44.23
+      },
+      "runnerUp2021": {
+        "name": "S.Jayabharathi",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 56989,
+        "voteshare": 36.16
+      },
+      "margin2021": 12721,
+      "marginPct2021": 8.07,
+      "apathyRatio": 4.25
+    },
+    {
+      "no": 179,
+      "name": "Viralimalai",
+      "district": "Pudukkottai",
+      "elec2021": 226411,
+      "elec2026": 223084,
+      "vtr2021": 85.43,
+      "vtr2026": 89.83,
+      "nonVoters2021": 32988,
+      "nonVoters2026": 22688,
+      "winner2021": {
+        "name": "Vijaya Basker C",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 102179,
+        "voteshare": 52.83
+      },
+      "runnerUp2021": {
+        "name": "Palaniappan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 78581,
+        "voteshare": 40.63
+      },
+      "margin2021": 23598,
+      "marginPct2021": 12.2,
+      "apathyRatio": 1.4
+    },
+    {
+      "no": 180,
+      "name": "Pudukkottai",
+      "district": "Pudukkottai",
+      "elec2021": 246630,
+      "elec2026": 223928,
+      "vtr2021": 72.94,
+      "vtr2026": 83.26,
+      "nonVoters2021": 66738,
+      "nonVoters2026": 37486,
+      "winner2021": {
+        "name": "V . Muthuraja",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 85802,
+        "voteshare": 47.7
+      },
+      "runnerUp2021": {
+        "name": "Karthik Thondaiman",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 72801,
+        "voteshare": 40.47
+      },
+      "margin2021": 13001,
+      "marginPct2021": 7.23,
+      "apathyRatio": 5.13
+    },
+    {
+      "no": 181,
+      "name": "Thirumayam",
+      "district": "Pudukkottai",
+      "elec2021": 229441,
+      "elec2026": 219279,
+      "vtr2021": 75.85,
+      "vtr2026": 81.94,
+      "nonVoters2021": 55410,
+      "nonVoters2026": 39602,
+      "winner2021": {
+        "name": "S.Regupathy",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 71349,
+        "voteshare": 41.0
+      },
+      "runnerUp2021": {
+        "name": "P.K.Vairamuthu",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 69967,
+        "voteshare": 40.2
+      },
+      "margin2021": 1382,
+      "marginPct2021": 0.79,
+      "apathyRatio": 40.09
+    },
+    {
+      "no": 182,
+      "name": "Alangudi",
+      "district": "Pudukkottai",
+      "elec2021": 218990,
+      "elec2026": 210296,
+      "vtr2021": 78.47,
+      "vtr2026": 84.43,
+      "nonVoters2021": 47149,
+      "nonVoters2026": 32743,
+      "winner2021": {
+        "name": "Siva.V.Meyyanathan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87935,
+        "voteshare": 51.17
+      },
+      "runnerUp2021": {
+        "name": "Dharma Thangavel",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 62088,
+        "voteshare": 36.13
+      },
+      "margin2021": 25847,
+      "marginPct2021": 15.04,
+      "apathyRatio": 1.82
+    },
+    {
+      "no": 183,
+      "name": "Aranthangi",
+      "district": "Pudukkottai",
+      "elec2021": 239350,
+      "elec2026": 227588,
+      "vtr2021": 70.21,
+      "vtr2026": 78.94,
+      "nonVoters2021": 71302,
+      "nonVoters2026": 47930,
+      "winner2021": {
+        "name": "Ramachandran T",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 81835,
+        "voteshare": 48.7
+      },
+      "runnerUp2021": {
+        "name": "Rajanayagam M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 50942,
+        "voteshare": 30.31
+      },
+      "margin2021": 30893,
+      "marginPct2021": 18.38,
+      "apathyRatio": 2.31
+    },
+    {
+      "no": 184,
+      "name": "Karaikudi",
+      "district": "Sivaganga",
+      "elec2021": 320785,
+      "elec2026": 303371,
+      "vtr2021": 66.23,
+      "vtr2026": 73.99,
+      "nonVoters2021": 108329,
+      "nonVoters2026": 78907,
+      "winner2021": {
+        "name": "S.Mangudi",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 75954,
+        "voteshare": 35.75
+      },
+      "runnerUp2021": {
+        "name": "H.Raja",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 54365,
+        "voteshare": 25.59
+      },
+      "margin2021": 21589,
+      "marginPct2021": 10.16,
+      "apathyRatio": 5.02
+    },
+    {
+      "no": 185,
+      "name": "Tiruppattur",
+      "district": "Sivaganga",
+      "elec2021": 292811,
+      "elec2026": 273456,
+      "vtr2021": 71.98,
+      "vtr2026": 77.28,
+      "nonVoters2021": 82046,
+      "nonVoters2026": 62129,
+      "winner2021": {
+        "name": "Kr.Periyakaruppan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 103682,
+        "voteshare": 49.19
+      },
+      "runnerUp2021": {
+        "name": "Marudhu Alaguraj",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 66308,
+        "voteshare": 31.46
+      },
+      "margin2021": 37374,
+      "marginPct2021": 17.73,
+      "apathyRatio": 2.2
+    },
+    {
+      "no": 186,
+      "name": "Sivaganga",
+      "district": "Sivaganga",
+      "elec2021": 304788,
+      "elec2026": 276156,
+      "vtr2021": 66.29,
+      "vtr2026": 75.81,
+      "nonVoters2021": 102744,
+      "nonVoters2026": 66802,
+      "winner2021": {
+        "name": "Pr. Senthilnathan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 82153,
+        "voteshare": 40.66
+      },
+      "runnerUp2021": {
+        "name": "S. Gunasekaran",
+        "party": "CPI",
+        "alliance": "SPA",
+        "votes": 70900,
+        "voteshare": 35.09
+      },
+      "margin2021": 11253,
+      "marginPct2021": 5.57,
+      "apathyRatio": 9.13
+    },
+    {
+      "no": 187,
+      "name": "Manamadurai",
+      "district": "Sivaganga",
+      "elec2021": 281833,
+      "elec2026": 257616,
+      "vtr2021": 72.05,
+      "vtr2026": 79.12,
+      "nonVoters2021": 78772,
+      "nonVoters2026": 53790,
+      "winner2021": {
+        "name": "Tamilarasi A.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89364,
+        "voteshare": 44.01
+      },
+      "runnerUp2021": {
+        "name": "Nagarajan S.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 75273,
+        "voteshare": 37.07
+      },
+      "margin2021": 14091,
+      "marginPct2021": 6.94,
+      "apathyRatio": 5.59
+    },
+    {
+      "no": 188,
+      "name": "Melur",
+      "district": "Madurai",
+      "elec2021": 246237,
+      "elec2026": 227789,
+      "vtr2021": 74.23,
+      "vtr2026": 82.42,
+      "nonVoters2021": 63455,
+      "nonVoters2026": 40045,
+      "winner2021": {
+        "name": "Periyapullan @ Selvam  P.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 83344,
+        "voteshare": 45.6
+      },
+      "runnerUp2021": {
+        "name": "Ravichandran  T.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 48182,
+        "voteshare": 26.36
+      },
+      "margin2021": 35162,
+      "marginPct2021": 19.24,
+      "apathyRatio": 1.8
+    },
+    {
+      "no": 189,
+      "name": "Madurai East",
+      "district": "Madurai",
+      "elec2021": 333462,
+      "elec2026": 330993,
+      "vtr2021": 71.34,
+      "vtr2026": 79.8,
+      "nonVoters2021": 95570,
+      "nonVoters2026": 66861,
+      "winner2021": {
+        "name": "Moorthy P",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 122729,
+        "voteshare": 51.59
+      },
+      "runnerUp2021": {
+        "name": "Gopalakrishnan R",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 73125,
+        "voteshare": 30.74
+      },
+      "margin2021": 49604,
+      "marginPct2021": 20.85,
+      "apathyRatio": 1.93
+    },
+    {
+      "no": 190,
+      "name": "Sholavandan",
+      "district": "Madurai",
+      "elec2021": 220607,
+      "elec2026": 212502,
+      "vtr2021": 79.49,
+      "vtr2026": 87.12,
+      "nonVoters2021": 45246,
+      "nonVoters2026": 27370,
+      "winner2021": {
+        "name": "Venkatesan A",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84240,
+        "voteshare": 48.04
+      },
+      "runnerUp2021": {
+        "name": "Manickam K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 67195,
+        "voteshare": 38.32
+      },
+      "margin2021": 17045,
+      "marginPct2021": 9.72,
+      "apathyRatio": 2.65
+    },
+    {
+      "no": 191,
+      "name": "Madurai North",
+      "district": "Madurai",
+      "elec2021": 246157,
+      "elec2026": 218719,
+      "vtr2021": 63.6,
+      "vtr2026": 72.63,
+      "nonVoters2021": 89601,
+      "nonVoters2026": 59863,
+      "winner2021": {
+        "name": "Thalapathi G",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 73010,
+        "voteshare": 46.64
+      },
+      "runnerUp2021": {
+        "name": "Saravanan P",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 50094,
+        "voteshare": 32.0
+      },
+      "margin2021": 22916,
+      "marginPct2021": 14.64,
+      "apathyRatio": 3.91
+    },
+    {
+      "no": 192,
+      "name": "Madurai South",
+      "district": "Madurai",
+      "elec2021": 231713,
+      "elec2026": 177605,
+      "vtr2021": 63.8,
+      "vtr2026": 78.26,
+      "nonVoters2021": 83880,
+      "nonVoters2026": 38611,
+      "winner2021": {
+        "name": "Boominathan.M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 62812,
+        "voteshare": 42.49
+      },
+      "runnerUp2021": {
+        "name": "Saravanan. S.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 56297,
+        "voteshare": 38.08
+      },
+      "margin2021": 6515,
+      "marginPct2021": 4.41,
+      "apathyRatio": 12.87
+    },
+    {
+      "no": 193,
+      "name": "Madurai Central",
+      "district": "Madurai",
+      "elec2021": 244846,
+      "elec2026": 196856,
+      "vtr2021": 61.03,
+      "vtr2026": 73.86,
+      "nonVoters2021": 95416,
+      "nonVoters2026": 51458,
+      "winner2021": {
+        "name": "Palanivel Thiaga Rajan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 73205,
+        "voteshare": 48.99
+      },
+      "runnerUp2021": {
+        "name": "Jothi Muthuramalingam N",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 39029,
+        "voteshare": 26.12
+      },
+      "margin2021": 34176,
+      "marginPct2021": 22.87,
+      "apathyRatio": 2.79
+    },
+    {
+      "no": 194,
+      "name": "Madurai West",
+      "district": "Madurai",
+      "elec2021": 309726,
+      "elec2026": 271341,
+      "vtr2021": 65.12,
+      "vtr2026": 77.81,
+      "nonVoters2021": 108032,
+      "nonVoters2026": 60211,
+      "winner2021": {
+        "name": "Raju. K",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 83883,
+        "voteshare": 41.59
+      },
+      "runnerUp2021": {
+        "name": "Chinnammal. C",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 74762,
+        "voteshare": 37.07
+      },
+      "margin2021": 9121,
+      "marginPct2021": 4.52,
+      "apathyRatio": 11.84
+    },
+    {
+      "no": 195,
+      "name": "Thiruparankundram",
+      "district": "Madurai",
+      "elec2021": 324280,
+      "elec2026": 307783,
+      "vtr2021": 72.73,
+      "vtr2026": 81.39,
+      "nonVoters2021": 88431,
+      "nonVoters2026": 57278,
+      "winner2021": {
+        "name": "Rajanchellappa, V.V.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 103683,
+        "voteshare": 43.96
+      },
+      "runnerUp2021": {
+        "name": "Ponnuthai",
+        "party": "CPM",
+        "alliance": "SPA",
+        "votes": 74194,
+        "voteshare": 31.46
+      },
+      "margin2021": 29489,
+      "marginPct2021": 12.5,
+      "apathyRatio": 3.0
+    },
+    {
+      "no": 196,
+      "name": "Thirumangalam",
+      "district": "Madurai",
+      "elec2021": 282215,
+      "elec2026": 259225,
+      "vtr2021": 78.13,
+      "vtr2026": 86.8,
+      "nonVoters2021": 61720,
+      "nonVoters2026": 34218,
+      "winner2021": {
+        "name": "Udhayakumar R B",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 100338,
+        "voteshare": 45.51
+      },
+      "runnerUp2021": {
+        "name": "Manimaran M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 86251,
+        "voteshare": 39.12
+      },
+      "margin2021": 14087,
+      "marginPct2021": 6.39,
+      "apathyRatio": 4.38
+    },
+    {
+      "no": 197,
+      "name": "Usilampatti",
+      "district": "Madurai",
+      "elec2021": 287879,
+      "elec2026": 264141,
+      "vtr2021": 73.82,
+      "vtr2026": 83.06,
+      "nonVoters2021": 75367,
+      "nonVoters2026": 44745,
+      "winner2021": {
+        "name": "Ayyappan P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 71255,
+        "voteshare": 33.53
+      },
+      "runnerUp2021": {
+        "name": "Kathiravan P V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 63778,
+        "voteshare": 30.01
+      },
+      "margin2021": 7477,
+      "marginPct2021": 3.52,
+      "apathyRatio": 10.08
+    },
+    {
+      "no": 198,
+      "name": "Andipatti",
+      "district": "Theni",
+      "elec2021": 279946,
+      "elec2026": 254549,
+      "vtr2021": 74.85,
+      "vtr2026": 83.26,
+      "nonVoters2021": 70406,
+      "nonVoters2026": 42612,
+      "winner2021": {
+        "name": "A.Maharajan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93541,
+        "voteshare": 44.64
+      },
+      "runnerUp2021": {
+        "name": "A.Logirajan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85003,
+        "voteshare": 40.57
+      },
+      "margin2021": 8538,
+      "marginPct2021": 4.07,
+      "apathyRatio": 8.25
+    },
+    {
+      "no": 199,
+      "name": "Periyakulam",
+      "district": "Theni",
+      "elec2021": 288528,
+      "elec2026": 263547,
+      "vtr2021": 69.94,
+      "vtr2026": 78.51,
+      "nonVoters2021": 86732,
+      "nonVoters2026": 56636,
+      "winner2021": {
+        "name": "K.S.Saravanakumaar",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 92251,
+        "voteshare": 45.71
+      },
+      "runnerUp2021": {
+        "name": "M Murugan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70930,
+        "voteshare": 35.15
+      },
+      "margin2021": 21321,
+      "marginPct2021": 10.57,
+      "apathyRatio": 4.07
+    },
+    {
+      "no": 200,
+      "name": "Bodinayakanur",
+      "district": "Theni",
+      "elec2021": 281513,
+      "elec2026": 261631,
+      "vtr2021": 76.3,
+      "vtr2026": 82.42,
+      "nonVoters2021": 66719,
+      "nonVoters2026": 45995,
+      "winner2021": {
+        "name": "O.Panneerselvam",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 100050,
+        "voteshare": 46.58
+      },
+      "runnerUp2021": {
+        "name": "Thangatamilselvan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89029,
+        "voteshare": 41.45
+      },
+      "margin2021": 11021,
+      "marginPct2021": 5.13,
+      "apathyRatio": 6.05
+    },
+    {
+      "no": 201,
+      "name": "Cumbum",
+      "district": "Theni",
+      "elec2021": 291001,
+      "elec2026": 253646,
+      "vtr2021": 69.51,
+      "vtr2026": 81.2,
+      "nonVoters2021": 88726,
+      "nonVoters2026": 47685,
+      "winner2021": {
+        "name": "N.Ramakrishnan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 104800,
+        "voteshare": 51.81
+      },
+      "runnerUp2021": {
+        "name": "Syedukhan.S.P.M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 62387,
+        "voteshare": 30.84
+      },
+      "margin2021": 42413,
+      "marginPct2021": 20.97,
+      "apathyRatio": 2.09
+    },
+    {
+      "no": 202,
+      "name": "Rajapalayam",
+      "district": "Virudhunagar",
+      "elec2021": 241856,
+      "elec2026": 212220,
+      "vtr2021": 73.89,
+      "vtr2026": 84.47,
+      "nonVoters2021": 63149,
+      "nonVoters2026": 32958,
+      "winner2021": {
+        "name": "Thangapandian S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 74158,
+        "voteshare": 41.5
+      },
+      "runnerUp2021": {
+        "name": "Rajenthrabhalaji K.T",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70260,
+        "voteshare": 39.32
+      },
+      "margin2021": 3898,
+      "marginPct2021": 2.18,
+      "apathyRatio": 16.2
+    },
+    {
+      "no": 203,
+      "name": "Srivilliputhur",
+      "district": "Virudhunagar",
+      "elec2021": 252992,
+      "elec2026": 222367,
+      "vtr2021": 73.14,
+      "vtr2026": 84.72,
+      "nonVoters2021": 67954,
+      "nonVoters2026": 33978,
+      "winner2021": {
+        "name": "Manraj, E.M.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 70475,
+        "voteshare": 38.09
+      },
+      "runnerUp2021": {
+        "name": "Madhavarao, P.S.W.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 57737,
+        "voteshare": 31.2
+      },
+      "margin2021": 12738,
+      "marginPct2021": 6.88,
+      "apathyRatio": 5.33
+    },
+    {
+      "no": 204,
+      "name": "Sattur",
+      "district": "Virudhunagar",
+      "elec2021": 255132,
+      "elec2026": 227963,
+      "vtr2021": 75.17,
+      "vtr2026": 85.39,
+      "nonVoters2021": 63349,
+      "nonVoters2026": 33305,
+      "winner2021": {
+        "name": "Raghuraman,  A.R.R.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 74174,
+        "voteshare": 38.68
+      },
+      "runnerUp2021": {
+        "name": "Ravichandhran, R.K.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 62995,
+        "voteshare": 32.85
+      },
+      "margin2021": 11179,
+      "marginPct2021": 5.83,
+      "apathyRatio": 5.67
+    },
+    {
+      "no": 205,
+      "name": "Sivakasi",
+      "district": "Virudhunagar",
+      "elec2021": 263750,
+      "elec2026": 225461,
+      "vtr2021": 70.16,
+      "vtr2026": 84.26,
+      "nonVoters2021": 78703,
+      "nonVoters2026": 35488,
+      "winner2021": {
+        "name": "Ashokan.G",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 78947,
+        "voteshare": 42.66
+      },
+      "runnerUp2021": {
+        "name": "Lakshmi Ganesan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 61628,
+        "voteshare": 33.3
+      },
+      "margin2021": 17319,
+      "marginPct2021": 9.36,
+      "apathyRatio": 4.54
+    },
+    {
+      "no": 206,
+      "name": "Virudhunagar",
+      "district": "Virudhunagar",
+      "elec2021": 226907,
+      "elec2026": 198616,
+      "vtr2021": 71.27,
+      "vtr2026": 82.77,
+      "nonVoters2021": 65190,
+      "nonVoters2026": 34222,
+      "winner2021": {
+        "name": "Seenivasan A.R.R",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 73297,
+        "voteshare": 45.32
+      },
+      "runnerUp2021": {
+        "name": "Pandurangan G",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 51958,
+        "voteshare": 32.13
+      },
+      "margin2021": 21339,
+      "marginPct2021": 13.2,
+      "apathyRatio": 3.05
+    },
+    {
+      "no": 207,
+      "name": "Aruppukkottai",
+      "district": "Virudhunagar",
+      "elec2021": 226456,
+      "elec2026": 206497,
+      "vtr2021": 75.6,
+      "vtr2026": 84.58,
+      "nonVoters2021": 55255,
+      "nonVoters2026": 31842,
+      "winner2021": {
+        "name": "K.K.S.S.R.Ramachandran",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 91040,
+        "voteshare": 53.18
+      },
+      "runnerUp2021": {
+        "name": "Vaigaichelvan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 52006,
+        "voteshare": 30.38
+      },
+      "margin2021": 39034,
+      "marginPct2021": 22.8,
+      "apathyRatio": 1.42
+    },
+    {
+      "no": 208,
+      "name": "Tiruchuli",
+      "district": "Virudhunagar",
+      "elec2021": 223097,
+      "elec2026": 204293,
+      "vtr2021": 77.46,
+      "vtr2026": 87.21,
+      "nonVoters2021": 50286,
+      "nonVoters2026": 26129,
+      "winner2021": {
+        "name": "Thangam Thenarasu",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 102225,
+        "voteshare": 59.15
+      },
+      "runnerUp2021": {
+        "name": "Rajasekar S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 41233,
+        "voteshare": 23.86
+      },
+      "margin2021": 60992,
+      "marginPct2021": 35.29,
+      "apathyRatio": 0.82
+    },
+    {
+      "no": 209,
+      "name": "Paramakudi",
+      "district": "Ramanathapuram",
+      "elec2021": 258050,
+      "elec2026": 233433,
+      "vtr2021": 70.59,
+      "vtr2026": 79.48,
+      "nonVoters2021": 75893,
+      "nonVoters2026": 47900,
+      "winner2021": {
+        "name": "Murugesan S",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 84864,
+        "voteshare": 46.59
+      },
+      "runnerUp2021": {
+        "name": "Sadhan Prabhakar N",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 71579,
+        "voteshare": 39.3
+      },
+      "margin2021": 13285,
+      "marginPct2021": 7.29,
+      "apathyRatio": 5.71
+    },
+    {
+      "no": 210,
+      "name": "Tiruvadanai",
+      "district": "Ramanathapuram",
+      "elec2021": 293677,
+      "elec2026": 282121,
+      "vtr2021": 68.72,
+      "vtr2026": 77.0,
+      "nonVoters2021": 91862,
+      "nonVoters2026": 64888,
+      "winner2021": {
+        "name": "Karumanickam",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 79364,
+        "voteshare": 39.33
+      },
+      "runnerUp2021": {
+        "name": "K C Animuthu",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 65512,
+        "voteshare": 32.46
+      },
+      "margin2021": 13852,
+      "marginPct2021": 6.86,
+      "apathyRatio": 6.63
+    },
+    {
+      "no": 211,
+      "name": "Ramanathapuram",
+      "district": "Ramanathapuram",
+      "elec2021": 311143,
+      "elec2026": 310165,
+      "vtr2021": 68.81,
+      "vtr2026": 75.4,
+      "nonVoters2021": 97046,
+      "nonVoters2026": 76301,
+      "winner2021": {
+        "name": "Katharbatcha Muthuramalingam",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 111082,
+        "voteshare": 51.88
+      },
+      "runnerUp2021": {
+        "name": "D.Kuppuramu",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 60603,
+        "voteshare": 28.31
+      },
+      "margin2021": 50479,
+      "marginPct2021": 23.58,
+      "apathyRatio": 1.92
+    },
+    {
+      "no": 212,
+      "name": "Mudhukulathur",
+      "district": "Ramanathapuram",
+      "elec2021": 314714,
+      "elec2026": 297310,
+      "vtr2021": 70.29,
+      "vtr2026": 76.22,
+      "nonVoters2021": 93502,
+      "nonVoters2026": 70700,
+      "winner2021": {
+        "name": "R.S.Rajakannappan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 101901,
+        "voteshare": 46.06
+      },
+      "runnerUp2021": {
+        "name": "Keerthika",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 81180,
+        "voteshare": 36.7
+      },
+      "margin2021": 20721,
+      "marginPct2021": 9.37,
+      "apathyRatio": 4.51
+    },
+    {
+      "no": 213,
+      "name": "Vilathikulam",
+      "district": "Thoothukudi",
+      "elec2021": 218464,
+      "elec2026": 203732,
+      "vtr2021": 76.52,
+      "vtr2026": 84.13,
+      "nonVoters2021": 51295,
+      "nonVoters2026": 32332,
+      "winner2021": {
+        "name": "Markandayan V",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 90348,
+        "voteshare": 54.05
+      },
+      "runnerUp2021": {
+        "name": "Chinnappan P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 51799,
+        "voteshare": 30.99
+      },
+      "margin2021": 38549,
+      "marginPct2021": 23.06,
+      "apathyRatio": 1.33
+    },
+    {
+      "no": 214,
+      "name": "Thoothukkudi",
+      "district": "Thoothukudi",
+      "elec2021": 289545,
+      "elec2026": 248300,
+      "vtr2021": 65.07,
+      "vtr2026": 80.92,
+      "nonVoters2021": 101138,
+      "nonVoters2026": 47376,
+      "winner2021": {
+        "name": "P.Geetha Jeevan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 92314,
+        "voteshare": 49.0
+      },
+      "runnerUp2021": {
+        "name": "Sdr Vijayaseelan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 42004,
+        "voteshare": 22.29
+      },
+      "margin2021": 50310,
+      "marginPct2021": 26.7,
+      "apathyRatio": 2.01
+    },
+    {
+      "no": 215,
+      "name": "Tiruchendur",
+      "district": "Thoothukudi",
+      "elec2021": 249194,
+      "elec2026": 230702,
+      "vtr2021": 70.04,
+      "vtr2026": 78.89,
+      "nonVoters2021": 74659,
+      "nonVoters2026": 48701,
+      "winner2021": {
+        "name": "Anitha R. Radhakrishnan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 88274,
+        "voteshare": 50.58
+      },
+      "runnerUp2021": {
+        "name": "Radhakrishnan M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 63011,
+        "voteshare": 36.1
+      },
+      "margin2021": 25263,
+      "marginPct2021": 14.47,
+      "apathyRatio": 2.96
+    },
+    {
+      "no": 216,
+      "name": "Srivaikuntam",
+      "district": "Thoothukudi",
+      "elec2021": 227240,
+      "elec2026": 212885,
+      "vtr2021": 72.34,
+      "vtr2026": 81.04,
+      "nonVoters2021": 62855,
+      "nonVoters2026": 40363,
+      "winner2021": {
+        "name": "Amirtharaj .S",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 76843,
+        "voteshare": 46.75
+      },
+      "runnerUp2021": {
+        "name": "S.P.Shunmuganathan",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 59471,
+        "voteshare": 36.18
+      },
+      "margin2021": 17372,
+      "marginPct2021": 10.57,
+      "apathyRatio": 3.62
+    },
+    {
+      "no": 217,
+      "name": "Ottapidaram",
+      "district": "Thoothukudi",
+      "elec2021": 254712,
+      "elec2026": 240988,
+      "vtr2021": 69.82,
+      "vtr2026": 79.34,
+      "nonVoters2021": 76872,
+      "nonVoters2026": 49788,
+      "winner2021": {
+        "name": "Shunmugaiah C",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 73110,
+        "voteshare": 41.11
+      },
+      "runnerUp2021": {
+        "name": "Mohan P",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 64600,
+        "voteshare": 36.32
+      },
+      "margin2021": 8510,
+      "marginPct2021": 4.79,
+      "apathyRatio": 9.03
+    },
+    {
+      "no": 218,
+      "name": "Kovilpatti",
+      "district": "Thoothukudi",
+      "elec2021": 268319,
+      "elec2026": 240017,
+      "vtr2021": 67.43,
+      "vtr2026": 79.21,
+      "nonVoters2021": 87391,
+      "nonVoters2026": 49900,
+      "winner2021": {
+        "name": "Kadambur Raju",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 68556,
+        "voteshare": 37.89
+      },
+      "runnerUp2021": {
+        "name": "Ttv Dhinakaran",
+        "party": "AMMK",
+        "alliance": "OTHER",
+        "votes": 56153,
+        "voteshare": 31.04
+      },
+      "margin2021": 12403,
+      "marginPct2021": 6.86,
+      "apathyRatio": 7.05
+    },
+    {
+      "no": 219,
+      "name": "Sankarankovil",
+      "district": "Tenkasi",
+      "elec2021": 256488,
+      "elec2026": 236532,
+      "vtr2021": 71.48,
+      "vtr2026": 81.09,
+      "nonVoters2021": 73150,
+      "nonVoters2026": 44728,
+      "winner2021": {
+        "name": "Raja E",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 71347,
+        "voteshare": 38.92
+      },
+      "runnerUp2021": {
+        "name": "Rajalakshmi V M",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 66050,
+        "voteshare": 36.03
+      },
+      "margin2021": 5297,
+      "marginPct2021": 2.89,
+      "apathyRatio": 13.81
+    },
+    {
+      "no": 220,
+      "name": "Vasudevanallur",
+      "district": "Tenkasi",
+      "elec2021": 244721,
+      "elec2026": 227369,
+      "vtr2021": 71.87,
+      "vtr2026": 81.48,
+      "nonVoters2021": 68840,
+      "nonVoters2026": 42109,
+      "winner2021": {
+        "name": "Sadhan Thirumalaikumar, Doctor.T",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 68730,
+        "voteshare": 39.08
+      },
+      "runnerUp2021": {
+        "name": "Manoharan A",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 66363,
+        "voteshare": 37.73
+      },
+      "margin2021": 2367,
+      "marginPct2021": 1.35,
+      "apathyRatio": 29.08
+    },
+    {
+      "no": 221,
+      "name": "Kadayanallur",
+      "district": "Tenkasi",
+      "elec2021": 291931,
+      "elec2026": 267517,
+      "vtr2021": 70.35,
+      "vtr2026": 81.38,
+      "nonVoters2021": 86558,
+      "nonVoters2026": 49812,
+      "winner2021": {
+        "name": "C.Krishnamurali",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88474,
+        "voteshare": 43.08
+      },
+      "runnerUp2021": {
+        "name": "K.A.M.Muhammed Abubacker",
+        "party": "IUML",
+        "alliance": "SPA",
+        "votes": 64125,
+        "voteshare": 31.22
+      },
+      "margin2021": 24349,
+      "marginPct2021": 11.86,
+      "apathyRatio": 3.55
+    },
+    {
+      "no": 222,
+      "name": "Tenkasi",
+      "district": "Tenkasi",
+      "elec2021": 295729,
+      "elec2026": 279585,
+      "vtr2021": 72.4,
+      "vtr2026": 82.42,
+      "nonVoters2021": 81621,
+      "nonVoters2026": 49151,
+      "winner2021": {
+        "name": "Palani Nadar.S",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 89315,
+        "voteshare": 41.71
+      },
+      "runnerUp2021": {
+        "name": "Selva Mohandas Pandian.S",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 88945,
+        "voteshare": 41.54
+      },
+      "margin2021": 370,
+      "marginPct2021": 0.17,
+      "apathyRatio": 220.6
+    },
+    {
+      "no": 223,
+      "name": "Alangulam",
+      "district": "Tenkasi",
+      "elec2021": 262891,
+      "elec2026": 253408,
+      "vtr2021": 77.4,
+      "vtr2026": 84.57,
+      "nonVoters2021": 59413,
+      "nonVoters2026": 39101,
+      "winner2021": {
+        "name": "Paul Manoj Pandian",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 74153,
+        "voteshare": 36.44
+      },
+      "runnerUp2021": {
+        "name": "Dr.Poongothai Aladi Aruna",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 70614,
+        "voteshare": 34.7
+      },
+      "margin2021": 3539,
+      "marginPct2021": 1.74,
+      "apathyRatio": 16.79
+    },
+    {
+      "no": 224,
+      "name": "Tirunelveli",
+      "district": "Tirunelveli",
+      "elec2021": 295302,
+      "elec2026": 273520,
+      "vtr2021": 66.91,
+      "vtr2026": 78.21,
+      "nonVoters2021": 97715,
+      "nonVoters2026": 59600,
+      "winner2021": {
+        "name": "Nainar Nagenthran",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 92282,
+        "voteshare": 46.7
+      },
+      "runnerUp2021": {
+        "name": "Lakshmanan,A.L.S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 69175,
+        "voteshare": 35.01
+      },
+      "margin2021": 23107,
+      "marginPct2021": 11.69,
+      "apathyRatio": 4.23
+    },
+    {
+      "no": 225,
+      "name": "Ambasamudram",
+      "district": "Tirunelveli",
+      "elec2021": 246676,
+      "elec2026": 225714,
+      "vtr2021": 72.03,
+      "vtr2026": 82.79,
+      "nonVoters2021": 68995,
+      "nonVoters2026": 38845,
+      "winner2021": {
+        "name": "E.Subaya",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 85211,
+        "voteshare": 47.96
+      },
+      "runnerUp2021": {
+        "name": "R.Avudaiappan",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 68296,
+        "voteshare": 38.44
+      },
+      "margin2021": 16915,
+      "marginPct2021": 9.52,
+      "apathyRatio": 4.08
+    },
+    {
+      "no": 226,
+      "name": "Palayamkottai",
+      "district": "Tirunelveli",
+      "elec2021": 278897,
+      "elec2026": 255130,
+      "vtr2021": 57.76,
+      "vtr2026": 68.97,
+      "nonVoters2021": 117806,
+      "nonVoters2026": 79167,
+      "winner2021": {
+        "name": "Abdul Wahab .M",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 89117,
+        "voteshare": 55.32
+      },
+      "runnerUp2021": {
+        "name": "Gerald .G",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 36976,
+        "voteshare": 22.95
+      },
+      "margin2021": 52141,
+      "marginPct2021": 32.37,
+      "apathyRatio": 2.26
+    },
+    {
+      "no": 227,
+      "name": "Nanguneri",
+      "district": "Tirunelveli",
+      "elec2021": 280685,
+      "elec2026": 254420,
+      "vtr2021": 68.59,
+      "vtr2026": 80.05,
+      "nonVoters2021": 88163,
+      "nonVoters2026": 50757,
+      "winner2021": {
+        "name": "Ruby R Manoharan",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 75902,
+        "voteshare": 39.43
+      },
+      "runnerUp2021": {
+        "name": "Ganesaraja",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 59416,
+        "voteshare": 30.86
+      },
+      "margin2021": 16486,
+      "marginPct2021": 8.56,
+      "apathyRatio": 5.35
+    },
+    {
+      "no": 228,
+      "name": "Radhapuram",
+      "district": "Tirunelveli",
+      "elec2021": 275132,
+      "elec2026": 244480,
+      "vtr2021": 68.08,
+      "vtr2026": 79.92,
+      "nonVoters2021": 87822,
+      "nonVoters2026": 49092,
+      "winner2021": {
+        "name": "M.Appavu",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 82331,
+        "voteshare": 43.95
+      },
+      "runnerUp2021": {
+        "name": "I.S.Inbadurai",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 76406,
+        "voteshare": 40.79
+      },
+      "margin2021": 5925,
+      "marginPct2021": 3.16,
+      "apathyRatio": 14.82
+    },
+    {
+      "no": 229,
+      "name": "Kanniyakumari",
+      "district": "Kanniyakumari",
+      "elec2021": 299074,
+      "elec2026": 286968,
+      "vtr2021": 75.19,
+      "vtr2026": 81.43,
+      "nonVoters2021": 74200,
+      "nonVoters2026": 53290,
+      "winner2021": {
+        "name": "Thalavai Sundaram N.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 109745,
+        "voteshare": 48.8
+      },
+      "runnerUp2021": {
+        "name": "Austin S.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 93532,
+        "voteshare": 41.59
+      },
+      "margin2021": 16213,
+      "marginPct2021": 7.21,
+      "apathyRatio": 4.58
+    },
+    {
+      "no": 230,
+      "name": "Nagercoil",
+      "district": "Kanniyakumari",
+      "elec2021": 274657,
+      "elec2026": 257022,
+      "vtr2021": 67.06,
+      "vtr2026": 74.72,
+      "nonVoters2021": 90472,
+      "nonVoters2026": 64975,
+      "winner2021": {
+        "name": "Gandhi M.R.",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 88804,
+        "voteshare": 48.21
+      },
+      "runnerUp2021": {
+        "name": "Suresh Rajan N.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 77135,
+        "voteshare": 41.88
+      },
+      "margin2021": 11669,
+      "marginPct2021": 6.34,
+      "apathyRatio": 7.75
+    },
+    {
+      "no": 231,
+      "name": "Colachal",
+      "district": "Kanniyakumari",
+      "elec2021": 271991,
+      "elec2026": 263448,
+      "vtr2021": 67.27,
+      "vtr2026": 74.13,
+      "nonVoters2021": 89023,
+      "nonVoters2026": 68154,
+      "winner2021": {
+        "name": "Prince J.G.",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 90681,
+        "voteshare": 49.56
+      },
+      "runnerUp2021": {
+        "name": "Ramesh P.",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 65849,
+        "voteshare": 35.99
+      },
+      "margin2021": 24832,
+      "marginPct2021": 13.57,
+      "apathyRatio": 3.59
+    },
+    {
+      "no": 232,
+      "name": "Padmanabhapuram",
+      "district": "Kanniyakumari",
+      "elec2021": 242802,
+      "elec2026": 234056,
+      "vtr2021": 70.08,
+      "vtr2026": 75.42,
+      "nonVoters2021": 72646,
+      "nonVoters2026": 57531,
+      "winner2021": {
+        "name": "Mano Thangaraj, T.",
+        "party": "DMK",
+        "alliance": "SPA",
+        "votes": 87744,
+        "voteshare": 51.57
+      },
+      "runnerUp2021": {
+        "name": "John Thankam, D.",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 60859,
+        "voteshare": 35.77
+      },
+      "margin2021": 26885,
+      "marginPct2021": 15.8,
+      "apathyRatio": 2.7
+    },
+    {
+      "no": 233,
+      "name": "Vilavancode",
+      "district": "Kanniyakumari",
+      "elec2021": 251138,
+      "elec2026": 225219,
+      "vtr2021": 66.83,
+      "vtr2026": 75.77,
+      "nonVoters2021": 83302,
+      "nonVoters2026": 54571,
+      "winner2021": {
+        "name": "Vijayadharani S",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 87473,
+        "voteshare": 52.12
+      },
+      "runnerUp2021": {
+        "name": "Jayaseelan R",
+        "party": "BJP",
+        "alliance": "NDA",
+        "votes": 58804,
+        "voteshare": 35.04
+      },
+      "margin2021": 28669,
+      "marginPct2021": 17.08,
+      "apathyRatio": 2.91
+    },
+    {
+      "no": 234,
+      "name": "Killiyoor",
+      "district": "Kanniyakumari",
+      "elec2021": 257959,
+      "elec2026": 243837,
+      "vtr2021": 65.87,
+      "vtr2026": 71.29,
+      "nonVoters2021": 88041,
+      "nonVoters2026": 70006,
+      "winner2021": {
+        "name": "Rajesh Kumar  S",
+        "party": "INC",
+        "alliance": "SPA",
+        "votes": 101541,
+        "voteshare": 59.76
+      },
+      "runnerUp2021": {
+        "name": "Jude Dev   K.V",
+        "party": "ADMK",
+        "alliance": "NDA",
+        "votes": 46141,
+        "voteshare": 27.15
+      },
+      "margin2021": 55400,
+      "marginPct2021": 32.6,
+      "apathyRatio": 1.59
+    }
+  ]
+}
