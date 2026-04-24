@@ -5,22 +5,27 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import turnoutData from "@/data/turnout.json";
 import "./globals.css";
 
-// Self-host the fonts via next/font so the browser computes size-adjust
-// fallback metrics — this is what removes the CLS shift when Fraunces
-// swaps in over the Georgia fallback on the large numerals.
+// Self-host the fonts via next/font. `display: 'optional'` is deliberate:
+// with `swap`, the browser renders fallback then re-lays-out when Fraunces
+// arrives, which moved the huge Masthead h1 and HeadlineBar numeral enough
+// to blow the CLS budget (0.338). `optional` gives the font a tiny window
+// to load from the Vercel edge; if it makes the window (almost always, since
+// we're serving from our own origin), paint is already with Fraunces — no
+// swap, no shift. If it misses, user sees Times New Roman for this visit
+// and the font is cached for next time.
 const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   style: ["normal", "italic"],
   variable: "--font-fraunces",
-  display: "swap",
+  display: "optional",
 });
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-mono",
-  display: "swap",
+  display: "optional",
 });
 
 const SITE_URL = "https://tn-dashboard-app.vercel.app";
