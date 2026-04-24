@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from 'react';
-import { SERIF, MONO, COLORS } from '@/styles/theme';
+import { SERIF, MONO, COLORS, onCream } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import { fmtIndian, fmtRupeesShort } from '@/utils/format';
 import acsData from '@/data/acs.json';
@@ -71,7 +71,7 @@ const CandidateCard = ({ candidate, ballotNo, myneta }: { candidate: any, ballot
           {candidate.name}
         </h4>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'baseline', marginTop: '2px', flexWrap: 'wrap' }}>
-          <span style={{ fontFamily: MONO, fontSize: '10px', fontWeight: 700, color: p.color, letterSpacing: '0.05em' }}>
+          <span style={{ fontFamily: MONO, fontSize: '10px', fontWeight: 700, color: onCream(p.color), letterSpacing: '0.05em' }}>
             {candidate.party}
           </span>
           <span style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '12px', color: COLORS.muted }}>
@@ -210,9 +210,9 @@ const CandidatePanel = ({ ac, onClose }: any) => {
             <div style={{ fontFamily: MONO, fontSize: '11px', letterSpacing: '0.18em', color: '#d4a080', fontWeight: 600 }}>
               AC №{String(ac.no).padStart(3, '0')} · {ac.d}{ac.t !== 'GEN' ? ` · ${ac.t}` : ''}
             </div>
-            <h2 style={{ fontFamily: SERIF, fontSize: isMobile ? '28px' : '32px', fontWeight: 900, fontStyle: 'italic', margin: '4px 0 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+            <h3 style={{ fontFamily: SERIF, fontSize: isMobile ? '28px' : '32px', fontWeight: 900, fontStyle: 'italic', margin: '4px 0 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
               {ac.n}
-            </h2>
+            </h3>
             <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.12em', color: '#d4a080', marginTop: '6px', fontWeight: 600 }}>
               {fmtIndian(ac.total)} ELECTORS · ♀ {femalePct}%
             </div>
@@ -416,6 +416,7 @@ export const ACExplorer = () => {
         <select
           value={sortKey}
           onChange={(e) => setSortKey(e.target.value)}
+          aria-label="Sort constituencies"
           style={{
             width: isMobile ? '100%' : 'auto',
             padding: '12px 16px',

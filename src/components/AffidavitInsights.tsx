@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo } from 'react';
-import { SERIF, MONO, COLORS } from '@/styles/theme';
+import { SERIF, MONO, COLORS, onCream } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import { fmtRupeesShort } from '@/utils/format';
 import acsData from '@/data/acs.json';
@@ -132,7 +132,7 @@ export const CrorepatiBallot = () => {
                   <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 700 }}>
                     {meta.label}
                   </span>
-                  <span style={{ fontFamily: MONO, fontSize: '11px', color: meta.color, fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
+                  <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(meta.color), fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
                     {fmtRupeesShort(b.medianAssets)}
                   </span>
                 </div>
@@ -167,7 +167,7 @@ export const CrorepatiBallot = () => {
                   </div>
                 </div>
                 {!isMobile && (
-                  <span style={{ fontFamily: MONO, fontSize: '12px', color: meta.color, fontWeight: 800, textAlign: 'right', fontFeatureSettings: '"tnum" 1' }}>
+                  <span style={{ fontFamily: MONO, fontSize: '12px', color: onCream(meta.color), fontWeight: 800, textAlign: 'right', fontFeatureSettings: '"tnum" 1' }}>
                     {fmtRupeesShort(r.assets ?? 0)}
                   </span>
                 )}
@@ -234,7 +234,7 @@ export const CriminalColumn = () => {
               <div key={b.code} style={{ marginBottom: '14px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
                   <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 700 }}>{meta.label}</span>
-                  <span style={{ fontFamily: MONO, fontSize: '11px', color: meta.color, fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
+                  <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(meta.color), fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
                     {b.pct.toFixed(1)}%
                   </span>
                 </div>
@@ -375,7 +375,7 @@ export const AgeOfTheBallot = () => {
               <div key={a.code} style={{ marginBottom: '14px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
                   <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 700 }}>{meta.label}</span>
-                  <span style={{ fontFamily: MONO, fontSize: '11px', color: meta.color, fontWeight: 800, fontFeatureSettings: '"tnum" 1' }}>
+                  <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(meta.color), fontWeight: 800, fontFeatureSettings: '"tnum" 1' }}>
                     {a.median.toFixed(0)}
                   </span>
                 </div>

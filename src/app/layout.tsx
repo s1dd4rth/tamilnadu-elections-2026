@@ -1,8 +1,27 @@
 import type { Metadata } from "next";
+import { Fraunces, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import turnoutData from "@/data/turnout.json";
 import "./globals.css";
+
+// Self-host the fonts via next/font so the browser computes size-adjust
+// fallback metrics — this is what removes the CLS shift when Fraunces
+// swaps in over the Georgia fallback on the large numerals.
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 const SITE_URL = "https://tn-dashboard-app.vercel.app";
 const TITLE = `Tamil Nadu 2026 Election · ${turnoutData.state.vtr2026}% Turnout Dashboard`;
@@ -101,14 +120,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fraunces.variable} ${ibmPlexMono.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700;1,9..144,900&family=IBM+Plex+Mono:wght@400;600;700&display=swap"
-          rel="stylesheet"
-        />
         <meta name="theme-color" content="#faf4e8" />
         <script
           type="application/ld+json"

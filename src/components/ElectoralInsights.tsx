@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo } from 'react';
-import { SERIF, MONO, COLORS } from '@/styles/theme';
+import { SERIF, MONO, COLORS, onCream } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
 import { useIsMobile } from '@/hooks/useMediaQuery';
 import candidatesData from '@/data/candidates_by_ac.json';
@@ -278,7 +278,7 @@ export const WomenOnBallot = () => {
           {PARTY_WOMEN.map(p => (
             <div key={p.code} style={{ marginBottom: '8px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr 60px', gap: '12px', alignItems: 'center' }}>
-                <span style={{ fontFamily: MONO, fontSize: '10px', color: p.color, fontWeight: 800 }}>{p.code}</span>
+                <span style={{ fontFamily: MONO, fontSize: '10px', color: onCream(p.color), fontWeight: 800 }}>{p.code}</span>
                 <div style={{ background: '#f5ead8', height: '16px', border: `1px solid ${COLORS.border}` }}>
                   <div style={{ width: `${(p.pct / maxPartyP) * 100}%`, height: '100%', background: p.color }} />
                 </div>
@@ -332,10 +332,10 @@ export const BeyondBigFour = () => {
         {THIRD_FRONT.map(p => (
           <div key={p.code} style={{ background: '#faf4e8', border: `1.5px solid ${COLORS.text}`, borderTop: `6px solid ${p.color}`, padding: '24px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
-              <SmallCaps style={{ color: p.color, fontSize: '10px' }}>{p.code}</SmallCaps>
-              <div style={{ fontFamily: SERIF, fontSize: '36px', fontWeight: 900, fontStyle: 'italic', color: p.color, lineHeight: 1 }}>{p.seats}</div>
+              <SmallCaps style={{ color: onCream(p.color), fontSize: '10px' }}>{p.code}</SmallCaps>
+              <div style={{ fontFamily: SERIF, fontSize: '36px', fontWeight: 900, fontStyle: 'italic', color: onCream(p.color), lineHeight: 1 }}>{p.seats}</div>
             </div>
-            <h4 style={{ fontFamily: SERIF, fontSize: '18px', fontWeight: 900, fontStyle: 'italic', margin: '0 0 4px', color: COLORS.text }}>{p.full}</h4>
+            <h3 style={{ fontFamily: SERIF, fontSize: '18px', fontWeight: 900, fontStyle: 'italic', margin: '0 0 4px', color: COLORS.text }}>{p.full}</h3>
             <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, marginBottom: '12px' }}>led by {p.leader}</div>
             <p style={{ fontFamily: SERIF, fontSize: '13px', color: COLORS.text, lineHeight: 1.6, margin: 0 }}>{p.desc}</p>
           </div>
