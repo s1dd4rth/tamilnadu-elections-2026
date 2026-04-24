@@ -3,6 +3,7 @@
 import React, { useMemo, useState } from "react";
 import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps } from "./common";
+import { PartyFlag } from "./PartyFlag";
 
 // ─────────────────────────────────────────────────────────────
 // Layout — 234 dots in a semicircle, rows, even-ish spacing.
@@ -206,10 +207,11 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legendCou
         }}
       >
         {activeSeat ? (
-          <div style={{ display: "grid", gridTemplateColumns: "auto 1fr auto", gap: "16px", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "auto auto 1fr auto", gap: "14px", alignItems: "center" }}>
             <div style={{ fontFamily: MONO, fontSize: "11px", color: COLORS.muted, letterSpacing: "0.1em" }}>
               AC № {activeSeat.seat.no}
             </div>
+            <PartyFlag party={activeSeat.seat.party} size={28} />
             <div>
               <div style={{ fontFamily: SERIF, fontSize: "19px", fontWeight: 800, color: COLORS.text }}>
                 {activeSeat.seat.name}

@@ -3,6 +3,7 @@
 import React, { useMemo } from "react";
 import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps, SectionTitle } from "./common";
+import { PartyFlag } from "./PartyFlag";
 import analysisData from "@/data/analysis.json";
 
 // Pull out the standout: Thiyagarayanagar 792:1
@@ -97,7 +98,12 @@ const ApathyTable = () => (
             <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "13px", color: COLORS.text, textAlign: "right", fontFeatureSettings: '"tnum" 1' }}>{fmt(r.nonVoters2021)}</td>
             <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "13px", color: COLORS.text, textAlign: "right", fontFeatureSettings: '"tnum" 1' }}>{fmt(r.margin2021)}</td>
             <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "14px", color: COLORS.accent, textAlign: "right", fontFeatureSettings: '"tnum" 1', fontWeight: 700 }}>{r.apathyRatio!.toFixed(1)}×</td>
-            <td style={{ padding: "10px 8px", fontFamily: SERIF, fontSize: "13px", fontStyle: "italic", color: "#3a302a" }}>{r.winner2021.party}</td>
+            <td style={{ padding: "10px 8px", fontFamily: SERIF, fontSize: "13px", color: "#3a302a" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                <PartyFlag party={r.winner2021.party} size={22} />
+                <span style={{ fontStyle: "italic" }}>{r.winner2021.party}</span>
+              </span>
+            </td>
           </tr>
         ))}
       </tbody>
