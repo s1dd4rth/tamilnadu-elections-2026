@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { SERIF, MONO, COLORS } from '@/styles/theme';
 import { SmallCaps, SectionTitle } from './common';
+import { PartyFlag } from './PartyFlag';
 import turnoutData from '@/data/turnout.json';
+import analysisData from '@/data/analysis.json';
 import districtsData from '@/data/districts.json';
 import { MAP_COORDS, TN_CLIP_PATHS, VORONOI_CELLS } from '@/data/map-data';
 import mapSvgData from '@/data/map-svg.json';
@@ -550,11 +553,169 @@ const TopBottomACs = () => {
   const bot = sorted.slice(-5).reverse();
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '22px' }}>
-      <ACList title="Top Five Constituencies" rows={top} accent />
-      <ACList title="Bottom Five Constituencies" rows={bot} />
+      <ACList title="Who Showed Up · Top 5 by VTR" rows={top} accent />
+      <ACList title="Who Didn't · Bottom 5 by VTR" rows={bot} />
     </div>
   );
 };
+
+// ─────────────────────────────────────────────────────────────
+// Apathy margin — a compact version of the /analysis page
+// finding. 2021 baseline: in a lot of Tamil Nadu the people who
+// DIDN'T vote mattered more than the contest itself.
+// ─────────────────────────────────────────────────────────────
+
+const ApathyInline = () => {
+  const acs = analysisData.acs.filter((a) => a.apathyRatio != null);
+  const ranked = [...acs].sort((a, b) => (b.apathyRatio! - a.apathyRatio!));
+  const lede = ranked[0];
+  const top5 = ranked.slice(0, 5);
+  const apathy_exceeds_margin = acs.filter((a) => a.nonVoters2021 > a.margin2021).length;
+
+  return (
+    <div style={{ marginBottom: '40px' }}>
+      <SmallCaps style={{ color: COLORS.accent, marginBottom: '14px' }}>
+        Who Didn't · The Apathy Margin
+      </SmallCaps>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+        gap: '22px',
+        alignItems: 'stretch',
+      }}>
+        {/* Pull-quote */}
+        <div style={{
+          background: COLORS.text,
+          color: '#faf4e8',
+          padding: '28px 26px',
+          border: `1.5px solid ${COLORS.text}`,
+          boxShadow: '6px 6px 0 rgba(26,20,16,0.08)',
+        }}>
+          <SmallCaps style={{ color: '#c8886a', marginBottom: '12px' }}>The vote that wasn't</SmallCaps>
+          <blockquote style={{
+            fontFamily: SERIF,
+            fontSize: 'clamp(20px, 2.6vw, 28px)',
+            fontWeight: 700,
+            fontStyle: 'italic',
+            lineHeight: 1.22,
+            margin: 0,
+            letterSpacing: '-0.015em',
+            color: '#faf4e8',
+          }}>
+            In {lede.name}, {lede.nonVoters2021.toLocaleString('en-IN')} people stayed home in 2021.
+            The winner came in by <span style={{ color: '#e8c9b0' }}>{lede.margin2021.toLocaleString('en-IN')} votes</span>.
+          </blockquote>
+          <div style={{ fontFamily: SERIF, fontSize: '13.5px', fontStyle: 'italic', color: '#d4c9bc', marginTop: '16px', lineHeight: 1.6 }}>
+            That is a ratio of{' '}
+            <strong style={{ color: '#e8c9b0', fontStyle: 'normal' }}>{lede.apathyRatio!.toFixed(0)}-to-one</strong>.
+            Across Tamil Nadu in 2021, non-voters outnumbered the winner's margin in{' '}
+            <strong style={{ color: '#e8c9b0', fontStyle: 'normal' }}>{apathy_exceeds_margin} of 234</strong> constituencies.
+          </div>
+        </div>
+
+        {/* Compact top-5 list */}
+        <div style={{ background: '#fff9ef', border: `1.5px solid ${COLORS.text}`, padding: '22px' }}>
+          <SmallCaps style={{ color: COLORS.muted, marginBottom: '14px' }}>
+            Widest Apathy Gaps · 2021 Baseline
+          </SmallCaps>
+          {top5.map((r, i) => (
+            <div key={r.no} style={{
+              display: 'grid',
+              gridTemplateColumns: '28px 1fr auto 64px',
+              alignItems: 'center',
+              gap: '10px',
+              padding: '10px 0',
+              borderBottom: i < top5.length - 1 ? '1px dotted #d4c9bc' : 'none',
+            }}>
+              <div style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.muted, fontWeight: 700 }}>
+                {String(i + 1).padStart(2, '0')}
+              </div>
+              <div>
+                <div style={{ fontFamily: SERIF, fontSize: '16px', fontWeight: 800, color: COLORS.text, letterSpacing: '-0.01em' }}>
+                  {r.name}
+                </div>
+                <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.08em', marginTop: '2px' }}>
+                  {r.nonVoters2021.toLocaleString('en-IN')} stayed home · margin {r.margin2021.toLocaleString('en-IN')}
+                </div>
+              </div>
+              <PartyFlag party={r.winner2021.party} size={22} />
+              <div style={{
+                fontFamily: MONO,
+                fontSize: '16px',
+                fontWeight: 700,
+                color: COLORS.accent,
+                textAlign: 'right',
+                fontFeatureSettings: '"tnum" 1',
+              }}>
+                {r.apathyRatio!.toFixed(1)}×
+              </div>
+            </div>
+          ))}
+          <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '12px', color: COLORS.muted, margin: '14px 0 0', lineHeight: 1.55 }}>
+            Ratio = 2021 non-voters ÷ winner's margin. The 2026 counterpart populates on counting day.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────
+// Deep-dive callout — sends readers to the full /analysis page.
+// ─────────────────────────────────────────────────────────────
+
+const DeepDiveLink = () => (
+  <Link
+    href="/analysis"
+    style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap: '20px',
+      padding: '26px 32px',
+      marginTop: '40px',
+      background: '#fff9ef',
+      border: `2px solid ${COLORS.text}`,
+      boxShadow: '6px 6px 0 rgba(26,20,16,0.06)',
+      textDecoration: 'none',
+      color: 'inherit',
+    }}
+  >
+    <div style={{ maxWidth: '640px' }}>
+      <SmallCaps style={{ color: COLORS.accent }}>Deep dive · Voting data analysis</SmallCaps>
+      <div style={{
+        fontFamily: SERIF,
+        fontSize: 'clamp(22px, 2.6vw, 28px)',
+        fontWeight: 800,
+        fontStyle: 'italic',
+        lineHeight: 1.2,
+        margin: '8px 0 6px',
+        letterSpacing: '-0.02em',
+        color: COLORS.text,
+      }}>
+        The 234-dot hemicycle, every AC's apathy ratio, and the 2021 baseline.
+      </div>
+      <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '14px', lineHeight: 1.5, color: '#3a302a', margin: 0 }}>
+        A dedicated page for the longer reading: the seat arc, side-by-side with the 2026 placeholder that fills in on counting day, and the full non-voter table for all 234 constituencies.
+      </p>
+    </div>
+    <span style={{
+      fontFamily: MONO,
+      fontSize: '13px',
+      fontWeight: 700,
+      letterSpacing: '0.15em',
+      textTransform: 'uppercase',
+      padding: '14px 18px',
+      border: `1.5px solid ${COLORS.text}`,
+      color: COLORS.text,
+      whiteSpace: 'nowrap',
+    }}>
+      Read the Analysis →
+    </span>
+  </Link>
+);
 
 // ─────────────────────────────────────────────────────────────
 // Points to note.
@@ -686,7 +847,7 @@ export const TurnoutSection = () => {
   return (
     <section style={{ margin: '48px 0 60px' }}>
       <div style={{ borderTop: `2px solid ${COLORS.text}` }} />
-      <SectionTitle kicker="Polling Day · 23 April 2026">Who Showed Up.</SectionTitle>
+      <SectionTitle kicker="Polling Day · 23 April 2026">Who Showed Up, Who Didn't.</SectionTitle>
 
       <div style={{ marginBottom: '40px' }}>
         <HistoricalStrip />
@@ -728,7 +889,11 @@ export const TurnoutSection = () => {
         <TopBottomACs />
       </div>
 
+      <ApathyInline />
+
       <PointsToNote />
+
+      <DeepDiveLink />
     </section>
   );
 };
