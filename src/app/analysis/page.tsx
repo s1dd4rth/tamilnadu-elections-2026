@@ -70,7 +70,7 @@ export default function AnalysisPage() {
   ];
 
   return (
-    <main style={{ maxWidth: "1200px", margin: "0 auto", background: "#faf4e8", minHeight: "100vh", padding: "16px" }}>
+    <main id="main-content" style={{ maxWidth: "1200px", margin: "0 auto", background: "#faf4e8", minHeight: "100vh", padding: "16px" }}>
       {/* Top nav */}
       <nav
         style={{

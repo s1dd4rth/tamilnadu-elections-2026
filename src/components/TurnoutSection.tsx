@@ -126,15 +126,25 @@ const TurnoutMap = ({ mode, selected, onSelect, onHover, hovered }: any) => {
       {districtsData.map((d) => {
         const pts = (VORONOI_CELLS as any)[d.id];
         if (!pts) return null;
+        const v = vtrByDistrictId[d.id];
+        const onActivate = () => onSelect(d.id === selected ? null : d.id);
         return (
           <polygon
             key={'cell-' + d.id}
             points={pts}
             fill="#000"
             fillOpacity={0}
-            onClick={() => onSelect(d.id === selected ? null : d.id)}
+            onClick={onActivate}
             onMouseEnter={() => onHover(d.id)}
             onMouseLeave={() => onHover(null)}
+            onFocus={() => onHover(d.id)}
+            onBlur={() => onHover(null)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onActivate(); }
+            }}
+            tabIndex={0}
+            role="button"
+            aria-label={`${d.name} district — approximate turnout ${v != null ? v.toFixed(2) + '%' : 'no data'}`}
             style={{ cursor: 'pointer' }}
           />
         );

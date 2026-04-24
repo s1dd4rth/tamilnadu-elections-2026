@@ -60,14 +60,62 @@ function hemicycleLayout(n: number, rows: number, innerR: number, outerR: number
 const ALLIANCE_COLOUR: Record<string, string> = {
   SPA: "#a04020",   // DMK-led — warm rust (site accent, editorial lead)
   NDA: "#1f4e3d",   // AIADMK-led — deep green
-  TVK: "#a61e5e",   // Tamilaga Vetri Kazhagam — wine/magenta (distinct from DMK rust;
-                    //   TVK's flag uses red, but maroon was indistinguishable from
-                    //   SPA at dot size — this keeps it "party red" but visually clear)
+  TVK: "#a61e5e",   // Tamilaga Vetri Kazhagam — wine/magenta
   NTK: "#d8a520",   // Naam Tamilar Katchi — Seeman, gold
   IND: "#7a6a56",   // independents — muted sepia
   OTHER: "#4a3a2c", // everything else — dark sepia
   UNKNOWN: "#e0d5c2", // placeholder before 2026 results come in
 };
+
+// Inner markers overlaid on each dot so alliance is readable *without* colour
+// (WCAG 1.4.1). Rendered in cream so they stand out on every fill.
+// scale = radius → marker strokes/sizes scale with dot size.
+const MARKER_FILL = "#faf4e8";
+
+function renderMarker(alliance: string, r: number, cx: number, cy: number) {
+  const s = r * 0.55; // marker half-extent
+  const sw = Math.max(1, r * 0.28); // stroke width
+  switch (alliance) {
+    case "SPA":
+      // solid fill, no marker — the baseline; most common colour
+      return null;
+    case "NDA":
+      // cream "plus" inside the dot
+      return (
+        <g stroke={MARKER_FILL} strokeWidth={sw} strokeLinecap="round">
+          <line x1={cx - s} y1={cy} x2={cx + s} y2={cy} />
+          <line x1={cx} y1={cy - s} x2={cx} y2={cy + s} />
+        </g>
+      );
+    case "TVK":
+      // cream "x" diagonal cross
+      return (
+        <g stroke={MARKER_FILL} strokeWidth={sw} strokeLinecap="round">
+          <line x1={cx - s} y1={cy - s} x2={cx + s} y2={cy + s} />
+          <line x1={cx - s} y1={cy + s} x2={cx + s} y2={cy - s} />
+        </g>
+      );
+    case "NTK":
+      // single horizontal bar
+      return (
+        <line
+          x1={cx - s}
+          y1={cy}
+          x2={cx + s}
+          y2={cy}
+          stroke={MARKER_FILL}
+          strokeWidth={sw}
+          strokeLinecap="round"
+        />
+      );
+    case "UNKNOWN":
+      // open ring — no marker needed, but fill is near-background so outline
+      // carries the shape. Handled by special-casing stroke below.
+      return null;
+    default:
+      return null;
+  }
+}
 
 const ALLIANCE_LABEL: Record<string, string> = {
   SPA: "DMK-led (SPA)",
@@ -152,23 +200,37 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
           viewBox={`${-320 - padTop} ${-320 - padTop} ${vbW} ${vbH}`}
           style={{ width: "100%", height: "auto", display: "block" }}
         >
-          {/* seat dots */}
+          {/* seat dots — each rendered as a group: filled circle + inner
+              pattern marker, so alliance is legible without relying on
+              colour. UNKNOWN gets an outlined-only treatment. */}
           {seatData.map(({ seat, pos }, i) => {
             const fill = ALLIANCE_COLOUR[seat.alliance] || ALLIANCE_COLOUR.OTHER;
             const isActive = hoverIdx === i;
+            const r = isActive ? 9 : 7;
+            const isUnknown = seat.alliance === "UNKNOWN";
             return (
-              <circle
+              <g
                 key={i}
-                cx={pos.x}
-                cy={pos.y}
-                r={isActive ? 9 : 7}
-                fill={fill}
-                stroke={isActive ? COLORS.text : "none"}
-                strokeWidth={isActive ? 2 : 0}
                 onMouseEnter={() => setHoverIdx(i)}
                 onMouseLeave={() => setHoverIdx(null)}
-                style={{ cursor: "pointer", transition: "r 120ms ease" }}
-              />
+                onFocus={() => setHoverIdx(i)}
+                onBlur={() => setHoverIdx(null)}
+                style={{ cursor: "pointer" }}
+                role="img"
+                aria-label={`AC ${seat.no} ${seat.name} — ${seat.alliance} ${seat.winnerName}`}
+                tabIndex={0}
+              >
+                <circle
+                  cx={pos.x}
+                  cy={pos.y}
+                  r={r}
+                  fill={isUnknown ? COLORS.background : fill}
+                  stroke={isActive ? COLORS.text : isUnknown ? fill : "none"}
+                  strokeWidth={isActive ? 2 : isUnknown ? 1.5 : 0}
+                  style={{ transition: "r 120ms ease" }}
+                />
+                {!isUnknown && renderMarker(seat.alliance, r, pos.x, pos.y)}
+              </g>
             );
           })}
 
@@ -257,28 +319,34 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
         )}
       </div>
 
-      {/* legend — renders exactly the entries the caller passes. */}
+      {/* legend — each chip mirrors the dot (fill + inner marker) so
+          the colour + shape pairing is visible here too. */}
       <div style={{ marginTop: "16px", display: "flex", flexWrap: "wrap", gap: "18px" }}>
-        {legend.map(({ alliance, count }) => (
-          <div key={alliance} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span
-              style={{
-                width: "14px",
-                height: "14px",
-                borderRadius: "50%",
-                background: ALLIANCE_COLOUR[alliance] || ALLIANCE_COLOUR.OTHER,
-                border: `1px solid ${COLORS.text}`,
-                flex: "none",
-              }}
-            />
-            <span style={{ fontFamily: MONO, fontSize: "11px", letterSpacing: "0.08em", color: COLORS.text, fontWeight: 600, whiteSpace: "nowrap" }}>
-              {ALLIANCE_LABEL[alliance] || alliance}
-              {count != null && (
-                <span style={{ color: COLORS.accent, marginLeft: "6px" }}>· {count}</span>
-              )}
-            </span>
-          </div>
-        ))}
+        {legend.map(({ alliance, count }) => {
+          const fill = ALLIANCE_COLOUR[alliance] || ALLIANCE_COLOUR.OTHER;
+          const isUnknown = alliance === "UNKNOWN";
+          return (
+            <div key={alliance} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <svg width={18} height={18} viewBox="-9 -9 18 18" aria-hidden="true" style={{ flex: "none" }}>
+                <circle
+                  cx={0}
+                  cy={0}
+                  r={7}
+                  fill={isUnknown ? COLORS.background : fill}
+                  stroke={isUnknown ? fill : COLORS.text}
+                  strokeWidth={isUnknown ? 1.5 : 1}
+                />
+                {!isUnknown && renderMarker(alliance, 7, 0, 0)}
+              </svg>
+              <span style={{ fontFamily: MONO, fontSize: "11px", letterSpacing: "0.08em", color: COLORS.text, fontWeight: 600, whiteSpace: "nowrap" }}>
+                {ALLIANCE_LABEL[alliance] || alliance}
+                {count != null && (
+                  <span style={{ color: COLORS.accent, marginLeft: "6px" }}>· {count}</span>
+                )}
+              </span>
+            </div>
+          );
+        })}
       </div>
 
       {caption && (

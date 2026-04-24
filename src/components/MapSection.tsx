@@ -112,15 +112,24 @@ const TNMap = ({ selected, onSelect, onHover, hovered }: any) => {
       {districtsData.map((d) => {
         const pts = VORONOI_CELLS[d.id];
         if (!pts) return null;
+        const onActivate = () => onSelect(d.id === selected ? null : d.id);
         return (
           <polygon
             key={'cell-' + d.id}
             points={pts}
             fill="#000"
             fillOpacity={0}
-            onClick={() => onSelect(d.id === selected ? null : d.id)}
+            onClick={onActivate}
             onMouseEnter={() => onHover(d.id)}
             onMouseLeave={() => onHover(null)}
+            onFocus={() => onHover(d.id)}
+            onBlur={() => onHover(null)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onActivate(); }
+            }}
+            tabIndex={0}
+            role="button"
+            aria-label={`${d.name} district — ${d.acs} constituencies, ${d.total.toLocaleString('en-IN')} electors`}
             style={{ cursor: 'pointer' }}
           />
         );

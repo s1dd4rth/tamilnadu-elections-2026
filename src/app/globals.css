@@ -15,3 +15,54 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Skip-to-content link — hidden unless focused. */
+.skip-to-content {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  background: #1a1410;
+  color: #faf4e8;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  z-index: 1000;
+  transform: translateY(-200%);
+  transition: transform 150ms ease;
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+  outline: 2px solid #faf4e8;
+  outline-offset: 2px;
+}
+
+/* Visible focus indicator for keyboard users on interactive elements.
+   :focus-visible only shows for keyboard focus, not mouse clicks. */
+:focus-visible {
+  outline: 2px solid #a04020;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* SVG elements with tabIndex need a custom focus halo since the default
+   outline doesn't wrap tightly around the shape. */
+[tabindex]:focus-visible {
+  outline: 2px solid #1a1410;
+  outline-offset: 2px;
+}
+
+/* Respect users who prefer reduced motion — disables hover transitions
+   and any animation that lasts longer than a blink. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
