@@ -22,6 +22,8 @@ This dashboard visualizes the largest single electoral cleanup in Tamil Nadu's h
 
 ## 📱 Features
 - **Interactive Heatmap**: Explore district-level electorate density.
+- **AC Turnout Map**: 234-hex choropleth over all constituencies, togglable between VTR 2026 and change-since-2021.
+- **Seat Atlas** (`/analysis`): Paired 2021-baseline and 2026-placeholder views — a seat hemicycle and a hex tile map that both colour in on counting day.
 - **Demographic Pulse**: Real-time gender split and age-cohort pyramids.
 - **AC Explorer**: Instant search and filter across all 234 Assembly Constituencies with candidate details.
 - **District Portrait**: Detailed rank-based analysis of voter demographics.
@@ -41,7 +43,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📜 Source & Credits
 - Data sourced from the **Chief Electoral Officer (CEO), Tamil Nadu** Final Roll 2026.
-- Map based on Wikimedia Commons (CC-BY-SA 3.0) by Planemad / Nichalp.
+- District map based on Wikimedia Commons (CC-BY-SA 3.0) by Planemad / Nichalp.
+- AC hex-tile layout adapted from [baskicanvas/tamilnadu-assembly-constituency-maps](https://github.com/baskicanvas/tamilnadu-assembly-constituency-maps).
 
 ---
 *Compiled and Engineered by Siddarth Kengadaran*
