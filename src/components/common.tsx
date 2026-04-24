@@ -1,8 +1,8 @@
 import React from 'react';
 import { MONO, SERIF } from '@/styles/theme';
 
-export const SmallCaps = ({ children, style }: { children: React.ReactNode, style?: React.CSSProperties }) => (
-  <div style={{
+export const SmallCaps = ({ children, style, className }: { children: React.ReactNode, style?: React.CSSProperties, className?: string }) => (
+  <div className={className} style={{
     fontFamily: MONO,
     fontSize: '11px',
     fontWeight: 700,

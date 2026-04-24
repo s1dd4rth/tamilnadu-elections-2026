@@ -54,6 +54,67 @@ a {
   outline-offset: 2px;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Responsive header layout — pure CSS, no JS breakpoint check.
+   Using media queries here (instead of useIsMobile in React)
+   means the same HTML is used on SSR and client, and the layout
+   does not shift after hydration. Kills the dominant CLS.
+   ───────────────────────────────────────────────────────────── */
+
+/* Masthead row: baseline row on desktop, column on mobile
+   with the credit line right-aligned. */
+.masthead-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 6px;
+  gap: 10px;
+  flex-direction: row;
+}
+.masthead-credit { align-self: auto; }
+@media (max-width: 768px) {
+  .masthead-row { flex-direction: column; }
+  .masthead-credit { align-self: flex-end; }
+}
+
+/* HeadlineBar: 2-column on desktop, single on mobile. */
+.headline-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: end;
+}
+@media (max-width: 768px) {
+  .headline-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* HeadlineBar big number: bigger viewport-scale on mobile so it
+   dominates a narrow screen. */
+.headline-number {
+  font-size: clamp(52px, 10vw, 150px);
+}
+@media (max-width: 768px) {
+  .headline-number { font-size: clamp(52px, 18vw, 120px); }
+}
+
+/* HeadlineBar right column: separator is a left border on desktop,
+   a top border (with top padding) on mobile. */
+.headline-rhs {
+  border-left: 1px solid #1a1410;
+  padding-left: 18px;
+}
+@media (max-width: 768px) {
+  .headline-rhs {
+    border-left: none;
+    border-top: 1px solid #1a1410;
+    padding-left: 0;
+    padding-top: 18px;
+  }
+}
+
 /* Respect users who prefer reduced motion — disables hover transitions
    and any animation that lasts longer than a blink. */
 @media (prefers-reduced-motion: reduce) {

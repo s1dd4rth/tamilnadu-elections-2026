@@ -1,10 +1,12 @@
-"use client";
 import { SERIF, COLORS } from '@/styles/theme';
 import { SmallCaps } from './common';
-import { useIsMobile } from '@/hooks/useMediaQuery';
+
+// Both components use CSS classes + media queries (see globals.css) instead
+// of the useIsMobile hook. The hook defaults to `false` on SSR and flips
+// on the client's first effect, which forced a full layout re-render and
+// was the dominant CLS source on mobile Lighthouse runs.
 
 export const Masthead = () => {
-  const isMobile = useIsMobile();
   return (
     <header style={{ borderBottom: `3px double ${COLORS.border}`, paddingBottom: '14px', marginBottom: '22px' }}>
       <h1 style={{
@@ -19,45 +21,36 @@ export const Masthead = () => {
       }}>
         TN Election in Numbers.
       </h1>
-      <div style={{ 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'baseline', 
-        marginTop: '6px', 
-        flexDirection: isMobile ? 'column' : 'row',
-        gap: '10px' 
-      }}>
+      <div className="masthead-row">
         <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: 'clamp(14px, 1.6vw, 18px)', color: COLORS.muted, margin: 0, maxWidth: '640px' }}>
           A numerical atlas of Tamil Nadu, after the Special Intensive Revision.
         </p>
-        <SmallCaps style={{ color: COLORS.accent, alignSelf: isMobile ? 'flex-end' : 'auto' }}>Compiled by Siddarth Kengadaran</SmallCaps>
+        <SmallCaps className="masthead-credit" style={{ color: COLORS.accent }}>
+          Compiled by Siddarth Kengadaran
+        </SmallCaps>
       </div>
     </header>
   );
 };
 
 export const HeadlineBar = () => {
-  const isMobile = useIsMobile();
   return (
     <section style={{ margin: '0 0 22px' }}>
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.4fr) minmax(0, 1fr)', 
-        gap: isMobile ? '32px' : '24px', 
-        alignItems: 'end' 
-      }}>
+      <div className="headline-grid">
         <div>
           <SmallCaps style={{ color: COLORS.accent }}>The Number That Matters</SmallCaps>
-          <div style={{
-            fontFamily: SERIF,
-            fontWeight: 900,
-            fontSize: isMobile ? 'clamp(52px, 18vw, 120px)' : 'clamp(52px, 10vw, 150px)',
-            lineHeight: 0.82,
-            letterSpacing: '-0.055em',
-            color: COLORS.text,
-            fontFeatureSettings: '"tnum" 1, "lnum" 1',
-            margin: '6px 0 0'
-          }}>
+          <div
+            className="headline-number"
+            style={{
+              fontFamily: SERIF,
+              fontWeight: 900,
+              lineHeight: 0.82,
+              letterSpacing: '-0.055em',
+              color: COLORS.text,
+              fontFeatureSettings: '"tnum" 1, "lnum" 1',
+              margin: '6px 0 0'
+            }}
+          >
             5,67,07,380
           </div>
           <p style={{
@@ -68,18 +61,12 @@ export const HeadlineBar = () => {
             margin: '14px 0 0',
             maxWidth: '640px'
           }}>
-            Electors on Tamil Nadu's final roll, published 23 February 2026 by the Chief Electoral Officer, Archana Patnaik. <span style={{ color: COLORS.accent, fontWeight: 600 }}>74,07,207 names</span> have been struck from the rolls during the Special Intensive Revision — the largest single correction in the state's electoral history.
+            Electors on Tamil Nadu&apos;s final roll, published 23 February 2026 by the Chief Electoral Officer, Archana Patnaik. <span style={{ color: COLORS.accent, fontWeight: 600 }}>74,07,207 names</span> have been struck from the rolls during the Special Intensive Revision — the largest single correction in the state&apos;s electoral history.
           </p>
         </div>
-        <div style={{ 
-          borderLeft: isMobile ? 'none' : `1px solid ${COLORS.border}`, 
-          borderTop: isMobile ? `1px solid ${COLORS.border}` : 'none',
-          paddingLeft: isMobile ? '0' : '18px', 
-          paddingTop: isMobile ? '18px' : '0',
-          fontFamily: SERIF 
-        }}>
+        <div className="headline-rhs" style={{ fontFamily: SERIF }}>
           <p style={{ margin: '0 0 10px', fontSize: '13px', lineHeight: 1.55, color: '#3a302a', fontStyle: 'italic', textIndent: '1em' }}>
-            Tamil Nadu's women now outnumber its men by 12.22 lakh — a fact the old rolls had partially obscured. Young voters aged eighteen and nineteen number 12.51 lakh; among them, 7.40 lakh were newly enrolled during this revision alone.
+            Tamil Nadu&apos;s women now outnumber its men by 12.22 lakh — a fact the old rolls had partially obscured. Young voters aged eighteen and nineteen number 12.51 lakh; among them, 7.40 lakh were newly enrolled during this revision alone.
           </p>
           <p style={{ margin: 0, fontSize: '13px', lineHeight: 1.55, color: '#3a302a', textIndent: '1em' }}>
             The final roll represents an 11.5 per cent net reduction from the pre-SIR figure of 6.41 crore. Chennai lost 14.25 lakh names — the sharpest decline of any district.
