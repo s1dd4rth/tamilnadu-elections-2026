@@ -54,6 +54,69 @@ const pp = (n: number) =>
   (n >= 0 ? "+" : "−") + Math.abs(n).toFixed(2) + " pp";
 const pct = (n: number) => n.toFixed(2) + "%";
 
+const PullQuote = () => (
+  <div
+    style={{
+      background: COLORS.text,
+      color: "#faf4e8",
+      padding: "40px 36px",
+      border: `1.5px solid ${COLORS.text}`,
+      boxShadow: "8px 8px 0 rgba(26,20,16,0.08)",
+    }}
+  >
+    <SmallCaps style={{ color: "#c8886a", marginBottom: "14px" }}>
+      The Lede
+    </SmallCaps>
+    <blockquote
+      style={{
+        fontFamily: SERIF,
+        fontSize: "clamp(28px, 4vw, 42px)",
+        fontWeight: 700,
+        fontStyle: "italic",
+        lineHeight: 1.2,
+        margin: 0,
+        letterSpacing: "-0.02em",
+        color: "#faf4e8",
+      }}
+    >
+      The percentage rose by twelve points. The number of voters rose by
+      <span style={{ color: "#e8c9b0" }}> one in twenty-five.</span>
+    </blockquote>
+    <div
+      style={{
+        marginTop: "22px",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+        gap: "18px 24px",
+        fontFamily: MONO,
+        fontSize: "12px",
+        color: "#d4c9bc",
+        letterSpacing: "0.05em",
+        lineHeight: 1.6,
+      }}
+    >
+      <div>
+        <div style={{ color: "#e8c9b0", fontSize: "20px", fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
+          {pp(liftHeadline)}
+        </div>
+        <div>on the smaller post-SIR roll</div>
+      </div>
+      <div>
+        <div style={{ color: "#e8c9b0", fontSize: "20px", fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
+          {pp(liftComparable)}
+        </div>
+        <div>like-for-like (2021-sized roll)</div>
+      </div>
+      <div>
+        <div style={{ color: "#e8c9b0", fontSize: "20px", fontWeight: 700, fontFeatureSettings: '"tnum" 1' }}>
+          {(voteIncreasePct >= 0 ? "+" : "−") + Math.abs(voteIncreasePct).toFixed(2) + "%"}
+        </div>
+        <div>in absolute ballots cast</div>
+      </div>
+    </div>
+  </div>
+);
+
 // ─── Component ──────────────────────────────────────────────────
 
 export const SIRAdjustedTurnout = () => {
@@ -84,7 +147,9 @@ export const SIRAdjustedTurnout = () => {
         constant, the surge looks different.
       </p>
 
-      {/* Blocks B–F land in subsequent tasks */}
+      <div style={{ marginBottom: "36px" }}>
+        <PullQuote />
+      </div>
     </section>
   );
 };
