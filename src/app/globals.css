@@ -115,6 +115,32 @@ a {
   }
 }
 
+/* SIRAdjustedTurnout — phantom-drop block: full table on desktop,
+   card-stack on narrow viewports. CSS-only swap so SSR HTML matches the
+   client and there is no post-hydration shift. */
+.sir-phantom-desktop { display: block; }
+.sir-phantom-mobile { display: none; }
+@media (max-width: 768px) {
+  .sir-phantom-desktop { display: none; }
+  .sir-phantom-mobile { display: block; }
+}
+
+/* SIRAdjustedTurnout — additions callout inner grid: 2-column (display
+   number + prose) on wide, single column at narrow widths where the
+   1fr prose column would compress to a few words per line. */
+.sir-additions-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 520px) {
+  .sir-additions-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
 /* Respect users who prefer reduced motion — disables hover transitions
    and any animation that lasts longer than a blink. */
 @media (prefers-reduced-motion: reduce) {

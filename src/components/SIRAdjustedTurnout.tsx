@@ -5,7 +5,6 @@ import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps, SectionTitle } from "./common";
 import analysisData from "@/data/analysis.json";
 import stateData from "@/data/state.json";
-import { useIsMobile } from "@/hooks/useMediaQuery";
 
 // ─── Module-scope math ──────────────────────────────────────────
 // Numerator math is computed from analysis.json only — never paraphrased
@@ -201,90 +200,92 @@ const StatStrip = () => (
   </div>
 );
 
-const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
-  if (isMobile) {
-    return (
-      <div
-        style={{
-          background: "#fff9ef",
-          border: `1.5px solid ${COLORS.text}`,
-          padding: "20px 18px",
-        }}
-      >
-        <SmallCaps style={{ color: COLORS.accent, marginBottom: "14px" }}>
-          Where Voters Fell Even As Turnout Rose · 2021 → 2026
-        </SmallCaps>
-        <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
-          {phantomDrops.map((r, i) => (
-            <li
-              key={r.no}
-              style={{
-                padding: "12px 0",
-                borderBottom:
-                  i < phantomDrops.length - 1 ? "1px dotted #d4c9bc" : "none",
-              }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px" }}>
-                <div>
-                  <div style={{ fontFamily: SERIF, fontSize: "15px", color: COLORS.text, fontWeight: 700 }}>
-                    {r.name}
-                  </div>
-                  <div style={{ fontFamily: SERIF, fontSize: "12px", color: COLORS.muted, fontStyle: "italic" }}>
-                    {r.district} · AC {r.no}
-                  </div>
+const PhantomDropTable = () => (
+  <>
+    {/* Mobile card-stack — visible at ≤768 px via globals.css.
+        Both branches render in SSR; the swap is purely CSS so there is
+        no post-hydration shift. */}
+    <div
+      className="sir-phantom-mobile"
+      style={{
+        background: "#fff9ef",
+        border: `1.5px solid ${COLORS.text}`,
+        padding: "20px 18px",
+      }}
+    >
+      <SmallCaps style={{ color: COLORS.accent, marginBottom: "14px" }}>
+        Where Voters Fell Even As Turnout Rose · 2021 → 2026
+      </SmallCaps>
+      <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
+        {phantomDrops.map((r, i) => (
+          <li
+            key={r.no}
+            style={{
+              padding: "12px 0",
+              borderBottom:
+                i < phantomDrops.length - 1 ? "1px dotted #d4c9bc" : "none",
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px" }}>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontFamily: SERIF, fontSize: "15px", color: COLORS.text, fontWeight: 700 }}>
+                  {r.name}
                 </div>
-                <div
-                  style={{
-                    fontFamily: MONO,
-                    fontSize: "16px",
-                    color: COLORS.accent,
-                    fontWeight: 700,
-                    fontFeatureSettings: '"tnum" 1',
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  −{fmt(r.drop)}
+                <div style={{ fontFamily: SERIF, fontSize: "12px", color: COLORS.muted, fontStyle: "italic" }}>
+                  {r.district} · AC {r.no}
                 </div>
               </div>
               <div
                 style={{
-                  marginTop: "6px",
                   fontFamily: MONO,
-                  fontSize: "11px",
-                  color: "#3a302a",
-                  letterSpacing: "0.04em",
+                  fontSize: "16px",
+                  color: COLORS.accent,
+                  fontWeight: 700,
                   fontFeatureSettings: '"tnum" 1',
-                  lineHeight: 1.6,
+                  whiteSpace: "nowrap",
                 }}
               >
-                {fmt(r.v21)} → {fmt(r.v26)} ballots
-                <span style={{ color: COLORS.muted }}> · </span>
-                {r.vtr2021.toFixed(1)}% → {r.vtr2026.toFixed(1)}%
+                −{fmt(r.drop)}
               </div>
-            </li>
-          ))}
-        </ol>
-        <p
-          style={{
-            fontFamily: SERIF,
-            fontStyle: "italic",
-            fontSize: "13px",
-            color: "#3a302a",
-            margin: "14px 0 0",
-            lineHeight: 1.6,
-          }}
-        >
-          In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
-          Chennai — ballots cast in 2026 fell by at least half a percent against
-          2021, even as the turnout percentage rose. The roll shrank faster than
-          the electorate showed up.
-        </p>
-      </div>
-    );
-  }
+            </div>
+            <div
+              style={{
+                marginTop: "6px",
+                fontFamily: MONO,
+                fontSize: "11px",
+                color: "#3a302a",
+                letterSpacing: "0.04em",
+                fontFeatureSettings: '"tnum" 1',
+                lineHeight: 1.6,
+              }}
+            >
+              {fmt(r.v21)} → {fmt(r.v26)} ballots
+              <span style={{ color: COLORS.muted }}> · </span>
+              {r.vtr2021.toFixed(1)}% → {r.vtr2026.toFixed(1)}%
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p
+        style={{
+          fontFamily: SERIF,
+          fontStyle: "italic",
+          fontSize: "13px",
+          color: "#3a302a",
+          margin: "14px 0 0",
+          lineHeight: 1.6,
+        }}
+      >
+        In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
+        Chennai — ballots cast in 2026 fell by at least half a percent against
+        2021, even as the turnout percentage rose. The roll shrank faster than
+        the electorate showed up.
+      </p>
+    </div>
 
-  return (
+    {/* Desktop table — visible at ≥769 px. */}
     <div
+      className="sir-phantom-desktop"
       style={{
         background: "#fff9ef",
         border: `1.5px solid ${COLORS.text}`,
@@ -375,8 +376,8 @@ const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
         electorate showed up.
       </p>
     </div>
-  );
-};
+  </>
+);
 
 const AdditionsCallout = () => (
   <div
@@ -393,14 +394,7 @@ const AdditionsCallout = () => (
     <SmallCaps style={{ color: COLORS.accent }}>
       The Numerator, Accounted For
     </SmallCaps>
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "auto 1fr",
-        gap: "24px",
-        alignItems: "baseline",
-      }}
-    >
+    <div className="sir-additions-grid">
       <div
         style={{
           fontFamily: SERIF,
@@ -475,7 +469,7 @@ const MethodologyBox = () => (
       Headline VTR is the ECI provisional figure (21:18 IST, 23 April 2026) and may
       revise upward by 1–2 points in the final release. Comparable VTR re-bases
       2026's votes against the pre-SIR roll size — it makes the two years
-      arithmetically comparable; it does not claim 2026 turnout was "really" lower.
+      arithmetically comparable; it does not claim 2026 turnout was “really” lower.
       The {lakh(stateData.totalDeletions)} deletions removed dead, migrated, and
       duplicate names that should not have counted in the 2021 denominator either,
       which is why 2021's {pct(vtr2021)} was itself an understatement. Additions
@@ -488,11 +482,8 @@ const MethodologyBox = () => (
 
 // ─── Component ──────────────────────────────────────────────────
 
-export const SIRAdjustedTurnout = () => {
-  const isMobile = useIsMobile();
-
-  return (
-    <section style={{ margin: "48px 0" }}>
+export const SIRAdjustedTurnout = () => (
+  <section style={{ margin: "48px 0" }}>
       <SectionTitle kicker="The Arithmetic of a Surge">
         A turnout headline, decomposed.
       </SectionTitle>
@@ -523,7 +514,7 @@ export const SIRAdjustedTurnout = () => {
       <StatStrip />
 
       <div style={{ marginBottom: "36px" }}>
-        <PhantomDropTable isMobile={isMobile} />
+        <PhantomDropTable />
       </div>
 
       <div style={{ marginBottom: "36px" }}>
@@ -532,5 +523,4 @@ export const SIRAdjustedTurnout = () => {
 
       <MethodologyBox />
     </section>
-  );
-};
+);
