@@ -23,6 +23,7 @@ This dashboard visualizes the largest single electoral cleanup in Tamil Nadu's h
 ## 📱 Features
 - **Interactive Heatmap**: Explore district-level electorate density.
 - **AC Turnout Map**: 234-hex choropleth over all constituencies, togglable between VTR 2026 and change-since-2021.
+- **Arithmetic of a Surge**: A three-act decomposition of the +12 pp turnout headline — state-level mechanical lift from the smaller post-SIR roll, the 23 constituencies where votes fell despite turnout rising, and the additions math that absorbs the entire absolute increase.
 - **Seat Atlas** (`/analysis`): Paired 2021-baseline and 2026-placeholder views — a seat hemicycle and a hex tile map that both colour in on counting day.
 - **Demographic Pulse**: Real-time gender split and age-cohort pyramids.
 - **AC Explorer**: Instant search and filter across all 234 Assembly Constituencies with candidate details.
