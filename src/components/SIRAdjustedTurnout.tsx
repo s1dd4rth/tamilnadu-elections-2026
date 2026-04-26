@@ -373,6 +373,79 @@ const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
   );
 };
 
+const AdditionsCallout = () => (
+  <div
+    style={{
+      background: "#fff9ef",
+      border: `1.5px solid ${COLORS.text}`,
+      borderLeft: `6px solid ${COLORS.accent}`,
+      padding: "28px 32px",
+      display: "grid",
+      gridTemplateColumns: "minmax(0, 1fr)",
+      gap: "16px",
+    }}
+  >
+    <SmallCaps style={{ color: COLORS.accent }}>
+      The Numerator, Accounted For
+    </SmallCaps>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "auto 1fr",
+        gap: "24px",
+        alignItems: "baseline",
+      }}
+    >
+      <div
+        style={{
+          fontFamily: SERIF,
+          fontSize: "clamp(48px, 6vw, 72px)",
+          fontWeight: 900,
+          fontStyle: "italic",
+          color: COLORS.text,
+          letterSpacing: "-0.03em",
+          lineHeight: 1,
+          fontFeatureSettings: '"tnum" 1, "lnum" 1',
+        }}
+      >
+        {lakh(sirAdditions)}
+      </div>
+      <div
+        style={{
+          fontFamily: SERIF,
+          fontSize: "16px",
+          lineHeight: 1.6,
+          color: "#3a302a",
+        }}
+      >
+        new electors added during the SIR. That is{" "}
+        <strong style={{ color: COLORS.accent }}>
+          {additionsRatioPct.toFixed(0)}%
+        </strong>{" "}
+        of the {lakh(voteIncrease)} increase in ballots cast between 2021 and 2026.
+        If every new voter on the roll had voted, they alone would more than account
+        for the surge. The arithmetic leaves little room for the awakening.
+      </div>
+    </div>
+    <p
+      style={{
+        fontFamily: SERIF,
+        fontStyle: "italic",
+        fontSize: "13px",
+        color: COLORS.muted,
+        margin: 0,
+        lineHeight: 1.6,
+        borderTop: `1px dotted ${COLORS.muted}`,
+        paddingTop: "14px",
+      }}
+    >
+      Not all new electors voted; some additions were age-18 enrolments that would
+      have happened in any cycle. The point is directional: the numerator's growth
+      tracks the roll's growth, not a behavioural shift.
+    </p>
+  </div>
+);
+
 // ─── Component ──────────────────────────────────────────────────
 
 export const SIRAdjustedTurnout = () => {
@@ -411,6 +484,10 @@ export const SIRAdjustedTurnout = () => {
 
       <div style={{ marginBottom: "36px" }}>
         <PhantomDropTable isMobile={isMobile} />
+      </div>
+
+      <div style={{ marginBottom: "36px" }}>
+        <AdditionsCallout />
       </div>
     </section>
   );
