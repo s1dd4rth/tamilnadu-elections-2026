@@ -446,6 +446,41 @@ const AdditionsCallout = () => (
   </div>
 );
 
+const MethodologyBox = () => (
+  <div
+    style={{
+      padding: "18px 22px",
+      background: "#fff9ef",
+      border: `1px dashed ${COLORS.muted}`,
+    }}
+  >
+    <SmallCaps style={{ color: COLORS.muted, marginBottom: "8px" }}>
+      Methodology
+    </SmallCaps>
+    <p
+      style={{
+        fontFamily: SERIF,
+        fontStyle: "italic",
+        fontSize: "13.5px",
+        color: "#3a302a",
+        margin: 0,
+        lineHeight: 1.6,
+      }}
+    >
+      Headline VTR is the ECI provisional figure (21:18 IST, 23 April 2026) and may
+      revise upward by 1–2 points in the final release. Comparable VTR re-bases
+      2026's votes against the pre-SIR roll size — it makes the two years
+      arithmetically comparable; it does not claim 2026 turnout was "really" lower.
+      The {lakh(stateData.totalDeletions)} deletions removed dead, migrated, and
+      duplicate names that should not have counted in the 2021 denominator either,
+      which is why 2021's {pct(vtr2021)} was itself an understatement. Additions
+      are computed as <code style={{ fontFamily: MONO, fontSize: "12px" }}>totalDeletions − netReduction</code>,
+      the net inflow during the revision; not all of them are first-time
+      eighteen-year-olds.
+    </p>
+  </div>
+);
+
 // ─── Component ──────────────────────────────────────────────────
 
 export const SIRAdjustedTurnout = () => {
@@ -489,6 +524,8 @@ export const SIRAdjustedTurnout = () => {
       <div style={{ marginBottom: "36px" }}>
         <AdditionsCallout />
       </div>
+
+      <MethodologyBox />
     </section>
   );
 };
