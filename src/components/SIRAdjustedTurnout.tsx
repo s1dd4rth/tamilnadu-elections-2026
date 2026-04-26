@@ -197,6 +197,106 @@ const StatStrip = () => (
   </div>
 );
 
+const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
+  if (isMobile) {
+    // Mobile card-stack lands in the next task. For now: render nothing on mobile.
+    return null;
+  }
+
+  return (
+    <div
+      style={{
+        background: "#fff9ef",
+        border: `1.5px solid ${COLORS.text}`,
+        padding: "22px",
+      }}
+    >
+      <SmallCaps style={{ color: COLORS.accent, marginBottom: "14px" }}>
+        Where Voters Fell Even As Turnout Rose · 2021 → 2026
+      </SmallCaps>
+      <div style={{ overflowX: "auto" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "640px" }}>
+          <thead>
+            <tr style={{ borderBottom: `2px solid ${COLORS.text}` }}>
+              {[
+                { label: "AC", align: "left" as const },
+                { label: "Name", align: "left" as const },
+                { label: "District", align: "left" as const },
+                { label: "Votes 2021", align: "right" as const },
+                { label: "Votes 2026", align: "right" as const },
+                { label: "Δ ballots", align: "right" as const },
+                { label: "VTR 2021 → 2026", align: "right" as const },
+              ].map((col) => (
+                <th
+                  key={col.label}
+                  style={{
+                    textAlign: col.align,
+                    padding: "10px 8px",
+                    fontFamily: MONO,
+                    fontSize: "10px",
+                    letterSpacing: "0.12em",
+                    color: COLORS.muted,
+                    fontWeight: 700,
+                  }}
+                >
+                  {col.label}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {phantomDrops.map((r, i) => (
+              <tr
+                key={r.no}
+                style={{
+                  borderBottom:
+                    i < phantomDrops.length - 1 ? "1px dotted #d4c9bc" : "none",
+                }}
+              >
+                <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "12px", color: COLORS.muted, fontWeight: 700 }}>
+                  {r.no}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: SERIF, fontSize: "15px", color: COLORS.text, fontWeight: 700 }}>
+                  {r.name}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: SERIF, fontSize: "13px", color: "#3a302a", fontStyle: "italic" }}>
+                  {r.district}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "13px", color: COLORS.text, textAlign: "right", fontFeatureSettings: '"tnum" 1' }}>
+                  {fmt(r.v21)}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "13px", color: COLORS.text, textAlign: "right", fontFeatureSettings: '"tnum" 1' }}>
+                  {fmt(r.v26)}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "14px", color: COLORS.accent, textAlign: "right", fontFeatureSettings: '"tnum" 1', fontWeight: 700 }}>
+                  −{fmt(r.drop)}
+                </td>
+                <td style={{ padding: "10px 8px", fontFamily: MONO, fontSize: "12px", color: "#3a302a", textAlign: "right", fontFeatureSettings: '"tnum" 1' }}>
+                  {r.vtr2021.toFixed(1)}% → {r.vtr2026.toFixed(1)}%
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p
+        style={{
+          fontFamily: SERIF,
+          fontStyle: "italic",
+          fontSize: "13px",
+          color: "#3a302a",
+          margin: "16px 0 0",
+          lineHeight: 1.6,
+        }}
+      >
+        In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
+        Chennai — the turnout percentage went up while the absolute number of ballots
+        cast went down. The roll shrank faster than the electorate showed up.
+      </p>
+    </div>
+  );
+};
+
 // ─── Component ──────────────────────────────────────────────────
 
 export const SIRAdjustedTurnout = () => {
@@ -232,6 +332,10 @@ export const SIRAdjustedTurnout = () => {
       </div>
 
       <StatStrip />
+
+      <div style={{ marginBottom: "36px" }}>
+        <PhantomDropTable isMobile={isMobile} />
+      </div>
     </section>
   );
 };
