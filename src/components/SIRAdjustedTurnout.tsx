@@ -117,6 +117,86 @@ const PullQuote = () => (
   </div>
 );
 
+const StatCard = ({
+  label,
+  value,
+  sub,
+  accent,
+}: {
+  label: string;
+  value: string;
+  sub: string;
+  accent?: boolean;
+}) => (
+  <div
+    style={{
+      background: "#fff9ef",
+      border: `1.5px solid ${COLORS.text}`,
+      padding: "18px 20px",
+    }}
+  >
+    <SmallCaps style={{ color: COLORS.muted }}>{label}</SmallCaps>
+    <div
+      style={{
+        fontFamily: SERIF,
+        fontSize: "clamp(28px, 3.6vw, 36px)",
+        fontWeight: 900,
+        color: accent ? COLORS.accent : COLORS.text,
+        margin: "4px 0",
+        fontFeatureSettings: '"tnum" 1, "lnum" 1',
+        letterSpacing: "-0.02em",
+        lineHeight: 1.1,
+      }}
+    >
+      {value}
+    </div>
+    <div
+      style={{
+        fontFamily: SERIF,
+        fontStyle: "italic",
+        fontSize: "13px",
+        color: "#3a302a",
+        lineHeight: 1.5,
+      }}
+    >
+      {sub}
+    </div>
+  </div>
+);
+
+const StatStrip = () => (
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+      gap: "22px",
+      marginBottom: "36px",
+    }}
+  >
+    <StatCard
+      label="Roll · 2021 → 2026"
+      value={`${crore(roll2021)} → ${crore(roll2026)}`}
+      sub={`${lakh(roll2021 - roll2026)} fewer names after the SIR`}
+    />
+    <StatCard
+      label="Ballots cast · 2021 → 2026"
+      value={`${crore(votes2021)} → ${crore(votes2026)}`}
+      sub={`${lakh(voteIncrease)} more votes cast`}
+    />
+    <StatCard
+      label="Headline VTR · 2026"
+      value={pct(vtrHeadline)}
+      sub="official figure, on the cleaned roll"
+    />
+    <StatCard
+      label="Comparable VTR · 2026"
+      value={pct(vtrComparable)}
+      sub="2026 votes on the 2021-sized roll · the like-for-like number"
+      accent
+    />
+  </div>
+);
+
 // ─── Component ──────────────────────────────────────────────────
 
 export const SIRAdjustedTurnout = () => {
@@ -150,6 +230,8 @@ export const SIRAdjustedTurnout = () => {
       <div style={{ marginBottom: "36px" }}>
         <PullQuote />
       </div>
+
+      <StatStrip />
     </section>
   );
 };
