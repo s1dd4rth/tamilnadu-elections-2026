@@ -227,14 +227,14 @@ const StatStrip = () => (
       sub={`${lakh(voteIncrease)} more votes cast`}
     />
     <StatCard
-      label="Headline VTR · 2026"
-      value={pct(vtrHeadline)}
-      sub="official figure, on the cleaned roll"
+      label="Headline VTR · 2021 → 2026"
+      value={`${pct(vtr2021)} → ${pct(vtrHeadline)}`}
+      sub={`${pp(liftHeadline)} on the cleaned roll`}
     />
     <StatCard
-      label="Comparable VTR · 2026"
-      value={pct(vtrComparable)}
-      sub="2026 votes on the 2021-sized roll · the like-for-like number"
+      label="Comparable VTR · 2021 → 2026"
+      value={`${pct(vtr2021)} → ${pct(vtrComparable)}`}
+      sub={`${pp(liftComparable)} like-for-like (2021-sized roll)`}
       accent
     />
   </div>
