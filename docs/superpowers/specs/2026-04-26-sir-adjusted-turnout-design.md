@@ -3,7 +3,7 @@
 **Date:** 2026-04-26
 **Status:** spec, awaiting implementation
 **Component to add:** `src/components/SIRAdjustedTurnout.tsx`
-**Placement:** home page, between `TurnoutSection` and `NonVoterAnalysis`
+**Placement:** home page, between `ACTurnoutMap` and `SIRFlow`
 
 ## Thesis
 
@@ -88,11 +88,11 @@ Section is below the fold, so `useIsMobile()` is acceptable here per the respons
 ## File touch list
 
 - **Add:** `src/components/SIRAdjustedTurnout.tsx` (new, ~250–300 LOC)
-- **Edit:** `src/app/page.tsx` — import and render the new component between `TurnoutSection` and `NonVoterAnalysis`.
+- **Edit:** `src/app/page.tsx` — import and render the new component between `ACTurnoutMap` and `SIRFlow`. (The narrative arc reads: district turnout → AC turnout map → headline decomposed → SIR mechanism.)
 - **No edits to:** any JSON in `src/data/`, any other component, `globals.css`, theme tokens.
 
 ## Risks and mitigations
 
 1. *Reader infers "the official number is wrong."* — Methodology copy is explicit that comparable VTR is an additional lens, not a correction; headline VTR is reported as the official figure throughout.
 2. *Final ECI revision lifts headline VTR by 1–2 pp.* — All numbers derive from `analysis.json` fields; updating `vtr2026` reflows the section automatically. No copy hardcodes `84.98`.
-3. *Section sits awkwardly close in tone to `NonVoterAnalysis`.* — Ordered placement (TurnoutSection → SIRAdjustedTurnout → NonVoterAnalysis) makes the arc explicit: headline → decomposition → apathy lens. Each section has a distinct kicker so the boundary is visually clear.
+3. *`NonVoterAnalysis` exists in the codebase but is currently not rendered on the home page.* — Out of scope; placement of the new section between `ACTurnoutMap` and `SIRFlow` does not depend on it. If `NonVoterAnalysis` is later mounted, it should sit further down the page after `SIRFlow`/`AgePyramid` so the apathy framing follows the SIR-mechanism explainer.
