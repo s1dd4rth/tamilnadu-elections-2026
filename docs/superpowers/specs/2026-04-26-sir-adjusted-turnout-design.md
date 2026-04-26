@@ -49,12 +49,20 @@ Single React client component, ~250–300 LOC, mirrors the structure of `NonVote
 
 **Block C — stat strip.** Four-card auto-fit grid `repeat(auto-fit, minmax(220px, 1fr))`, identical to `NonVoterAnalysis` `StateSummary` (lines 119–143). Cards in order:
 
-1. `Roll · 6.35 cr → 5.67 cr` — *67.84 lakh fewer names after the SIR*
-2. `Ballots · 4.62 cr → 4.82 cr` — *19.52 lakh more votes cast*
-3. `Headline VTR · 84.98%` — *official figure, on the cleaned roll*
-4. `Comparable VTR · 75.90%` (rust accent) — *2026 votes on the 2021-sized roll · the like-for-like number*
+All four cards share the same `2021 → 2026` arrow rhythm:
 
-**Block D — phantom-drop AC table.** Cream card, chrome from `ApathyTable` (`NonVoterAnalysis.tsx:77–115`). Kicker: `WHERE VOTERS FELL EVEN AS TURNOUT ROSE · 2021 → 2026`. Columns: AC# · Name · District · Votes 2021 · Votes 2026 · Δ ballots · VTR 2021 → 2026. **Filter:** ACs where the absolute drop is at least 0.5% of 2021 votes (the noise floor; below this, the change is statistically indistinguishable from rounding). After the filter: 18 rows. Sorted by absolute drop descending; Anna Nagar (−10,595) leads. Caption beneath: *In each of these 18 constituencies — ten of them in Chennai — ballots cast in 2026 fell by at least half a percent against 2021, even as the turnout percentage rose. The roll shrank faster than the electorate showed up.*
+1. `Roll · 2021 → 2026` — `6.35 cr → 5.67 cr` — *67.84 lakh fewer names after the SIR*
+2. `Ballots cast · 2021 → 2026` — `4.62 cr → 4.82 cr` — *19.52 lakh more votes cast*
+3. `Headline VTR · 2021 → 2026` — `72.82% → 84.98%` — *+12.15 pp on the cleaned roll*
+4. `Comparable VTR · 2021 → 2026` — `72.82% → 75.90%` (rust accent) — *+3.08 pp like-for-like (2021-sized roll)*
+
+**Block D — phantom-drop AC table.** Cream card, chrome from `ApathyTable` (`NonVoterAnalysis.tsx:77–115`). Kicker on the left, mode-toggle pill on the right (`18 PHANTOM DROPS | ALL 234 ACS`, MONO 10px tracked, active button = ink fill, inactive = transparent). Columns: AC# · Name · District · Votes 2021 · Votes 2026 · Δ ballots · VTR 2021 → 2026. The Δ ballots cell is sign-aware via the `ballotCell` helper — rust for losses, ink for gains, grey for zero — so phantom drops still pop visually in the all-234 view.
+
+**Two modes:**
+- *18 phantom drops* (default): kicker reads `WHERE VOTERS FELL EVEN AS TURNOUT ROSE · 2021 → 2026`. Filtered to ACs where the absolute drop is at least 0.5% of 2021 votes (the noise floor; below this, the change is statistically indistinguishable from rounding). 18 rows, sorted by drop magnitude descending; Anna Nagar (−10,595) leads. Caption: *In each of these 18 constituencies — ten of them in Chennai — ballots cast in 2026 fell by at least half a percent against 2021, even as the turnout percentage rose.*
+- *All 234 ACs*: kicker swaps to `ALL 234 CONSTITUENCIES · 2021 → 2026`. Every column header becomes click-to-sort with toggle asc/desc and a small ↑/↓ indicator on the active column (active label colour also flips to rust). Default sort = AC# ascending. Body becomes 640 px scrollable with `position: sticky` thead. Caption: *All 234 constituencies, sortable by any column. Rows where the Δ ballots column reads in rust are the 18 phantom drops featured in the curated view — votes that fell by at least half a percent.*
+
+The mobile branch uses the same kicker + toggle layout, the same iterator, but no per-column sort UI (sticky header / scroll only matter on desktop). State (`mode`, `sortKey`, `sortDir`) lives in `PhantomDropTable` via `useState`; sort is `useMemo`'d over `allRows`.
 
 **Block E — additions callout.** Single wide card, distinct from Block C (longer-form, margin-note feel — not a stat tile). Pull number **23.3 lakh**, caption: *That is **119%** of the 19.5-lakh increase in ballots cast between 2021 and 2026. If every new voter on the roll had voted, they alone would more than account for the surge. The arithmetic leaves little room for the awakening.* Followed by a single italic-Fraunces nuance line: *(Not all new electors voted; some additions were age-18 enrolments that would have happened in any cycle. The point is directional: the numerator's growth tracks the roll's growth, not a behavioural shift.)*
 
