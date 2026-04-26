@@ -6,6 +6,7 @@ import { ACTurnoutMap } from '@/components/ACTurnoutMap';
 import { AgePyramid } from '@/components/AgePyramid';
 import { ACExplorer } from '@/components/ACExplorer';
 import { SIRFlow } from '@/components/SIRFlow';
+import { SIRAdjustedTurnout } from '@/components/SIRAdjustedTurnout';
 import { NominationFunnel } from '@/components/NominationFunnel';
 import { DistrictTable } from '@/components/DistrictTable';
 import { ACExtremes } from '@/components/ACExtremes';
@@ -35,6 +36,7 @@ export default function Page() {
       <MapSection />
       <TurnoutSection />
       <ACTurnoutMap />
+      <SIRAdjustedTurnout />
       <SIRFlow />
       <AgePyramid />
       <ACExtremes />
