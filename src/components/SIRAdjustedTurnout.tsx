@@ -32,6 +32,10 @@ const additionsRatioPct = (sirAdditions / voteIncrease) * 100;
 
 type ACRow = (typeof acs)[number];
 
+// Noise floor: a drop smaller than 0.5% of 2021 votes is statistically
+// indistinguishable from rounding. Below this, "votes fell" is editorially dishonest.
+const PHANTOM_DROP_MIN_PCT = 0.005;
+
 const phantomDrops: Array<ACRow & { v21: number; v26: number; drop: number }> =
   acs
     .map((a) => {
@@ -39,7 +43,7 @@ const phantomDrops: Array<ACRow & { v21: number; v26: number; drop: number }> =
       const v26 = a.elec2026 - a.nonVoters2026;
       return { ...a, v21, v26, drop: v21 - v26 };
     })
-    .filter((a) => a.drop > 0)
+    .filter((a) => a.drop / a.v21 >= PHANTOM_DROP_MIN_PCT)
     .sort((a, b) => b.drop - a.drop);
 
 const chennaiPhantomCount = phantomDrops.filter(
@@ -271,9 +275,9 @@ const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
           }}
         >
           In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
-          Chennai — the turnout percentage went up while the absolute number of
-          ballots cast went down. The roll shrank faster than the electorate showed
-          up.
+          Chennai — ballots cast in 2026 fell by at least half a percent against
+          2021, even as the turnout percentage rose. The roll shrank faster than
+          the electorate showed up.
         </p>
       </div>
     );
@@ -366,8 +370,9 @@ const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
         }}
       >
         In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
-        Chennai — the turnout percentage went up while the absolute number of ballots
-        cast went down. The roll shrank faster than the electorate showed up.
+        Chennai — ballots cast in 2026 fell by at least half a percent against 2021,
+        even as the turnout percentage rose. The roll shrank faster than the
+        electorate showed up.
       </p>
     </div>
   );

@@ -26,7 +26,7 @@ liftComparable = vtrComparable − vtr2021                                = +3.0
 voteIncrease   = votes2026 − votes2021                                  = +19,52,396
 sirAdditions   = state.totalDeletions − state.netReduction              = 23,30,624
 additionsRatio = sirAdditions / voteIncrease                            = 119%
-phantomDrops   = acs filtered to votes26 < votes21, sorted by Δ desc    = 23 ACs
+phantomDrops   = acs filtered to (drop / v21) >= 0.005, sorted by Δ desc = 18 ACs
 ```
 
 Numerator math (`votes = elec − nonVoters`) is computed from `analysis.json` only, never paraphrased from `state.json` or `turnout.json` snapshots — those are different reports and could disagree by ±0.05 pp. The component's own derivation is canonical for everything it displays.
@@ -54,7 +54,7 @@ Single React client component, ~250–300 LOC, mirrors the structure of `NonVote
 3. `Headline VTR · 84.98%` — *official figure, on the cleaned roll*
 4. `Comparable VTR · 75.90%` (rust accent) — *2026 votes on the 2021-sized roll · the like-for-like number*
 
-**Block D — phantom-drop AC table.** Cream card, chrome from `ApathyTable` (`NonVoterAnalysis.tsx:77–115`). Kicker: `WHERE VOTERS FELL EVEN AS TURNOUT ROSE · 2021 → 2026`. Columns: AC# · Name · District · Votes 2021 · Votes 2026 · Δ ballots · VTR 2021 → 2026. All 23 rows shown (not truncated to 10 — the count is the story). Sorted by absolute drop descending; Anna Nagar (−10,595) leads. Caption beneath: *In each of these 23 constituencies — eleven of them in Chennai — the turnout percentage went up while the absolute number of ballots cast went down. The roll shrank faster than the electorate showed up.*
+**Block D — phantom-drop AC table.** Cream card, chrome from `ApathyTable` (`NonVoterAnalysis.tsx:77–115`). Kicker: `WHERE VOTERS FELL EVEN AS TURNOUT ROSE · 2021 → 2026`. Columns: AC# · Name · District · Votes 2021 · Votes 2026 · Δ ballots · VTR 2021 → 2026. **Filter:** ACs where the absolute drop is at least 0.5% of 2021 votes (the noise floor; below this, the change is statistically indistinguishable from rounding). After the filter: 18 rows. Sorted by absolute drop descending; Anna Nagar (−10,595) leads. Caption beneath: *In each of these 18 constituencies — ten of them in Chennai — ballots cast in 2026 fell by at least half a percent against 2021, even as the turnout percentage rose. The roll shrank faster than the electorate showed up.*
 
 **Block E — additions callout.** Single wide card, distinct from Block C (longer-form, margin-note feel — not a stat tile). Pull number **23.3 lakh**, caption: *That is **119%** of the 19.5-lakh increase in ballots cast between 2021 and 2026. If every new voter on the roll had voted, they alone would more than account for the surge. The arithmetic leaves little room for the awakening.* Followed by a single italic-Fraunces nuance line: *(Not all new electors voted; some additions were age-18 enrolments that would have happened in any cycle. The point is directional: the numerator's growth tracks the roll's growth, not a behavioural shift.)*
 
