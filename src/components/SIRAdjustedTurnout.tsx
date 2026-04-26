@@ -199,8 +199,84 @@ const StatStrip = () => (
 
 const PhantomDropTable = ({ isMobile }: { isMobile: boolean }) => {
   if (isMobile) {
-    // Mobile card-stack lands in the next task. For now: render nothing on mobile.
-    return null;
+    return (
+      <div
+        style={{
+          background: "#fff9ef",
+          border: `1.5px solid ${COLORS.text}`,
+          padding: "20px 18px",
+        }}
+      >
+        <SmallCaps style={{ color: COLORS.accent, marginBottom: "14px" }}>
+          Where Voters Fell Even As Turnout Rose · 2021 → 2026
+        </SmallCaps>
+        <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
+          {phantomDrops.map((r, i) => (
+            <li
+              key={r.no}
+              style={{
+                padding: "12px 0",
+                borderBottom:
+                  i < phantomDrops.length - 1 ? "1px dotted #d4c9bc" : "none",
+              }}
+            >
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: "12px" }}>
+                <div>
+                  <div style={{ fontFamily: SERIF, fontSize: "15px", color: COLORS.text, fontWeight: 700 }}>
+                    {r.name}
+                  </div>
+                  <div style={{ fontFamily: SERIF, fontSize: "12px", color: COLORS.muted, fontStyle: "italic" }}>
+                    {r.district} · AC {r.no}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    fontFamily: MONO,
+                    fontSize: "16px",
+                    color: COLORS.accent,
+                    fontWeight: 700,
+                    fontFeatureSettings: '"tnum" 1',
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  −{fmt(r.drop)}
+                </div>
+              </div>
+              <div
+                style={{
+                  marginTop: "6px",
+                  fontFamily: MONO,
+                  fontSize: "11px",
+                  color: "#3a302a",
+                  letterSpacing: "0.04em",
+                  fontFeatureSettings: '"tnum" 1',
+                  lineHeight: 1.6,
+                }}
+              >
+                {fmt(r.v21)} → {fmt(r.v26)} ballots
+                <span style={{ color: COLORS.muted }}> · </span>
+                {r.vtr2021.toFixed(1)}% → {r.vtr2026.toFixed(1)}%
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p
+          style={{
+            fontFamily: SERIF,
+            fontStyle: "italic",
+            fontSize: "13px",
+            color: "#3a302a",
+            margin: "14px 0 0",
+            lineHeight: 1.6,
+          }}
+        >
+          In each of these {phantomDrops.length} constituencies — {chennaiPhantomCount} of them in
+          Chennai — the turnout percentage went up while the absolute number of
+          ballots cast went down. The roll shrank faster than the electorate showed
+          up.
+        </p>
+      </div>
+    );
   }
 
   return (
