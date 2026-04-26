@@ -64,12 +64,12 @@ Single React client component, ~250–300 LOC, mirrors the structure of `NonVote
 
 ## Responsive
 
-Section is below the fold, so `useIsMobile()` is acceptable here per the responsive-patterns guidance. Specific behaviour:
+Per the responsive-patterns guidance, all responsive splits use CSS media queries in `globals.css`, not `useIsMobile`. Same SSR HTML on server and client — no post-hydration shift. Specific behaviour:
 
 - Stat strip (Block C): existing auto-fit grid handles the breakpoint cascade with no new CSS.
-- AC table (Block D): table layout at ≥768 px. At <768 px, collapse to a card stack — AC name + district as row header, then two sub-lines: `votes 2021 → 2026 · −Δ` and `vtr 2021 → 2026 · +Δpp`. Use `useIsMobile`.
-- Pull-quote, stat strip cards, additions callout: already fluid via `clamp()`.
-- Methodology box: prose, fluid by default.
+- AC table (Block D): both desktop table and mobile card-stack render simultaneously inside one `<>` fragment, with `.sir-phantom-desktop` / `.sir-phantom-mobile` classes toggled at `@media (max-width: 768px)` in `globals.css`.
+- Additions callout (Block E): inner two-column grid uses `.sir-additions-grid`, which collapses to a single column at `@media (max-width: 520px)` — the display number stacks above the prose at narrow viewports.
+- Pull-quote, stat strip cards, methodology box: already fluid via `clamp()` and prose flow.
 
 ## Methodology guards (hard rules in implementation)
 
