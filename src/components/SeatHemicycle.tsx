@@ -296,8 +296,11 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
                 {activeSeat.seat.name}
               </div>
               <div style={{ fontFamily: SERIF, fontSize: "13px", fontStyle: "italic", color: "#3a302a", marginTop: "2px" }}>
-                {activeSeat.seat.winnerName} · {activeSeat.seat.party} · won by{" "}
-                {activeSeat.seat.margin.toLocaleString("en-IN")} ({activeSeat.seat.marginPct.toFixed(2)}%)
+                {activeSeat.seat.alliance === "UNKNOWN"
+                  ? activeSeat.seat.winnerName
+                  : activeSeat.seat.margin > 0
+                  ? `${activeSeat.seat.winnerName} · ${activeSeat.seat.party} · won by ${activeSeat.seat.margin.toLocaleString("en-IN")} (${activeSeat.seat.marginPct.toFixed(2)}%)`
+                  : `${activeSeat.seat.winnerName} · ${activeSeat.seat.party} · leading`}
               </div>
             </div>
             <div

@@ -1,5 +1,6 @@
 import { Masthead, HeadlineBar } from '@/components/Header';
 import { KPIStrip } from '@/components/Stats';
+import { LiveCountingStrip } from '@/components/LiveCountingStrip';
 import { MapSection } from '@/components/MapSection';
 import { TurnoutSection } from '@/components/TurnoutSection';
 import { ACTurnoutMap } from '@/components/ACTurnoutMap';
@@ -30,9 +31,10 @@ export default function Page() {
   return (
     <main id="main-content" style={{ maxWidth: '1200px', margin: '0 auto', background: '#faf4e8', minHeight: '100vh', padding: '16px' }}>
       <Masthead />
+      <LiveCountingStrip />
       <HeadlineBar />
       <KPIStrip />
-      
+
       <MapSection />
       <TurnoutSection />
       <ACTurnoutMap />

@@ -230,7 +230,9 @@ export const SeatHexMap: React.FC<Props> = ({ title, kicker, seats, legend, capt
               <div style={{ fontFamily: SERIF, fontSize: "13px", fontStyle: "italic", color: "#3a302a", marginTop: "2px" }}>
                 {activeSeat.alliance === "UNKNOWN"
                   ? activeSeat.winnerName
-                  : `${activeSeat.winnerName} · ${activeSeat.party} · won by ${activeSeat.margin.toLocaleString("en-IN")} (${activeSeat.marginPct.toFixed(2)}%)`}
+                  : activeSeat.margin > 0
+                  ? `${activeSeat.winnerName} · ${activeSeat.party} · won by ${activeSeat.margin.toLocaleString("en-IN")} (${activeSeat.marginPct.toFixed(2)}%)`
+                  : `${activeSeat.winnerName} · ${activeSeat.party} · leading`}
               </div>
             </div>
             <div
