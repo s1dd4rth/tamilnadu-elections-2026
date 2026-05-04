@@ -17,6 +17,20 @@ const fmtIST = (iso: string | null | undefined): string => {
   }
 };
 
+// Bloc → display colour, matching the seat-component palette so the strip
+// reads as the same visual language as the /analysis hemicycle.
+const BLOC_COLOUR: Record<string, string> = {
+  TVK: "#e72bd9",
+  NDA: "#0c7a3a",
+  SPA: "#a04020",
+};
+
+const BLOC_LABEL: Record<string, string> = {
+  TVK: "TVK",
+  NDA: "NDA",
+  SPA: "SPA",
+};
+
 export const LiveCountingStrip = () => {
   const snaps = resultsTimeline.snapshots;
   if (!snaps?.length) return null;
@@ -25,15 +39,29 @@ export const LiveCountingStrip = () => {
   const declared = latest?.declared ?? 0;
   const ts = fmtIST(latest?.eciTs ?? latest?.ts);
 
-  // Hide once counting is essentially done — saves the banner from
-  // hanging around for weeks. Threshold tuned generously; users can
-  // still hit /analysis directly.
   const isDone = declared >= 234;
+
+  // Once all 234 are declared, compute the bloc tally for the result strip.
+  const blocCounts: Record<string, number> = {};
+  if (isDone && latest?.results) {
+    for (const row of Object.values(latest.results) as string[][]) {
+      const bloc = row[1];
+      blocCounts[bloc] = (blocCounts[bloc] ?? 0) + 1;
+    }
+  }
+  // Display order: largest first
+  const blocOrder = Object.keys(blocCounts).sort(
+    (a, b) => (blocCounts[b] ?? 0) - (blocCounts[a] ?? 0)
+  );
 
   return (
     <Link
       href="/analysis"
-      aria-label={`Counting in progress, ${declared} of 234 trending. View live map.`}
+      aria-label={
+        isDone
+          ? `Counting complete. ${blocOrder.map((b) => `${b} ${blocCounts[b]}`).join(", ")}. View timeline.`
+          : `Counting in progress, ${declared} of 234 trending. View live map.`
+      }
       style={{
         display: "block",
         textDecoration: "none",
@@ -54,34 +82,66 @@ export const LiveCountingStrip = () => {
           rowGap: "6px",
         }}
       >
-        {/* Pulsing red dot — drawn in CSS so SSR is fine. */}
+        {/* Pulsing red dot — keeps a visual heartbeat even after counting closes. */}
         <span
           style={{
             width: 10,
             height: 10,
             borderRadius: 999,
-            background: "#e53935",
+            background: isDone ? "#d8c8a8" : "#e53935",
             boxShadow: "0 0 0 0 rgba(229, 57, 53, 0.7)",
-            animation: "pulse-live 1.6s infinite",
+            animation: isDone ? "none" : "pulse-live 1.6s infinite",
             flex: "none",
           }}
           aria-hidden="true"
         />
-        <SmallCaps style={{ color: "#e53935", letterSpacing: "0.18em" }}>
-          {isDone ? "Counting Complete" : "Counting Live"}
+        <SmallCaps style={{ color: isDone ? "#d8c8a8" : "#e53935", letterSpacing: "0.18em" }}>
+          {isDone ? "Result · 4 May 2026" : "Counting Live"}
         </SmallCaps>
-        <span
-          style={{
-            fontFamily: SERIF,
-            fontStyle: "italic",
-            fontSize: "18px",
-            fontWeight: 800,
-            color: "#faf4e8",
-            letterSpacing: "-0.01em",
-          }}
-        >
-          {declared} <span style={{ fontWeight: 500, color: "#d8c8a8" }}>of 234 ACs trending</span>
-        </span>
+
+        {isDone ? (
+          // Bloc tally as the headline — TVK 108 · NDA 53 · SPA 73
+          <span
+            style={{
+              fontFamily: SERIF,
+              fontStyle: "italic",
+              fontSize: "20px",
+              fontWeight: 900,
+              color: "#faf4e8",
+              letterSpacing: "-0.01em",
+              display: "flex",
+              gap: "14px",
+              flexWrap: "wrap",
+              alignItems: "baseline",
+            }}
+          >
+            {blocOrder.map((bloc, i) => (
+              <span key={bloc} style={{ display: "inline-flex", alignItems: "baseline", gap: "6px" }}>
+                <span style={{ color: BLOC_COLOUR[bloc] ?? "#faf4e8", fontWeight: 700 }}>
+                  {BLOC_LABEL[bloc] ?? bloc}
+                </span>
+                <span>{blocCounts[bloc]}</span>
+                {i < blocOrder.length - 1 && (
+                  <span style={{ color: "#5a4d3f", marginLeft: "8px" }}>·</span>
+                )}
+              </span>
+            ))}
+          </span>
+        ) : (
+          <span
+            style={{
+              fontFamily: SERIF,
+              fontStyle: "italic",
+              fontSize: "18px",
+              fontWeight: 800,
+              color: "#faf4e8",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            {declared} <span style={{ fontWeight: 500, color: "#d8c8a8" }}>of 234 ACs trending</span>
+          </span>
+        )}
+
         <span
           style={{
             fontFamily: MONO,
@@ -92,7 +152,7 @@ export const LiveCountingStrip = () => {
             marginLeft: "auto",
           }}
         >
-          ECI · {ts} IST · 04 May 2026
+          {isDone ? "ECI · all 234 declared" : `ECI · ${ts} IST · 04 May 2026`}
         </span>
         <span
           style={{
@@ -106,7 +166,7 @@ export const LiveCountingStrip = () => {
             paddingBottom: "1px",
           }}
         >
-          Replay the day →
+          {isDone ? "Replay the day →" : "Replay the day →"}
         </span>
       </div>
       <style>{`
