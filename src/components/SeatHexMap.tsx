@@ -121,6 +121,7 @@ type Seat = {
   winnerName: string;
   margin: number;
   marginPct: number;
+  status?: "won" | "leading";
 };
 
 type Props = {
@@ -177,6 +178,8 @@ export const SeatHexMap: React.FC<Props> = ({ title, kicker, seats, legend, capt
             const fill = ALLIANCE_COLOUR[alliance] ?? ALLIANCE_COLOUR.OTHER;
             const isUnknown = alliance === "UNKNOWN";
             const isActive = hoverAc === h.no;
+            // Faded fill for "leading" cells; solid for "won" + 2021 baseline.
+            const isLeading = seat?.status === "leading";
             return (
               <g
                 key={h.no}
@@ -188,10 +191,10 @@ export const SeatHexMap: React.FC<Props> = ({ title, kicker, seats, legend, capt
                 role="img"
                 aria-label={
                   seat
-                    ? `AC ${seat.no} ${seat.name} — ${seat.alliance} ${seat.winnerName}`
+                    ? `AC ${seat.no} ${seat.name} — ${seat.alliance} ${seat.winnerName}${isLeading ? " (leading)" : seat.status === "won" ? " (declared)" : ""}`
                     : `AC ${h.no} ${h.name}`
                 }
-                style={{ cursor: "pointer", outline: "none" }}
+                style={{ cursor: "pointer", outline: "none", opacity: isUnknown || !isLeading ? 1 : 0.55 }}
               >
                 <polygon
                   points={h.points}
@@ -232,7 +235,7 @@ export const SeatHexMap: React.FC<Props> = ({ title, kicker, seats, legend, capt
                   ? activeSeat.winnerName
                   : activeSeat.margin > 0
                   ? `${activeSeat.winnerName} · ${activeSeat.party} · won by ${activeSeat.margin.toLocaleString("en-IN")} (${activeSeat.marginPct.toFixed(2)}%)`
-                  : `${activeSeat.winnerName} · ${activeSeat.party} · leading`}
+                  : `${activeSeat.winnerName} · ${activeSeat.party} · ${activeSeat.status === "won" ? "declared" : "leading"}`}
               </div>
             </div>
             <div

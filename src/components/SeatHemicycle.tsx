@@ -139,6 +139,7 @@ type Seat = {
   winnerName: string;
   margin: number;
   marginPct: number;
+  status?: "won" | "leading";
 };
 
 type Props = {
@@ -208,6 +209,10 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
             const isActive = hoverIdx === i;
             const r = isActive ? 9 : 7;
             const isUnknown = seat.alliance === "UNKNOWN";
+            // "leading" trends render at reduced opacity to distinguish them
+            // from "won" (officially declared by the Returning Officer).
+            // 2021 baseline rows have no status field — treat as fully solid.
+            const isLeading = seat.status === "leading";
             return (
               <g
                 key={i}
@@ -215,9 +220,9 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
                 onMouseLeave={() => setHoverIdx(null)}
                 onFocus={() => setHoverIdx(i)}
                 onBlur={() => setHoverIdx(null)}
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "pointer", opacity: isUnknown || !isLeading ? 1 : 0.55 }}
                 role="img"
-                aria-label={`AC ${seat.no} ${seat.name} — ${seat.alliance} ${seat.winnerName}`}
+                aria-label={`AC ${seat.no} ${seat.name} — ${seat.alliance} ${seat.winnerName}${isLeading ? " (leading)" : seat.status === "won" ? " (declared)" : ""}`}
                 tabIndex={0}
               >
                 <circle
@@ -300,7 +305,7 @@ export const SeatHemicycle: React.FC<Props> = ({ title, kicker, seats, legend, c
                   ? activeSeat.seat.winnerName
                   : activeSeat.seat.margin > 0
                   ? `${activeSeat.seat.winnerName} · ${activeSeat.seat.party} · won by ${activeSeat.seat.margin.toLocaleString("en-IN")} (${activeSeat.seat.marginPct.toFixed(2)}%)`
-                  : `${activeSeat.seat.winnerName} · ${activeSeat.seat.party} · leading`}
+                  : `${activeSeat.seat.winnerName} · ${activeSeat.seat.party} · ${activeSeat.seat.status === "won" ? "declared" : "leading"}`}
               </div>
             </div>
             <div

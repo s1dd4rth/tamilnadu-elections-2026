@@ -16,6 +16,7 @@ type Seat = {
   winnerName: string;
   margin: number;
   marginPct: number;
+  status?: "won" | "leading";
 };
 
 type Props = {
@@ -50,6 +51,10 @@ export const Live2026Section: React.FC<Props> = ({ acs, snapshots }) => {
         };
       }
       const [party, bloc, candidate] = r;
+      // Status is the 5th tuple element (index 4) — added mid-day, so
+      // older snapshots are 4-element rows and read undefined. Default
+      // to "leading" in that case.
+      const status = (r[4] === "won" ? "won" : "leading") as "won" | "leading";
       return {
         no: a.no,
         name: a.name,
@@ -61,6 +66,7 @@ export const Live2026Section: React.FC<Props> = ({ acs, snapshots }) => {
         // (rather than "won by 0").
         margin: 0,
         marginPct: 0,
+        status,
       };
     });
   }, [acs, snap]);
@@ -86,6 +92,10 @@ export const Live2026Section: React.FC<Props> = ({ acs, snapshots }) => {
   }, [seats]);
 
   const declaredCount = snap?.declared ?? 0;
+  const wonCount = useMemo(
+    () => seats.filter((s) => s.status === "won").length,
+    [seats]
+  );
   const isLatest = idx === snapshots.length - 1;
   const liveTag = isLatest ? "LIVE" : "REPLAY";
 
@@ -128,25 +138,24 @@ export const Live2026Section: React.FC<Props> = ({ acs, snapshots }) => {
           }}
         >
           <SeatHemicycle
-            kicker={`2026 · ${liveTag} · ${declaredCount}/234`}
+            kicker={`2026 · ${liveTag} · ${declaredCount}/234 · ${wonCount} declared`}
             title="The arc as it stood at this moment."
             seats={seats}
             legend={legend}
             caption={
               <>
-                Each dot is one of the 234 Tamil Nadu constituencies. Coloured dots are the
-                trend at the selected snapshot — DMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>SPA</strong>, AIADMK-led <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NDA</strong>, <strong style={{ color: COLORS.text, fontStyle: "normal" }}>TVK</strong> (Vijay), <strong style={{ color: COLORS.text, fontStyle: "normal" }}>NTK</strong> (Seeman). Empty dots are seats where ECI had not yet posted a trend.
+                Each dot is one of the 234 Tamil Nadu constituencies. Solid dots are seats officially declared by the Returning Officer; faded dots are still leading on ECI's live feed. Empty dots are seats where ECI had not yet posted any trend.
               </>
             }
           />
           <SeatHexMap
-            kicker={`2026 · ${liveTag} · ${declaredCount}/234`}
+            kicker={`2026 · ${liveTag} · ${declaredCount}/234 · ${wonCount} declared`}
             title="The map as it stood at this moment."
             seats={seats}
             legend={legend}
             caption={
               <>
-                Same data, laid out by geography. Equal-area hexes — a Chennai ward and a Nilgiris seat carry the same visual weight. Watching the slider is watching the belts colour in — first the early-finishing rural ACs, later the bigger urban ones.
+                Same data, laid out by geography. Equal-area hexes — a Chennai ward and a Nilgiris seat carry the same visual weight. Solid cells = officially declared, faded = leading. Watch how the early-finishing rural ACs harden first.
               </>
             }
           />
