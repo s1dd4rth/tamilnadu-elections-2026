@@ -1,0 +1,3983 @@
+{
+  "fetchedAt": "2026-05-05T02:31:13.402307+05:30",
+  "rows": [
+    {
+      "no": 1,
+      "name": "GUMMIDIPOONDI",
+      "winner": {
+        "name": "S.VIJAYAKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SUDHAKAR.V",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 27945,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 2,
+      "name": "PONNERI",
+      "winner": {
+        "name": "DR.RAVI.M.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DURAI CHANDRASEKAR",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 55768,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 3,
+      "name": "TIRUTTANI",
+      "winner": {
+        "name": "G.HARI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "M.SATHYA KUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 5793,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 4,
+      "name": "THIRUVALLUR",
+      "winner": {
+        "name": "DR. T. ARUNKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "V.G. RAAJENDRAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 24760,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 5,
+      "name": "POONAMALLEE",
+      "winner": {
+        "name": "PRAKASAM.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "KRISHNASWAMY.A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 72740,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 6,
+      "name": "AVADI",
+      "winner": {
+        "name": "R.RAMESH KUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S.M.NASAR",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 76311,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 7,
+      "name": "MADURAVOYAL",
+      "winner": {
+        "name": "RHEVANTH CHARAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "GANAPATHY. K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 61509,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 8,
+      "name": "AMBATTUR",
+      "winner": {
+        "name": "BALAMURUGAN.G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR A.P. POORNIMA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 58781,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 9,
+      "name": "MADAVARAM",
+      "winner": {
+        "name": "M.L.VIJAYPRABHU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S.SUDHARSANAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 94985,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 10,
+      "name": "THIRUVOTTIYUR",
+      "winner": {
+        "name": "SENTHIL KUMAR. N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SUNDARARAJ. L",
+        "party": "Communist Party of India (Marxist)",
+        "bloc": "SPA"
+      },
+      "margin": 53564,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 11,
+      "name": "DR.RADHAKRISHNAN NAGAR",
+      "winner": {
+        "name": "N. MARIE WILSON",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "J. JOHN EBENEZER",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 49668,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 12,
+      "name": "PERAMBUR",
+      "winner": {
+        "name": "C. JOSEPH VIJAY",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "R.D. SHEKAR",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 53715,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 13,
+      "name": "KOLATHUR",
+      "winner": {
+        "name": "V. S. BABU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "M. K. STALIN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 8795,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 14,
+      "name": "VILLIVAKKAM",
+      "winner": {
+        "name": "AADHAV ARJUNA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "KARTHIK MOHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 17302,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 15,
+      "name": "THIRU-VI-KA-NAGAR",
+      "winner": {
+        "name": "M. R. PALLAVI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "K. S. RAVICHANDRAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 22333,
+      "rounds": "17/17",
+      "status": "Result Declared"
+    },
+    {
+      "no": 16,
+      "name": "EGMORE",
+      "winner": {
+        "name": "RAJMOHAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "TAMILAN PRASANNA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 10804,
+      "rounds": "15/15",
+      "status": "Result Declared"
+    },
+    {
+      "no": 17,
+      "name": "ROYAPURAM",
+      "winner": {
+        "name": "K.V. VIJAY DAMU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR. A. SUBAIR KHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 14249,
+      "rounds": "15/15",
+      "status": "Result Declared"
+    },
+    {
+      "no": 18,
+      "name": "HARBOUR",
+      "winner": {
+        "name": "P K SEKARBABU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SINORA P S ASHOK",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 11750,
+      "rounds": "14/14",
+      "status": "Result Declared"
+    },
+    {
+      "no": 19,
+      "name": "CHEPAUK-THIRUVALLIKENI",
+      "winner": {
+        "name": "UDHAYANIDHI STALIN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SELVAM. D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7140,
+      "rounds": "17/17",
+      "status": "Result Declared"
+    },
+    {
+      "no": 20,
+      "name": "THOUSAND LIGHTS",
+      "winner": {
+        "name": "PRABHAKAR.J.C.D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "EZHILAN NAGANATHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 15141,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 21,
+      "name": "ANNA NAGAR",
+      "winner": {
+        "name": "V.K.RAMKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "N.CHITRARASU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 21363,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 22,
+      "name": "VIRUGAMPAKKAM",
+      "winner": {
+        "name": "SABARINATHAN.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "PRABHAKARA RAJA.A.M.V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 27086,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 23,
+      "name": "SAIDAPET",
+      "winner": {
+        "name": "ARUL PRAKASAM. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SUBRAMANIAN. MA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 28514,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 24,
+      "name": "THIYAGARAYANAGAR",
+      "winner": {
+        "name": "ANAND N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SATHIYANARAYANAN B",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 13027,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 25,
+      "name": "MYLAPORE",
+      "winner": {
+        "name": "VENKATARAMANAN. P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "VELU. DHA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 28972,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 26,
+      "name": "VELACHERY",
+      "winner": {
+        "name": "KUMAR. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ASHOK. M.K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 33305,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 27,
+      "name": "SHOZHINGANALLUR",
+      "winner": {
+        "name": "ECR P SARAVANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S. ARAVIND RAMESH",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 96780,
+      "rounds": "33/33",
+      "status": "Result Declared"
+    },
+    {
+      "no": 28,
+      "name": "ALANDUR",
+      "winner": {
+        "name": "M.HARISH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "T.M.ANBARASAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 29609,
+      "rounds": "31/31",
+      "status": "Result Declared"
+    },
+    {
+      "no": 29,
+      "name": "SRIPERUMBUDUR",
+      "winner": {
+        "name": "THENNARASU.K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "K. SELVAPERUNTHAGAI",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 54246,
+      "rounds": "33/33",
+      "status": "Result Declared"
+    },
+    {
+      "no": 30,
+      "name": "PALLAVARAM",
+      "winner": {
+        "name": "J.KAMATCHI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "D.MURUGESAN",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 54693,
+      "rounds": "35/35",
+      "status": "Result Declared"
+    },
+    {
+      "no": 31,
+      "name": "TAMBARAM",
+      "winner": {
+        "name": "D.SARATHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "R.S.KIRUTHIKA DEVI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 35621,
+      "rounds": "39/39",
+      "status": "Result Declared"
+    },
+    {
+      "no": 32,
+      "name": "CHENGALPATTU",
+      "winner": {
+        "name": "S. THIYAGARAJAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "KARTHIKDHANDAPANI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 35641,
+      "rounds": "40/40",
+      "status": "Result Declared"
+    },
+    {
+      "no": 33,
+      "name": "THIRUPORUR",
+      "winner": {
+        "name": "B.VIJAYARAJ",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "R. PANNEERDOSS",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "margin": 39351,
+      "rounds": "33/33",
+      "status": "Result Declared"
+    },
+    {
+      "no": 34,
+      "name": "CHEYYUR",
+      "winner": {
+        "name": "RAJASEKAR. E",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MOHAN RAJA.M.G.K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 5668,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 35,
+      "name": "MADURANTAKAM",
+      "winner": {
+        "name": "MARAGATHAM KUMARAVEL.K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "EZHIL KATHARINE EZHILMALAI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7194,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 36,
+      "name": "UTHIRAMERUR",
+      "winner": {
+        "name": "MUNIRATHINAM.J",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SUNDAR.K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 14223,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 37,
+      "name": "KANCHEEPURAM",
+      "winner": {
+        "name": "R.V. RANJITHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "V. SOMASUNDARAM",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 15488,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 38,
+      "name": "ARAKKONAM",
+      "winner": {
+        "name": "V. GANDHIRAJ",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "EZHIL CAROLINE",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "margin": 23121,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 39,
+      "name": "SHOLINGUR",
+      "winner": {
+        "name": "G.KAPIL",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "K.SARAVANAN",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "margin": 5686,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 40,
+      "name": "KATPADI",
+      "winner": {
+        "name": "DR M SUDHAKAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "V. RAMU",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 5870,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 41,
+      "name": "RANIPET",
+      "winner": {
+        "name": "THAHIRA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "R. GANDHI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 5787,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 42,
+      "name": "ARCOT",
+      "winner": {
+        "name": "S.M.SUKUMAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "G.VIJAY MOHAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 42720,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 43,
+      "name": "VELLORE",
+      "winner": {
+        "name": "M.M.VINOTH KANNAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "P.KARTHIKEYAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 6777,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 44,
+      "name": "ANAIKATTU",
+      "winner": {
+        "name": "D.VELAZHAGAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "A.P.NANDAKUMAR",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 7081,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 45,
+      "name": "KILVAITHINANKUPPAM",
+      "winner": {
+        "name": "THENRAL KUMAR. E",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "JEGAN MOORTHY. M",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 20255,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 46,
+      "name": "GUDIYATTAM",
+      "winner": {
+        "name": "K.SINDU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "K.B.PRADAP",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 10097,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 47,
+      "name": "VANIYAMBADI",
+      "winner": {
+        "name": "SYED FAROOQ BASHA SSB",
+        "party": "Indian Union Muslim League",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SYED BHURHANUDEEN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2982,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 48,
+      "name": "AMBUR",
+      "winner": {
+        "name": "VILWANATHAN. A.C.",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "IMTHIYAZ PANDARATTUDU ABDU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7131,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 49,
+      "name": "JOLARPET",
+      "winner": {
+        "name": "VEERAMANI K.C.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MUNISAMY C",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 16083,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 50,
+      "name": "TIRUPPATTUR",
+      "winner": {
+        "name": "DR.THIRUPATHI. N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "NALLATHAMBI. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 48263,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 51,
+      "name": "UTHANGARAI",
+      "winner": {
+        "name": "N ELAIYARAJA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "T M TAMILSELVAM",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 5198,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 52,
+      "name": "BARGUR",
+      "winner": {
+        "name": "E.C. GOVINDARASAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "E. MURALIDHARAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 4241,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 53,
+      "name": "KRISHNAGIRI",
+      "winner": {
+        "name": "MUKUNDHAN.P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ASHOKKUMAR.K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 18844,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 54,
+      "name": "VEPPANAHALLI",
+      "winner": {
+        "name": "SRINIVASAN.P.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MUNUSAMY.K.P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 138,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 55,
+      "name": "HOSUR",
+      "winner": {
+        "name": "BALAKRISHNAREDDY. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "VENDARKARASAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 27803,
+      "rounds": "32/32",
+      "status": "Result Declared"
+    },
+    {
+      "no": 56,
+      "name": "THALLI",
+      "winner": {
+        "name": "RAMACHANDRAN. T",
+        "party": "Communist Party of India",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "DR.NAGESH KUMAR. C",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 5240,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 57,
+      "name": "PALACODU",
+      "winner": {
+        "name": "ANBALAGAN. K.P.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "GOPI. R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 39042,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 58,
+      "name": "PENNAGARAM",
+      "winner": {
+        "name": "GAJENDRAN. S.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SELVAM. V.",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "margin": 3165,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 59,
+      "name": "DHARMAPURI",
+      "winner": {
+        "name": "SOWMIYA ANBUMANI",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SIVAN. M.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 20896,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 60,
+      "name": "PAPPIREDDIPATTI",
+      "winner": {
+        "name": "MARAGATHAM VETRIVEL",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "PALANIAPPAN. P",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 33114,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 61,
+      "name": "HARUR",
+      "winner": {
+        "name": "SAMPATHKUMAR. V",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SHANMUGAM. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 3329,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 62,
+      "name": "CHENGAM",
+      "winner": {
+        "name": "S.VELU",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "K BHARATHIDHASAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 13278,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 63,
+      "name": "TIRUVANNAMALAI",
+      "winner": {
+        "name": "VELU. E.V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "ARUL ARUMUGAM",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2455,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 64,
+      "name": "KILPENNATHUR",
+      "winner": {
+        "name": "RAMACHANDRAN.S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "PITCHANDI.K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 30465,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 65,
+      "name": "KALASAPAKKAM",
+      "winner": {
+        "name": "AGRI KRISHNAMURTHY. S S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SARAVANAN. P.S.T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 26740,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 66,
+      "name": "POLUR",
+      "winner": {
+        "name": "ABISHEK. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SARAVANAN. P",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 227,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 67,
+      "name": "ARANI",
+      "winner": {
+        "name": "JAYASUDHA. L",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MAHALAKSHMI GOVARTHANAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 5631,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 68,
+      "name": "CHEYYAR",
+      "winner": {
+        "name": "MUKKUR N. SUBRAMANIAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "DUSI K MOHAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 21081,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 69,
+      "name": "VANDAVASI",
+      "winner": {
+        "name": "AMBETHKUMAR. S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "RANI. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 3333,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 70,
+      "name": "GINGEE",
+      "winner": {
+        "name": "GANESHKUMAR A",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "GINGEE MASTHAN K S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 12645,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 71,
+      "name": "MAILAM",
+      "winner": {
+        "name": "SHANMUGAM C VE",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "VIJAY NIRANJAN A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 30041,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 72,
+      "name": "TINDIVANAM",
+      "winner": {
+        "name": "VANNI ARASU",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "ARJUNAN. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 734,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 73,
+      "name": "VANUR",
+      "winner": {
+        "name": "GOWTHAM D",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SURESH P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7034,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 74,
+      "name": "VILUPPURAM",
+      "winner": {
+        "name": "LAKSHMANAN R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MOHANRAJ N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 4119,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 75,
+      "name": "VIKRAVANDI",
+      "winner": {
+        "name": "SIVAKUMAR C",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "VIJAI VADIVEL A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 910,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 76,
+      "name": "TIRUKKOYILUR",
+      "winner": {
+        "name": "PALANISAMY S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "VIJAY R BARANIBALAAJI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 285,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 77,
+      "name": "ULUNDURPETTAI",
+      "winner": {
+        "name": "VASANTHAVEL G R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "KUMARAGURU R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 2277,
+      "rounds": "29/29",
+      "status": "Result Declared"
+    },
+    {
+      "no": 78,
+      "name": "RISHIVANDIYAM",
+      "winner": {
+        "name": "KARTHIKEYAN K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "ASHOK KUMAR G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 4862,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 79,
+      "name": "SANKARAPURAM",
+      "winner": {
+        "name": "RAKESH R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "UDHAYASURIYAN T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 3440,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 80,
+      "name": "KALLAKURICHI",
+      "winner": {
+        "name": "ARUL VIGNESH C",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "RAJEEVGANDHI S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 798,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 81,
+      "name": "GANGAVALLI",
+      "winner": {
+        "name": "NALLATHAMBI. A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "CHINNADURAI. K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 14404,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 82,
+      "name": "ATTUR",
+      "winner": {
+        "name": "JAYASANKARAN. A.P.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SELVABHARATHI. R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 15318,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 83,
+      "name": "YERCAUD",
+      "winner": {
+        "name": "USHARANI. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "LAKSHMI JANARTHANAN. J",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2189,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 84,
+      "name": "OMALUR",
+      "winner": {
+        "name": "MANI. R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "ADHIYAMAAN. R.V",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 14539,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 85,
+      "name": "METTUR",
+      "winner": {
+        "name": "VENKATACHALAM. G",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MIDHUN CHAKRAVARTHY. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 19105,
+      "rounds": "30/30",
+      "status": "Result Declared"
+    },
+    {
+      "no": 86,
+      "name": "EDAPPADI",
+      "winner": {
+        "name": "EDAPPADI PALANISWAMI. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "PREMKUMAR. K",
+        "party": "Independent",
+        "bloc": "IND"
+      },
+      "margin": 98110,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 87,
+      "name": "SANKARI",
+      "winner": {
+        "name": "VETRIVEL. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SENTHILKUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 9517,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 88,
+      "name": "SALEM (WEST)",
+      "winner": {
+        "name": "LAKSHMANAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "KARTHE.M",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "margin": 74867,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 89,
+      "name": "SALEM (NORTH)",
+      "winner": {
+        "name": "SIVAKUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "RAJENDRAN. R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 14034,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 90,
+      "name": "SALEM (SOUTH)",
+      "winner": {
+        "name": "VIJAY TAMILAN PARTHIBAN. A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "LOGANATHAN. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 33369,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 91,
+      "name": "VEERAPANDI",
+      "winner": {
+        "name": "PALANIVEL. M.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SRI BALAJI SUGUMAR. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 4071,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 92,
+      "name": "RASIPURAM",
+      "winner": {
+        "name": "LOGESH TAMILSELVAN D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "PREMKUMAR S D",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 14511,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 93,
+      "name": "SENTHAMANGALAM",
+      "winner": {
+        "name": "P CHANDRASEKAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "C CHANDRASEKARAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 2655,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 94,
+      "name": "NAMAKKAL",
+      "winner": {
+        "name": "DILIP C S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SRIDEVI MOHAN P S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 11008,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 95,
+      "name": "PARAMATHI-VELUR",
+      "winner": {
+        "name": "SEKAR S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MOORTHIY K S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 308,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 96,
+      "name": "TIRUCHENGODU",
+      "winner": {
+        "name": "ARUNRAJ K G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SRMT SEKAR (A) CHANDRASEKAR R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 28172,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 97,
+      "name": "KUMARAPALAYAM",
+      "winner": {
+        "name": "C.VIJAYALAKSHMI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "P.THANGAMANI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 7696,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 98,
+      "name": "ERODE (EAST)",
+      "winner": {
+        "name": "M.VIJAY BALAJI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "GOPINATH PALANIYAPPAN",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 23966,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 99,
+      "name": "ERODE (WEST)",
+      "winner": {
+        "name": "ANANTH MOGHAN K.K.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S. MUTHUSAMY",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 22250,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 100,
+      "name": "MODAKKURICHI",
+      "winner": {
+        "name": "D.SHANMUGAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S.KIRTHIKA",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 2430,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 101,
+      "name": "DHARAPURAM",
+      "winner": {
+        "name": "SATHYABAMA.P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "INDIRANI.T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 16727,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 102,
+      "name": "KANGAYAM",
+      "winner": {
+        "name": "NSN NATARAJ",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MANI GOUNDER",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 8133,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 103,
+      "name": "PERUNDURAI",
+      "winner": {
+        "name": "JAYAKUMAR. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "THOPPU VENKATACHALAM (ALIAS) N.D. VENKATACHALAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 9693,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 104,
+      "name": "BHAVANI",
+      "winner": {
+        "name": "KARUPPANAN. K.C",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "BALAKRISHNAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7396,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 105,
+      "name": "ANTHIYUR",
+      "winner": {
+        "name": "HARIBASKAR.P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SIVABALAN.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 1260,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 106,
+      "name": "GOBICHETTIPALAYAM",
+      "winner": {
+        "name": "SENGOTTAIYAN.K.A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "NALLASIVAM.N",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 16620,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 107,
+      "name": "BHAVANISAGAR",
+      "winner": {
+        "name": "V.P.TAMILSELVI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "A.BANNARI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 4569,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 108,
+      "name": "UDHAGAMANDALAM",
+      "winner": {
+        "name": "BHOJARAJAN.M",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "IBRAHIM.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 976,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 109,
+      "name": "GUDALUR",
+      "winner": {
+        "name": "DHRAVIDAMANI.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PON.JAYASEELAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 22833,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 110,
+      "name": "COONOOR",
+      "winner": {
+        "name": "M. RAJU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "A. RAMU",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 8099,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 111,
+      "name": "METTUPPALAYAM",
+      "winner": {
+        "name": "SUNILANAND",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SMT.KAVITHA KALYANASUNDARAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 7768,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 112,
+      "name": "AVANASHI",
+      "winner": {
+        "name": "KAMALI.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR. L. MURUGAN",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 15373,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 113,
+      "name": "TIRUPPUR (NORTH)",
+      "winner": {
+        "name": "V.SATHYABAMA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "M.S.M.ANANDAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 69992,
+      "rounds": "34/34",
+      "status": "Result Declared"
+    },
+    {
+      "no": 114,
+      "name": "TIRUPPUR (SOUTH)",
+      "winner": {
+        "name": "BALAMURUGAN. S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DINESHKUMAR. N",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 12901,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 115,
+      "name": "PALLADAM",
+      "winner": {
+        "name": "K.RAMKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "K.P.PARAMASIVAM",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 37897,
+      "rounds": "35/35",
+      "status": "Result Declared"
+    },
+    {
+      "no": 116,
+      "name": "SULUR",
+      "winner": {
+        "name": "NM.SUKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "V.P.KANDASAMY",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 4790,
+      "rounds": "30/30",
+      "status": "Result Declared"
+    },
+    {
+      "no": 117,
+      "name": "KAVUNDAMPALAYAM",
+      "winner": {
+        "name": "KANIMOZHI SANTHOSH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ARUNKUMAR PRG",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 42140,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 118,
+      "name": "COIMBATORE (NORTH)",
+      "winner": {
+        "name": "V. SAMPATHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DURAI. SENTHAMIL SELVAN B.E",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 21992,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 119,
+      "name": "THONDAMUTHUR",
+      "winner": {
+        "name": "S.P.VELUMANI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SATHISH RAJU (ALIAS) K.P.R. SATHISH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 14725,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 120,
+      "name": "COIMBATORE (SOUTH)",
+      "winner": {
+        "name": "V SENTHILBALAJI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "V. SENTHILKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2271,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 121,
+      "name": "SINGANALLUR",
+      "winner": {
+        "name": "K.S.SRI GIRI PRASATH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "V.SRINIDHI",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 19139,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 122,
+      "name": "KINATHUKADAVU",
+      "winner": {
+        "name": "VIGNESH K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SABARI KARTHIKEYAN K.V.K.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 11710,
+      "rounds": "31/31",
+      "status": "Result Declared"
+    },
+    {
+      "no": 123,
+      "name": "POLLACHI",
+      "winner": {
+        "name": "K. NITHYANANDHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "POLLACHI V. JAYARAMAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 4627,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 124,
+      "name": "VALPARAI",
+      "winner": {
+        "name": "KUTTY (ALIAS) SUDHAKAR. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "DR. SRIDHARAN. A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 9371,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 125,
+      "name": "UDUMALAIPETTAI",
+      "winner": {
+        "name": "JAYAKUMAR M.",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "RADHAKRISHNAN K.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 2882,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 126,
+      "name": "MADATHUKULAM",
+      "winner": {
+        "name": "R JAYARAMAKRISHNAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "C SHANMUGAVELU",
+        "party": "Amma Makkal Munnettra Kazagam",
+        "bloc": "NDA"
+      },
+      "margin": 15968,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 127,
+      "name": "PALANI",
+      "winner": {
+        "name": "RAVIMANOHARAN. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "DR. PRAVEEN KUMAR. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 693,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 128,
+      "name": "ODDANCHATRAM",
+      "winner": {
+        "name": "SAKKARAPANI. R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "VIDIYAL S. SEKAR",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 43249,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 129,
+      "name": "ATHOOR",
+      "winner": {
+        "name": "I. PERIASAMY",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "N. KALAISELVI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 22368,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 130,
+      "name": "NILAKKOTTAI",
+      "winner": {
+        "name": "AYYANAR.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "NAGAJOTHI.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 2925,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 131,
+      "name": "NATHAM",
+      "winner": {
+        "name": "NATHAM VISWANATHAN R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SELVAKUMAR K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 11869,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 132,
+      "name": "DINDIGUL",
+      "winner": {
+        "name": "SENTHILKUMAR. I.P",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "NAZEER RAJA. G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1131,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 133,
+      "name": "VEDASANDUR",
+      "winner": {
+        "name": "SAMINATHAN. T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PARAMASIVAM. V.P.B.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 10063,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 134,
+      "name": "ARAVAKURICHI",
+      "winner": {
+        "name": "ELANGO. R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "KARTHIKEYAN. P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 19382,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 135,
+      "name": "KARUR",
+      "winner": {
+        "name": "M.R. VIJAYABHASKAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MATHIYALAGAN V.P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1821,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 136,
+      "name": "KRISHNARAYAPURAM",
+      "winner": {
+        "name": "SATHYA. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR. DHIVYA. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 3503,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 137,
+      "name": "KULITHALAI",
+      "winner": {
+        "name": "SURIYANUR. A. CHANDRAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "G.BALASUBRAMANI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 579,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 138,
+      "name": "MANAPPARAI",
+      "winner": {
+        "name": "R. KATHIRAVAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR. PL. VIJAYAKUMAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 1426,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 139,
+      "name": "SRIRANGAM",
+      "winner": {
+        "name": "RAMESH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S. DURAIRAJ",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 33590,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 140,
+      "name": "TIRUCHIRAPPALLI (WEST)",
+      "winner": {
+        "name": "K.N.NEHRU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "G.RAMAMOORTHI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 4786,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 141,
+      "name": "TIRUCHIRAPPALLI (EAST)",
+      "winner": {
+        "name": "C. JOSEPH VIJAY",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "S. INIGO IRUDAYARAJ",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 27416,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 142,
+      "name": "THIRUVERUMBUR",
+      "winner": {
+        "name": "VIJAYAKUMAR (A) NAVALPATTU S. VIJI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ANBIL MAHESH POYYAMOZHI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 8705,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 143,
+      "name": "LALGUDI",
+      "winner": {
+        "name": "LEEMAROSE MARTIN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "KU PA KRISHNAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2739,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 144,
+      "name": "MANACHANALLUR",
+      "winner": {
+        "name": "KATHIRAVAN. S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "V.SARAVANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 12364,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 145,
+      "name": "MUSIRI",
+      "winner": {
+        "name": "M.VIGNESH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "N.S.KARUNAIRAAJA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 17442,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 146,
+      "name": "THURAIYUR",
+      "winner": {
+        "name": "RAVISANKAR.M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "E.SAROJA",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 9614,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 147,
+      "name": "PERAMBALUR",
+      "winner": {
+        "name": "SIVAKUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "DR. JAYALAKSHMI. S.T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 14393,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 148,
+      "name": "KUNNAM",
+      "winner": {
+        "name": "SIVASANKAR. S.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SARANYA. A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 15557,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 149,
+      "name": "ARIYALUR",
+      "winner": {
+        "name": "RAJENDRAN S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "LATHA BALU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 24498,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 150,
+      "name": "JAYANKONDAM",
+      "winner": {
+        "name": "VAITHILINGAM G.",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "KANNAN KA.SO.KA.",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 18490,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 151,
+      "name": "TITTAKUDI",
+      "winner": {
+        "name": "GANESAN C.V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "RAJASEKAR A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2629,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 152,
+      "name": "VRIDDHACHALAM",
+      "winner": {
+        "name": "PREMALLATHA VIJAYAKANT",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "VIJAY.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2387,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 153,
+      "name": "NEYVELI",
+      "winner": {
+        "name": "RAJENDRAN.R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SABA.RAJENDRAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 10962,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 154,
+      "name": "PANRUTI",
+      "winner": {
+        "name": "MOHAN. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "ABDUR RAHMAN. A.R",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "margin": 10663,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 155,
+      "name": "CUDDALORE",
+      "winner": {
+        "name": "B.RAJKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "A.S.CHANDARASEKARAN",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 15519,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 156,
+      "name": "KURINJIPADI",
+      "winner": {
+        "name": "M.R.K.PANNEERSELVAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "A BHUVANENTHIRAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 7589,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 157,
+      "name": "BHUVANAGIRI",
+      "winner": {
+        "name": "ARUNMOZHITHEVAN . A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "SARAVANAN. DURAI . K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 2487,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 158,
+      "name": "CHIDAMBARAM",
+      "winner": {
+        "name": "THAMIMUN ANSARI. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PANDIAN. K.A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 5747,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 159,
+      "name": "KATTUMANNARKOIL",
+      "winner": {
+        "name": "L.E. JOTHIMANI",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "A. SOZHAN",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "margin": 33063,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 160,
+      "name": "SIRKAZHI",
+      "winner": {
+        "name": "SENTHILSELVAN.R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SAKTHI.M",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 11417,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 161,
+      "name": "MAYILADUTHURAI",
+      "winner": {
+        "name": "JAMAL MOHAMED YOUNOOS. Y.N",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PALANISAMY. A  M.COM.",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA"
+      },
+      "margin": 10845,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 162,
+      "name": "POOMPUHAR",
+      "winner": {
+        "name": "NIVEDHA M MURUGAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PAVUNRAJ. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 8260,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 163,
+      "name": "NAGAPATTINAM",
+      "winner": {
+        "name": "M.H.JAWAHIRULLAH",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "M.SUGUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 9781,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 164,
+      "name": "KILVELUR",
+      "winner": {
+        "name": "LATHA. T",
+        "party": "Communist Party of India (Marxist)",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SENTHIL PANDIAN. P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2278,
+      "rounds": "17/17",
+      "status": "Result Declared"
+    },
+    {
+      "no": 165,
+      "name": "VEDARANYAM",
+      "winner": {
+        "name": "MANIAN. O.S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "PUGAZHENDI. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 7331,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 166,
+      "name": "THIRUTHURAIPOONDI",
+      "winner": {
+        "name": "MARIMUTHU.K",
+        "party": "Communist Party of India",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PANDIYAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 12922,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 167,
+      "name": "MANNARGUDI",
+      "winner": {
+        "name": "KAMARAJ. S",
+        "party": "Amma Makkal Munnettra Kazagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "RAJAA.T.R.B",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 1566,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 168,
+      "name": "THIRUVARUR",
+      "winner": {
+        "name": "KALAIVANAN POONDI K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "VEERAMANI V",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 18148,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 169,
+      "name": "NANNILAM",
+      "winner": {
+        "name": "KAMARAJ. R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MOHAMED MUBARAK",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 41724,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 170,
+      "name": "THIRUVIDAIMARUDUR",
+      "winner": {
+        "name": "GOVI.CHEZHIAAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "S.PRABAKARAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 14116,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 171,
+      "name": "KUMBAKONAM",
+      "winner": {
+        "name": "VINOTH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ANBALAGAN G",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 679,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 172,
+      "name": "PAPANASAM",
+      "winner": {
+        "name": "A.M. SHAHJAHAN",
+        "party": "Indian Union Muslim League",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "AZARUDEEN UDUMAN ALI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1065,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 173,
+      "name": "THIRUVAIYARU",
+      "winner": {
+        "name": "DURAI. CHANDRASEKARAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MATHI. MANIKANDAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 8555,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 174,
+      "name": "THANJAVUR",
+      "winner": {
+        "name": "R. VIJAYSARAVANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SHAN. RAMANATHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 16955,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 175,
+      "name": "ORATHANADU",
+      "winner": {
+        "name": "R. VAITHILINGAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "DR. K. ARVIND",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 35028,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 176,
+      "name": "PATTUKKOTTAI",
+      "winner": {
+        "name": "ANNADURAI K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MATHAN C",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 13754,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 177,
+      "name": "PERAVURANI",
+      "winner": {
+        "name": "ASHOKKUMAR. N",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "GOVI.ELANGO",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 3162,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 178,
+      "name": "GANDHARVAKOTTAI",
+      "winner": {
+        "name": "N. SUBRAMANIAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "C. UTHAYAKUMAR",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 11039,
+      "rounds": "18/18",
+      "status": "Result Declared"
+    },
+    {
+      "no": 179,
+      "name": "VIRALIMALAI",
+      "winner": {
+        "name": "VIJAYABASKAR. C",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MURUGESAN. P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 62073,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 180,
+      "name": "PUDUKKOTTAI",
+      "winner": {
+        "name": "V. MUTHURAJA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "K.M. SHARIFF",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1867,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 181,
+      "name": "THIRUMAYAM",
+      "winner": {
+        "name": "REGUPATHY.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "CHINTHAMANI.C",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1492,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 182,
+      "name": "ALANGUDI",
+      "winner": {
+        "name": "SIVA.V.MEYYANATHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "KANDASAMY",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 12977,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 183,
+      "name": "ARANTHANGI",
+      "winner": {
+        "name": "MOHAMED FARVAS. J",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "RAMACHANDRAN . T",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 10062,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 184,
+      "name": "KARAIKUDI",
+      "winner": {
+        "name": "DR.PRABHU. TK",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "MANGUDI. S",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 46074,
+      "rounds": "30/30",
+      "status": "Result Declared"
+    },
+    {
+      "no": 185,
+      "name": "TIRUPPATTUR",
+      "winner": {
+        "name": "SEENIVASA SETHUPATHY. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "PERIAKARUPPAN. KR",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 1,
+      "rounds": "30/30",
+      "status": "Result Declared"
+    },
+    {
+      "no": 186,
+      "name": "SIVAGANGA",
+      "winner": {
+        "name": "KULANTHAI RANI A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SENTHILNATHAN PR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 15081,
+      "rounds": "31/31",
+      "status": "Result Declared"
+    },
+    {
+      "no": 187,
+      "name": "MANAMADURAI",
+      "winner": {
+        "name": "ELANGOVAN.D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "TAMILARASI.A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 1208,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 188,
+      "name": "MELUR",
+      "winner": {
+        "name": "P.VISWANATHAN",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "A.MADURAIVEERAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2724,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 189,
+      "name": "MADURAI EAST",
+      "winner": {
+        "name": "KARTHIKEYAN S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "MOORTHY P",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 16547,
+      "rounds": "29/29",
+      "status": "Result Declared"
+    },
+    {
+      "no": 190,
+      "name": "SHOLAVANDAN",
+      "winner": {
+        "name": "KARUPPAIAH.M.V",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "VENKATESAN.A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 2678,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 191,
+      "name": "MADURAI NORTH",
+      "winner": {
+        "name": "A.KALLANAI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "G.THALAPATHI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 18038,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 192,
+      "name": "MADURAI SOUTH",
+      "winner": {
+        "name": "M.M.GOPISON",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "M.BOOMINATHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 21529,
+      "rounds": "17/17",
+      "status": "Result Declared"
+    },
+    {
+      "no": 193,
+      "name": "MADURAI CENTRAL",
+      "winner": {
+        "name": "MADHAR BADHURUDEEN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "PALANIVEL THIAGA RAJAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 19128,
+      "rounds": "19/19",
+      "status": "Result Declared"
+    },
+    {
+      "no": 194,
+      "name": "MADURAI WEST",
+      "winner": {
+        "name": "THANGAPANDI SR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "BALAJI R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 11931,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 195,
+      "name": "THIRUPARANKUNDRAM",
+      "winner": {
+        "name": "NIRMALKUMAR. R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "KIRUTHIGA THANGAPANDI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 41553,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 196,
+      "name": "THIRUMANGALAM",
+      "winner": {
+        "name": "MANIMARAN.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "UDHAYAKUMAR.R.B",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 23807,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 197,
+      "name": "USILAMPATTI",
+      "winner": {
+        "name": "VIJAY. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "MAHENDRAN. I",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 1805,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 198,
+      "name": "ANDIPATTI",
+      "winner": {
+        "name": "MAHARAJAN.A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PANDI.V",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 9554,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 199,
+      "name": "PERIYAKULAM",
+      "winner": {
+        "name": "SABARI IYNGARAN G.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SAKTHIVEL P.",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA"
+      },
+      "margin": 19321,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 200,
+      "name": "BODINAYAKANUR",
+      "winner": {
+        "name": "PANNEERSELVAM.O",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PRAKASH.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 6805,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 201,
+      "name": "CUMBUM",
+      "winner": {
+        "name": "JEGANATHMISHRA PLA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ERAMAKRISHNAN N",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 751,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 202,
+      "name": "RAJAPALAYAM",
+      "winner": {
+        "name": "JEGADESHWARI. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "THANGAPANDIAN. S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 10605,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 203,
+      "name": "SRIVILLIPUTHUR",
+      "winner": {
+        "name": "KARTHIK.A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "MAHALINGAM.P",
+        "party": "Communist Party of India",
+        "bloc": "SPA"
+      },
+      "margin": 8581,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 204,
+      "name": "SATTUR",
+      "winner": {
+        "name": "KADARKARAIRAJ. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "NAINAR NAGENTHRAN",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 5989,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 205,
+      "name": "SIVAKASI",
+      "winner": {
+        "name": "KEERTHANA S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "ASHOKAN G",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 11670,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 206,
+      "name": "VIRUDHUNAGAR",
+      "winner": {
+        "name": "SELVAM P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "VIJAYAPRABHAKAR",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 9391,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 207,
+      "name": "ARUPPUKKOTTAI",
+      "winner": {
+        "name": "RAMACHANDRAN. K.K.S.S.R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "KARTHIK KUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 4943,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 208,
+      "name": "TIRUCHULI",
+      "winner": {
+        "name": "THANGAM THENARASU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SAMAYAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 13485,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 209,
+      "name": "PARAMAKUDI",
+      "winner": {
+        "name": "ADVOCATE. KATHIRAVAN. K.K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "GOPIRAJAN. G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 3548,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 210,
+      "name": "TIRUVADANAI",
+      "winner": {
+        "name": "RAJEEV",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "RM. KARUMANICKAM",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 2513,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 211,
+      "name": "RAMANATHAPURAM",
+      "winner": {
+        "name": "KATHARBATCHA MUTHURAMALINGAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SHAHUL HAMEED",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 12459,
+      "rounds": "31/31",
+      "status": "Result Declared"
+    },
+    {
+      "no": 212,
+      "name": "MUDHUKULATHUR",
+      "winner": {
+        "name": "R.S.RAJAKANNAPPAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MALARVIZHI. B",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 16598,
+      "rounds": "31/31",
+      "status": "Result Declared"
+    },
+    {
+      "no": 213,
+      "name": "VILATHIKULAM",
+      "winner": {
+        "name": "MARKANDAYAN G V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "P. KASIRAM",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 8228,
+      "rounds": "20/20",
+      "status": "Result Declared"
+    },
+    {
+      "no": 214,
+      "name": "THOOTHUKKUDI",
+      "winner": {
+        "name": "SRINATH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "P. GEETHA JEEVAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 37731,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 215,
+      "name": "TIRUCHENDUR",
+      "winner": {
+        "name": "ANITHA R. RADHAKRISHNAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "J. MURUGAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 5872,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 216,
+      "name": "SRIVAIKUNTAM",
+      "winner": {
+        "name": "SARAVANAN. G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SHANMUGANATHAN. S. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 1186,
+      "rounds": "21/21",
+      "status": "Result Declared"
+    },
+    {
+      "no": 217,
+      "name": "OTTAPIDARAM",
+      "winner": {
+        "name": "P .MATHANRAJA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "P.M.RAMAJEYAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 29083,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 218,
+      "name": "KOVILPATTI",
+      "winner": {
+        "name": "KARUNANITHI.K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "BALASUBRAMANIAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 843,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 219,
+      "name": "SANKARANKOVIL",
+      "winner": {
+        "name": "DR. DHILIPAN JAISHANKAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "C. RAMARAJAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 6489,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 220,
+      "name": "VASUDEVANALLUR",
+      "winner": {
+        "name": "E. RAJA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "ANANTHAN AYYASAMY",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA"
+      },
+      "margin": 6583,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 221,
+      "name": "KADAYANALLUR",
+      "winner": {
+        "name": "RAJENDRAN. T. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "C. KRISHNAMURALI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 6253,
+      "rounds": "27/27",
+      "status": "Result Declared"
+    },
+    {
+      "no": 222,
+      "name": "TENKASI",
+      "winner": {
+        "name": "DR.KALAI KATHIRAVAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "S.SELVA MOHANDAS PANDIAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 10299,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 223,
+      "name": "ALANGULAM",
+      "winner": {
+        "name": "PAUL MANOJ PANDIAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "K R P PRABAKARAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "margin": 7798,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 224,
+      "name": "TIRUNELVELI",
+      "winner": {
+        "name": "MURUGHAN.R.S.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "SUBRAMANIAN.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 11414,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 225,
+      "name": "AMBASAMUDRAM",
+      "winner": {
+        "name": "DR.ESAKKI SUBAYA",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "V.P.DURAI",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 10245,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 226,
+      "name": "PALAYAMKOTTAI",
+      "winner": {
+        "name": "M.ABDUL WAHAB",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MARIA JOHN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 13805,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 227,
+      "name": "NANGUNERI",
+      "winner": {
+        "name": "REDDIARPATTI V. NARAYANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "RUBY.R.MANOHARAN",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "margin": 16419,
+      "rounds": "25/25",
+      "status": "Result Declared"
+    },
+    {
+      "no": 228,
+      "name": "RADHAPURAM",
+      "winner": {
+        "name": "DR.SATHISH CHRISTOPHER",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "runnerUp": {
+        "name": "APPAVU.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 12313,
+      "rounds": "26/26",
+      "status": "Result Declared"
+    },
+    {
+      "no": 229,
+      "name": "KANNIYAKUMARI",
+      "winner": {
+        "name": "THALAVAI SUNDARAM. N",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA"
+      },
+      "runnerUp": {
+        "name": "MAHESH.R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "margin": 214,
+      "rounds": "34/34",
+      "status": "Result Declared"
+    },
+    {
+      "no": 230,
+      "name": "NAGERCOIL",
+      "winner": {
+        "name": "AUSTIN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "BERVIN KINGS G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 7570,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    },
+    {
+      "no": 231,
+      "name": "COLACHAL",
+      "winner": {
+        "name": "THARAHAI CUTHBERT",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "PREM ALEX LAWRENCE",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 2833,
+      "rounds": "28/28",
+      "status": "Result Declared"
+    },
+    {
+      "no": 232,
+      "name": "PADMANABHAPURAM",
+      "winner": {
+        "name": "CHELLASWAMY. R",
+        "party": "Communist Party of India (Marxist)",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "KRISHNA KUMAR. S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 15569,
+      "rounds": "24/24",
+      "status": "Result Declared"
+    },
+    {
+      "no": 233,
+      "name": "VILAVANCODE",
+      "winner": {
+        "name": "PRAVEEN T.T",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "MICHAEL KUMAR K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 20970,
+      "rounds": "22/22",
+      "status": "Result Declared"
+    },
+    {
+      "no": 234,
+      "name": "KILLIYOOR",
+      "winner": {
+        "name": "RAJESH KUMAR. S",
+        "party": "Indian National Congress",
+        "bloc": "SPA"
+      },
+      "runnerUp": {
+        "name": "SABIN. S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK"
+      },
+      "margin": 1311,
+      "rounds": "23/23",
+      "status": "Result Declared"
+    }
+  ]
+}

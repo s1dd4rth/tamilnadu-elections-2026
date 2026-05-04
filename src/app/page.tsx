@@ -1,6 +1,7 @@
 import { Masthead, HeadlineBar } from '@/components/Header';
 import { KPIStrip } from '@/components/Stats';
 import { LiveCountingStrip } from '@/components/LiveCountingStrip';
+import { MarginAtlas } from '@/components/MarginAtlas';
 import { MapSection } from '@/components/MapSection';
 import { TurnoutSection } from '@/components/TurnoutSection';
 import { ACTurnoutMap } from '@/components/ACTurnoutMap';
@@ -34,6 +35,8 @@ export default function Page() {
       <LiveCountingStrip />
       <HeadlineBar />
       <KPIStrip />
+
+      <MarginAtlas />
 
       <MapSection />
       <TurnoutSection />
