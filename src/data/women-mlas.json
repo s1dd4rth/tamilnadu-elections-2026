@@ -1,13 +1,14 @@
 {
-  "method": "name-heuristic",
-  "methodology": "Heuristic gender inference: strip honorifics + initials, match remaining tokens against a curated list of common Tamil female first names + female-suffix patterns. Provisional \u2014 should be cross-checked against authoritative news.",
+  "method": "myneta-women-list",
+  "methodology": "Cross-referenced each AC winner against MyNeta's curated list of 442 women candidates contesting the TN 2026 election (myneta.info ... action=summary&subAction=women_candidate). For each AC, the highest-vote candidate's MyNeta candidate_id is looked up; if it appears in the women list, the winner is counted as a woman. This replaces an earlier name-heuristic that produced 21 winners with both false positives and false negatives.",
   "totalChecked": 234,
-  "flaggedCount": 21,
+  "flaggedCount": 23,
   "byBloc": {
-    "TVK": 10,
+    "TVK": 13,
     "NDA": 7,
-    "SPA": 4
+    "SPA": 3
   },
+  "totalWomenCandidates": 442,
   "winners": [
     {
       "no": 15,
@@ -15,8 +16,17 @@
       "name": "M. R. PALLAVI",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: PALLAVI",
+      "reason": "MyNeta women-candidate list (id 859)",
       "margin": 22333
+    },
+    {
+      "no": 30,
+      "ac": "PALLAVARAM",
+      "name": "J.KAMATCHI",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "MyNeta women-candidate list (id 302)",
+      "margin": 54693
     },
     {
       "no": 35,
@@ -24,7 +34,7 @@
       "name": "MARAGATHAM KUMARAVEL.K",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: MARAGATHAM",
+      "reason": "MyNeta women-candidate list (id 848)",
       "margin": 7194
     },
     {
@@ -33,7 +43,7 @@
       "name": "THAHIRA",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: THAHIRA",
+      "reason": "MyNeta women-candidate list (id 994)",
       "margin": 5787
     },
     {
@@ -42,7 +52,7 @@
       "name": "K.SINDU",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: SINDU",
+      "reason": "MyNeta women-candidate list (id 1083)",
       "margin": 10097
     },
     {
@@ -51,7 +61,7 @@
       "name": "SOWMIYA ANBUMANI",
       "party": "Pattali Makkal Katchi",
       "bloc": "NDA",
-      "reason": "first-token match: SOWMIYA",
+      "reason": "MyNeta women-candidate list (id 1157)",
       "margin": 20896
     },
     {
@@ -60,7 +70,7 @@
       "name": "MARAGATHAM VETRIVEL",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: MARAGATHAM",
+      "reason": "MyNeta women-candidate list (id 1212)",
       "margin": 33114
     },
     {
@@ -69,7 +79,7 @@
       "name": "JAYASUDHA. L",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: JAYASUDHA",
+      "reason": "MyNeta women-candidate list (id 1406)",
       "margin": 5631
     },
     {
@@ -78,7 +88,7 @@
       "name": "USHARANI. P",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: USHARANI",
+      "reason": "MyNeta women-candidate list (id 1334)",
       "margin": 2189
     },
     {
@@ -87,7 +97,7 @@
       "name": "C.VIJAYALAKSHMI",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: VIJAYALAKSHMI",
+      "reason": "MyNeta women-candidate list (id 354)",
       "margin": 7696
     },
     {
@@ -96,7 +106,7 @@
       "name": "SATHYABAMA.P",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: SATHYABAMA",
+      "reason": "MyNeta women-candidate list (id 1117)",
       "margin": 16727
     },
     {
@@ -105,7 +115,7 @@
       "name": "V.P.TAMILSELVI",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: TAMILSELVI",
+      "reason": "MyNeta women-candidate list (id 244)",
       "margin": 4569
     },
     {
@@ -114,7 +124,7 @@
       "name": "KAMALI.S",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: KAMALI",
+      "reason": "MyNeta women-candidate list (id 664)",
       "margin": 15373
     },
     {
@@ -123,7 +133,7 @@
       "name": "V.SATHYABAMA",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: SATHYABAMA",
+      "reason": "MyNeta women-candidate list (id 195)",
       "margin": 69992
     },
     {
@@ -132,8 +142,17 @@
       "name": "KANIMOZHI SANTHOSH",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: KANIMOZHI",
+      "reason": "MyNeta women-candidate list (id 800)",
       "margin": 42140
+    },
+    {
+      "no": 136,
+      "ac": "KRISHNARAYAPURAM",
+      "name": "SATHYA. M",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "MyNeta women-candidate list (id 2690)",
+      "margin": 3503
     },
     {
       "no": 143,
@@ -141,7 +160,7 @@
       "name": "LEEMAROSE MARTIN",
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "bloc": "NDA",
-      "reason": "first-token match: LEEMAROSE",
+      "reason": "MyNeta women-candidate list (id 1184)",
       "margin": 2739
     },
     {
@@ -150,26 +169,8 @@
       "name": "PREMALLATHA VIJAYAKANT",
       "party": "Desiya Murpokku Dravida Kazhagam",
       "bloc": "SPA",
-      "reason": "first-token match: PREMALLATHA",
+      "reason": "MyNeta women-candidate list (id 1331)",
       "margin": 2387
-    },
-    {
-      "no": 159,
-      "ac": "KATTUMANNARKOIL",
-      "name": "L.E. JOTHIMANI",
-      "party": "Viduthalai Chiruthaigal Katchi",
-      "bloc": "SPA",
-      "reason": "first-token match: JOTHIMANI",
-      "margin": 33063
-    },
-    {
-      "no": 162,
-      "ac": "POOMPUHAR",
-      "name": "NIVEDHA M MURUGAN",
-      "party": "Dravida Munnetra Kazhagam",
-      "bloc": "SPA",
-      "reason": "first-token match: NIVEDHA",
-      "margin": 8260
     },
     {
       "no": 164,
@@ -177,8 +178,17 @@
       "name": "LATHA. T",
       "party": "Communist Party of India (Marxist)",
       "bloc": "SPA",
-      "reason": "first-token match: LATHA",
+      "reason": "MyNeta women-candidate list (id 733)",
       "margin": 2278
+    },
+    {
+      "no": 186,
+      "ac": "SIVAGANGA",
+      "name": "KULANTHAI RANI A",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "MyNeta women-candidate list (id 1005)",
+      "margin": 15081
     },
     {
       "no": 202,
@@ -186,7 +196,7 @@
       "name": "JEGADESHWARI. K",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: JEGADESHWARI",
+      "reason": "MyNeta women-candidate list (id 1090)",
       "margin": 10605
     },
     {
@@ -195,8 +205,17 @@
       "name": "KEERTHANA S",
       "party": "Tamilaga Vettri Kazhagam",
       "bloc": "TVK",
-      "reason": "first-token match: KEERTHANA",
+      "reason": "MyNeta women-candidate list (id 1093)",
       "margin": 11670
+    },
+    {
+      "no": 231,
+      "ac": "COLACHAL",
+      "name": "THARAHAI CUTHBERT",
+      "party": "Indian National Congress",
+      "bloc": "SPA",
+      "reason": "MyNeta women-candidate list (id 1388)",
+      "margin": 2833
     }
   ]
 }

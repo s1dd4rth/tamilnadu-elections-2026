@@ -37,7 +37,7 @@ export const WomenInOffice = () => {
 
   return (
     <section style={{ margin: "60px 0" }}>
-      <SectionTitle kicker="Women in the 16th Assembly · Provisional">
+      <SectionTitle kicker="Women in the 16th Assembly">
         How many women won.
       </SectionTitle>
       <p style={{
@@ -51,7 +51,7 @@ export const WomenInOffice = () => {
       }}>
         {filed && (
           <>
-            <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{fmt(filed.filedTotal)}</strong> women candidates filed nominations across the state ({(filed.filedTotal*100/filed.filedAll).toFixed(1)}% of all nominees, per ECI Form-7A). Below: a name-heuristic estimate of how many of the 234 winners are women — provisional, since the candidate gender field in the standard MyNeta dataset turned out to be unreliable for this election.
+            <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{fmt(filed.filedTotal)}</strong> women candidates filed nominations across the state ({(filed.filedTotal*100/filed.filedAll).toFixed(1)}% of all nominees, per ECI Form-7A). Of the 442 women who made it to the final ballot, here&rsquo;s how many of the 234 winners are women — cross-referenced against MyNeta&rsquo;s curated women-candidate list.
           </>
         )}
       </p>
@@ -118,7 +118,7 @@ export const WomenInOffice = () => {
         boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
         padding: "22px 24px",
       }}>
-        <SmallCaps style={{ color: COLORS.accent }}>The {winners.length} women MLAs (heuristic)</SmallCaps>
+        <SmallCaps style={{ color: COLORS.accent }}>The {winners.length} women MLAs</SmallCaps>
         <h3 style={{
           fontFamily: SERIF,
           fontSize: "20px",
@@ -181,7 +181,7 @@ export const WomenInOffice = () => {
           lineHeight: 1.55,
         }}>
           <strong style={{ color: COLORS.text, fontStyle: "normal" }}>Methodology:</strong>{" "}
-          The MyNeta candidate database&apos;s gender field was unreliable for this election (23 ACs had every candidate flagged female; ~210 had none flagged). As a fallback, we matched winner names against a curated list of common Tamil women&apos;s first names, requiring the first significant token to match. One known male override was applied (Anitha R. Radhakrishnan, AC 215, is male despite a feminine first name). Some results may still be miscoded — please report errors.
+          MyNeta&apos;s per-candidate gender field was unreliable for this election (23 ACs had every candidate flagged female; ~210 had none). Instead, we cross-referenced each AC&apos;s winner against MyNeta&apos;s separately-curated women-candidate listing of 442 contestants. For each AC, the highest-vote candidate&apos;s MyNeta id is looked up, and the winner is counted as a woman if that id appears in the women list. This replaced an earlier name-heuristic that produced both false positives (men with feminine first names) and false negatives.
         </p>
       </div>
     </section>

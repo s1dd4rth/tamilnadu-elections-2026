@@ -254,7 +254,7 @@ export const WomenOnBallot = () => {
       <div style={{ borderTop: `2px solid ${COLORS.text}` }} />
       <SectionTitle kicker="Reading the 2026 ballot · №3 of 5">Women on the Ballot.</SectionTitle>
       <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '15px', color: COLORS.muted, margin: '-8px 0 32px', maxWidth: '820px', lineHeight: 1.6 }}>
-        <strong style={{ color: COLORS.accent }}>1,380 of the 7,599 nomination forms (18.2%) were filed by women</strong>, per the Tamil Nadu CEO. The two-stage filter — Returning-Officer scrutiny then voluntary withdrawal — narrows that figure further: MyNeta, working off the affidavit corpus, classifies <strong style={{ color: COLORS.accent }}>{mynetaTotal} of {Object.values(mynetaCounts).reduce((s, c) => s + c.total, 0).toLocaleString('en-IN')} contestants</strong> as women. The party-by-party share below comes from MyNeta's classification; alliance estimates are rounded.
+        <strong style={{ color: COLORS.accent }}>1,380 of the 7,599 nomination forms (18.2%) were filed by women</strong>, per the Tamil Nadu CEO. The two-stage filter — Returning-Officer scrutiny then voluntary withdrawal — narrows that figure further: MyNeta&rsquo;s curated women-candidate listing identifies <strong style={{ color: COLORS.accent }}>{mynetaTotal} of {Object.values(mynetaCounts).reduce((s, c) => s + c.total, 0).toLocaleString('en-IN')} contestants</strong> as women. The party-by-party share below comes from MyNeta&rsquo;s classification; alliance estimates are rounded.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(360px, 1fr))', gap: '40px' }}>
@@ -290,9 +290,9 @@ export const WomenOnBallot = () => {
       </div>
 
       <div style={{ marginTop: '36px', padding: '20px 24px', background: '#f5ead8', border: `1.5px solid ${COLORS.border}` }}>
-        <SmallCaps style={{ color: COLORS.accent }}>Affidavit-derived alliance counts</SmallCaps>
+        <SmallCaps style={{ color: COLORS.accent }}>Women contestants by alliance</SmallCaps>
         <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '12px', color: COLORS.muted, margin: '4px 0 14px' }}>
-          MyNeta's affidavit-derived classification, by alliance bucket. NTK's official slate (117 announced women) is conspicuously larger than the affidavit count — likely because MyNeta detects gender from the W/o, D/o, or female-honorific marker, which many NTK candidates omit.
+          From MyNeta&rsquo;s curated 442-name women-candidate listing, joined to the alliance buckets used elsewhere on this page. NTK delivered on its announced 117-women pledge in full — half its slate, against ~11% for every other alliance.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(auto-fit, minmax(140px, 1fr))', gap: '12px 18px' }}>
           {ALLIANCE_WOMEN.map(a => {
