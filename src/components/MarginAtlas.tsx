@@ -76,12 +76,15 @@ const SeatRow: React.FC<{ row: AtlasRow; maxMargin: number }> = ({ row, maxMargi
           {row.runnerUp.name} <span style={{ color: COLORS.muted, fontStyle: "normal" }}>·</span>{" "}
           <BlocChip bloc={row.runnerUp.bloc} />
         </div>
-        {/* The margin bar — coloured by winner bloc, scaled to column max */}
+        {/* The margin bar — coloured by winner bloc, scaled to column max.
+            overflow:hidden as a defensive clip in case any computed width
+            goes >100% from a future data anomaly. */}
         <div style={{
           height: "3px",
           background: "#e9dfc9",
           marginTop: "4px",
           position: "relative",
+          overflow: "hidden",
         }}>
           <div style={{
             position: "absolute", left: 0, top: 0, bottom: 0,
@@ -168,10 +171,12 @@ export const MarginAtlas = () => {
   }));
   const distMax = Math.max(...dist.map((d) => d.SPA + d.NDA + d.TVK + d.OTHER));
 
-  // Tightest column is dominated by the AC 185 = 1 vote outlier; scale
-  // the bars by the SECOND-tightest so the rest of the rows don't
-  // collapse into invisibility.
-  const tightestMax = tightest[1]?.margin ?? tightest[0].margin;
+  // Scale bars by the MAX margin in each column so widths stay ≤ 100%.
+  // (Earlier version scaled tightest by the 2nd-tightest to avoid the
+  // 1-vote outlier collapsing everything to 1px — but that produced
+  // widths > 100% for the rest of the rows, which overflowed the cell
+  // and bled across the page.)
+  const tightestMax = tightest[tightest.length - 1].margin;
   const biggestMax = biggest[0].margin;
 
   return (

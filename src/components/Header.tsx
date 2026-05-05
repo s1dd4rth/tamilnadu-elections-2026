@@ -61,7 +61,9 @@ export const HeadlineBar = () => {
             margin: '14px 0 0',
             maxWidth: '640px'
           }}>
-            Electors on Tamil Nadu&apos;s final roll, published 23 February 2026 by the Chief Electoral Officer, Archana Patnaik. <span style={{ color: COLORS.accent, fontWeight: 600 }}>74,07,207 names</span> have been struck from the rolls during the Special Intensive Revision — the largest single correction in the state&apos;s electoral history.
+            Electors on Tamil Nadu&apos;s final roll, published 23 February 2026 by the Chief Electoral Officer, Archana Patnaik.{" "}
+            <span style={{ color: COLORS.accent, fontWeight: 600 }}>74,07,207 names</span>
+            {" "}have been struck from the rolls during the Special Intensive Revision — the largest single correction in the state&apos;s electoral history.
           </p>
         </div>
         <div className="headline-rhs" style={{ fontFamily: SERIF }}>

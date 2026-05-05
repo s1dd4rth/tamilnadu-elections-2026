@@ -94,10 +94,17 @@ a {
 /* HeadlineBar big number: bigger viewport-scale on mobile so it
    dominates a narrow screen. */
 .headline-number {
-  font-size: clamp(52px, 10vw, 150px);
+  /* 10-character "5,67,07,380" was overflowing the left column at desktop
+     widths (~1000-1200px) and bleeding into the right column. Tighter
+     clamp keeps it within the 1.4fr cell. */
+  font-size: clamp(48px, 8vw, 104px);
+  /* Defensive: shrink rather than overflow if anything pushes it. */
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  min-width: 0;
 }
 @media (max-width: 768px) {
-  .headline-number { font-size: clamp(52px, 18vw, 120px); }
+  .headline-number { font-size: clamp(48px, 16vw, 100px); }
 }
 
 /* HeadlineBar right column: separator is a left border on desktop,
