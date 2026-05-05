@@ -7,6 +7,7 @@ import { SIRSwingChart } from '@/components/SIRSwingChart';
 import { FlipMatrix } from '@/components/FlipMatrix';
 import { MLAProfile } from '@/components/MLAProfile';
 import { WomenInOffice } from '@/components/WomenInOffice';
+import { NonVoterStory } from '@/components/NonVoterStory';
 import { MapSection } from '@/components/MapSection';
 import { TurnoutSection } from '@/components/TurnoutSection';
 import { ACTurnoutMap } from '@/components/ACTurnoutMap';
@@ -44,6 +45,7 @@ export default function Page() {
       <MarginAtlas />
       <FlipMatrix />
       <SIRSwingChart />
+      <NonVoterStory />
       <MLAProfile />
       <WomenInOffice />
       <MarqueeRounds />
