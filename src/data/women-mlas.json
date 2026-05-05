@@ -2,9 +2,9 @@
   "method": "name-heuristic",
   "methodology": "Heuristic gender inference: strip honorifics + initials, match remaining tokens against a curated list of common Tamil female first names + female-suffix patterns. Provisional \u2014 should be cross-checked against authoritative news.",
   "totalChecked": 234,
-  "flaggedCount": 22,
+  "flaggedCount": 21,
   "byBloc": {
-    "TVK": 11,
+    "TVK": 10,
     "NDA": 7,
     "SPA": 4
   },
@@ -35,15 +35,6 @@
       "bloc": "TVK",
       "reason": "first-token match: THAHIRA",
       "margin": 5787
-    },
-    {
-      "no": 45,
-      "ac": "KILVAITHINANKUPPAM",
-      "name": "THENRAL KUMAR. E",
-      "party": "Tamilaga Vettri Kazhagam",
-      "bloc": "TVK",
-      "reason": "first-token match: THENRAL",
-      "margin": 20255
     },
     {
       "no": 46,

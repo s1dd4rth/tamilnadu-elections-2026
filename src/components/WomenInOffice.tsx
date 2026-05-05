@@ -118,7 +118,7 @@ export const WomenInOffice = () => {
         boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
         padding: "22px 24px",
       }}>
-        <SmallCaps style={{ color: COLORS.accent }}>The 22 women MLAs (heuristic)</SmallCaps>
+        <SmallCaps style={{ color: COLORS.accent }}>The {winners.length} women MLAs (heuristic)</SmallCaps>
         <h3 style={{
           fontFamily: SERIF,
           fontSize: "20px",
