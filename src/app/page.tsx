@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Masthead, HeadlineBar } from '@/components/Header';
 import { KPIStrip } from '@/components/Stats';
 import { LiveCountingStrip } from '@/components/LiveCountingStrip';
@@ -92,6 +93,35 @@ export default function Page() {
               <li>· CEO TAMIL NADU FINAL ROLL (FEB 2026)</li>
               <li>· ECI FORM 7A NOMINATIONS (APR 2026)</li>
               <li>· CENSUS 2011 & PROJECTIONS</li>
+            </ul>
+          </div>
+          <div>
+            <SmallCaps style={{ color: COLORS.accent }}>More</SmallCaps>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: '12px 0 0',
+              fontFamily: MONO,
+              fontSize: '11px',
+              letterSpacing: '0.06em',
+              lineHeight: 2,
+            }}>
+              <li>
+                <Link href="/analysis" style={{ color: COLORS.text, textDecoration: 'none', borderBottom: `1px dotted ${COLORS.muted}` }}>
+                  /analysis →
+                </Link>
+                <span style={{ color: COLORS.muted, marginLeft: '8px', fontStyle: 'italic', fontFamily: SERIF, letterSpacing: 0 }}>
+                  counting-day replay + 2021 baseline
+                </span>
+              </li>
+              <li>
+                <Link href="/others" style={{ color: COLORS.text, textDecoration: 'none', borderBottom: `1px dotted ${COLORS.muted}` }}>
+                  /others →
+                </Link>
+                <span style={{ color: COLORS.muted, marginLeft: '8px', fontStyle: 'italic', fontFamily: SERIF, letterSpacing: 0 }}>
+                  flip matrix, SIR effect, marquee rounds, apathy
+                </span>
+              </li>
             </ul>
           </div>
           <div style={{ textAlign: 'right' }}>
