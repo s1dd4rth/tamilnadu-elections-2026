@@ -1,6 +1,7 @@
 import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps, SectionTitle } from "./common";
 import marginAtlas from "@/data/margin-atlas.json";
+import detail from "@/data/results-2026-detail.json";
 
 type AtlasRow = {
   no: number;
@@ -104,9 +105,36 @@ const SeatRow: React.FC<{ row: AtlasRow; maxMargin: number }> = ({ row, maxMargi
   );
 };
 
+type DetailCand = {
+  rank: number;
+  name: string;
+  party: string;
+  evm: number;
+  postal: number;
+  total: number;
+  share: number;
+};
+type DetailFile = { ac: Record<string, DetailCand[]> };
+
+// Cross-reference each AC's winning margin against its NOTA tally.
+// Returns rows where NOTA > margin, sorted by margin ascending (most
+// striking first — closest race where NOTA ate the result).
+const notaOverMargin = (rows: AtlasRow[], detailAc: Record<string, DetailCand[]>) => {
+  const out: Array<AtlasRow & { nota: number }> = [];
+  for (const r of rows) {
+    const cands = detailAc[String(r.no)];
+    if (!cands) continue;
+    const nota = cands.find((c) => c.party === "None of the Above")?.total ?? 0;
+    if (nota > r.margin) out.push({ ...r, nota });
+  }
+  return out.sort((a, b) => a.margin - b.margin);
+};
+
 export const MarginAtlas = () => {
   const rows = (marginAtlas.rows as AtlasRow[]).slice();
   if (!rows.length) return null;
+  const detailAc = (detail as DetailFile).ac;
+  const notaSeats = notaOverMargin(rows, detailAc);
 
   const sortedAsc = [...rows].sort((a, b) => a.margin - b.margin);
   const sortedDesc = [...rows].sort((a, b) => b.margin - a.margin);
@@ -352,6 +380,101 @@ export const MarginAtlas = () => {
           Source: ECI live trends, S22 statewise tables, captured at counting day close. Margin = leading − trailing in the official Form-20 reconciliation.
         </p>
       </div>
+
+      {/* NOTA-bigger-than-margin section */}
+      {notaSeats.length > 0 && (
+        <div style={{
+          marginTop: "26px",
+          background: "#fff9ef",
+          border: `1.5px solid ${COLORS.text}`,
+          boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
+          padding: "22px 24px",
+        }}>
+          <SmallCaps style={{ color: COLORS.accent }}>
+            NOTA &gt; Margin · {notaSeats.length} seats
+          </SmallCaps>
+          <h3 style={{
+            fontFamily: SERIF,
+            fontSize: "22px",
+            fontStyle: "italic",
+            fontWeight: 800,
+            color: COLORS.text,
+            margin: "4px 0 6px",
+            letterSpacing: "-0.015em",
+          }}>
+            Where the &ldquo;none of the above&rdquo; vote outvoted the verdict.
+          </h3>
+          <p style={{
+            fontFamily: SERIF,
+            fontSize: "14px",
+            lineHeight: 1.55,
+            color: "#3a302a",
+            margin: "0 0 16px",
+            fontStyle: "italic",
+            maxWidth: "780px",
+          }}>
+            In <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{notaSeats.length}</strong> of 234 constituencies, more voters pressed the NOTA button than the entire winning margin between first and second place. A protest vote that, in another counting day, would have been the swing.
+          </p>
+          <div style={{ marginTop: "10px" }}>
+            {/* Header row */}
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "32px 1fr 90px 90px 60px",
+              gap: "10px",
+              alignItems: "center",
+              padding: "6px 0",
+              borderBottom: `1px solid ${COLORS.text}`,
+              fontFamily: MONO,
+              fontSize: "10px",
+              letterSpacing: "0.08em",
+              color: COLORS.muted,
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}>
+              <div style={{ textAlign: "right" }}>AC</div>
+              <div>Constituency · Winner</div>
+              <div style={{ textAlign: "right" }}>Margin</div>
+              <div style={{ textAlign: "right" }}>NOTA</div>
+              <div style={{ textAlign: "right" }}>×</div>
+            </div>
+            {notaSeats.map((row) => {
+              const ratio = row.nota / row.margin;
+              return (
+                <div key={row.no} style={{
+                  display: "grid",
+                  gridTemplateColumns: "32px 1fr 90px 90px 60px",
+                  gap: "10px",
+                  alignItems: "center",
+                  padding: "6px 0",
+                  borderBottom: "1px dotted #d8c8a8",
+                }}>
+                  <div style={{ fontFamily: MONO, fontSize: "10px", color: COLORS.muted, textAlign: "right" }}>
+                    {row.no}
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: SERIF, fontSize: "13px", fontWeight: 700, color: COLORS.text, display: "flex", alignItems: "baseline", gap: "8px" }}>
+                      {row.name}
+                      <BlocChip bloc={row.winner.bloc} />
+                    </div>
+                    <div style={{ fontFamily: SERIF, fontSize: "11px", color: "#5a4d3f", fontStyle: "italic", lineHeight: 1.35 }}>
+                      {row.winner.name}
+                    </div>
+                  </div>
+                  <div style={{ fontFamily: SERIF, fontSize: "13px", fontWeight: 700, color: COLORS.text, textAlign: "right" }}>
+                    {fmt(row.margin)}
+                  </div>
+                  <div style={{ fontFamily: SERIF, fontSize: "13px", fontWeight: 700, color: COLORS.accent, textAlign: "right" }}>
+                    {fmt(row.nota)}
+                  </div>
+                  <div style={{ fontFamily: MONO, fontSize: "11px", color: COLORS.muted, textAlign: "right", fontWeight: 700 }}>
+                    {ratio < 10 ? ratio.toFixed(1) : Math.round(ratio)}×
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </section>
   );
 };
