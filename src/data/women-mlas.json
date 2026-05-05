@@ -1,0 +1,211 @@
+{
+  "method": "name-heuristic",
+  "methodology": "Heuristic gender inference: strip honorifics + initials, match remaining tokens against a curated list of common Tamil female first names + female-suffix patterns. Provisional \u2014 should be cross-checked against authoritative news.",
+  "totalChecked": 234,
+  "flaggedCount": 22,
+  "byBloc": {
+    "TVK": 11,
+    "NDA": 7,
+    "SPA": 4
+  },
+  "winners": [
+    {
+      "no": 15,
+      "ac": "THIRU-VI-KA-NAGAR",
+      "name": "M. R. PALLAVI",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: PALLAVI",
+      "margin": 22333
+    },
+    {
+      "no": 35,
+      "ac": "MADURANTAKAM",
+      "name": "MARAGATHAM KUMARAVEL.K",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: MARAGATHAM",
+      "margin": 7194
+    },
+    {
+      "no": 41,
+      "ac": "RANIPET",
+      "name": "THAHIRA",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: THAHIRA",
+      "margin": 5787
+    },
+    {
+      "no": 45,
+      "ac": "KILVAITHINANKUPPAM",
+      "name": "THENRAL KUMAR. E",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: THENRAL",
+      "margin": 20255
+    },
+    {
+      "no": 46,
+      "ac": "GUDIYATTAM",
+      "name": "K.SINDU",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: SINDU",
+      "margin": 10097
+    },
+    {
+      "no": 59,
+      "ac": "DHARMAPURI",
+      "name": "SOWMIYA ANBUMANI",
+      "party": "Pattali Makkal Katchi",
+      "bloc": "NDA",
+      "reason": "first-token match: SOWMIYA",
+      "margin": 20896
+    },
+    {
+      "no": 60,
+      "ac": "PAPPIREDDIPATTI",
+      "name": "MARAGATHAM VETRIVEL",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: MARAGATHAM",
+      "margin": 33114
+    },
+    {
+      "no": 67,
+      "ac": "ARANI",
+      "name": "JAYASUDHA. L",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: JAYASUDHA",
+      "margin": 5631
+    },
+    {
+      "no": 83,
+      "ac": "YERCAUD",
+      "name": "USHARANI. P",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: USHARANI",
+      "margin": 2189
+    },
+    {
+      "no": 97,
+      "ac": "KUMARAPALAYAM",
+      "name": "C.VIJAYALAKSHMI",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: VIJAYALAKSHMI",
+      "margin": 7696
+    },
+    {
+      "no": 101,
+      "ac": "DHARAPURAM",
+      "name": "SATHYABAMA.P",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: SATHYABAMA",
+      "margin": 16727
+    },
+    {
+      "no": 107,
+      "ac": "BHAVANISAGAR",
+      "name": "V.P.TAMILSELVI",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: TAMILSELVI",
+      "margin": 4569
+    },
+    {
+      "no": 112,
+      "ac": "AVANASHI",
+      "name": "KAMALI.S",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: KAMALI",
+      "margin": 15373
+    },
+    {
+      "no": 113,
+      "ac": "TIRUPPUR (NORTH)",
+      "name": "V.SATHYABAMA",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: SATHYABAMA",
+      "margin": 69992
+    },
+    {
+      "no": 117,
+      "ac": "KAVUNDAMPALAYAM",
+      "name": "KANIMOZHI SANTHOSH",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: KANIMOZHI",
+      "margin": 42140
+    },
+    {
+      "no": 143,
+      "ac": "LALGUDI",
+      "name": "LEEMAROSE MARTIN",
+      "party": "All India Anna Dravida Munnetra Kazhagam",
+      "bloc": "NDA",
+      "reason": "first-token match: LEEMAROSE",
+      "margin": 2739
+    },
+    {
+      "no": 152,
+      "ac": "VRIDDHACHALAM",
+      "name": "PREMALLATHA VIJAYAKANT",
+      "party": "Desiya Murpokku Dravida Kazhagam",
+      "bloc": "SPA",
+      "reason": "first-token match: PREMALLATHA",
+      "margin": 2387
+    },
+    {
+      "no": 159,
+      "ac": "KATTUMANNARKOIL",
+      "name": "L.E. JOTHIMANI",
+      "party": "Viduthalai Chiruthaigal Katchi",
+      "bloc": "SPA",
+      "reason": "first-token match: JOTHIMANI",
+      "margin": 33063
+    },
+    {
+      "no": 162,
+      "ac": "POOMPUHAR",
+      "name": "NIVEDHA M MURUGAN",
+      "party": "Dravida Munnetra Kazhagam",
+      "bloc": "SPA",
+      "reason": "first-token match: NIVEDHA",
+      "margin": 8260
+    },
+    {
+      "no": 164,
+      "ac": "KILVELUR",
+      "name": "LATHA. T",
+      "party": "Communist Party of India (Marxist)",
+      "bloc": "SPA",
+      "reason": "first-token match: LATHA",
+      "margin": 2278
+    },
+    {
+      "no": 202,
+      "ac": "RAJAPALAYAM",
+      "name": "JEGADESHWARI. K",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: JEGADESHWARI",
+      "margin": 10605
+    },
+    {
+      "no": 205,
+      "ac": "SIVAKASI",
+      "name": "KEERTHANA S",
+      "party": "Tamilaga Vettri Kazhagam",
+      "bloc": "TVK",
+      "reason": "first-token match: KEERTHANA",
+      "margin": 11670
+    }
+  ]
+}
