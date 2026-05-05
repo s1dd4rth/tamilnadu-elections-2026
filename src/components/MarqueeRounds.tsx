@@ -132,20 +132,6 @@ const RoundChart: React.FC<{ ac: MarqueeAC }> = ({ ac }) => {
         </text>
       ))}
 
-      {/* Inline keyframes for the line-draw animation. Each top path
-          uses pathLength="100" + dasharray "100" so the dashoffset
-          counts down from 100 to 0 — drawing the line on. */}
-      <style>{`
-        @keyframes mq-draw { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
-        .mq-line { stroke-dasharray: 100; stroke-dashoffset: 100; animation: mq-draw 1.6s ease-out forwards; }
-        .mq-dot  { opacity: 0; animation: mq-fade 0.4s ease-out forwards; animation-delay: 1.5s; }
-        @keyframes mq-fade { to { opacity: 1; } }
-        @media (prefers-reduced-motion: reduce) {
-          .mq-line { animation: none; stroke-dashoffset: 0; }
-          .mq-dot  { animation: none; opacity: 1; }
-        }
-      `}</style>
-
       {/* Faded lines for the long tail of also-rans */}
       {rest.slice(0, 12).map((c, i) => (
         <path
@@ -165,9 +151,6 @@ const RoundChart: React.FC<{ ac: MarqueeAC }> = ({ ac }) => {
         return (
           <g key={`t${i}`}>
             <path
-              className="mq-line"
-              pathLength={100}
-              style={{ animationDelay: `${i * 150}ms` }}
               d={linePath(c.totals)}
               fill="none"
               stroke={colour}
@@ -175,10 +158,8 @@ const RoundChart: React.FC<{ ac: MarqueeAC }> = ({ ac }) => {
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            {/* End-of-line dot, fades in after the line finishes drawing */}
+            {/* End-of-line dot */}
             <circle
-              className="mq-dot"
-              style={{ animationDelay: `${1500 + i * 150}ms` }}
               cx={xAt(c.totals.length)}
               cy={yAt(final)}
               r={3}
