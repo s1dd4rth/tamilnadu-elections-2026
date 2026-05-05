@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Masthead, HeadlineBar } from '@/components/Header';
 import { KPIStrip } from '@/components/Stats';
 import { LiveCountingStrip } from '@/components/LiveCountingStrip';
+import { VotesToSeats } from '@/components/VotesToSeats';
 import { MarginAtlas } from '@/components/MarginAtlas';
 import { MLAProfile } from '@/components/MLAProfile';
 import { WomenInOffice } from '@/components/WomenInOffice';
@@ -39,6 +40,7 @@ export default function Page() {
       <HeadlineBar />
       <KPIStrip />
 
+      <VotesToSeats />
       <MarginAtlas />
       <MLAProfile />
       <WomenInOffice />
