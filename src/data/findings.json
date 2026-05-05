@@ -1,0 +1,3197 @@
+{
+  "flipMatrix": {
+    "rows": [
+      "NDA",
+      "SPA"
+    ],
+    "cols": [
+      "TVK",
+      "NDA",
+      "SPA",
+      "OTHER"
+    ],
+    "counts": {
+      "NDA": {
+        "TVK": 30,
+        "NDA": 25,
+        "SPA": 20,
+        "OTHER": 0
+      },
+      "SPA": {
+        "TVK": 78,
+        "NDA": 28,
+        "SPA": 53,
+        "OTHER": 0
+      }
+    }
+  },
+  "turnoutQuintiles": [
+    {
+      "label": "1 (lowest)",
+      "lo": 68.97,
+      "hi": 80.83,
+      "size": 46,
+      "blocCounts": {
+        "TVK": 27,
+        "NDA": 2,
+        "SPA": 17,
+        "OTHER": 0
+      },
+      "flipped": 32
+    },
+    {
+      "label": "2",
+      "lo": 80.92,
+      "hi": 84.43,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 19,
+        "NDA": 4,
+        "SPA": 24,
+        "OTHER": 0
+      },
+      "flipped": 27
+    },
+    {
+      "label": "3",
+      "lo": 84.47,
+      "hi": 87.37,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 23,
+        "NDA": 8,
+        "SPA": 16,
+        "OTHER": 0
+      },
+      "flipped": 36
+    },
+    {
+      "label": "4",
+      "lo": 87.39,
+      "hi": 89.65,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 19,
+        "NDA": 19,
+        "SPA": 9,
+        "OTHER": 0
+      },
+      "flipped": 32
+    },
+    {
+      "label": "5 (highest)",
+      "lo": 89.66,
+      "hi": 93.39,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 20,
+        "NDA": 20,
+        "SPA": 7,
+        "OTHER": 0
+      },
+      "flipped": 29
+    }
+  ],
+  "sirQuintiles": [
+    {
+      "label": "1 (lightest)",
+      "lo": -5.182148852825965,
+      "hi": 4.874967459381652,
+      "size": 46,
+      "blocCounts": {
+        "TVK": 12,
+        "NDA": 15,
+        "SPA": 19,
+        "OTHER": 0
+      },
+      "flipped": 25
+    },
+    {
+      "label": "2",
+      "lo": 4.914142469187382,
+      "hi": 7.420724415515623,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 15,
+        "NDA": 12,
+        "SPA": 20,
+        "OTHER": 0
+      },
+      "flipped": 24
+    },
+    {
+      "label": "3",
+      "lo": 7.463735250600386,
+      "hi": 9.914781329757322,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 19,
+        "NDA": 14,
+        "SPA": 14,
+        "OTHER": 0
+      },
+      "flipped": 30
+    },
+    {
+      "label": "4",
+      "lo": 10.022758826177087,
+      "hi": 14.835407054960589,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 26,
+        "NDA": 9,
+        "SPA": 12,
+        "OTHER": 0
+      },
+      "flipped": 33
+    },
+    {
+      "label": "5 (heaviest)",
+      "lo": 14.882864049890806,
+      "hi": 37.99786552828175,
+      "size": 47,
+      "blocCounts": {
+        "TVK": 36,
+        "NDA": 3,
+        "SPA": 8,
+        "OTHER": 0
+      },
+      "flipped": 44
+    }
+  ],
+  "winnersAffidavits": {
+    "matched": 230,
+    "total": 234,
+    "crorepati": 72,
+    "multi_cr": 14,
+    "criminal": 50,
+    "medianAge": 46.0,
+    "meanAge": 47.243478260869566,
+    "youngest": [
+      {
+        "no": 120,
+        "name": "V SENTHILBALAJI",
+        "age": 25,
+        "bloc": "SPA"
+      },
+      {
+        "no": 197,
+        "name": "VIJAY. M",
+        "age": 25,
+        "bloc": "TVK"
+      },
+      {
+        "no": 18,
+        "name": "P K SEKARBABU",
+        "age": 27,
+        "bloc": "SPA"
+      },
+      {
+        "no": 54,
+        "name": "SRINIVASAN.P.S",
+        "age": 27,
+        "bloc": "SPA"
+      },
+      {
+        "no": 151,
+        "name": "GANESAN C.V",
+        "age": 27,
+        "bloc": "SPA"
+      }
+    ],
+    "oldest": [
+      {
+        "no": 230,
+        "name": "AUSTIN",
+        "age": 81,
+        "bloc": "SPA"
+      },
+      {
+        "no": 49,
+        "name": "VEERAMANI K.C.",
+        "age": 76,
+        "bloc": "NDA"
+      },
+      {
+        "no": 126,
+        "name": "R JAYARAMAKRISHNAN",
+        "age": 76,
+        "bloc": "SPA"
+      },
+      {
+        "no": 130,
+        "name": "AYYANAR.R",
+        "age": 74,
+        "bloc": "TVK"
+      },
+      {
+        "no": 103,
+        "name": "JAYAKUMAR. S",
+        "age": 73,
+        "bloc": "NDA"
+      }
+    ],
+    "educationCounts": {
+      "Graduate": 30,
+      "10th Pass": 30,
+      "Post Graduate": 39,
+      "12th Pass": 20,
+      "Graduate Professional": 38,
+      "Illiterate": 4,
+      "Others": 21,
+      "8th Pass": 21,
+      "Literate": 5,
+      "5th Pass": 15,
+      "Doctorate": 7
+    },
+    "blocSummary": {
+      "TVK": {
+        "n": 105,
+        "crorepatiPct": 21.0,
+        "criminalPct": 13.3,
+        "medianAge": 48
+      },
+      "NDA": {
+        "n": 53,
+        "crorepatiPct": 37.7,
+        "criminalPct": 11.3,
+        "medianAge": 46
+      },
+      "SPA": {
+        "n": 72,
+        "crorepatiPct": 41.7,
+        "criminalPct": 41.7,
+        "medianAge": 43.5
+      }
+    },
+    "all": [
+      {
+        "no": 1,
+        "name": "S.VIJAYAKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 44,
+        "ed": "Graduate",
+        "ta": 366089,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 2,
+        "name": "DR.RAVI.M.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 48,
+        "ed": "10th Pass",
+        "ta": 5707205,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 3,
+        "name": "G.HARI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 63,
+        "ed": "10th Pass",
+        "ta": 60475999,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 4,
+        "name": "DR. T. ARUNKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 68,
+        "ed": "Post Graduate",
+        "ta": 41246,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 5,
+        "name": "PRAKASAM.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 56,
+        "ed": "Graduate",
+        "ta": 568000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 6,
+        "name": "R.RAMESH KUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 50,
+        "ed": "Graduate",
+        "ta": 4427000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 7,
+        "name": "RHEVANTH CHARAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 49,
+        "ed": "12th Pass",
+        "ta": 810000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 8,
+        "name": "BALAMURUGAN.G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 52,
+        "ed": "Graduate",
+        "ta": 6062000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 9,
+        "name": "M.L.VIJAYPRABHU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 54,
+        "ed": "Graduate Professional",
+        "ta": 1846742,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 10,
+        "name": "SENTHIL KUMAR. N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 41,
+        "ed": "10th Pass",
+        "ta": 142114,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 11,
+        "name": "N. MARIE WILSON",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 55,
+        "ed": "Illiterate",
+        "ta": 86463,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 12,
+        "name": "C. JOSEPH VIJAY",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 55,
+        "ed": "10th Pass",
+        "ta": 24196888,
+        "cc": 3,
+        "g": null
+      },
+      {
+        "no": 13,
+        "name": "V. S. BABU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 44,
+        "ed": "Others",
+        "ta": 288100,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 14,
+        "name": "AADHAV ARJUNA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 55,
+        "ed": "Graduate Professional",
+        "ta": 43090250,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 15,
+        "name": "M. R. PALLAVI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 53,
+        "ed": "Illiterate",
+        "ta": 987000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 16,
+        "name": "RAJMOHAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 39,
+        "ed": "12th Pass",
+        "ta": 583800,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 17,
+        "name": "K.V. VIJAY DAMU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 46,
+        "ed": "Graduate Professional",
+        "ta": 1806560,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 18,
+        "name": "P K SEKARBABU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 27,
+        "ed": "Graduate",
+        "ta": 5885206,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 19,
+        "name": "UDHAYANIDHI STALIN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 40,
+        "ed": "Illiterate",
+        "ta": 1122000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 20,
+        "name": "PRABHAKAR.J.C.D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 43,
+        "ed": "Post Graduate",
+        "ta": 8461607,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 21,
+        "name": "V.K.RAMKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 52,
+        "ed": "Post Graduate",
+        "ta": 44601494,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 22,
+        "name": "SABARINATHAN.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 64,
+        "ed": "12th Pass",
+        "ta": 12079000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 23,
+        "name": "ARUL PRAKASAM. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 63,
+        "ed": "Post Graduate",
+        "ta": 32298771,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 24,
+        "name": "ANAND N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 60,
+        "ed": "Post Graduate",
+        "ta": 13883300,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 25,
+        "name": "VENKATARAMANAN. P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 69,
+        "ed": "Others",
+        "ta": 7901950,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 26,
+        "name": "KUMAR. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 69,
+        "ed": "12th Pass",
+        "ta": 16163250,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 27,
+        "name": "ECR P SARAVANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 59,
+        "ed": "10th Pass",
+        "ta": 724000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 28,
+        "name": "M.HARISH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 37,
+        "ed": "Graduate Professional",
+        "ta": 538718,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 29,
+        "name": "THENNARASU.K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 41,
+        "ed": "Graduate",
+        "ta": 10227939,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 30,
+        "name": "J.KAMATCHI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 65,
+        "ed": "Graduate",
+        "ta": 11528400,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 31,
+        "name": "D.SARATHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 62,
+        "ed": "Graduate",
+        "ta": 9546074,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 32,
+        "name": "S. THIYAGARAJAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 41,
+        "ed": "10th Pass",
+        "ta": 140000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 33,
+        "name": "B.VIJAYARAJ",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 34,
+        "ed": "Graduate",
+        "ta": 118900,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 34,
+        "name": "RAJASEKAR. E",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 39,
+        "ed": "8th Pass",
+        "ta": 1800500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 35,
+        "name": "MARAGATHAM KUMARAVEL.K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 36,
+        "ed": "Graduate Professional",
+        "ta": 1426000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 36,
+        "name": "MUNIRATHINAM.J",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 54,
+        "ed": "Literate",
+        "ta": 710000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 37,
+        "name": "R.V. RANJITHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 31,
+        "ed": "Others",
+        "ta": 4394975,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 38,
+        "name": "V. GANDHIRAJ",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 54,
+        "ed": "Graduate Professional",
+        "ta": 20000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 39,
+        "name": "G.KAPIL",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 51,
+        "ed": "Graduate Professional",
+        "ta": 59595450,
+        "cc": 7,
+        "g": null
+      },
+      {
+        "no": 40,
+        "name": "DR M SUDHAKAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 32,
+        "ed": "8th Pass",
+        "ta": 38000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 41,
+        "name": "THAHIRA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 46,
+        "ed": "Graduate",
+        "ta": 2122692,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 42,
+        "name": "S.M.SUKUMAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 33,
+        "ed": "Graduate",
+        "ta": 5554,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 43,
+        "name": "M.M.VINOTH KANNAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 34,
+        "ed": "Others",
+        "ta": 3581616,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 44,
+        "name": "D.VELAZHAGAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 47,
+        "ed": "5th Pass",
+        "ta": 604136,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 45,
+        "name": "THENRAL KUMAR. E",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 51,
+        "ed": "10th Pass",
+        "ta": 230000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 46,
+        "name": "K.SINDU",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 52,
+        "ed": "Post Graduate",
+        "ta": 2331095,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 47,
+        "name": "SYED FAROOQ BASHA SSB",
+        "party": "Indian Union Muslim League",
+        "bloc": "SPA",
+        "age": 36,
+        "ed": "Graduate Professional",
+        "ta": 7608320,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 48,
+        "name": "VILWANATHAN. A.C.",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 61,
+        "ed": "Post Graduate",
+        "ta": 74222577,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 49,
+        "name": "VEERAMANI K.C.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 76,
+        "ed": "10th Pass",
+        "ta": 960700,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 50,
+        "name": "DR.THIRUPATHI. N",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 30,
+        "ed": "12th Pass",
+        "ta": 563000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 51,
+        "name": "N ELAIYARAJA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 41,
+        "ed": "5th Pass",
+        "ta": 325000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 52,
+        "name": "E.C. GOVINDARASAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 63,
+        "ed": "10th Pass",
+        "ta": 3968300,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 53,
+        "name": "MUKUNDHAN.P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 56,
+        "ed": "5th Pass",
+        "ta": 1832570,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 54,
+        "name": "SRINIVASAN.P.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 27,
+        "ed": "Graduate",
+        "ta": 522000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 55,
+        "name": "BALAKRISHNAREDDY. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 29,
+        "ed": "Graduate",
+        "ta": 291700,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 56,
+        "name": "RAMACHANDRAN. T",
+        "party": "Communist Party of India",
+        "bloc": "SPA",
+        "age": 42,
+        "ed": "Others",
+        "ta": 6645879,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 57,
+        "name": "ANBALAGAN. K.P.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 48,
+        "ed": "Post Graduate",
+        "ta": 92024131,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 58,
+        "name": "GAJENDRAN. S.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 61,
+        "ed": "8th Pass",
+        "ta": 22504511,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 59,
+        "name": "SOWMIYA ANBUMANI",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA",
+        "age": 35,
+        "ed": "Graduate Professional",
+        "ta": 64366003,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 60,
+        "name": "MARAGATHAM VETRIVEL",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 45,
+        "ed": "10th Pass",
+        "ta": 719000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 61,
+        "name": "SAMPATHKUMAR. V",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 51,
+        "ed": "Others",
+        "ta": 376000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 62,
+        "name": "S.VELU",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 31,
+        "ed": "Post Graduate",
+        "ta": 3270000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 63,
+        "name": "VELU. E.V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 43,
+        "ed": "Post Graduate",
+        "ta": 44816340,
+        "cc": 13,
+        "g": null
+      },
+      {
+        "no": 64,
+        "name": "RAMACHANDRAN.S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 71,
+        "ed": "Post Graduate",
+        "ta": 46305950,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 65,
+        "name": "AGRI KRISHNAMURTHY. S S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 57,
+        "ed": "Post Graduate",
+        "ta": 69311073,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 66,
+        "name": "ABISHEK. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 49,
+        "ed": "10th Pass",
+        "ta": 10000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 67,
+        "name": "JAYASUDHA. L",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 34,
+        "ed": "Others",
+        "ta": 1135000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 68,
+        "name": "MUKKUR N. SUBRAMANIAN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 55,
+        "ed": "Graduate",
+        "ta": 31494406,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 69,
+        "name": "AMBETHKUMAR. S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 42,
+        "ed": "Graduate",
+        "ta": 3307600,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 70,
+        "name": "GANESHKUMAR A",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA",
+        "age": 45,
+        "ed": "Post Graduate",
+        "ta": 6216700,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 71,
+        "name": "SHANMUGAM C VE",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 31,
+        "ed": "12th Pass",
+        "ta": 925000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 72,
+        "name": "VANNI ARASU",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA",
+        "age": 56,
+        "ed": "10th Pass",
+        "ta": 323000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 73,
+        "name": "GOWTHAM D",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 58,
+        "ed": "Graduate Professional",
+        "ta": 24525387,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 74,
+        "name": "LAKSHMANAN R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 46,
+        "ed": "8th Pass",
+        "ta": 50000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 75,
+        "name": "SIVAKUMAR C",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA",
+        "age": 43,
+        "ed": "8th Pass",
+        "ta": 7366785,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 76,
+        "name": "PALANISAMY S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 39,
+        "ed": "Graduate Professional",
+        "ta": 3920536,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 77,
+        "name": "VASANTHAVEL G R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 40,
+        "ed": "Graduate Professional",
+        "ta": 1473000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 78,
+        "name": "KARTHIKEYAN K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 37,
+        "ed": "5th Pass",
+        "ta": 976000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 79,
+        "name": "RAKESH R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 47,
+        "ed": "10th Pass",
+        "ta": 1050000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 80,
+        "name": "ARUL VIGNESH C",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 57,
+        "ed": "Others",
+        "ta": 1486000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 81,
+        "name": "NALLATHAMBI. A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 37,
+        "ed": "12th Pass",
+        "ta": 3897000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 82,
+        "name": "JAYASANKARAN. A.P.",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 38,
+        "ed": "Post Graduate",
+        "ta": 4128695,
+        "cc": 2,
+        "g": "F"
+      },
+      {
+        "no": 83,
+        "name": "USHARANI. P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 54,
+        "ed": "10th Pass",
+        "ta": 1101000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 84,
+        "name": "MANI. R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 29,
+        "ed": "Graduate Professional",
+        "ta": 19483029,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 85,
+        "name": "VENKATACHALAM. G",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 42,
+        "ed": "8th Pass",
+        "ta": 2796764,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 86,
+        "name": "EDAPPADI PALANISWAMI. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 37,
+        "ed": "Post Graduate",
+        "ta": 4889363,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 87,
+        "name": "VETRIVEL. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 55,
+        "ed": "Doctorate",
+        "ta": 1863608,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 88,
+        "name": "LAKSHMANAN.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 40,
+        "ed": "Illiterate",
+        "ta": 1480000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 89,
+        "name": "SIVAKUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 36,
+        "ed": "10th Pass",
+        "ta": 3292000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 90,
+        "name": "VIJAY TAMILAN PARTHIBAN. A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 47,
+        "ed": "8th Pass",
+        "ta": 390000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 92,
+        "name": "LOGESH TAMILSELVAN D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 31,
+        "ed": "Graduate Professional",
+        "ta": 504900,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 93,
+        "name": "P CHANDRASEKAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 65,
+        "ed": "Post Graduate",
+        "ta": 6193500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 94,
+        "name": "DILIP C S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 58,
+        "ed": "Others",
+        "ta": 2693000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 95,
+        "name": "SEKAR S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 64,
+        "ed": "Graduate",
+        "ta": 111824724,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 96,
+        "name": "ARUNRAJ K G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 40,
+        "ed": "Graduate Professional",
+        "ta": 2517000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 97,
+        "name": "C.VIJAYALAKSHMI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 54,
+        "ed": "8th Pass",
+        "ta": 406000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 98,
+        "name": "M.VIJAY BALAJI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 34,
+        "ed": "Post Graduate",
+        "ta": 98000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 99,
+        "name": "ANANTH MOGHAN K.K.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 65,
+        "ed": "12th Pass",
+        "ta": 53633909,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 100,
+        "name": "D.SHANMUGAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 45,
+        "ed": "Post Graduate",
+        "ta": 26937264,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 101,
+        "name": "SATHYABAMA.P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 28,
+        "ed": "Post Graduate",
+        "ta": 531113,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 102,
+        "name": "NSN NATARAJ",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 50,
+        "ed": "Graduate Professional",
+        "ta": 72647000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 103,
+        "name": "JAYAKUMAR. S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 73,
+        "ed": "12th Pass",
+        "ta": 919705306,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 104,
+        "name": "KARUPPANAN. K.C",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 51,
+        "ed": "12th Pass",
+        "ta": 72805999,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 105,
+        "name": "HARIBASKAR.P",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 39,
+        "ed": "Graduate",
+        "ta": 17110,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 107,
+        "name": "V.P.TAMILSELVI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 65,
+        "ed": "Literate",
+        "ta": 1410000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 108,
+        "name": "BHOJARAJAN.M",
+        "party": "Bharatiya Janata Party",
+        "bloc": "NDA",
+        "age": 48,
+        "ed": "Doctorate",
+        "ta": 12075113,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 109,
+        "name": "DHRAVIDAMANI.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 53,
+        "ed": "Graduate Professional",
+        "ta": 11118526,
+        "cc": 8,
+        "g": null
+      },
+      {
+        "no": 110,
+        "name": "M. RAJU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 58,
+        "ed": "Graduate Professional",
+        "ta": 285284563,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 111,
+        "name": "SUNILANAND",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 33,
+        "ed": "10th Pass",
+        "ta": 873727,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 112,
+        "name": "KAMALI.S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 45,
+        "ed": "8th Pass",
+        "ta": 50000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 113,
+        "name": "V.SATHYABAMA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 72,
+        "ed": "10th Pass",
+        "ta": 586000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 114,
+        "name": "BALAMURUGAN. S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 52,
+        "ed": "Others",
+        "ta": 2564301,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 115,
+        "name": "K.RAMKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 53,
+        "ed": "10th Pass",
+        "ta": 1037000,
+        "cc": 9,
+        "g": null
+      },
+      {
+        "no": 116,
+        "name": "NM.SUKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 29,
+        "ed": "Graduate Professional",
+        "ta": 11276380,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 117,
+        "name": "KANIMOZHI SANTHOSH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 42,
+        "ed": "Graduate Professional",
+        "ta": 5930220,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 118,
+        "name": "V. SAMPATHKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 49,
+        "ed": "12th Pass",
+        "ta": 56000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 119,
+        "name": "S.P.VELUMANI",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 44,
+        "ed": "Post Graduate",
+        "ta": 34772567,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 120,
+        "name": "V SENTHILBALAJI",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 25,
+        "ed": "10th Pass",
+        "ta": 58134,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 121,
+        "name": "K.S.SRI GIRI PRASATH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 58,
+        "ed": "8th Pass",
+        "ta": 19500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 123,
+        "name": "K. NITHYANANDHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 72,
+        "ed": "Doctorate",
+        "ta": 421796723,
+        "cc": 5,
+        "g": null
+      },
+      {
+        "no": 124,
+        "name": "KUTTY (ALIAS) SUDHAKAR. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 57,
+        "ed": "12th Pass",
+        "ta": 87989483,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 125,
+        "name": "JAYAKUMAR M.",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 50,
+        "ed": "Literate",
+        "ta": 3919077,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 126,
+        "name": "R JAYARAMAKRISHNAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 76,
+        "ed": "Post Graduate",
+        "ta": 45814567,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 127,
+        "name": "RAVIMANOHARAN. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 40,
+        "ed": "Post Graduate",
+        "ta": 87735704,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 128,
+        "name": "SAKKARAPANI. R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 41,
+        "ed": "10th Pass",
+        "ta": 180803,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 129,
+        "name": "I. PERIASAMY",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 72,
+        "ed": "Graduate",
+        "ta": 67855000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 130,
+        "name": "AYYANAR.R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 74,
+        "ed": "Doctorate",
+        "ta": 17834000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 131,
+        "name": "NATHAM VISWANATHAN R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 43,
+        "ed": "5th Pass",
+        "ta": 30000,
+        "cc": 6,
+        "g": null
+      },
+      {
+        "no": 132,
+        "name": "SENTHILKUMAR. I.P",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 35,
+        "ed": "Post Graduate",
+        "ta": 15548344,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 133,
+        "name": "SAMINATHAN. T",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 45,
+        "ed": "Post Graduate",
+        "ta": 249812529,
+        "cc": 4,
+        "g": null
+      },
+      {
+        "no": 134,
+        "name": "ELANGO. R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 32,
+        "ed": "Post Graduate",
+        "ta": 527500,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 135,
+        "name": "M.R. VIJAYABHASKAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 61,
+        "ed": "Others",
+        "ta": 9592980,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 136,
+        "name": "SATHYA. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 49,
+        "ed": "Others",
+        "ta": 10430000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 137,
+        "name": "SURIYANUR. A. CHANDRAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 43,
+        "ed": "Graduate Professional",
+        "ta": 17740000,
+        "cc": 3,
+        "g": null
+      },
+      {
+        "no": 138,
+        "name": "R. KATHIRAVAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 35,
+        "ed": "8th Pass",
+        "ta": 3470000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 139,
+        "name": "RAMESH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 43,
+        "ed": "Graduate",
+        "ta": 10488000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 140,
+        "name": "K.N.NEHRU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 40,
+        "ed": "Graduate",
+        "ta": 474500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 141,
+        "name": "C. JOSEPH VIJAY",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 47,
+        "ed": "10th Pass",
+        "ta": 35000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 142,
+        "name": "VIJAYAKUMAR (A) NAVALPATTU S. VIJI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 53,
+        "ed": "5th Pass",
+        "ta": 1747000,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 143,
+        "name": "LEEMAROSE MARTIN",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 49,
+        "ed": "10th Pass",
+        "ta": 405000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 144,
+        "name": "KATHIRAVAN. S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 31,
+        "ed": "Post Graduate",
+        "ta": 2762499,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 145,
+        "name": "M.VIGNESH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 42,
+        "ed": "8th Pass",
+        "ta": 591000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 146,
+        "name": "RAVISANKAR.M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 38,
+        "ed": "5th Pass",
+        "ta": 1610000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 147,
+        "name": "SIVAKUMAR. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 43,
+        "ed": "Post Graduate",
+        "ta": 1040867,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 148,
+        "name": "SIVASANKAR. S.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 42,
+        "ed": "12th Pass",
+        "ta": 626500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 149,
+        "name": "RAJENDRAN S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 49,
+        "ed": "Post Graduate",
+        "ta": 15124444,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 150,
+        "name": "VAITHILINGAM G.",
+        "party": "Pattali Makkal Katchi",
+        "bloc": "NDA",
+        "age": 66,
+        "ed": "Graduate",
+        "ta": 9363540,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 151,
+        "name": "GANESAN C.V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 27,
+        "ed": "Graduate Professional",
+        "ta": 456500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 152,
+        "name": "PREMALLATHA VIJAYAKANT",
+        "party": "Desiya Murpokku Dravida Kazhagam",
+        "bloc": "SPA",
+        "age": 50,
+        "ed": "Others",
+        "ta": 8995783,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 153,
+        "name": "RAJENDRAN.R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 46,
+        "ed": "Others",
+        "ta": 13393630,
+        "cc": 4,
+        "g": null
+      },
+      {
+        "no": 154,
+        "name": "MOHAN. K",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 42,
+        "ed": "10th Pass",
+        "ta": 799000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 155,
+        "name": "B.RAJKUMAR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 48,
+        "ed": "Graduate Professional",
+        "ta": 16013300,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 156,
+        "name": "M.R.K.PANNEERSELVAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 60,
+        "ed": "12th Pass",
+        "ta": 109840857,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 157,
+        "name": "ARUNMOZHITHEVAN . A",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 51,
+        "ed": "Others",
+        "ta": 622000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 158,
+        "name": "THAMIMUN ANSARI. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 35,
+        "ed": "Post Graduate",
+        "ta": 801000,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 159,
+        "name": "L.E. JOTHIMANI",
+        "party": "Viduthalai Chiruthaigal Katchi",
+        "bloc": "SPA",
+        "age": 55,
+        "ed": "12th Pass",
+        "ta": 3474971,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 160,
+        "name": "SENTHILSELVAN.R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 36,
+        "ed": "Graduate Professional",
+        "ta": 2984000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 161,
+        "name": "JAMAL MOHAMED YOUNOOS. Y.N",
+        "party": "Indian National Congress",
+        "bloc": "SPA",
+        "age": 60,
+        "ed": "Doctorate",
+        "ta": 14194000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 162,
+        "name": "NIVEDHA M MURUGAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 69,
+        "ed": "10th Pass",
+        "ta": 31566244,
+        "cc": 4,
+        "g": null
+      },
+      {
+        "no": 163,
+        "name": "M.H.JAWAHIRULLAH",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 48,
+        "ed": "5th Pass",
+        "ta": 4425326,
+        "cc": 12,
+        "g": null
+      },
+      {
+        "no": 164,
+        "name": "LATHA. T",
+        "party": "Communist Party of India (Marxist)",
+        "bloc": "SPA",
+        "age": 32,
+        "ed": "Graduate",
+        "ta": 1093700,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 165,
+        "name": "MANIAN. O.S",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 49,
+        "ed": "Graduate Professional",
+        "ta": 382247739,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 166,
+        "name": "MARIMUTHU.K",
+        "party": "Communist Party of India",
+        "bloc": "SPA",
+        "age": 41,
+        "ed": "10th Pass",
+        "ta": 352000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 167,
+        "name": "KAMARAJ. S",
+        "party": "Amma Makkal Munnettra Kazagam",
+        "bloc": "NDA",
+        "age": 68,
+        "ed": "Post Graduate",
+        "ta": 85209936,
+        "cc": 19,
+        "g": null
+      },
+      {
+        "no": 168,
+        "name": "KALAIVANAN POONDI K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 63,
+        "ed": "10th Pass",
+        "ta": 42742766,
+        "cc": 17,
+        "g": null
+      },
+      {
+        "no": 169,
+        "name": "KAMARAJ. R",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 48,
+        "ed": "Post Graduate",
+        "ta": 88370718,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 170,
+        "name": "GOVI.CHEZHIAAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 30,
+        "ed": "Graduate Professional",
+        "ta": 591400,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 171,
+        "name": "VINOTH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 50,
+        "ed": "Post Graduate",
+        "ta": 16139000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 172,
+        "name": "A.M. SHAHJAHAN",
+        "party": "Indian Union Muslim League",
+        "bloc": "SPA",
+        "age": 30,
+        "ed": "12th Pass",
+        "ta": 6510000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 173,
+        "name": "DURAI. CHANDRASEKARAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 44,
+        "ed": "Doctorate",
+        "ta": 5190000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 174,
+        "name": "R. VIJAYSARAVANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 42,
+        "ed": "Graduate Professional",
+        "ta": 5540500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 175,
+        "name": "R. VAITHILINGAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 31,
+        "ed": "Others",
+        "ta": 3574494,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 176,
+        "name": "ANNADURAI K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 53,
+        "ed": "Others",
+        "ta": 23724500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 177,
+        "name": "ASHOKKUMAR. N",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 41,
+        "ed": "Graduate Professional",
+        "ta": 31757440,
+        "cc": 3,
+        "g": null
+      },
+      {
+        "no": 178,
+        "name": "N. SUBRAMANIAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 59,
+        "ed": "5th Pass",
+        "ta": 810000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 179,
+        "name": "VIJAYABASKAR. C",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 36,
+        "ed": "Post Graduate",
+        "ta": 2225000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 180,
+        "name": "V. MUTHURAJA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 39,
+        "ed": "Post Graduate",
+        "ta": 228305706,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 181,
+        "name": "REGUPATHY.S",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 43,
+        "ed": "Graduate",
+        "ta": 5263000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 182,
+        "name": "SIVA.V.MEYYANATHAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 46,
+        "ed": "Graduate Professional",
+        "ta": 8284700,
+        "cc": 2,
+        "g": "F"
+      },
+      {
+        "no": 183,
+        "name": "MOHAMED FARVAS. J",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 37,
+        "ed": "10th Pass",
+        "ta": 3260000,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 184,
+        "name": "DR.PRABHU. TK",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 45,
+        "ed": "8th Pass",
+        "ta": 8065000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 185,
+        "name": "SEENIVASA SETHUPATHY. R",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 67,
+        "ed": "8th Pass",
+        "ta": 2500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 186,
+        "name": "KULANTHAI RANI A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 44,
+        "ed": "Graduate",
+        "ta": 20758559,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 187,
+        "name": "ELANGOVAN.D",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 33,
+        "ed": "Post Graduate",
+        "ta": 3618000,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 188,
+        "name": "P.VISWANATHAN",
+        "party": "Indian National Congress",
+        "bloc": "SPA",
+        "age": 37,
+        "ed": "Others",
+        "ta": 21883966,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 189,
+        "name": "KARTHIKEYAN S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 39,
+        "ed": "8th Pass",
+        "ta": 2656500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 190,
+        "name": "KARUPPAIAH.M.V",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 55,
+        "ed": "5th Pass",
+        "ta": 775000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 191,
+        "name": "A.KALLANAI",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 48,
+        "ed": "10th Pass",
+        "ta": 8225351,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 192,
+        "name": "M.M.GOPISON",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 49,
+        "ed": "8th Pass",
+        "ta": 16000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 193,
+        "name": "MADHAR BADHURUDEEN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 73,
+        "ed": "Doctorate",
+        "ta": 5821000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 194,
+        "name": "THANGAPANDI SR",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 44,
+        "ed": "12th Pass",
+        "ta": 3080000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 195,
+        "name": "NIRMALKUMAR. R.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 47,
+        "ed": "Graduate",
+        "ta": 4883000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 196,
+        "name": "MANIMARAN.M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 35,
+        "ed": "Graduate Professional",
+        "ta": 3854000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 197,
+        "name": "VIJAY. M",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 25,
+        "ed": "12th Pass",
+        "ta": 1842200,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 198,
+        "name": "MAHARAJAN.A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 66,
+        "ed": "5th Pass",
+        "ta": 464028046,
+        "cc": 12,
+        "g": "F"
+      },
+      {
+        "no": 199,
+        "name": "SABARI IYNGARAN G.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 39,
+        "ed": "8th Pass",
+        "ta": 1620080,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 200,
+        "name": "PANNEERSELVAM.O",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 71,
+        "ed": "Post Graduate",
+        "ta": 2728664,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 201,
+        "name": "JEGANATHMISHRA PLA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 33,
+        "ed": "12th Pass",
+        "ta": 426000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 202,
+        "name": "JEGADESHWARI. K",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 28,
+        "ed": "Graduate Professional",
+        "ta": 433540704,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 203,
+        "name": "KARTHIK.A",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 51,
+        "ed": "Others",
+        "ta": 11520000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 204,
+        "name": "KADARKARAIRAJ. A",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 53,
+        "ed": "Graduate Professional",
+        "ta": 7513229,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 205,
+        "name": "KEERTHANA S",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 38,
+        "ed": "10th Pass",
+        "ta": 1047000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 206,
+        "name": "SELVAM P",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 57,
+        "ed": "Literate",
+        "ta": 3880000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 207,
+        "name": "RAMACHANDRAN. K.K.S.S.R",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 53,
+        "ed": "Literate",
+        "ta": 17633020,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 208,
+        "name": "THANGAM THENARASU",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 53,
+        "ed": "8th Pass",
+        "ta": 167845930,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 210,
+        "name": "RAJEEV",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 42,
+        "ed": "5th Pass",
+        "ta": 2295000,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 211,
+        "name": "KATHARBATCHA MUTHURAMALINGAM",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 57,
+        "ed": "Graduate",
+        "ta": 127445362,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 212,
+        "name": "R.S.RAJAKANNAPPAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 39,
+        "ed": "5th Pass",
+        "ta": 389500,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 213,
+        "name": "MARKANDAYAN G V",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 44,
+        "ed": "5th Pass",
+        "ta": 8397572,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 214,
+        "name": "SRINATH",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 51,
+        "ed": "10th Pass",
+        "ta": 3086024,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 215,
+        "name": "ANITHA R. RADHAKRISHNAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 33,
+        "ed": "Graduate",
+        "ta": 9725922,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 216,
+        "name": "SARAVANAN. G",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 37,
+        "ed": "Graduate Professional",
+        "ta": 2318000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 217,
+        "name": "P .MATHANRAJA",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 35,
+        "ed": "Others",
+        "ta": 2631000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 218,
+        "name": "KARUNANITHI.K",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 35,
+        "ed": "Graduate Professional",
+        "ta": 8852000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 219,
+        "name": "DR. DHILIPAN JAISHANKAR",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 31,
+        "ed": "8th Pass",
+        "ta": 90000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 220,
+        "name": "E. RAJA",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 50,
+        "ed": "12th Pass",
+        "ta": 16033814,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 221,
+        "name": "RAJENDRAN. T. M",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 44,
+        "ed": "Graduate",
+        "ta": 101396195,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 222,
+        "name": "DR.KALAI KATHIRAVAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 56,
+        "ed": "Others",
+        "ta": 106109314,
+        "cc": 4,
+        "g": null
+      },
+      {
+        "no": 223,
+        "name": "PAUL MANOJ PANDIAN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 38,
+        "ed": "Graduate Professional",
+        "ta": 15660000,
+        "cc": 4,
+        "g": "F"
+      },
+      {
+        "no": 224,
+        "name": "MURUGHAN.R.S.",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 44,
+        "ed": "8th Pass",
+        "ta": 1686000,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 225,
+        "name": "DR.ESAKKI SUBAYA",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 32,
+        "ed": "Graduate Professional",
+        "ta": 2332858,
+        "cc": 0,
+        "g": "F"
+      },
+      {
+        "no": 226,
+        "name": "M.ABDUL WAHAB",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 28,
+        "ed": "Post Graduate",
+        "ta": 44874667,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 227,
+        "name": "REDDIARPATTI V. NARAYANAN",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 46,
+        "ed": "8th Pass",
+        "ta": 2561870,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 228,
+        "name": "DR.SATHISH CHRISTOPHER",
+        "party": "Tamilaga Vettri Kazhagam",
+        "bloc": "TVK",
+        "age": 52,
+        "ed": "5th Pass",
+        "ta": 1532000,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 229,
+        "name": "THALAVAI SUNDARAM. N",
+        "party": "All India Anna Dravida Munnetra Kazhagam",
+        "bloc": "NDA",
+        "age": 60,
+        "ed": "Graduate Professional",
+        "ta": 38295992,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 230,
+        "name": "AUSTIN",
+        "party": "Dravida Munnetra Kazhagam",
+        "bloc": "SPA",
+        "age": 81,
+        "ed": "Graduate",
+        "ta": 6122083,
+        "cc": 24,
+        "g": null
+      },
+      {
+        "no": 231,
+        "name": "THARAHAI CUTHBERT",
+        "party": "Indian National Congress",
+        "bloc": "SPA",
+        "age": 57,
+        "ed": "Graduate",
+        "ta": 4291264,
+        "cc": 0,
+        "g": null
+      },
+      {
+        "no": 232,
+        "name": "CHELLASWAMY. R",
+        "party": "Communist Party of India (Marxist)",
+        "bloc": "SPA",
+        "age": 60,
+        "ed": "Post Graduate",
+        "ta": 64182545,
+        "cc": 2,
+        "g": null
+      },
+      {
+        "no": 233,
+        "name": "PRAVEEN T.T",
+        "party": "Indian National Congress",
+        "bloc": "SPA",
+        "age": 44,
+        "ed": "Post Graduate",
+        "ta": 5140896,
+        "cc": 1,
+        "g": null
+      },
+      {
+        "no": 234,
+        "name": "RAJESH KUMAR. S",
+        "party": "Indian National Congress",
+        "bloc": "SPA",
+        "age": 32,
+        "ed": "Graduate Professional",
+        "ta": 2250720,
+        "cc": 1,
+        "g": null
+      }
+    ]
+  },
+  "women": {
+    "filedTotal": 1380,
+    "filedAll": 7599
+  },
+  "ind": {
+    "totalVotes": 524744,
+    "stateTotal": 49324121,
+    "share": 1.064,
+    "seatsWon": 0,
+    "maxAcShare": {
+      "no": 86,
+      "share": 20.69
+    }
+  },
+  "ntk": {
+    "totalVotes": 1972537,
+    "share": 3.999,
+    "above5": 47,
+    "above10": 2,
+    "max": {
+      "no": 184,
+      "share": 13.43
+    }
+  },
+  "nota": {
+    "totalVotes": 199801,
+    "share": 0.405,
+    "max": {
+      "no": 108,
+      "share": 1.03,
+      "votes": 1525
+    }
+  },
+  "districtPicture": {
+    "Thiruvallur": {
+      "TVK": 9,
+      "NDA": 1,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 10
+    },
+    "Chennai": {
+      "TVK": 14,
+      "NDA": 0,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 16
+    },
+    "Chengalpattu": {
+      "TVK": 5,
+      "NDA": 2,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 7
+    },
+    "Kancheepuram": {
+      "TVK": 4,
+      "NDA": 0,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Ranipet": {
+      "TVK": 3,
+      "NDA": 1,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Vellore": {
+      "TVK": 4,
+      "NDA": 1,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 5
+    },
+    "Tirupathur": {
+      "TVK": 1,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Krishnagiri": {
+      "TVK": 2,
+      "NDA": 2,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 6
+    },
+    "Dharmapuri": {
+      "TVK": 1,
+      "NDA": 4,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 5
+    },
+    "Tiruvannamalai": {
+      "TVK": 1,
+      "NDA": 5,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 8
+    },
+    "Viluppuram": {
+      "TVK": 0,
+      "NDA": 4,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 7
+    },
+    "Kallakurichi": {
+      "TVK": 1,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Salem": {
+      "TVK": 4,
+      "NDA": 7,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 11
+    },
+    "Namakkal": {
+      "TVK": 5,
+      "NDA": 1,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 6
+    },
+    "Erode": {
+      "TVK": 5,
+      "NDA": 3,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 8
+    },
+    "Tiruppur": {
+      "TVK": 4,
+      "NDA": 2,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 8
+    },
+    "The Nilgiris": {
+      "TVK": 0,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 3
+    },
+    "Coimbatore": {
+      "TVK": 6,
+      "NDA": 1,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 10
+    },
+    "Dindigul": {
+      "TVK": 1,
+      "NDA": 2,
+      "SPA": 4,
+      "OTHER": 0,
+      "total": 7
+    },
+    "Karur": {
+      "TVK": 1,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Tiruchirappalli": {
+      "TVK": 6,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 9
+    },
+    "Perambalur": {
+      "TVK": 1,
+      "NDA": 0,
+      "SPA": 1,
+      "OTHER": 0,
+      "total": 2
+    },
+    "Ariyalur": {
+      "TVK": 0,
+      "NDA": 2,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 2
+    },
+    "Cuddalore": {
+      "TVK": 1,
+      "NDA": 3,
+      "SPA": 5,
+      "OTHER": 0,
+      "total": 9
+    },
+    "Mayiladuthurai": {
+      "TVK": 0,
+      "NDA": 0,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 3
+    },
+    "Nagapattinam": {
+      "TVK": 0,
+      "NDA": 1,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 3
+    },
+    "Thiruvarur": {
+      "TVK": 0,
+      "NDA": 2,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Thanjavur": {
+      "TVK": 2,
+      "NDA": 0,
+      "SPA": 6,
+      "OTHER": 0,
+      "total": 8
+    },
+    "Pudukkottai": {
+      "TVK": 2,
+      "NDA": 1,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 6
+    },
+    "Sivaganga": {
+      "TVK": 4,
+      "NDA": 0,
+      "SPA": 0,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Madurai": {
+      "TVK": 8,
+      "NDA": 0,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 10
+    },
+    "Theni": {
+      "TVK": 2,
+      "NDA": 0,
+      "SPA": 2,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Virudhunagar": {
+      "TVK": 4,
+      "NDA": 0,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 7
+    },
+    "Ramanathapuram": {
+      "TVK": 1,
+      "NDA": 0,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 4
+    },
+    "Thoothukudi": {
+      "TVK": 3,
+      "NDA": 0,
+      "SPA": 3,
+      "OTHER": 0,
+      "total": 6
+    },
+    "Tenkasi": {
+      "TVK": 0,
+      "NDA": 1,
+      "SPA": 4,
+      "OTHER": 0,
+      "total": 5
+    },
+    "Tirunelveli": {
+      "TVK": 3,
+      "NDA": 1,
+      "SPA": 1,
+      "OTHER": 0,
+      "total": 5
+    },
+    "Kanniyakumari": {
+      "TVK": 0,
+      "NDA": 1,
+      "SPA": 5,
+      "OTHER": 0,
+      "total": 6
+    }
+  },
+  "marginChange": {
+    "tightened": [
+      {
+        "no": 129,
+        "name": "Athoor",
+        "margin2021": 135571,
+        "margin2026": 22368,
+        "delta": -113203,
+        "winner2021": "SPA",
+        "winner2026": "SPA"
+      },
+      {
+        "no": 63,
+        "name": "Tiruvannamalai",
+        "margin2021": 94673,
+        "margin2026": 2455,
+        "delta": -92218,
+        "winner2021": "SPA",
+        "winner2026": "SPA"
+      },
+      {
+        "no": 140,
+        "name": "Tiruchirappalli (West)",
+        "margin2021": 85109,
+        "margin2026": 4786,
+        "delta": -80323,
+        "winner2021": "SPA",
+        "winner2026": "SPA"
+      },
+      {
+        "no": 19,
+        "name": "Chepauk-Thiruvallikeni",
+        "margin2021": 69355,
+        "margin2026": 7140,
+        "delta": -62215,
+        "winner2021": "SPA",
+        "winner2026": "SPA"
+      },
+      {
+        "no": 13,
+        "name": "Kolathur",
+        "margin2021": 70384,
+        "margin2026": 8795,
+        "delta": -61589,
+        "winner2021": "SPA",
+        "winner2026": "TVK"
+      }
+    ],
+    "blown": [
+      {
+        "no": 27,
+        "name": "Shozhinganallur",
+        "margin2021": 35405,
+        "margin2026": 96780,
+        "delta": 61375,
+        "winner2021": "SPA",
+        "winner2026": "TVK"
+      },
+      {
+        "no": 88,
+        "name": "Salem (West)",
+        "margin2021": 21499,
+        "margin2026": 74867,
+        "delta": 53368,
+        "winner2021": "NDA",
+        "winner2026": "TVK"
+      },
+      {
+        "no": 2,
+        "name": "Ponneri",
+        "margin2021": 9689,
+        "margin2026": 55768,
+        "delta": 46079,
+        "winner2021": "SPA",
+        "winner2026": "TVK"
+      },
+      {
+        "no": 29,
+        "name": "Sriperumbudur",
+        "margin2021": 10879,
+        "margin2026": 54246,
+        "delta": 43367,
+        "winner2021": "SPA",
+        "winner2026": "TVK"
+      },
+      {
+        "no": 179,
+        "name": "Viralimalai",
+        "margin2021": 23598,
+        "margin2026": 62073,
+        "delta": 38475,
+        "winner2021": "NDA",
+        "winner2026": "NDA"
+      }
+    ]
+  }
+}
