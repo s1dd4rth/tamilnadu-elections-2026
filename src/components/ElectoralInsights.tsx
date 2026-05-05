@@ -22,24 +22,28 @@ const CONTEST_TOP10 = [
   {ac: 180, name: 'Pudukkottai', n: 30},
 ];
 
-const ALLIANCE_WOMEN = [
-  {code: 'NTK', label: 'NTK (Seeman)', women: 73, total: 234, pct: 31.2, color: '#d8a520'},
-  {code: 'TVK', label: 'TVK (Vijay)', women: 59, total: 233, pct: 25.3, color: '#8a2020'},
-  {code: 'NDA', label: 'NDA (AIADMK-led)', women: 52, total: 234, pct: 22.2, color: '#0c7a3a'},
-  {code: 'IND', label: 'Independents', women: 439, total: 2208, pct: 19.9, color: '#6b5d52'},
-  {code: 'OTH', label: 'Other parties', women: 167, total: 880, pct: 19.0, color: '#5a7a9a'},
-  {code: 'SPA', label: 'SPA (DMK-led)', women: 44, total: 234, pct: 18.8, color: '#d32a1e'},
+// Display order + presentation metadata; counts computed at runtime from
+// candidates_myneta (the per-candidate `g` flag is now grounded in MyNeta's
+// curated women-candidate listing — see candidates_myneta.json).
+const ALLIANCE_WOMEN_META: { code: string; label: string; color: string }[] = [
+  {code: 'NTK', label: 'NTK (Seeman)',      color: '#d8a520'},
+  {code: 'NDA', label: 'NDA (AIADMK-led)',  color: '#0c7a3a'},
+  {code: 'TVK', label: 'TVK (Vijay)',       color: '#8a2020'},
+  {code: 'OTH', label: 'Other parties',     color: '#5a7a9a'},
+  {code: 'SPA', label: 'SPA (DMK-led)',     color: '#d32a1e'},
+  {code: 'IND', label: 'Independents',      color: '#6b5d52'},
 ];
 
-const PARTY_WOMEN = [
-  {code: 'BJP',    full: 'Bharatiya Janata Party',        women: 11,  total: 33,   pct: 33.3, color: '#f28c28'},
-  {code: 'NTK',    full: 'Naam Tamilar Katchi',           women: 73,  total: 234,  pct: 31.2, color: '#d8a520'},
-  {code: 'TVK',    full: 'Tamilaga Vettri Kazhagam',      women: 59,  total: 233,  pct: 25.3, color: '#8a2020'},
-  {code: 'BSP',    full: 'Bahujan Samaj Party',           women: 30,  total: 119,  pct: 25.2, color: '#0a5a9a'},
-  {code: 'PMK',    full: 'Pattali Makkal Katchi',         women: 4,   total: 18,   pct: 22.2, color: '#d9b14a'},
-  {code: 'AIADMK', full: 'AIADMK',                        women: 36,  total: 172,  pct: 20.9, color: '#0c7a3a'},
-  {code: 'IND',    full: 'Independent',                   women: 439, total: 2208, pct: 19.9, color: '#6b5d52'},
-  {code: 'DMK',    full: 'Dravida Munnetra Kazhagam',     women: 32,  total: 176,  pct: 18.2, color: '#d32a1e'},
+const PARTY_WOMEN_META: { code: string; full: string; color: string }[] = [
+  {code: 'NTK',    full: 'Naam Tamilar Katchi',           color: '#d8a520'},
+  {code: 'BJP',    full: 'Bharatiya Janata Party',        color: '#f28c28'},
+  {code: 'AIPMMK', full: 'AIPMMK (Sasikala)',             color: '#8a6a3a'},
+  {code: 'PMK',    full: 'Pattali Makkal Katchi',         color: '#d9b14a'},
+  {code: 'BSP',    full: 'Bahujan Samaj Party',           color: '#0a5a9a'},
+  {code: 'AIADMK', full: 'AIADMK',                        color: '#0c7a3a'},
+  {code: 'DMK',    full: 'Dravida Munnetra Kazhagam',     color: '#d32a1e'},
+  {code: 'TVK',    full: 'Tamilaga Vettri Kazhagam',      color: '#8a2020'},
+  {code: 'IND',    full: 'Independent',                   color: '#6b5d52'},
 ];
 
 const THIRD_FRONT = [
@@ -212,18 +216,17 @@ export const DecoyCandidates = () => {
 
 // ─── 3. Women on the Ballot ───────────────────────────────────────────────
 
-// MyNeta cross-check: women that MyNeta has confirmed female from their
-// affidavit data, broken down by the same alliance buckets.
-function useMynetaWomenByAlliance() {
+// Runtime tallies from candidates_myneta.json (where `g='F'` is grounded in
+// MyNeta's curated women-candidate listing). Returns alliance and party
+// rollups joined with the presentation metadata above; both arrays are
+// sorted by descending %women so the rendered bar charts stack tallest-first.
+function useWomenStats() {
   return useMemo(() => {
-    const counts: Record<string, { women: number; total: number }> = {
-      SPA: { women: 0, total: 0 },
-      NDA: { women: 0, total: 0 },
-      TVK: { women: 0, total: 0 },
-      NTK: { women: 0, total: 0 },
-      OTH: { women: 0, total: 0 },
-      IND: { women: 0, total: 0 },
-    };
+    const allianceTally: Record<string, { women: number; total: number }> = {};
+    const partyTally: Record<string, { women: number; total: number }> = {};
+    let totalWomen = 0;
+    let totalContesting = 0;
+
     for (const [acNo, list] of Object.entries(candidatesMyneta as any)) {
       const eciList = (candidatesData as any)[acNo] || [];
       for (const c of list as any[]) {
@@ -232,39 +235,57 @@ function useMynetaWomenByAlliance() {
         const party = eci.party || '';
         const p = (partiesData as any)[party];
         const alliance = (p && p.alliance) || (party === 'IND' ? 'IND' : 'OTH');
-        if (counts[alliance]) {
-          counts[alliance].total += 1;
-          if (c.g === 'F') counts[alliance].women += 1;
-        }
+        const isW = c.g === 'F';
+
+        (allianceTally[alliance] ??= { women: 0, total: 0 }).total += 1;
+        if (isW) allianceTally[alliance].women += 1;
+
+        (partyTally[party] ??= { women: 0, total: 0 }).total += 1;
+        if (isW) partyTally[party].women += 1;
+
+        totalContesting += 1;
+        if (isW) totalWomen += 1;
       }
     }
-    return counts;
+
+    const pct = (w: number, t: number) => (t > 0 ? (w * 100) / t : 0);
+
+    const alliance = ALLIANCE_WOMEN_META.map(m => {
+      const t = allianceTally[m.code] ?? { women: 0, total: 0 };
+      return { ...m, women: t.women, total: t.total, pct: pct(t.women, t.total) };
+    }).sort((a, b) => b.pct - a.pct);
+
+    const party = PARTY_WOMEN_META.map(m => {
+      const t = partyTally[m.code] ?? { women: 0, total: 0 };
+      return { ...m, women: t.women, total: t.total, pct: pct(t.women, t.total) };
+    }).sort((a, b) => b.pct - a.pct);
+
+    return { alliance, party, totalWomen, totalContesting };
   }, []);
 }
 
 export const WomenOnBallot = () => {
   const isMobile = useIsMobile();
-  const maxAllianceP = Math.max(...ALLIANCE_WOMEN.map(a => a.pct));
-  const maxPartyP = Math.max(...PARTY_WOMEN.map(p => p.pct));
-  const mynetaCounts = useMynetaWomenByAlliance();
-  const mynetaTotal = Object.values(mynetaCounts).reduce((s, c) => s + c.women, 0);
+  const stats = useWomenStats();
+  const maxAllianceP = stats.alliance[0]?.pct || 1;
+  const maxPartyP = stats.party[0]?.pct || 1;
 
   return (
     <section style={{ margin: '60px 0' }}>
       <div style={{ borderTop: `2px solid ${COLORS.text}` }} />
       <SectionTitle kicker="Reading the 2026 ballot · №3 of 5">Women on the Ballot.</SectionTitle>
       <p style={{ fontFamily: SERIF, fontStyle: 'italic', fontSize: '15px', color: COLORS.muted, margin: '-8px 0 32px', maxWidth: '820px', lineHeight: 1.6 }}>
-        <strong style={{ color: COLORS.accent }}>1,380 of the 7,599 nomination forms (18.2%) were filed by women</strong>, per the Tamil Nadu CEO. The two-stage filter — Returning-Officer scrutiny then voluntary withdrawal — narrows that figure further: MyNeta&rsquo;s curated women-candidate listing identifies <strong style={{ color: COLORS.accent }}>{mynetaTotal} of {Object.values(mynetaCounts).reduce((s, c) => s + c.total, 0).toLocaleString('en-IN')} contestants</strong> as women. The party-by-party share below comes from MyNeta&rsquo;s classification; alliance estimates are rounded.
+        <strong style={{ color: COLORS.accent }}>1,380 of the 7,599 nomination forms (18.2%) were filed by women</strong>, per the Tamil Nadu CEO. The two-stage filter — Returning-Officer scrutiny then voluntary withdrawal — narrows that figure further: MyNeta&rsquo;s curated women-candidate listing identifies <strong style={{ color: COLORS.accent }}>{stats.totalWomen} of {stats.totalContesting.toLocaleString('en-IN')} contestants</strong> ({(stats.totalWomen * 100 / Math.max(1, stats.totalContesting)).toFixed(1)}%) as women. The shares below are computed from that listing.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(360px, 1fr))', gap: '40px' }}>
         <div>
           <SmallCaps style={{ color: COLORS.accent, marginBottom: '20px', display: 'block' }}>By Alliance · Share of women candidates</SmallCaps>
-          {ALLIANCE_WOMEN.map(a => (
+          {stats.alliance.map(a => (
             <div key={a.code} style={{ marginBottom: '16px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
                 <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 800 }}>{a.label}</span>
-                <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(a.color), fontWeight: 800 }}>{a.pct}%</span>
+                <span style={{ fontFamily: MONO, fontSize: '11px', color: onCream(a.color), fontWeight: 800 }}>{a.pct.toFixed(1)}%</span>
               </div>
               <div style={{ background: '#f5ead8', height: '20px', border: `1px solid ${COLORS.border}` }}>
                 <div style={{ width: `${(a.pct / maxAllianceP) * 100}%`, height: '100%', background: a.color }} />
@@ -275,14 +296,14 @@ export const WomenOnBallot = () => {
 
         <div>
           <SmallCaps style={{ color: COLORS.accent, marginBottom: '20px', display: 'block' }}>By Party · Ranked by % women</SmallCaps>
-          {PARTY_WOMEN.map(p => (
+          {stats.party.map(p => (
             <div key={p.code} style={{ marginBottom: '8px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr 60px', gap: '12px', alignItems: 'center' }}>
                 <span style={{ fontFamily: MONO, fontSize: '10px', color: onCream(p.color), fontWeight: 800 }}>{p.code}</span>
                 <div style={{ background: '#f5ead8', height: '16px', border: `1px solid ${COLORS.border}` }}>
                   <div style={{ width: `${(p.pct / maxPartyP) * 100}%`, height: '100%', background: p.color }} />
                 </div>
-                <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 800, textAlign: 'right' }}>{p.pct}%</span>
+                <span style={{ fontFamily: MONO, fontSize: '11px', color: COLORS.text, fontWeight: 800, textAlign: 'right' }}>{p.pct.toFixed(1)}%</span>
               </div>
             </div>
           ))}
@@ -295,22 +316,19 @@ export const WomenOnBallot = () => {
           From MyNeta&rsquo;s curated 442-name women-candidate listing, joined to the alliance buckets used elsewhere on this page. NTK delivered on its announced 117-women pledge in full — half its slate, against ~11% for every other alliance.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(auto-fit, minmax(140px, 1fr))', gap: '12px 18px' }}>
-          {ALLIANCE_WOMEN.map(a => {
-            const m = mynetaCounts[a.code];
-            return (
-              <div key={a.code}>
-                <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.08em', color: COLORS.muted, fontWeight: 700 }}>
-                  {a.label.toUpperCase()}
-                </div>
-                <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 800, color: onCream(a.color), fontFeatureSettings: '"tnum" 1', marginTop: '2px' }}>
-                  {m?.women ?? 0}
-                </div>
-                <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.05em' }}>
-                  of {m?.total ?? 0} contesting
-                </div>
+          {stats.alliance.map(a => (
+            <div key={a.code}>
+              <div style={{ fontFamily: MONO, fontSize: '10px', letterSpacing: '0.08em', color: COLORS.muted, fontWeight: 700 }}>
+                {a.label.toUpperCase()}
               </div>
-            );
-          })}
+              <div style={{ fontFamily: SERIF, fontSize: '22px', fontWeight: 800, color: onCream(a.color), fontFeatureSettings: '"tnum" 1', marginTop: '2px' }}>
+                {a.women}
+              </div>
+              <div style={{ fontFamily: MONO, fontSize: '10px', color: COLORS.muted, letterSpacing: '0.05em' }}>
+                of {a.total} contesting
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
