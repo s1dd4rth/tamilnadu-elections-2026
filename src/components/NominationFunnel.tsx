@@ -69,13 +69,19 @@ function useFunnelData() {
     const topReject = [...rows].sort((a, b) => b.rejPct - a.rejPct).slice(0, 5);
     const topWithdraw = [...rows].sort((a, b) => b.wdPct - a.wdPct).slice(0, 5);
 
-    return { totals, stateRejPct, stateWdPct, quartiles, topReject, topWithdraw, rows };
+    // ACs that received any third-gender nomination filing (Form-7A).
+    const thirdGenderAcs = rows
+      .filter(r => (r.thirdGender ?? 0) > 0)
+      .map(r => ({ no: r.no, name: r.name, count: r.thirdGender }))
+      .sort((a, b) => b.count - a.count);
+
+    return { totals, stateRejPct, stateWdPct, quartiles, topReject, topWithdraw, rows, thirdGenderAcs };
   }, []);
 }
 
 export const NominationFunnel = () => {
   const isMobile = useIsMobile();
-  const { totals, stateRejPct, stateWdPct, quartiles, topReject, topWithdraw } = useFunnelData();
+  const { totals, stateRejPct, stateWdPct, quartiles, topReject, topWithdraw, thirdGenderAcs } = useFunnelData();
 
   const filedW = 100;
   const acceptedW = (totals.accepted / totals.filed) * 100;
@@ -115,6 +121,32 @@ export const NominationFunnel = () => {
           </div>
         ))}
       </div>
+
+      {/* Statewide gender breakdown of filings (CEO Form-7A) */}
+      {totals.thirdGender > 0 && (
+        <div style={{
+          marginTop: '16px',
+          padding: '12px 16px',
+          background: '#faf4e8',
+          border: `1px solid ${COLORS.border}`,
+          fontFamily: SERIF,
+          fontStyle: 'italic',
+          fontSize: '13px',
+          lineHeight: 1.55,
+          color: COLORS.muted,
+          maxWidth: '820px',
+        }}>
+          <strong style={{ color: COLORS.text, fontStyle: 'normal', fontFamily: MONO, fontSize: '10px', letterSpacing: '0.1em', display: 'block', marginBottom: '4px', fontWeight: 800 }}>
+            BY GENDER · {fmtIndian(totals.male)} M · {fmtIndian(totals.female)} F · {totals.thirdGender} TG
+          </strong>
+          Of {fmtIndian(totals.filed)} filings, just {totals.thirdGender} were third-gender — {thirdGenderAcs.map((a, i) => (
+            <span key={a.no}>
+              {i > 0 && (i === thirdGenderAcs.length - 1 ? ' and ' : ', ')}
+              {a.count} in <strong style={{ color: COLORS.text, fontStyle: 'normal' }}>{a.name}</strong>
+            </span>
+          ))}. Only one — Roshini S, NTK&rsquo;s nominee from Villivakkam — survived scrutiny and withdrawal to reach the EVM under a party banner.
+        </div>
+      )}
 
       {/* Counter-intuitive insight: pull-quote treatment */}
       <figure style={{ margin: '48px 0 0' }}>

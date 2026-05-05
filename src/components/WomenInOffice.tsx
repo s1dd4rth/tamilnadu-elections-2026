@@ -3,6 +3,7 @@ import { SmallCaps, SectionTitle } from "./common";
 import women from "@/data/women-mlas.json";
 import findings from "@/data/findings.json";
 import marginAtlas from "@/data/margin-atlas.json";
+import nominations from "@/data/nominations.json";
 
 const BLOC_COLOUR: Record<string, string> = {
   SPA: "#a04020",
@@ -34,6 +35,10 @@ export const WomenInOffice = () => {
   for (const r of marginAtlas.rows as Array<{ winner: { bloc: string } }>) {
     totalByBloc[r.winner.bloc] = (totalByBloc[r.winner.bloc] ?? 0) + 1;
   }
+
+  // Statewide third-gender filings (CEO Form-7A) — used for the Roshini callout.
+  const tgFiled = (nominations as Array<{ thirdGender: number }>)
+    .reduce((s, n) => s + (n.thirdGender ?? 0), 0);
 
   return (
     <section style={{ margin: "60px 0" }}>
@@ -109,6 +114,35 @@ export const WomenInOffice = () => {
             );
           })}
         </div>
+      </div>
+
+      {/* Roshini callout — the only third-gender party nominee on the ballot */}
+      <div style={{
+        borderLeft: `3px solid ${COLORS.accent}`,
+        background: "#fff9ef",
+        padding: "16px 20px",
+        margin: "0 0 24px",
+        maxWidth: "820px",
+      }}>
+        <SmallCaps style={{ color: COLORS.accent }}>A footnote on the 442</SmallCaps>
+        <p style={{
+          fontFamily: SERIF,
+          fontStyle: "italic",
+          fontSize: "15px",
+          lineHeight: 1.6,
+          color: "#3a302a",
+          margin: "6px 0 0",
+        }}>
+          One of the 442 women on the ballot is also Tamil Nadu&rsquo;s only third-gender candidate fielded by a political party — <strong style={{ color: COLORS.text, fontStyle: "normal" }}>Roshini S</strong>, NTK&rsquo;s nominee from <strong style={{ color: COLORS.text, fontStyle: "normal" }}>Villivakkam</strong>. Across all {fmt(filed?.filedAll ?? 0)} nominations filed statewide, only {tgFiled} were third-gender; Roshini is the only one to survive scrutiny + withdrawal and reach the EVM under a party banner. Reporting:{" "}
+          <a
+            href="https://www.deccanherald.com/elections/tamil-nadu/tamil-nadu-assembly-elections-2026-meet-roshini-tamil-nadus-only-transgender-woman-candidate-3973182"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: COLORS.accent, textDecoration: "none", borderBottom: `1px dotted ${COLORS.accent}` }}
+          >
+            Deccan Herald
+          </a>.
+        </p>
       </div>
 
       {/* List of all flagged winners */}
