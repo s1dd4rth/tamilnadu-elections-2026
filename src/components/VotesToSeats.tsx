@@ -142,13 +142,23 @@ export const VotesToSeats = () => {
       appearances2021ByCode[code] = (appearances2021ByCode[code] ?? 0) + 1;
     }
   }
-  const get2021Pct = (longName: string): { pct: number | null; partial: boolean } => {
+  // Manual overrides for parties whose 2021 share isn't captured in
+  // analysis.json (because they rarely placed top-2). Sourced from the
+  // ECI Statistical Report on the 2021 TN assembly election. Only added
+  // for parties where the 2021 number is editorially relevant.
+  const OVERRIDES_2021_PCT: Record<string, number> = {
+    "Naam Tamilar Katchi": 6.46, // ECI Statistical Report 2021
+  };
+
+  const get2021Pct = (longName: string): { pct: number | null; partial: boolean; overridden: boolean } => {
+    const override = OVERRIDES_2021_PCT[longName];
+    if (override != null) return { pct: override, partial: false, overridden: true };
     const code = LONG_TO_2021_CODE[longName];
-    if (!code) return { pct: null, partial: false };
+    if (!code) return { pct: null, partial: false, overridden: false };
     const v = votes2021ByCode[code];
-    if (!v) return { pct: null, partial: false };
+    if (!v) return { pct: null, partial: false, overridden: false };
     const apps = appearances2021ByCode[code] ?? 0;
-    return { pct: (v / total2021Votes) * 100, partial: apps < 50 };
+    return { pct: (v / total2021Votes) * 100, partial: apps < 50, overridden: false };
   };
 
   // Headline party rows — top 10 by votes
@@ -352,37 +362,41 @@ export const VotesToSeats = () => {
         </p>
       </div>
 
-      {/* NTK + zero-seat-but-many-votes pull-quote */}
-      {ntk && ntk.votes > 0 && (
-        <blockquote style={{
-          margin: "0 0 28px",
-          padding: "20px 24px",
-          background: "#fff9ef",
-          border: `1.5px solid ${COLORS.text}`,
-          boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
-        }}>
-          <SmallCaps style={{ color: COLORS.accent, marginBottom: "4px" }}>
-            The vote-without-seat case
-          </SmallCaps>
-          <p style={{
-            fontFamily: SERIF,
-            fontSize: "clamp(20px, 2.3vw, 26px)",
-            fontStyle: "italic",
-            fontWeight: 800,
-            lineHeight: 1.3,
-            color: COLORS.text,
-            margin: "8px 0 6px",
-            letterSpacing: "-0.015em",
+      {/* NTK pull-quote: shrinking vote-without-seat */}
+      {ntk && ntk.votes > 0 && (() => {
+        const ntk2021 = OVERRIDES_2021_PCT["Naam Tamilar Katchi"];
+        const ntkDrop = ntk2021 - ntk.pct;
+        return (
+          <blockquote style={{
+            margin: "0 0 28px",
+            padding: "20px 24px",
+            background: "#fff9ef",
+            border: `1.5px solid ${COLORS.text}`,
+            boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
           }}>
-            Seeman&apos;s NTK polled <span style={{ color: BLOC_COLOUR.NTK }}>{fmtL(ntk.votes)}</span> votes —{" "}
-            {ntk.pct.toFixed(1)}% statewide — and won{" "}
-            <span style={{ color: BLOC_COLOUR.NTK }}>zero</span> seats.
-          </p>
-          <p style={{ fontFamily: SERIF, fontSize: "13px", color: COLORS.muted, margin: 0, lineHeight: 1.5 }}>
-            NTK fielded candidates in all 234 ACs, 117 of them women. Without an alliance, the four-percent vote spread thinly across every constituency — never enough to win any single seat. Independents (1.06%) and BJP-as-a-standalone-tally inside NDA (3% vote, 1 seat) tell the same FPTP-spoiler story.
-          </p>
-        </blockquote>
-      )}
+            <SmallCaps style={{ color: COLORS.accent, marginBottom: "4px" }}>
+              The shrinking third force
+            </SmallCaps>
+            <p style={{
+              fontFamily: SERIF,
+              fontSize: "clamp(20px, 2.3vw, 26px)",
+              fontStyle: "italic",
+              fontWeight: 800,
+              lineHeight: 1.3,
+              color: COLORS.text,
+              margin: "8px 0 6px",
+              letterSpacing: "-0.015em",
+            }}>
+              NTK polled <span style={{ color: BLOC_COLOUR.NTK }}>{ntk2021.toFixed(2)}%</span> in 2021,{" "}
+              <span style={{ color: BLOC_COLOUR.NTK }}>{ntk.pct.toFixed(2)}%</span> in 2026 — a {ntkDrop.toFixed(1)}-point drop — and still won{" "}
+              <span style={{ color: BLOC_COLOUR.NTK }}>zero</span> seats both times.
+            </p>
+            <p style={{ fontFamily: SERIF, fontSize: "13px", color: COLORS.muted, margin: 0, lineHeight: 1.5 }}>
+              In 2021 NTK was the only third force in TN — Seeman&apos;s all-Tamil pitch with no alliance — and its 6.5% share was a ceiling. By 2026, Vijay&apos;s TVK had claimed the third-front lane; NTK lost roughly a third of its share to it ({fmtL(ntk.votes)} this time, vs ~30 lakh in 2021). The party fielded candidates in all 234 ACs again, 117 of them women, but without an alliance, four percent spread thinly is still zero seats.
+            </p>
+          </blockquote>
+        );
+      })()}
 
       {/* Top parties detail table */}
       <div style={{
@@ -509,7 +523,7 @@ export const VotesToSeats = () => {
           paddingTop: "12px",
           lineHeight: 1.55,
         }}>
-          Source: ECI per-AC ballots aggregated for 2026; analysis.json winner+runner-up aggregation for 2021. The 2021 column captures only parties that placed first or second in any AC — DMK and AIADMK appeared in 188/234 and 191/234 ACs respectively (near-complete), but NTK rarely cracked the top two in 2021 so its number is shown as &ldquo;—&rdquo; rather than misleadingly low. The bloc tag indicates which alliance the party contested under in 2026 (DMDK joined the SPA umbrella; AMMK was a fused-symbol AIADMK ally).
+          Source: ECI per-AC ballots aggregated for 2026; analysis.json winner+runner-up aggregation for 2021, with NTK&apos;s 2021 share (6.46%) sourced from the ECI Statistical Report on the 2021 TN assembly election since NTK rarely placed top-2 and isn&apos;t captured in the local file. Parties without a 2021 number (Independents, smaller fringe outfits) show &ldquo;—&rdquo; rather than a misleadingly low value. Bloc tags reflect 2026 alliance (DMDK joined SPA; AMMK contested NDA on a fused symbol).
         </p>
       </div>
     </section>
