@@ -102,7 +102,7 @@ const TurnoutMap = ({ mode, selected, onSelect, onHover, hovered }: any) => {
         })}
       </g>
 
-      <g dangerouslySetInnerHTML={{ __html: mapSvgData.svg }} />
+      <g className="tn-map" dangerouslySetInnerHTML={{ __html: mapSvgData.svg }} />
 
       {districtsData.map((d) => {
         const coords = (MAP_COORDS as any)[d.id];
