@@ -6,7 +6,6 @@ import { SeatHemicycle } from "@/components/SeatHemicycle";
 import { SeatHexMap } from "@/components/SeatHexMap";
 import { Live2026Section } from "@/components/Live2026Section";
 import type { TimelineSnapshot } from "@/components/TimelineScrubber";
-import { NonVoterAnalysis } from "@/components/NonVoterAnalysis";
 import analysisData from "@/data/analysis.json";
 import resultsTimeline from "@/data/results-timeline.json";
 import turnoutData from "@/data/turnout.json";
@@ -147,9 +146,6 @@ export default function AnalysisPage() {
           />
         </div>
       </section>
-
-      {/* Non-voter section */}
-      <NonVoterAnalysis />
 
       {/* Data source + forward pointer */}
       <footer style={{ marginTop: "80px", paddingTop: "32px", borderTop: `1px solid ${COLORS.text}`, paddingBottom: "40px" }}>
