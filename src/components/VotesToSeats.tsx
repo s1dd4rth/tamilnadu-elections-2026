@@ -2,6 +2,7 @@ import { SERIF, MONO, COLORS } from "@/styles/theme";
 import { SmallCaps, SectionTitle } from "./common";
 import detail from "@/data/results-2026-detail.json";
 import marginAtlas from "@/data/margin-atlas.json";
+import analysisData from "@/data/analysis.json";
 
 const BLOC_COLOUR: Record<string, string> = {
   TVK: "#a61e5e",
@@ -58,6 +59,34 @@ type DetailFile = { ac: Record<string, Cand[]> };
 
 type Atlas = { rows: Array<{ no: number; winner: { party: string; bloc: string } }> };
 
+// 2026 ECI uses long party names; 2021 analysis.json uses short codes
+// (DMK, ADMK, INC, etc). This map converts a 2026 long name to its
+// 2021 code so we can look up its 2021 vote share.
+const LONG_TO_2021_CODE: Record<string, string> = {
+  "Dravida Munnetra Kazhagam": "DMK",
+  "All India Anna Dravida Munnetra Kazhagam": "ADMK",
+  "Indian National Congress": "INC",
+  "Pattali Makkal Katchi": "PMK",
+  "Bharatiya Janata Party": "BJP",
+  "Communist Party of India": "CPI",
+  "Communist Party of India  (Marxist)": "CPM",
+  "Communist Party of India (Marxist)": "CPM",
+  "Viduthalai Chiruthaigal Katchi": "VCK",
+  "Indian Union Muslim League": "IUML",
+  "Amma Makkal Munnettra Kazagam": "AMMK",
+  "Marumalarchi Dravida Munnetra Kazhagam": "MDMK",
+  "Desiya Murpokku Dravida Kazhagam": "DMDK",
+};
+
+type AnalysisAC = {
+  no: number;
+  elec2021: number;
+  nonVoters2021: number;
+  winner2021: { party: string; votes: number };
+  runnerUp2021: { party: string; votes: number };
+};
+type AnalysisFile = { acs: AnalysisAC[] };
+
 export const VotesToSeats = () => {
   // Aggregate votes per party from per-AC ballots
   const parties: Record<string, number> = {};
@@ -95,6 +124,33 @@ export const VotesToSeats = () => {
     seatPct: ((blocSeats[b] ?? 0) / 234) * 100,
   })).sort((a, b) => b.votes - a.votes);
 
+  // 2021 vote share, computed from analysis.json's per-AC winner+runner-up
+  // data. This is PARTIAL — parties that placed 3rd or below in 2021 are
+  // not represented. For DMK (188/234 ACs as top-2) and AIADMK (191/234)
+  // coverage is near-complete; for smaller parties it's partial. Tracked
+  // separately so we can show an honest "—" where coverage is too thin.
+  const analysisAcs = (analysisData as AnalysisFile).acs;
+  const total2021Votes = analysisAcs.reduce(
+    (s, a) => s + (a.elec2021 - a.nonVoters2021), 0
+  );
+  const votes2021ByCode: Record<string, number> = {};
+  const appearances2021ByCode: Record<string, number> = {};
+  for (const ac of analysisAcs) {
+    for (const slot of [ac.winner2021, ac.runnerUp2021]) {
+      const code = slot.party;
+      votes2021ByCode[code] = (votes2021ByCode[code] ?? 0) + slot.votes;
+      appearances2021ByCode[code] = (appearances2021ByCode[code] ?? 0) + 1;
+    }
+  }
+  const get2021Pct = (longName: string): { pct: number | null; partial: boolean } => {
+    const code = LONG_TO_2021_CODE[longName];
+    if (!code) return { pct: null, partial: false };
+    const v = votes2021ByCode[code];
+    if (!v) return { pct: null, partial: false };
+    const apps = appearances2021ByCode[code] ?? 0;
+    return { pct: (v / total2021Votes) * 100, partial: apps < 50 };
+  };
+
   // Headline party rows — top 10 by votes
   const partyRows = Object.entries(parties)
     .map(([p, v]) => ({
@@ -115,6 +171,16 @@ export const VotesToSeats = () => {
   // Conversion premium per bloc (seat% − vote%)
   const tvkPremium = (blocs.find((b) => b.bloc === "TVK")?.seatPct ?? 0) -
     (blocs.find((b) => b.bloc === "TVK")?.pct ?? 0);
+
+  // Where TVK's 35% came from — the DMK + AIADMK 2021→2026 collapse
+  const dmk2021 = get2021Pct("Dravida Munnetra Kazhagam").pct ?? 0;
+  const admk2021 = get2021Pct("All India Anna Dravida Munnetra Kazhagam").pct ?? 0;
+  const dmk2026 = (parties["Dravida Munnetra Kazhagam"] / totalVotes) * 100;
+  const admk2026 = (parties["All India Anna Dravida Munnetra Kazhagam"] / totalVotes) * 100;
+  const combined2021 = dmk2021 + admk2021;
+  const combined2026 = dmk2026 + admk2026;
+  const collapse = combined2021 - combined2026;
+  const tvk2026 = (parties["Tamilaga Vettri Kazhagam"] / totalVotes) * 100;
 
   // NTK pull-quote
   const ntk = blocs.find((b) => b.bloc === "NTK");
@@ -152,6 +218,39 @@ export const VotesToSeats = () => {
         <FunnelArrow />
         <FunnelStat label="Seats won" value="234" sub="TVK 108 · SPA 73 · NDA 53" />
       </div>
+
+      {/* The DMK+AIADMK 2021→2026 collapse — explains where TVK's 35% came from */}
+      <blockquote style={{
+        margin: "0 0 28px",
+        padding: "20px 24px",
+        background: "#fff9ef",
+        border: `1.5px solid ${COLORS.text}`,
+        boxShadow: "6px 6px 0 rgba(26,20,16,0.05)",
+      }}>
+        <SmallCaps style={{ color: COLORS.accent, marginBottom: "4px" }}>
+          Where TVK&apos;s {tvk2026.toFixed(0)}% came from
+        </SmallCaps>
+        <p style={{
+          fontFamily: SERIF,
+          fontSize: "clamp(20px, 2.3vw, 26px)",
+          fontStyle: "italic",
+          fontWeight: 800,
+          lineHeight: 1.3,
+          color: COLORS.text,
+          margin: "8px 0 6px",
+          letterSpacing: "-0.015em",
+        }}>
+          DMK + AIADMK held{" "}
+          <span style={{ color: BLOC_COLOUR.SPA }}>{combined2021.toFixed(0)}%</span> of the vote in 2021.
+          In 2026, between them they hold{" "}
+          <span style={{ color: BLOC_COLOUR.SPA }}>{combined2026.toFixed(0)}%</span>.
+          The {collapse.toFixed(0)}-point gap is roughly{" "}
+          <span style={{ color: BLOC_COLOUR.TVK }}>TVK&apos;s entire debut share</span>.
+        </p>
+        <p style={{ fontFamily: SERIF, fontSize: "13px", color: COLORS.muted, margin: 0, lineHeight: 1.5 }}>
+          DMK fell from <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{dmk2021.toFixed(1)}%</strong> to <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{dmk2026.toFixed(1)}%</strong> ({(dmk2021 - dmk2026).toFixed(1)}pp loss). AIADMK fell from <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{admk2021.toFixed(1)}%</strong> to <strong style={{ color: COLORS.text, fontStyle: "normal" }}>{admk2026.toFixed(1)}%</strong> ({(admk2021 - admk2026).toFixed(1)}pp loss). Vijay&apos;s party — non-existent in 2021 — picked up {tvk2026.toFixed(1)}% of the vote in its first contest. The arithmetic is almost exact.
+        </p>
+      </blockquote>
 
       {/* Bloc-level vote vs seat comparison */}
       <div style={{
@@ -308,7 +407,7 @@ export const VotesToSeats = () => {
         </h3>
         <div style={{
           display: "grid",
-          gridTemplateColumns: "1fr 90px 80px 80px",
+          gridTemplateColumns: "1fr 90px 80px 80px 80px",
           gap: "10px",
           alignItems: "center",
           padding: "6px 0",
@@ -322,59 +421,84 @@ export const VotesToSeats = () => {
         }}>
           <div>Party</div>
           <div style={{ textAlign: "right" }}>Votes</div>
-          <div style={{ textAlign: "right" }}>Vote %</div>
+          <div style={{ textAlign: "right" }}>2026 %</div>
+          <div style={{ textAlign: "right" }}>2021 %</div>
           <div style={{ textAlign: "right" }}>Seats</div>
         </div>
-        {partyRows.map((r) => (
-          <div key={r.party} style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 90px 80px 80px",
-            gap: "10px",
-            alignItems: "center",
-            padding: "8px 0",
-            borderBottom: "1px dotted #d8c8a8",
-          }}>
-            <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
-              <span style={{
+        {partyRows.map((r) => {
+          const prior = get2021Pct(r.party);
+          const delta = prior.pct != null ? r.pct - prior.pct : null;
+          return (
+            <div key={r.party} style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 90px 80px 80px 80px",
+              gap: "10px",
+              alignItems: "center",
+              padding: "8px 0",
+              borderBottom: "1px dotted #d8c8a8",
+            }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
+                <span style={{
+                  fontFamily: SERIF,
+                  fontSize: "13px",
+                  fontWeight: 700,
+                  color: COLORS.text,
+                }}>
+                  {r.party}
+                </span>
+                <span style={{
+                  fontFamily: MONO,
+                  fontSize: "9px",
+                  fontWeight: 700,
+                  color: BLOC_COLOUR[r.bloc] ?? COLORS.text,
+                  letterSpacing: "0.08em",
+                  background: "#faf4e8",
+                  padding: "2px 6px",
+                  borderRadius: 2,
+                }}>
+                  {r.bloc}
+                </span>
+              </div>
+              <div style={{ fontFamily: SERIF, fontSize: "13px", color: COLORS.text, textAlign: "right" }}>
+                {fmtL(r.votes)}
+              </div>
+              <div style={{ fontFamily: SERIF, fontSize: "14px", fontWeight: 700, fontStyle: "italic", color: COLORS.text, textAlign: "right" }}>
+                {r.pct.toFixed(2)}%
+              </div>
+              <div style={{
                 fontFamily: SERIF,
                 fontSize: "13px",
-                fontWeight: 700,
-                color: COLORS.text,
+                color: prior.pct == null ? COLORS.muted : COLORS.text,
+                textAlign: "right",
+                fontStyle: prior.partial ? "italic" : "normal",
               }}>
-                {r.party}
-              </span>
-              <span style={{
-                fontFamily: MONO,
-                fontSize: "9px",
-                fontWeight: 700,
-                color: BLOC_COLOUR[r.bloc] ?? COLORS.text,
-                letterSpacing: "0.08em",
-                background: "#faf4e8",
-                padding: "2px 6px",
-                borderRadius: 2,
+                {prior.pct != null ? `${prior.pct.toFixed(2)}%` : "—"}
+                {delta != null && Math.abs(delta) >= 0.5 && (
+                  <span style={{
+                    marginLeft: "4px",
+                    fontFamily: MONO,
+                    fontSize: "9px",
+                    color: delta > 0 ? "#1f4e3d" : "#c8886a",
+                    fontWeight: 700,
+                  }}>
+                    {delta > 0 ? "+" : ""}{delta.toFixed(1)}
+                  </span>
+                )}
+              </div>
+              <div style={{
+                fontFamily: SERIF,
+                fontSize: "16px",
+                fontWeight: 800,
+                fontStyle: "italic",
+                color: r.seats === 0 ? COLORS.muted : COLORS.text,
+                textAlign: "right",
+                letterSpacing: "-0.01em",
               }}>
-                {r.bloc}
-              </span>
+                {r.seats}
+              </div>
             </div>
-            <div style={{ fontFamily: SERIF, fontSize: "13px", color: COLORS.text, textAlign: "right" }}>
-              {fmtL(r.votes)}
-            </div>
-            <div style={{ fontFamily: SERIF, fontSize: "14px", fontWeight: 700, fontStyle: "italic", color: COLORS.text, textAlign: "right" }}>
-              {r.pct.toFixed(2)}%
-            </div>
-            <div style={{
-              fontFamily: SERIF,
-              fontSize: "16px",
-              fontWeight: 800,
-              fontStyle: "italic",
-              color: r.seats === 0 ? COLORS.muted : COLORS.text,
-              textAlign: "right",
-              letterSpacing: "-0.01em",
-            }}>
-              {r.seats}
-            </div>
-          </div>
-        ))}
+          );
+        })}
         <p style={{
           fontFamily: SERIF,
           fontStyle: "italic",
@@ -385,7 +509,7 @@ export const VotesToSeats = () => {
           paddingTop: "12px",
           lineHeight: 1.55,
         }}>
-          Source: ECI per-AC ballots aggregated. The bloc tag indicates which alliance the party contested under in 2026 (DMDK joined the SPA umbrella; AMMK was a fused-symbol AIADMK ally). DMK&apos;s vote share is roughly 24% of the state — yet only 30% of seats once the SPA partners are added in. AIADMK alone (21%) won 47 seats; with NDA partners that&apos;s 53.
+          Source: ECI per-AC ballots aggregated for 2026; analysis.json winner+runner-up aggregation for 2021. The 2021 column captures only parties that placed first or second in any AC — DMK and AIADMK appeared in 188/234 and 191/234 ACs respectively (near-complete), but NTK rarely cracked the top two in 2021 so its number is shown as &ldquo;—&rdquo; rather than misleadingly low. The bloc tag indicates which alliance the party contested under in 2026 (DMDK joined the SPA umbrella; AMMK was a fused-symbol AIADMK ally).
         </p>
       </div>
     </section>
